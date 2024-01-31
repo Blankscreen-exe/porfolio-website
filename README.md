@@ -8,3 +8,15 @@
 - [Berry Theme](https://github.com/codedthemes/berry-free-react-admin-template)
 - [Minimal Free](https://github.com/codedthemes/material-kit-react)
 - [Material UI 2 - creative tim](https://www.creative-tim.com/product/material-dashboard-react)
+- [Redux persist](https://medium.com/@xbstrxct/persisting-state-in-your-react-app-with-redux-persist-1e7dd877c58a)
+- [Redux persistor log rocket](https://blog.logrocket.com/persist-state-redux-persist-redux-toolkit-react/)
+
+
+## Milestones
+
+- [x] React Bootstrap
+- [ ] Redux
+- [ ] Redux Thunk
+- [ ] Redux persistor
+- [ ] React Router
+- [ ] Material UI
