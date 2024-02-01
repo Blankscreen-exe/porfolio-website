@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dummy-div {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bg-pink {
+    background-color: rgb(203, 176, 228);
+}
+
+.custom-blog-card {
+    width: 300px !important;
+}

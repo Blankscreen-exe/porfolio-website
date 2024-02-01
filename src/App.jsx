@@ -12,15 +12,21 @@ function App() {
     
   const count = useSelector((state) => {
     console.log(state)
-    return state.persistedCommonReducer.myValue
+    return state.persistedReducer.common.myValue
   })
+
+  const posts = useSelector((state) => {
+    console.log(state)
+    return state.persistedReducer.post
+  })
+
   const dispatch = useDispatch()
 
   return (
     <>
     <NavBar/>
 
-    <button
+    {/* <button
       aria-label="Increment value"
       onClick={() => dispatch(increment())}
       className='bg-slate-100 hover:bg-slate-400 p-2 border-l-neutral-400 hover:border-neutral-600 border-2'
@@ -36,47 +42,36 @@ function App() {
       className='bg-slate-100 hover:bg-slate-400 p-2 border-l-neutral-400 hover:border-neutral-600 border-2'
     >
       Decrement
-    </button>
+    </button> */}
 
-      <div className=''>
-        <div className='flex flex-row gap-10'>
-          <div className='flex flex-wrap gap-10'>
-                        
-                <BlogCard
-                cardTitle={"Blog post 1"}
-                cardDescription={"Long Long Description 1"}
-                tags={["Machine Learning", "AI"]}/>
 
-                <BlogCard
-                cardTitle={"Blog post 1"}
-                cardDescription={"Long Long Description 1"}
-                tags={["Machine Learning", "AI"]}/>
+          <br/>
+          <br/>
+    <div class="grid grid-cols-5 gap-4">
+      <div className='col-span-4'>
+        <div class="flex flex-row flex-wrap gap-5 justify-around">
+          {/* {[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15].map((number) => (
+            // <div className="dummy-div" key={number}>
+            //   {number.toString().padStart(2, '0')}
+            // </div>
+            <BlogCard tags={["ML", "React", "Tensorflow", "Redux"]}/>
+          ))} */}
 
-                <BlogCard
-                cardTitle={"Blog post 1"}
-                cardDescription={"Long Long Description 1"}
-                tags={["Machine Learning", "AI"]}/>
-
-                <BlogCard
-                cardTitle={"Blog post 1"}
-                cardDescription={"Long Long Description 1"}
-                tags={["Machine Learning", "AI"]}/>
-
-                <BlogCard
-                cardTitle={"Blog post 1"}
-                cardDescription={"Long Long Description 1"}
-                tags={["Machine Learning", "AI"]}/>
-              
-
-            
-          </div>
-
-          <div className='w-1/4 bg-slate-100 rounded-lg p-10'>
-            sadf
-          </div>
+            {posts.map((item) => (
+              <BlogCard
+                cardTitle={item.title}
+                cardDescription={item.description}
+                tags={item.tags}
+                date={item.date}
+                imgUrl={item.imageUrl}
+                postLink={item.postLink}
+              />)
+            )}
         </div>
-
       </div>
+      <div className='col-span-1'>asd</div>
+    </div>
+
     </>
   )
 }

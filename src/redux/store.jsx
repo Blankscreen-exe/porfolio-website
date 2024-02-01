@@ -1,29 +1,37 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import { thunk } from "redux-thunk";
 
 // Reducers
 import common from "./reducers/commonSlice";
+import post from "./reducers/postSlice";
 
 const persistConfig = {
     key: 'root',
     storage,
-    whitelist: ['common']
+    // whitelist: ['common'], // FIXME: find out why this is not working
 }
 
-const persistedCommonReducer = persistReducer(persistConfig, common)
+const rootReducer = combineReducers({ 
+    common,
+    post
+})
 
-const store = configureStore({
+const persistedReducer = persistReducer(persistConfig, rootReducer)
+
+export const store = configureStore({
     // Register all reducer you create here
     reducer: {
-        persistedCommonReducer
+        persistedReducer
     },
     // TODO: enable this once env is setup
     // devTools: process.env.NODE_ENV !== 'production',
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(thunk)
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware({
+        serializableCheck: false, // shut the serializable check
+      }).concat(thunk)
 });
 
-export default store;
+// export store;
 
-export const persister = persistStore(store)
+export const persister = persistStore(store) 
