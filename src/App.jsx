@@ -7,6 +7,7 @@ import { increment, decrement } from './redux/reducers/commonSlice'
 // Components
 import NavBar from './components/common/navbar'
 import BlogCard from './components/blog/BlogCard'
+import Hero from './components/home/Hero'
 
 function App() {
     
@@ -25,7 +26,7 @@ function App() {
   return (
     <>
     <NavBar/>
-
+    <Hero/>
     {/* <button
       aria-label="Increment value"
       onClick={() => dispatch(increment())}
