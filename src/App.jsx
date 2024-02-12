@@ -3,11 +3,14 @@ import './App.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { increment, decrement } from './redux/reducers/commonSlice'
 
+import "tw-elements-react/dist/css/tw-elements-react.min.css";
 
 // Components
 import NavBar from './components/common/navbar'
 import BlogCard from './components/blog/BlogCard'
 import Hero from './components/home/Hero'
+import Testimonials from './components/home/Testimonials'
+import Footer from './components/common/Footer';
 
 function App() {
     
@@ -27,6 +30,10 @@ function App() {
     <>
     <NavBar/>
     <Hero/>
+    <Testimonials/>
+    <Footer/>
+
+    {/* REVIEW: Redux check */}
     {/* <button
       aria-label="Increment value"
       onClick={() => dispatch(increment())}
@@ -48,16 +55,10 @@ function App() {
 
           <br/>
           <br/>
-    <div class="grid grid-cols-5 gap-4">
+
+    {/* <div class="grid grid-cols-5 gap-4">
       <div className='col-span-4'>
         <div class="flex flex-row flex-wrap gap-5 justify-around">
-          {/* {[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15].map((number) => (
-            // <div className="dummy-div" key={number}>
-            //   {number.toString().padStart(2, '0')}
-            // </div>
-            <BlogCard tags={["ML", "React", "Tensorflow", "Redux"]}/>
-          ))} */}
-
             {posts.map((item) => (
               <BlogCard
                 cardTitle={item.title}
@@ -71,7 +72,7 @@ function App() {
         </div>
       </div>
       <div className='col-span-1'>asd</div>
-    </div>
+    </div> */}
 
     </>
   )
