@@ -2158,10 +2158,6 @@ select {
   height: 1.25rem;
 }
 
-.h-64 {
-  height: 16rem;
-}
-
 .h-full {
   height: 100%;
 }
@@ -2633,6 +2629,26 @@ select {
   }
 }
 
+/* Media query for mobile screens */
+
+@media only screen and (max-width: 911px) {
+  /* Adjustable breakpoint as needed */
+
+  .circle-sketch-highlight:before {
+    /* Mobile-specific styles */
+    width: 190%;
+    /* Increase width to 190% */
+    /* Other mobile-specific styling, if needed */
+  }
+
+  .circle-sketch-highlight:after {
+    /* Mobile-specific styles */
+    width: 190%;
+    /* Increase width to 190% */
+    /* Other mobile-specific styling, if needed */
+  }
+}
+
 .placeholder\:text-gray-400::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
@@ -2706,8 +2722,20 @@ select {
 }
 
 @media (min-width: 768px) {
+  .md\:w-48 {
+    width: 12rem;
+  }
+
   .md\:basis-1\/2 {
     flex-basis: 50%;
+  }
+
+  .md\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  .md\:justify-around {
+    justify-content: space-around;
   }
 }
 

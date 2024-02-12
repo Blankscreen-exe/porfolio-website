@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 function Hero(props) {
   return (
 
-    <div class="flex flex-wrap justify-between mt-10"> 
+    <div class="flex flex-wrap md:flex-nowrap justify-between md:justify-around mt-10"> 
       <div class="flex flex-col justify-evenly flex-grow basis-full md:basis-1/2 p-4 rounded-lg mr-4 ">
         <div>
 
@@ -21,8 +21,8 @@ function Hero(props) {
           </div>
         </div>
       </div>
-      <div class="w-64 h-64 rounded-lg shadow ">
-        <img src="https://dummyimage.com/250x250/cacaca/fff" alt="Placeholder image" class="w-64 object-cover rounded-md  hover:shadow-xl transition duration-500 "/>
+      <div class="w-64 md:w-48">
+        <img src="https://dummyimage.com/250x250/cacaca/fff" alt="Placeholder image" class=" rounded-lg shadow object-cover rounded-md  hover:shadow-xl transition duration-500 "/>
       </div>
     </div>
 
