@@ -1,15 +1,19 @@
 module.exports = {
     content: [
       "./index.html",
-      "./src/**/*.{html,jsx,js}"
+      "./src/**/*.{html,jsx,js}",
+      "./node_modules/tw-elements-react/dist/js/**/*.js"
     ],
     theme: {
       extend: {
       },
     },
+    darkMode: "class",
     plugins: [
       require("daisyui"),
-      // require('@tailwindcss/aspect-ratio')
+      require('@tailwindcss/forms'),
+      // require('@tailwindcss/aspect-ratio'),
+      require("tw-elements-react/dist/plugin.cjs")
     ],
     // daisyui: {
     //   themes: false, // false: only light + dark | true: all themes | array: specific themes like this ["light", "dark", "cupcake"]

@@ -11,6 +11,9 @@ import BlogCard from './components/blog/BlogCard'
 import Hero from './components/home/Hero'
 import Testimonials from './components/home/Testimonials'
 import Footer from './components/common/Footer';
+import BlockQuote from './components/common/BlockQuote';
+import BlogList from "./components/blog/BlogList.jsx"
+import TimeLine from './components/common/TimeLine.jsx';
 
 function App() {
     
@@ -31,6 +34,10 @@ function App() {
     <NavBar/>
     <Hero/>
     <Testimonials/>
+
+    <BlockQuote/>
+    <TimeLine/>
+    <BlogList/>
     <Footer/>
 
     {/* REVIEW: Redux check */}
