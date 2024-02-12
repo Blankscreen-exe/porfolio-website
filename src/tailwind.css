@@ -19,3 +19,76 @@
 .custom-blog-card {
     width: 300px !important;
 }
+
+.realistic-marker-highlight{
+    position:relative;
+  }
+  
+.realistic-marker-highlight:before{
+    content:"";
+    background-color:#ff6db7;
+    width:100%;
+    height:1em;
+    position:absolute;
+    z-index:-1;
+    filter:url(#marker-shape);
+    left:-0.25em;
+    top:0.1em;
+    padding:0 0.25em;
+}
+
+.circle-sketch-highlight{
+    position:relative;
+  }
+  
+  .circle-sketch-highlight:before{
+    content:"";
+    z-index:-1;
+    left:-0.5em;
+    top:-0.1em;
+    border-width:4px;
+    border-style:solid;
+    border-color:red;
+    position:absolute;
+    border-right-color:transparent;
+    width:100%;
+    height:1.2em;
+    transform:rotate(2deg);
+    opacity:0.5;
+    border-radius:50%;
+    padding:0.1em 0.25em;
+    transform: rotate(-5deg);
+  }
+  
+  .circle-sketch-highlight:after{
+    content:"";
+    z-index:-1;
+    left:-0.5em;
+    top:-0.01em;
+    padding:0.1em 0.25em;
+    border-width:3px;
+    border-style:solid;
+    border-color:red;
+    border-left-color:transparent;
+    border-top-color:transparent;
+    position:absolute;
+    width:100%;
+    height:1.2em;
+    transform:rotate(-6deg);
+    opacity:0.5;
+    border-radius:50%;
+  }
+
+/* Media query for mobile screens */
+@media only screen and (max-width: 767px) { /* Adjustable breakpoint as needed */
+    .circle-sketch-highlight:before {
+      /* Mobile-specific styles */
+      width: 190%; /* Increase width to 190% */
+      /* Other mobile-specific styling, if needed */
+    }
+    .circle-sketch-highlight:after {
+        /* Mobile-specific styles */
+        width: 190%; /* Increase width to 190% */
+        /* Other mobile-specific styling, if needed */
+      }
+  }
