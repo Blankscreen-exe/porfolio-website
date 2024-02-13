@@ -5,6 +5,7 @@ import {MdChevronLeft, MdChevronRight} from 'react-icons/md'
 function TimeLine(props) {
     const [description, setDescription] = useState("");
     const [activeIndex, setActiveIndex] = useState(0);
+    const [contentToShow, setContentToShow] = useState("");
 
     const timeLine = [
         {
@@ -123,12 +124,40 @@ function TimeLine(props) {
 
     const handleOpenDescription = (index, content) => {
         setActiveIndex(index)
+        setContentToShow(index+ " " +content)
         // typewriterEffect(index + " " +content)
-        document.getElementById("timeline-description-1-innerspan").classList.remove("animate-typing")
-        setTimeout(() => {
-            document.getElementById("timeline-description-1-innerspan").classList.add("animate-typing")
-        }, 1000);
-        setDescription(index + " " +content)
+        // document.getElementById("timeline-description-1-innerspan").classList.remove("animate-typing")
+        // setTimeout(() => {
+        //     document.getElementById("timeline-description-1-innerspan").classList.add("animate-typing")
+        // }, 1000);
+        // setDescription(index + " " +content)
+
+        // const timePerLetter = 300
+        // console.log(content.length)
+        // for (let i=0; i== content.length; i++){
+        //     console.log(i)
+        // }
+
+        // // function typeWriter(content, containerId, timePerLetter = 50, isHTML = false) {
+        //     let container = document.getElementById("timeline-description-1-innerspan");
+        //     if (!container) {
+        //       return console.error(`Element with ID '${"timeline-description-1-innerspan"}' not found.`);
+        //     }
+          
+        //     var i = 0;
+        //     let intervalId = setInterval(() => {
+        //       if (i < content.length) {
+        //         console.log("index at ", i)
+        //         console.log("CONTENT  >> " +content)
+        //         const letter = content.charAt(i);
+        //         const content = letter;
+        //         container.insertAdjacentHTML("beforeend", content);
+        //         i++;
+        //       } else {
+        //         clearInterval(intervalId);
+        //       }
+        //     }, timePerLetter);
+          
     }
 
 const slideLeft = () => {
@@ -140,14 +169,14 @@ const slideRight = () => {
     let slider = document.getElementById(sliderId)
     slider.scrollLeft = slider.scrollLeft + scrollMagnitude
 }
-
+    
   return (
   <div id="timeline-container"  className='flex flex-col justify-center items-center'>
 
     <div  className="h-[300%] w-[90%] relative flex items-center gap-7" >
         <MdChevronLeft className={scrollButtonClass} onClick={slideLeft} size={scrollButtonSize}/>
         {/* TODO: add a key to this id name */}
-        <div id={sliderId} className=' h-full scroll overflow-x-scroll whitespace-nowrap scroll-smooth styled-scroll-none' style={{overflowX: "scroll"}}>
+        <div id={sliderId} className=' h-full scroll overflow-x-scroll whitespace-nowrap scroll-smooth styled-scroll-none sticky' style={{overflowX: "scroll"}}>
             <ul className="timeline touch-auto mb-3" >
                 {
                     timeLine.map( (item, index) => {
@@ -159,18 +188,24 @@ const slideRight = () => {
                                     className={
                                         (index%2==0 ? "timeline-end" : "timeline-start") 
                                         + " " 
-                                        + (index==activeIndex ? "bg-lime-200 " : "hover:bg-lime-100 hover:bg-opacity-50") 
-                                        + " timeline-box hover:bg-lime-100 hover:bg-opacity-50 hover:cursor-pointer" 
+                                        + (index==activeIndex ? "bg-[#86DAB3] " : "hover:bg-[#86DAB3] hover:bg-opacity-50") 
+                                        + " timeline-box hover:bg-[#86DAB3] hover:bg-opacity-50 hover:cursor-pointer" 
                                         } 
                                     onClick={() => handleOpenDescription(index, item.tooltip)}
                                     >
-                                    <div className={index%2==0 ? "tooltip tooltip-top" : "tooltip tooltip-bottom"} data-tip={item.tooltip}>{item.title} {index}</div>
+                                    <div className={
+                                        "tooltip " 
+                                        + (index==0? "tooltip-right" : index!=(timeLine.length-1) ? "tooltip-left" : index%2==0 ? "tooltip-top" : "tooltip-bottom") 
+                                        + "z-100 float-start"
+                                        } 
+                                        data-tip={item.tooltip}>{item.title} {index}</div>
                                 </div>
+
                                 <div className="timeline-middle">
                                     <svg 
                                         xmlns="http://www.w3.org/2000/svg" 
                                         viewBox="0 0 20 20" 
-                                        fill="lightgreen" 
+                                        fill="#239962" 
                                         className="w-5 h-5">
                                             <path 
                                                 fillRule="evenodd" 
@@ -179,7 +214,8 @@ const slideRight = () => {
                                             />
                                     </svg>
                                 </div>
-                                <div className={(index%2==0 ? "timeline-start " : "timeline-end ") + "text-lime-700 font-medium" } >{item.date}</div>
+                                
+                                <div className={(index%2==0 ? "timeline-start " : "timeline-end ") + "text-[#45AD7D] font-medium" } >{item.date}</div>
 
                                 {index!=(timeLine.length-1) && <hr/>}
 
@@ -195,7 +231,8 @@ const slideRight = () => {
 
     <div className='border-2 p-2 mt-5 rounded-md w-[90%]'>
         <div id="timeline-description-1" className=' p-3 rounded-md bg-slate-100'>
-            <span id="timeline-description-1-innerspan">{description ? description : timeLine[activeIndex].description}</span>
+            <span id="timeline-description-1-innerspan" >{contentToShow ? contentToShow : timeLine[activeIndex].description}</span>
+            {/* <span id="timeline-description-1-innerspan" >{contentToShow}</span> */}
         </div>
         {/* <div id="timeline-description-1" className=' animate-typing w-[100%] h-[200px] p-3 rounded-md bg-slate-100'></div> */}
     </div>

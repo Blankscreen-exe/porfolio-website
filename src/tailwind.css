@@ -150,3 +150,39 @@
   .styled-scroll-none::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
+
+  /* ========================== */
+
+  * {
+    scroll-behavior: smooth;
+  }
+  
+  .feature-card:hover {
+    background: var(--black-gradient);
+    box-shadow: var(--card-shadow);
+  }
+  
+  .feedback-card {
+    background: transparent;
+  }
+  
+  .feedback-card:hover {
+    background: var(--black-gradient);
+  }
+  
+  .bg-blue-gradient {
+    background: linear-gradient(
+      157.81deg,
+      #def9fa -43.27%,
+      #bef3f5 -21.24%,
+      #9dedf0 12.19%,
+      #7de7eb 29.82%,
+      #5ce1e6 51.94%,
+      #33bbcf 90.29%
+    );
+  }
+  
+  .slider-container {
+    @apply w-full;
+  }
