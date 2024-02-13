@@ -36,7 +36,7 @@ function Testimonials(props) {
 
 {/* ============================================================== */}
 
-    <TECarousel showControls showIndicators ride="carousel"
+    <TECarousel showControls  ride="carousel"
     prevBtnIcon={
           <>
             <span className="inline-block text-black h-8 w-8 [&>svg]:h-8">
@@ -76,15 +76,16 @@ function Testimonials(props) {
             />
             </svg>
         </span>
-        <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
+        <span className="!absolute !hover:bg-none !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
             Next
         </span>
         </div>
     }
-    theme={{
-        indicator:
-        "mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none",
-    }}>
+    // theme={{
+    //     indicator:
+    //     "mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-black bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none",
+    // }}
+    >
         <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
             {/* TODO: dummy array */}
             { [1,2,3,4].map( item => {
