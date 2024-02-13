@@ -6,7 +6,7 @@ function NavBar(props) {
   return (
     <div
     id="navbar"
-    className="navbar bg-base-100 bg-slate-10 rounded-md shadow-md m-auto mt-10 flex justify-between sticky opacity-90 backdrop-blur-xl bg-white"
+    className="navbar bg-base-100 bg-slate-10 rounded-md shadow-md m-auto mt-10 flex justify-between sticky opacity-90 backdrop-blur-xl bg-white z-50"
   >
       <div className="navbar-start">
         <div className="dropdown">
