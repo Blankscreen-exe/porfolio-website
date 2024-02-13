@@ -106,3 +106,47 @@
         /* Other mobile-specific styling, if needed */
       }
   }
+
+  /* width */
+.styled-scroll-1::-webkit-scrollbar {
+  width: 4px;
+  height: 6px;
+}
+
+/* Track */
+.styled-scroll-1::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.styled-scroll-1::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.styled-scroll-1::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+  /* width */
+  .styled-scroll-none::-webkit-scrollbar {
+    width: 4px;
+    height: 0px;
+  }
+  
+  /* Track */
+  .styled-scroll-none::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  .styled-scroll-none::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .styled-scroll-none::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
