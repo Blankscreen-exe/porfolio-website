@@ -1,0 +1,37 @@
+[
+    {
+      "title": "The Sparks Foundation",
+      "orgUrl": "#",
+      "tooltip": "My first internship",
+      "description": "My responsibilities included:\n- doing this\n- doing that\n- doing those as well",
+      "date": "Jan 2022"
+    },
+    {
+      "title": "Acme Inc.",
+      "orgUrl": "https://www.example.com/acme-inc",
+      "tooltip": "Software Engineer Internship",
+      "description": "Developed and maintained web applications using React and Node.js. Collaborated with a team of engineers to deliver features on time and within budget. Gained valuable experience in software development best practices.",
+      "date": "Jun 2022 - Aug 2022"
+    },
+    {
+      "title": "Microsoft",
+      "orgUrl": "https://www.example.com/startup",
+      "tooltip": "Marketing Assistant",
+      "description": "Assisted with social media marketing campaigns, created content for the blog, and managed email marketing initiatives. Increased website traffic by 20% and social media engagement by 30%. Learned valuable skills in digital marketing and content creation.",
+      "date": "Sep 2022 - Dec 2022"
+    },
+    {
+      "title": "Google",
+      "orgUrl": "https://www.example.com/university",
+      "tooltip": "Teaching Assistant",
+      "description": "Assisted professors with undergraduate courses in computer science. Graded assignments, led review sessions, and provided individual support to students. Developed strong communication and interpersonal skills.",
+      "date": "Jan 2023 - May 2023"
+    },
+    {
+      "title": "Freelance Web Developer",
+      "orgUrl": "#",
+      "tooltip": "Personal Projects",
+      "description": "Built and launched several personal web projects using various technologies like HTML, CSS, and JavaScript. Gained experience in full-stack development and honed project management skills.",
+      "date": "Ongoing"
+    }
+  ]
