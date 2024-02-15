@@ -56,3 +56,9 @@ export function sentenceToSlug(sentence) {
   
     return slug;
   }
+
+export function classAdd(baseClass, ...args) {
+  const allClasses = [baseClass, ...args];
+  const filteredClasses = allClasses.filter(className => className);
+  return filteredClasses.join(" ");
+}

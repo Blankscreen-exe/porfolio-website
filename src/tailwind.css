@@ -28,6 +28,11 @@
     padding:0 0.25em;
 }
 
+/* -------------- TOOLTIP --------------  */
+.tooltip::before {
+  z-index: 100;
+}
+
 /* -------------- TITLE HIGHLIGHT --------------  */
 
 .circle-sketch-highlight{
