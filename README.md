@@ -20,3 +20,35 @@
 - [ ] Redux persistor
 - [ ] React Router
 - [ ] Material UI
+
+## Sitemap
+
+- Home
+    |- About Me
+    |- Testimonials
+    |- Tech Stack
+    |- Awards (featured)
+    |- Blog (latest)
+    |- Projects (featured)
+    |- E-bizcard
+    |- CTA
+- About Me
+    |- About Me
+    |- Education
+    |- Hobby
+    |- Languages
+- Work Experience
+    |- History
+    |- Awards
+    |- Certificates (featured)
+    |- Working on next
+- Certificates
+- Lists
+    |- Useful Resources
+    |- Games
+- Blog
+    |- Blog roll 
+- Contact
+    |- Form
+    |- Social Links
+    |- CTA
