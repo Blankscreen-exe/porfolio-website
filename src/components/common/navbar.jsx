@@ -30,32 +30,74 @@ function NavBar(props) {
             tabIndex="0"
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li><a>Item 1</a></li>
+            <li><a>Home</a></li>
             <li>
-              <a>Parent</a>
+              <a>About Me</a>
               <ul className="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
+                <li><a>Education</a></li>
+                <li><a>Hobbies</a></li>
+                <li><a>Languages I Speak</a></li>
               </ul>
             </li>
-            <li><a>Item 3</a></li>
+            <li>
+              <a>Experience</a>
+              <ul className="p-2">
+                <li><a>Work History</a></li>
+                <li><a>Awards</a></li>
+                <li><a>Certificates</a></li>
+                <li><a>Working On Next</a></li>
+              </ul>
+            </li>
+            <li>
+              <a>Lists</a>
+              <ul className="p-2">
+                <li><a>Useful Resources</a></li>
+                <li><a>Games</a></li>
+              </ul>
+            </li>
+            <li><a>Projects</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
           </ul>
         </div>
         <a className="hover:text-neutral-600 transition-colors text-xl mx-2">{appConstants.common.pageTitle}</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
-          <li><a>Item 1</a></li>
+          <li><a>Home</a></li>
           <li>
             <details>
-              <summary>Parent</summary>
+              <summary>About Me</summary>
               <ul className="p-2">
-                <li><a>Submenu 1</a></li>
-                <li><a>Submenu 2</a></li>
+              <li><a>Education</a></li>
+              <li><a>Hobbies</a></li>
+              <li><a>Languages I Speak</a></li>
               </ul>
             </details>
           </li>
-          <li><a>Item 3</a></li>
+          <li>
+            <details>
+              <summary>Experience</summary>
+              <ul className="p-2">
+                <li><a>Work History</a></li>
+                <li><a>Awards</a></li>
+                <li><a>Certificates</a></li>
+                <li><a>Working On Next</a></li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details>
+              <summary>Lists</summary>
+              <ul className="p-2">
+                <li><a>Useful Resources</a></li>
+                <li><a>Games</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a>Projects</a></li>
+          <li><a>Blog</a></li>
+          <li><a>Contact</a></li>
         </ul>
       </div>
   </div>
@@ -65,3 +107,73 @@ function NavBar(props) {
 NavBar.propTypes = {}
 
 export default NavBar
+
+
+{/* <ul
+tabIndex="0"
+className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+>
+<li><a>Home</a></li>
+<li>
+  <a>About Me</a>
+  <ul className="p-2">
+    <li><a>Education</a></li>
+    <li><a>Hobbies</a></li>
+    <li><a>Languages I Speak</a></li>
+  </ul>
+</li>
+<li>
+  <a>Experience</a>
+  <ul className="p-2">
+    <li><a>Work History</a></li>
+    <li><a>Awards</a></li>
+    <li><a>Certificates</a></li>
+    <li><a>Working On Next</a></li>
+  </ul>
+</li>
+<li>
+  <a>List</a>
+  <ul className="p-2">
+    <li><a>Useful Resources</a></li>
+    <li><a>Games</a></li>
+  </ul>
+</li>
+<li><a>Projects</a></li>
+<li><a>Blog</a></li>
+<li><a>Contact</a></li>
+</ul>
+</div>
+<a className="hover:text-neutral-600 transition-colors text-xl mx-2">{appConstants.common.pageTitle}</a>
+</div>
+<div className="navbar-center hidden lg:flex">
+<ul className="menu menu-horizontal px-1">
+<li><a>Home</a></li>
+<li>
+  <a>About Me</a>
+  <ul className="p-2">
+    <li><a>Education</a></li>
+    <li><a>Hobbies</a></li>
+    <li><a>Languages I Speak</a></li>
+  </ul>
+</li>
+<li>
+  <a>Experience</a>
+  <ul className="p-2">
+    <li><a>Work History</a></li>
+    <li><a>Awards</a></li>
+    <li><a>Certificates</a></li>
+    <li><a>Working On Next</a></li>
+  </ul>
+</li>
+<li>
+  <a>List</a>
+  <ul className="p-2">
+    <li><a>Useful Resources</a></li>
+    <li><a>Games</a></li>
+  </ul>
+</li>
+<li><a>Projects</a></li>
+<li><a>Blog</a></li>
+<li><a>Contact</a></li>
+</ul>
+</div> */}
