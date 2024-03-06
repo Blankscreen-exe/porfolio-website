@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 
+/* ---------------- Anchor tags ------------------ */
+a, a:active {
+  color: rgb(86, 86, 86);
+}
+a:hover {
+  color: #0694a2;
+}
+
+
+/* ----------------------------------------------- */
+
 .bg-pink {
     background-color: rgb(203, 176, 228);
 }
@@ -46,7 +57,7 @@
     top:-0.1em;
     border-width:4px;
     border-style:solid;
-    border-color:red;
+    border-color:rgb(43, 176, 10);
     position:absolute;
     border-right-color:transparent;
     width:100%;
@@ -66,7 +77,7 @@
     padding:0.1em 0.25em;
     border-width:3px;
     border-style:solid;
-    border-color:red;
+    border-color:rgb(43, 176, 10);
     border-left-color:transparent;
     border-top-color:transparent;
     position:absolute;

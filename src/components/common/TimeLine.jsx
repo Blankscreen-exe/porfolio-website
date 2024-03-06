@@ -76,44 +76,45 @@ const scrollButtonClass =
 
   // typewriter effect
 
-  function typewriterEffect(content) {
-    for (let index = 0; index < content.length; index++) {
-      document.getElementById("timeline-description-1").textContent =
-        content.substring(0, i);
-    }
+  // function typewriterEffect(content) {
+  //   for (let index = 0; index < content.length; index++) {
+  //     document.getElementById("timeline-description-1").textContent =
+  //       content.substring(0, i);
+  //   }
 
-    // if (isDeleting) {
-    //     document.getElementById("timeline-description-1").textContent = currentWord.substring(0, j-1);
-    //     j--;
-    //     if (j == 0) {
-    //     isDeleting = false;
-    //     i++;
-    //     if (i == content.length) {
-    //         i = 0;
-    //     }
-    //     }
-    // } else {
-    //     document.getElementById("timeline-description-1").textContent = currentWord.substring(0, j+1);
-    //     j++;
-    //     if (j == currentWord.length) {
-    //     isDeleting = true;
-    //     }
-    // }
-    // setTimeout(typewriterEffect, 100);
-  }
+  //   // if (isDeleting) {
+  //   //     document.getElementById("timeline-description-1").textContent = currentWord.substring(0, j-1);
+  //   //     j--;
+  //   //     if (j == 0) {
+  //   //     isDeleting = false;
+  //   //     i++;
+  //   //     if (i == content.length) {
+  //   //         i = 0;
+  //   //     }
+  //   //     }
+  //   // } else {
+  //   //     document.getElementById("timeline-description-1").textContent = currentWord.substring(0, j+1);
+  //   //     j++;
+  //   //     if (j == currentWord.length) {
+  //   //     isDeleting = true;
+  //   //     }
+  //   // }
+  //   // setTimeout(typewriterEffect, 100);
+  // }
 
   const handleOpenDescription = (index, content) => {
     console.log("THIS CLICKED",content);
     setActiveIndex(index);
 
-    setContentToShow(          
-    <TypeAnimation
-        sequence={content}
-        wrapper="span"
-        cursor={true}
-        repeat={0}
-        />
-    )
+    setContentToShow(content)
+    // setContentToShow(          
+    // <TypeAnimation
+    //     sequence={content}
+    //     wrapper="span"
+    //     cursor={true}
+    //     repeat={0}
+    //     />
+    // )
     
     // const contentToArray = content.split("")
     // let contentIteration = 0;
@@ -292,8 +293,8 @@ const scrollButtonClass =
 
       <div className="border-2 p-2 mt-5 rounded-md w-[90%]">
         <div
-          id="timeline-description-1"
-          className=" p-3 rounded-md bg-slate-100"
+          id="timeline-description-1-disabled-this"
+          className=" p-3 rounded-md bg-slate-100 transition-all duration-75"
         >
           {/* <span
             id="timeline-description-1-innerspan"

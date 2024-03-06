@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 function Hero(props) {
   return (
 
-    <div class="flex flex-wrap md:flex-nowrap justify-between md:justify-around mt-10"> 
+    <div class="w-[75%] flex flex-wrap mx-auto md:flex-nowrap justify-between md:justify-around mt-10"> 
       <div class="flex flex-col justify-evenly flex-grow basis-full md:basis-1/2 p-4 rounded-lg mr-4 ">
         <div>
 

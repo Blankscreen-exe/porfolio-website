@@ -14,6 +14,7 @@ import Footer from './components/common/Footer';
 import BlockQuote from './components/common/BlockQuote';
 import BlogList from "./components/blog/BlogList.jsx"
 import TimeLine from './components/common/TimeLine.jsx';
+import TechStack from './components/home/TechStack.jsx';
 
 function App() {
     
@@ -34,7 +35,7 @@ function App() {
     <NavBar/>
     <Hero/>
     <Testimonials/>
-
+    <TechStack/>
     <BlockQuote/>
     <TimeLine/>
     <BlogList/>

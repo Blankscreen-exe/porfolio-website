@@ -63,11 +63,11 @@ function NavBar(props) {
         <a className="hover:text-neutral-600 transition-colors text-xl mx-2">{appConstants.common.pageTitle}</a>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
+        <ul className="menu menu-horizontal px-1 gap-5">
+          <li><a class="border border-[#0694a2]">Home</a></li>
           <li>
             <details>
-              <summary>About Me</summary>
+              <summary class="text-[#0694a2]"><a>About Me</a></summary>
               <ul className="p-2">
               <li><a>Education</a></li>
               <li><a>Hobbies</a></li>
@@ -77,7 +77,7 @@ function NavBar(props) {
           </li>
           <li>
             <details>
-              <summary>Experience</summary>
+              <summary class="text-[#0694a2]"><a>Experience</a></summary>
               <ul className="p-2">
                 <li><a>Work History</a></li>
                 <li><a>Awards</a></li>
@@ -88,7 +88,7 @@ function NavBar(props) {
           </li>
           <li>
             <details>
-              <summary>Lists</summary>
+              <summary class="hover:text-[#0694a2]"><a>Lists</a></summary>
               <ul className="p-2">
                 <li><a>Useful Resources</a></li>
                 <li><a>Games</a></li>

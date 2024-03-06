@@ -1,3 +1,5 @@
+import {classes} from '../constants/cssClasses';
+
 export function truncateText(text, maxLength) {
   if (text.length <= maxLength) {
     return text;
@@ -61,4 +63,13 @@ export function classAdd(baseClass, ...args) {
   const allClasses = [baseClass, ...args];
   const filteredClasses = allClasses.filter(className => className);
   return filteredClasses.join(" ");
+}
+
+export function getClasses(componentIdentifier) {
+  classArr = classes[componentIdentifier]
+  return classArr ? classArr.filter(Boolean).join(' ') : "";
+}
+
+export function capitalizeWords(str) {
+  return str.replace(/\b\w/g, l => l.toUpperCase())
 }
