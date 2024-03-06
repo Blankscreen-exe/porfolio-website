@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ---------------- Body ------------------ */
+/* body {
+  background-color: white !important;
+} */
 
 /* ---------------- Anchor tags ------------------ */
+
 a, a:active {
   color: rgb(86, 86, 86);
 }

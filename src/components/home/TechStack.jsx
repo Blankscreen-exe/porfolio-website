@@ -50,23 +50,17 @@ function TechStack(props) {
             </ul>
         </div>
 
-        {/* <div className='bg-slate-400 rounded-md p-3 w-full'>
-            <ul>
-                {listItem.map(item => <li 
-                    key={item.name}
-                    className=''
-                    >{capitalizeWords(item.name)}</li>)}
-            </ul>
-        </div> */}
-        <div className='border border-slate-200 rounded-md p-3 w-full h-min overflow-y-auto'>
-            <table class="table-fixed">
-                {listItem.map(item => <tr 
-                    key={item.name}
-                    className=''
-                    >
-                        <td className='text-lg font-bold text-slate-300'>🔹 {capitalizeWords(item.name)}</td>
-                    </tr>)}
-            </table>
+        <div className='p-3 w-full h-min overflow-y-auto flex flex-row flex-wrap gap-2'>
+            
+            {listItem.map(item => <div 
+                key={item.name}
+                className='w-fit p-2 rounded-md border border-slate-300 text-2xl font-semibold flex flex-row justify-center gap-4'
+                >
+                <img src="https://dummyimage.com/100x100/eee/444" class="w-10 rounded-md"/>
+                    <span>{capitalizeWords(item.name)}</span>
+                
+            </div>)}
+        
         </div>
     </div>
 
