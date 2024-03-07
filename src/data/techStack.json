@@ -3,98 +3,248 @@
         {
             "name":"Python",
             "url":"#",
-            "imgUrl":"https://dummyimage.com/100x100/eee/444"
+            "imgUrl":"https://dummyimage.com/100x100/eee/444",
+            "fontColor":"",
+            "bgColor":""
         },
         {
             "name":"JavaScript",
             "url":"#",
-            "imgUrl":"https://dummyimage.com/100x100/eee/444"
+            "imgUrl":"https://dummyimage.com/100x100/eee/444",
+            "fontColor":"",
+            "bgColor":""
         },
         {
             "name":"Java",
             "url":"#",
-            "imgUrl":"https://dummyimage.com/100x100/eee/444"
+            "imgUrl":"https://dummyimage.com/100x100/eee/444",
+            "fontColor":"",
+            "bgColor":""
         },
         {
             "name":"PHP",
             "url":"#",
-            "imgUrl":"https://dummyimage.com/100x100/eee/444"
+            "imgUrl":"https://dummyimage.com/100x100/eee/444",
+            "fontColor":"",
+            "bgColor":""
         },
         {
             "name":"Node.js",
             "url":"#",
-            "imgUrl":"https://dummyimage.com/100x100/eee/444"
+            "imgUrl":"https://dummyimage.com/100x100/eee/444",
+            "fontColor":"",
+            "bgColor":""
         },
         {
             "name":"Solidity",
             "url":"#",
-            "imgUrl":"https://dummyimage.com/100x100/eee/444"
+            "imgUrl":"https://dummyimage.com/100x100/eee/444",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"Python",
+            "url":"#",
+            "imgUrl":"https://dummyimage.com/100x100/eee/444",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"JavaScript",
+            "url":"#",
+            "imgUrl":"https://dummyimage.com/100x100/eee/444",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"Java",
+            "url":"#",
+            "imgUrl":"https://dummyimage.com/100x100/eee/444",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"PHP",
+            "url":"#",
+            "imgUrl":"https://dummyimage.com/100x100/eee/444",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"Node.js",
+            "url":"#",
+            "imgUrl":"https://dummyimage.com/100x100/eee/444",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"Solidity",
+            "url":"#",
+            "imgUrl":"https://dummyimage.com/100x100/eee/444",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"Python",
+            "url":"#",
+            "imgUrl":"https://dummyimage.com/100x100/eee/444",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"JavaScript",
+            "url":"#",
+            "imgUrl":"https://dummyimage.com/100x100/eee/444",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"Java",
+            "url":"#",
+            "imgUrl":"https://dummyimage.com/100x100/eee/444",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"PHP",
+            "url":"#",
+            "imgUrl":"https://dummyimage.com/100x100/eee/444",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"Node.js",
+            "url":"#",
+            "imgUrl":"https://dummyimage.com/100x100/eee/444",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"Solidity",
+            "url":"#",
+            "imgUrl":"https://dummyimage.com/100x100/eee/444",
+            "fontColor":"",
+            "bgColor":""
         }
     ],
     "backend": [
         {
             "name":"Django",
             "url":"#",
-            "imgUrl":"#"
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
         },
         {
             "name":"Django Rest Framework",
             "url":"#",
-            "imgUrl":"#"
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
         },
         {
             "name":"Express.js",
             "url":"#",
-            "imgUrl":"#"
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
         },
         {
             "name":"Laravel",
             "url":"#",
-            "imgUrl":"#"
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
         }
     ],
     "frontend": [
         {
             "name":"React.js",
             "url":"#",
-            "imgUrl":"#"
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
         },
         {
             "name":"Redux",
             "url":"#",
-            "imgUrl":"#"
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
         },
         {
             "name":"React Router",
             "url":"#",
-            "imgUrl":"#"
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
         },
         {
             "name":"Tailwind CSS",
             "url":"#",
-            "imgUrl":"#"
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
         }
     ],
     "database": [
         {
             "name":"PostgresSQL",
             "url":"#",
-            "imgUrl":"#"
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
         },
         {
             "name":"MySQL",
             "url":"#",
-            "imgUrl":"#"
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
         },
         {
             "name":"Redis",
             "url":"#",
-            "imgUrl":"#"
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
         },
         {
             "name":"MongoDB",
             "url":"#",
-            "imgUrl":"#"
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
+        }
+    ],
+    "ML DS AI": [
+        {
+            "name":"PostgresSQL",
+            "url":"#",
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"MySQL",
+            "url":"#",
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"Redis",
+            "url":"#",
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"MongoDB",
+            "url":"#",
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
         }
     ]
 }
