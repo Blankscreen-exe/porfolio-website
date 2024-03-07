@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import PropTypes from 'prop-types'
 import techStack from '../../data/techStack.json'
-import { capitalizeWords, classAdd } from '../../helpers/common'
+import { capitalizeFirstLetter, capitalizeWords, classAdd } from '../../helpers/common'
 
 function TechStack(props) {
     const stackList = Object.keys(techStack)
@@ -50,16 +50,23 @@ function TechStack(props) {
             </ul>
         </div>
 
-        <div className='p-3 w-full h-min overflow-y-auto flex flex-row flex-wrap gap-2'>
+        <div className='p-9 w-full flex flex-row flex-wrap align-top content-start gap-2'>
             
-            {listItem.map(item => <div 
-                key={item.name}
-                className='w-fit p-2 rounded-md border border-slate-300 text-2xl font-semibold flex flex-row justify-center gap-4'
-                >
-                <img src="https://dummyimage.com/100x100/eee/444" class="w-10 rounded-md"/>
-                    <span>{capitalizeWords(item.name)}</span>
-                
-            </div>)}
+            {listItem.map(item => 
+                (
+                <a href={item.url} className='h-min'>    
+                    <div className="tooltip z-[100] " data-tip={`Go To ${capitalizeFirstLetter(item.name)}'s Official Page`}>
+                        <div 
+                        key={item.name}
+                        className='w-fit p-2 rounded-md text-slate-600 border border-slate-300 text-lg font-semibold flex flex-row justify-center items-center gap-4 hover:shadow hover:shadow-sm hover:shadow-[#0694a2] hover:cursor-pointer transition-shadow duration-400'
+                        >
+                            <img src="https://dummyimage.com/100x100/eee/444" class="w-10 rounded-md"/>
+                            <span>{capitalizeFirstLetter(item.name)}</span>        
+                        </div>
+                    </div>
+                    
+                </a>))
+            }
         
         </div>
     </div>

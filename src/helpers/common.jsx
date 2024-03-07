@@ -73,3 +73,7 @@ export function getClasses(componentIdentifier) {
 export function capitalizeWords(str) {
   return str.replace(/\b\w/g, l => l.toUpperCase())
 }
+
+export function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
