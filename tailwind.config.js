@@ -5,6 +5,17 @@ module.exports = {
       "./node_modules/tw-elements-react/dist/js/**/*.js"
     ],
     theme: {
+      color:{
+        "primary-light": "#0694a2",
+        "secondary-light": "#c4c4c4",
+        "tertiary-light": "#f1f5f9",
+        "contrast-light": "#dc4c64",
+      
+        "primary-dark": "#30C3D2",
+        "secondary-dark": "#8a8a8a",
+        "tertiary-dark": "#4B5660",
+        "contrast-dark": "#FC5E79"
+      },
       extend: {
         keyframes: {
           typing: {
@@ -23,12 +34,28 @@ module.exports = {
             "100%": {
               borderColor: "white"
             }  
-          }
+          },
         },
         animation: {
           typing: "typing 3s steps(20) , blink .7s infinite"
         }
       },
+      screens: {
+        'sm': '640px',
+        // => @media (min-width: 640px) { ... }
+  
+        'md': '768px',
+        // => @media (min-width: 768px) { ... }
+  
+        'lg': '1024px',
+        // => @media (min-width: 1024px) { ... }
+  
+        'xl': '1280px',
+        // => @media (min-width: 1280px) { ... }
+  
+        '2xl': '1536px',
+        // => @media (min-width: 1536px) { ... }
+      }
     },
     darkMode: "class",
     plugins: [
