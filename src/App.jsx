@@ -15,6 +15,12 @@ import BlockQuote from './components/common/BlockQuote';
 import BlogList from "./components/blog/BlogList.jsx"
 import TimeLine from './components/common/TimeLine.jsx';
 import TechStack from './components/home/TechStack.jsx';
+import FloatingSidebar from './components/common/FloatingSidebar.jsx';
+import aboutMeText from './data/aboutMe.json';
+import HorizontalSlider from './components/common/HorizontalSlider.jsx';
+
+//data
+import certificateData from './data/certificates.json'
 
 function App() {
     
@@ -34,9 +40,14 @@ function App() {
     <>
     <NavBar/>
     <Hero/>
+    <BlockQuote
+    text={aboutMeText.aboutMeHome}/>
+    <HorizontalSlider
+      title={"Certificates"}
+      data={certificateData}
+      />
     <Testimonials/>
     <TechStack/>
-    <BlockQuote/>
     <TimeLine/>
     <BlogList/>
     <Footer/>
