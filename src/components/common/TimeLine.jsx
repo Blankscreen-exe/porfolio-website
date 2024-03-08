@@ -185,20 +185,19 @@ const scrollButtonClass =
       <div className=" w-[100%]  relative flex items-center gap-7">
         <MdChevronLeft
           className={scrollButtonClass}
-          //   onClick={slideLeft}
           onMouseDown={startSliderLeft}
           onMouseUp={stopSliderLeft}
           onMouseLeave={stopSliderLeft}
           size={scrollButtonSize}
         />
-        {/* TODO: add a key to this id name */}
+        
         <div
           id={sliderId}
           className="scroll overflow-x-scroll whitespace-nowrap scroll-smooth styled-scroll-none"
           style={{ overflowX: "scroll" }}
         >
           <div className="mt-5 mb-5 px-40">
-            <ul className="timeline touch-auto">
+            <ul className="timeline touch-auto ">
               {timeLine.map((item, index) => {
                 let tooltipClass = "";
 
@@ -242,8 +241,6 @@ const scrollButtonClass =
                           "z-50",
                           "float-start"
                         )}
-                        // TODO: implement only if
-                        // data-tip={item.tooltip}
                       >
                         {item.title}
                       </div>
@@ -283,7 +280,6 @@ const scrollButtonClass =
         </div>
         <MdChevronRight
           className={scrollButtonClass}
-          //   onClick={slideRight}
           onMouseDown={startSliderRight}
           onMouseUp={stopSliderRight}
           onMouseLeave={stopSliderRight}
