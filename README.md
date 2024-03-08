@@ -76,4 +76,5 @@
 - https://tailwindcomponents.com/component/tailwind-contact-form-2
 - https://tailwindcomponents.com/component/peaceful-mind
 - https://tailwindcomponents.com/component/boilerplates-card
+- https://tailwindcomponents.com/component/card-ai-power-analytics
 - 
