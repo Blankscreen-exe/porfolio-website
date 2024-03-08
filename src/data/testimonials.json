@@ -1,37 +1,37 @@
 [
     {
-      "id": 0,
       "title": "James Bond",
       "designation": "Super Spy",
-      "avatarUrl": "https://example.com/avatar0.jpg",
+      "avatarUrl": "https://dummyimage.com/250x250/a9a9a9/fff",
+      "profileUrl":"#",
       "content": "[Professional's name] was a pleasure to work with. They were responsive, communicative, and always went the extra mile to ensure my satisfaction. The results they achieved were exceptional and helped us achieve our business goals."
     },
     {
-      "id": 1,
       "title": "Johnny English",
       "designation": "British Spy",
-      "avatarUrl": "https://example.com/avatar1.jpg",
+      "avatarUrl": "https://dummyimage.com/250x250/a9a9a9/fff",
+      "profileUrl":"#",
       "content": "I was incredibly impressed with [professional's name]'s expertise and professionalism. They exceeded my expectations and delivered results that went above and beyond. I highly recommend them to anyone seeking [professional's field of expertise]."
     },
     {
-      "id": 2,
       "title": "Bruce Wayne",
       "designation": "CEO, Wayne Tech",
-      "avatarUrl": "https://example.com/avatar2.jpg",
+      "avatarUrl": "https://dummyimage.com/250x250/a9a9a9/fff",
+      "profileUrl":"#",
       "content": "[Professional's name] was a pleasure to work with. They were responsive, communicative, and always went the extra mile to ensure my satisfaction. The results they achieved were exceptional and helped us achieve our business goals."
     },
     {
-      "id": 3,
       "title": "Prof. Chalres",
       "designation": "Professor, University of X",
-      "avatarUrl": "https://example.com/avatar3.jpg",
+      "avatarUrl": "https://dummyimage.com/250x250/a9a9a9/fff",
+      "profileUrl":"#",
       "content": "[Professional's name] is a true expert in their field. Their knowledge and insights were invaluable, and they were able to communicate complex concepts in a clear and concise way. I highly recommend them for any consultation or training needs."
     },
     {
-      "id": 4,
       "title": "Sans",
       "designation": "Comic Skeleton",
-      "avatarUrl": "https://example.com/avatar4.jpg",
+      "avatarUrl": "https://dummyimage.com/250x250/a9a9a9/fff",
+      "profileUrl":"#",
       "content": "Working with [professional's name] was an outstanding experience. They were flexible, adaptable, and always willing to go the extra mile. They delivered high-quality work on time and within budget. I would definitely recommend them to anyone looking for a reliable and skilled professional."
     }
   ]
