@@ -40,16 +40,40 @@
 - Work Experience
     |- History
     |- Awards
-    |- Certificates (featured)
+    |- Certificates Roll
     |- Working on next
-- Certificates
+- Projects
 - Lists
     |- Useful Resources
     |- Games
 - Blog
     |- Blog roll 
+- FAQ
 - Contact
     |- Form
     |- Social Links
     |- CTA
 ```
+
+
+## colors
+```css
+--primary-light: #0694a2;
+--secondary-light: #c4c4c4;
+--tertiary-light: #f1f5f9;
+--contrast-light: #dc4c64;
+
+
+--primary-dark: #30C3D2;
+--secondary-dark: #8a8a8a;
+--tertiary-dark: #4B5660;
+--contrast-dark: #FC5E79;
+
+```
+## components to use 
+
+- https://tailwindcomponents.com/component/delivery-tracking
+- https://tailwindcomponents.com/component/tailwind-contact-form-2
+- https://tailwindcomponents.com/component/peaceful-mind
+- https://tailwindcomponents.com/component/boilerplates-card
+- 
