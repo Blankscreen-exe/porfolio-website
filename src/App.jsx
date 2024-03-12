@@ -21,6 +21,7 @@ import HorizontalSlider from './components/common/HorizontalSlider.jsx';
 
 //data
 import certificateData from './data/certificates.json'
+import RoutesList from './components/Routes.jsx';
 
 function App() {
     
@@ -38,6 +39,8 @@ function App() {
 
   return (
     <>
+    <RoutesList/>
+{/*     
     <NavBar/>
     <Hero/>
     <BlockQuote
@@ -50,7 +53,7 @@ function App() {
     <TechStack/>
     <TimeLine/>
     <BlogList/>
-    <Footer/>
+    <Footer/> */}
 
     {/* REVIEW: Redux check */}
     {/* <button
@@ -71,9 +74,9 @@ function App() {
       Decrement
     </button> */}
 
-
+{/* 
           <br/>
-          <br/>
+          <br/> */}
 
     {/* <div class="grid grid-cols-5 gap-4">
       <div className='col-span-4'>

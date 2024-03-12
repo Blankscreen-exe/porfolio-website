@@ -8,12 +8,17 @@ import './tailwind-compiled.css'
 import { store, persister } from './redux/store.jsx'
 import { PersistGate } from 'redux-persist/integration/react';
 import { Provider } from 'react-redux'
+// Router
+import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persister}>
-        <App />
+        <BrowserRouter>
+        {/* <RoutesList/> */}
+          <App />
+        </BrowserRouter>
       </PersistGate>
     </Provider>
   </React.StrictMode>,

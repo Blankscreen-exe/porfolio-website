@@ -2,7 +2,89 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import appConstants from '../../constants/appConstants'
 
+// Router
+import { Link, NavLink } from 'react-router-dom'
+
 function NavBar(props) {
+
+  const navLinkList =  [
+    {
+      name: "Home",
+      url: appConstants.routes.home
+    },
+    {
+      name: "About Me",
+      url: appConstants.routes.aboutMe,
+      children: [
+        {
+          name: "Education",
+          url: appConstants.routes.aboutMeEducation
+        },
+        {
+          name: "Languages I Speak",
+          url: appConstants.routes.aboutMeLanguages
+        },
+        {
+          name: "Hobbies",
+          url: appConstants.routes.aboutMeHobby
+        },
+      ]
+    },
+    {
+      name: "My Experience",
+      url: appConstants.routes.experience,
+      children: [
+        {
+          name: "Work History",
+          url: appConstants.routes.experienceWorkHistory
+        },
+        {
+          name: "Awards",
+          url: appConstants.routes.experienceAwards
+        },
+        {
+          name: "Certificates",
+          url: appConstants.routes.experienceCertificates
+        },
+        {
+          name: "Targeted Skills",
+          url: appConstants.routes.experienceUpcomingSkills
+        },
+      ]
+    },
+    {
+      name: "Lists",
+      url: appConstants.routes.lists,
+      children: [
+        {
+          name: "Dev Resources",
+          url: appConstants.routes.listsResources
+        },
+        {
+          name: "Games",
+          url: appConstants.routes.listsGames
+        },
+        {
+          name: "Books",
+          url: appConstants.routes.listsBooks
+        },
+      ]
+    },
+    {
+      name: "Projects",
+      url: appConstants.routes.projects
+    },
+    {
+      name: "Blog",
+      url: appConstants.routes.blog
+    },
+    {
+      name: "Contact",
+      url: appConstants.routes.contacts
+    },
+    
+  ]
+
   return (
     <div
     id="navbar"
@@ -30,7 +112,21 @@ function NavBar(props) {
             tabIndex="0"
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
-            <li><a>Home</a></li>
+
+            {navLinkList.map( (item, ind) => {
+              return (<li>
+                {<NavLink to={item.url}>{item.name}</NavLink>}
+                {item.children && (
+                  <ul className="p-2">
+                    {item.children.map( (item, ind ) => {
+                      return (<li><NavLink to={item.url}>{item.name}</NavLink></li>)
+                    })}
+                  </ul>
+                )}
+              </li>
+            )})}
+
+            {/* <li><a>Home</a></li>
             <li>
               <a>About Me</a>
               <ul className="p-2">
@@ -57,7 +153,7 @@ function NavBar(props) {
             </li>
             <li><a>Projects</a></li>
             <li><a>Blog</a></li>
-            <li><a>Contact</a></li>
+            <li><a>Contact</a></li> */}
           </ul>
         </div>
         <a className="hover:text-neutral-600 transition-colors text-xl mx-2">{appConstants.common.pageTitle}</a>
@@ -67,6 +163,26 @@ function NavBar(props) {
 
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-5">
+
+
+
+          {navLinkList.map( (item, ind) => {
+              return (<li>
+                {item.children && <details/> }
+                {<NavLink to={item.url} className={"border border-slate-400 hover:border-[#0694a2]"}>{item.name}</NavLink>}
+                {item.children && (
+                  <ul className="p-2">
+                    {item.children.map( (item, ind ) => {
+                      return (<li><NavLink to={item.url}>{item.name}</NavLink></li>)
+                    })}
+                  </ul>
+                )}
+                {item.children && <details/>}
+              </li>
+            )})}
+          
+
+
           <li><a class="border border-slate-400 hover:border-[#0694a2]">Home</a></li>
           <li>
             <details>
