@@ -43,6 +43,11 @@
     |- Certificates Roll
     |- Working on next
 - Projects
+- Services
+    |- Backend Developement
+    |- Frontend Developement
+    |- Data Science/Business Analytics
+    |- Mentor
 - Lists
     |- Useful Resources
     |- Games
@@ -52,6 +57,7 @@
 - Contact
     |- Form
     |- Social Links
+    |- Discord server
     |- CTA
 ```
 
