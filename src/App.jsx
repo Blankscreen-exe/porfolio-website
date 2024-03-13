@@ -1,26 +1,17 @@
 import { useState } from 'react'
 import './App.css'
 import { useDispatch, useSelector } from 'react-redux'
+
+// TODO: redux check. remove when done
 import { increment, decrement } from './redux/reducers/commonSlice'
 
 import "tw-elements-react/dist/css/tw-elements-react.min.css";
 
 // Components
 import NavBar from './components/common/navbar'
-import BlogCard from './components/blog/BlogCard'
-import Hero from './components/home/Hero'
-import Testimonials from './components/home/Testimonials'
 import Footer from './components/common/Footer';
-import BlockQuote from './components/common/BlockQuote';
-import BlogList from "./components/blog/BlogList.jsx"
-import TimeLine from './components/common/TimeLine.jsx';
-import TechStack from './components/home/TechStack.jsx';
-import FloatingSidebar from './components/common/FloatingSidebar.jsx';
-import aboutMeText from './data/aboutMe.json';
-import HorizontalSlider from './components/common/HorizontalSlider.jsx';
 
 //data
-import certificateData from './data/certificates.json'
 import RoutesList from './components/Routes.jsx';
 
 function App() {
@@ -39,23 +30,11 @@ function App() {
 
   return (
     <>
-    <RoutesList/>
-{/*     
     <NavBar/>
-    <Hero/>
-    <BlockQuote
-    text={aboutMeText.aboutMeHome}/>
-    <HorizontalSlider
-      title={"Certificates"}
-      data={certificateData}
-      />
-    <Testimonials/>
-    <TechStack/>
-    <TimeLine/>
-    <BlogList/>
-    <Footer/> */}
+    <RoutesList/>
+    <Footer/>
 
-    {/* REVIEW: Redux check */}
+    {/* TODO: Redux check. remove when done */}
     {/* <button
       aria-label="Increment value"
       onClick={() => dispatch(increment())}
@@ -73,10 +52,6 @@ function App() {
     >
       Decrement
     </button> */}
-
-{/* 
-          <br/>
-          <br/> */}
 
     {/* <div class="grid grid-cols-5 gap-4">
       <div className='col-span-4'>

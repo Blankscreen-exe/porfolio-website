@@ -24,7 +24,8 @@ function Hero(props) {
           </div>
         </div>
       </div>
-      <div class="w-64 md:w-48">
+      <div class="w-64 md:w-48 mx-auto">
+        {/* TODO: put this link in constants */}
         <img src="https://dummyimage.com/250x250/cacaca/fff" alt="Placeholder image" class=" rounded-lg shadow object-cover rounded-md  hover:shadow-xl transition duration-500 "/>
       </div>
     </div>

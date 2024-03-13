@@ -1,5 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+
+// Constants
 import appConstants from '../../constants/appConstants'
 
 // Router
@@ -15,18 +17,26 @@ function NavBar(props) {
     {
       name: "About Me",
       url: appConstants.routes.aboutMe,
+    },
+    {
+      name: "Services",
+      url: appConstants.routes.services,
       children: [
         {
-          name: "Education",
-          url: appConstants.routes.aboutMeEducation
+          name: "Backend",
+          url: appConstants.routes.servicesBackend
         },
         {
-          name: "Languages I Speak",
-          url: appConstants.routes.aboutMeLanguages
+          name: "Frontend",
+          url: appConstants.routes.servicesFrontend
         },
         {
-          name: "Hobbies",
-          url: appConstants.routes.aboutMeHobby
+          name: "Data Science",
+          url: appConstants.routes.servicesDataScience
+        },
+        {
+          name: "Mentorship",
+          url: appConstants.routes.servicesMentorship
         },
       ]
     },
@@ -55,20 +65,20 @@ function NavBar(props) {
     {
       name: "Lists",
       url: appConstants.routes.lists,
-      children: [
-        {
-          name: "Dev Resources",
-          url: appConstants.routes.listsResources
-        },
-        {
-          name: "Games",
-          url: appConstants.routes.listsGames
-        },
-        {
-          name: "Books",
-          url: appConstants.routes.listsBooks
-        },
-      ]
+      // children: [
+      //   {
+      //     name: "Dev Resources",
+      //     url: appConstants.routes.listsResources
+      //   },
+      //   {
+      //     name: "Games",
+      //     url: appConstants.routes.listsGames
+      //   },
+      //   {
+      //     name: "Books",
+      //     url: appConstants.routes.listsBooks
+      //   },
+      // ]
     },
     {
       name: "Projects",
@@ -126,34 +136,6 @@ function NavBar(props) {
               </li>
             )})}
 
-            {/* <li><a>Home</a></li>
-            <li>
-              <a>About Me</a>
-              <ul className="p-2">
-                <li><a>Education</a></li>
-                <li><a>Hobbies</a></li>
-                <li><a>Languages I Speak</a></li>
-              </ul>
-            </li>
-            <li>
-              <a>Experience</a>
-              <ul className="p-2">
-                <li><a>Work History</a></li>
-                <li><a>Awards</a></li>
-                <li><a>Certificates</a></li>
-                <li><a>Working On Next</a></li>
-              </ul>
-            </li>
-            <li>
-              <a>Lists</a>
-              <ul className="p-2">
-                <li><a>Useful Resources</a></li>
-                <li><a>Games</a></li>
-              </ul>
-            </li>
-            <li><a>Projects</a></li>
-            <li><a>Blog</a></li>
-            <li><a>Contact</a></li> */}
           </ul>
         </div>
         <a className="hover:text-neutral-600 transition-colors text-xl mx-2">{appConstants.common.pageTitle}</a>
@@ -164,59 +146,30 @@ function NavBar(props) {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-5">
 
-
-
           {navLinkList.map( (item, ind) => {
               return (<li>
-                {item.children && <details/> }
-                {<NavLink to={item.url} className={"border border-slate-400 hover:border-[#0694a2]"}>{item.name}</NavLink>}
-                {item.children && (
-                  <ul className="p-2">
-                    {item.children.map( (item, ind ) => {
-                      return (<li><NavLink to={item.url}>{item.name}</NavLink></li>)
-                    })}
-                  </ul>
-                )}
-                {item.children && <details/>}
-              </li>
-            )})}
+                <>
+                  {item.children ? (
+                    <details>
+                      <summary><NavLink to={item.url}>{item.name}</NavLink></summary>
+                      {item.children && (
+                        <ul className="p-2">
+                          {item.children.map( (item, ind ) => {
+                            return (<li><NavLink to={item.url}>{item.name}</NavLink></li>)
+                          })}
+                        </ul>
+                      )}
+                    </details>
+                  ) : 
+                    item.name === "Home"
+                    ? (<NavLink to={item.url} className={"border border-slate-400 hover:bg-[#0694a2]"}>{item.name}</NavLink>)
+                    : (<NavLink to={item.url}>{item.name}</NavLink>)
+                  }
+                </>
+
+              </li>)
+              })}
           
-
-
-          <li><a class="border border-slate-400 hover:border-[#0694a2]">Home</a></li>
-          <li>
-            <details>
-              <summary class="hover:text-[#0694a2]"><a>About Me</a></summary>
-              <ul className="p-2">
-              <li><a>Education</a></li>
-              <li><a>Hobbies</a></li>
-              <li><a>Languages I Speak</a></li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <details>
-              <summary class="hover:text-[#0694a2]"><a>Experience</a></summary>
-              <ul className="p-2">
-                <li><a>Work History</a></li>
-                <li><a>Awards</a></li>
-                <li><a>Certificates</a></li>
-                <li><a>Working On Next</a></li>
-              </ul>
-            </details>
-          </li>
-          <li>
-            <details>
-              <summary class="hover:text-[#0694a2]"><a>Lists</a></summary>
-              <ul className="p-2">
-                <li><a>Useful Resources</a></li>
-                <li><a>Games</a></li>
-              </ul>
-            </details>
-          </li>
-          <li><a>Projects</a></li>
-          <li><a>Blog</a></li>
-          <li><a>Contact</a></li>
         </ul>
       </div>
   </div>

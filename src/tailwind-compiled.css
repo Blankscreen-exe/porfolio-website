@@ -3766,8 +3766,8 @@ input.tab:checked + .tab-content,
   height: 3px;
 }
 
-.h-\[650px\] {
-  height: 650px;
+.h-\[550px\] {
+  height: 550px;
 }
 
 .h-\[calc\(100vh-3\.5rem\)\] {
@@ -3804,10 +3804,6 @@ input.tab:checked + .tab-content,
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[550px\] {
-  height: 550px;
 }
 
 .max-h-24 {
@@ -4423,10 +4419,6 @@ input.tab:checked + .tab-content,
   border-bottom-width: 10px;
 }
 
-.border-b {
-  border-bottom-width: 1px;
-}
-
 .border-b-0 {
   border-bottom-width: 0px;
 }
@@ -4571,13 +4563,13 @@ input.tab:checked + .tab-content,
   border-left-color: rgb(163 163 163 / var(--tw-border-opacity));
 }
 
-.border-t-transparent {
-  border-top-color: transparent;
-}
-
 .border-t-slate-300 {
   --tw-border-opacity: 1;
   border-top-color: rgb(203 213 225 / var(--tw-border-opacity));
+}
+
+.border-t-transparent {
+  border-top-color: transparent;
 }
 
 .border-opacity-100 {
@@ -4997,11 +4989,6 @@ input.tab:checked + .tab-content,
   line-height: 1rem;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -5236,6 +5223,11 @@ input.tab:checked + .tab-content,
 .text-primary {
   --tw-text-opacity: 1;
   color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)));
+}
+
+.text-red-600 {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
 .text-secondary {
@@ -6067,14 +6059,14 @@ a:hover {
   border-right-width: 0px;
 }
 
-.hover\:border-\[\#0694a2\]:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(6 148 162 / var(--tw-border-opacity));
-}
-
 .hover\:border-neutral-600:hover {
   --tw-border-opacity: 1;
   border-color: rgb(82 82 82 / var(--tw-border-opacity));
+}
+
+.hover\:bg-\[\#0694a2\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(6 148 162 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-black\/5:hover {
@@ -6122,11 +6114,6 @@ a:hover {
 
 .hover\:to-teal-100:hover {
   --tw-gradient-to: #ccfbf1 var(--tw-gradient-to-position);
-}
-
-.hover\:text-\[\#0694a2\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(6 148 162 / var(--tw-text-opacity));
 }
 
 .hover\:text-neutral-600:hover {
@@ -6884,6 +6871,10 @@ a:hover {
     height: 350px;
   }
 
+  .md\:w-10 {
+    width: 2.5rem;
+  }
+
   .md\:w-3\/12 {
     width: 25%;
   }
@@ -6896,16 +6887,8 @@ a:hover {
     width: 75%;
   }
 
-  .md\:w-\[65\%\] {
-    width: 65%;
-  }
-
   .md\:w-\[75\%\] {
     width: 75%;
-  }
-
-  .md\:w-10 {
-    width: 2.5rem;
   }
 
   .md\:basis-1\/2 {

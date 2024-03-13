@@ -15,10 +15,10 @@
 ## Milestones
 
 - [x] React Bootstrap
-- [ ] Redux
+- [x] Redux
 - [ ] Redux Thunk
-- [ ] Redux persistor
-- [ ] React Router
+- [x] Redux persistor
+- [x] React Router
 - [ ] Material UI
 
 ## Sitemap
@@ -53,7 +53,6 @@
     |- Games
 - Blog
     |- Blog roll 
-- FAQ
 - Contact
     |- Form
     |- Social Links

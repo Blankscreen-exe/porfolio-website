@@ -46,6 +46,7 @@ export function formatDate(date) {
   return `${day}${ordinalSuffix} ${month}, ${year}`;
 }
 
+// FIXME:  do it
 export function sentenceToSlug(sentence) {
     // Convert the sentence to lowercase.
     // sentence = sentence.toLowerCase();
