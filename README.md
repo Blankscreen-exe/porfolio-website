@@ -11,6 +11,7 @@
 - [Redux persist](https://medium.com/@xbstrxct/persisting-state-in-your-react-app-with-redux-persist-1e7dd877c58a)
 - [Redux persistor log rocket](https://blog.logrocket.com/persist-state-redux-persist-redux-toolkit-react/)
 - [TW elements](https://tw-elements.com/docs)
+- [Hero Icons](https://github.com/tailwindlabs/heroicons)
 
 ## Milestones
 
