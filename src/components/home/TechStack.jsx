@@ -70,7 +70,7 @@ function TechStack(props) {
               >
                 <div
                   key={item.name}
-                  className="w-fit p-2 rounded-md text-slate-600 border border-slate-300 md:text-lg text-sm font-semibold flex flex-row justify-center items-center gap-4 hover:shadow hover:shadow-sm hover:shadow-[#0694a2] hover:bg-slate-100 hover:cursor-pointer transition-shadow duration-400"
+                  className="w-fit p-2 rounded-md text-slate-600 border border-slate-300 md:text-lg text-sm font-semibold flex flex-row justify-center items-center gap-4 bg-gradient-to-br hover:from-teal-100 hover:to-teal-400 hover:text-teal-900 hover:cursor-pointer transition-all duration-700"
                 >
                   <img
                     src="https://dummyimage.com/100x100/eee/444"
