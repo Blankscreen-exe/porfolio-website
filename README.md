@@ -13,6 +13,8 @@
 - [TW elements](https://tw-elements.com/docs)
 - [Hero Icons](https://github.com/tailwindlabs/heroicons)
 - [how to use svgs in react](https://www.freecodecamp.org/news/how-to-import-svgs-in-react-and-vite/)
+- [LinearIcons](https://linearicons.com/free)
+- [how to use dark mode in tailwind](https://www.youtube.com/watch?v=WTchW0LdWL0)
 
 ## Milestones
 
@@ -25,7 +27,7 @@
 
 ## Sitemap
 ```
-- Home
+- ✅Home
     |- About Me
     |- Testimonials
     |- Tech Stack
