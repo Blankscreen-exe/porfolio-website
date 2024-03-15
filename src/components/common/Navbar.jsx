@@ -124,12 +124,12 @@ function NavBar(props) {
           >
 
             {navLinkList.map( (item, ind) => {
-              return (<li>
+              return (<li key={ind} >
                 {<NavLink to={item.url}>{item.name}</NavLink>}
                 {item.children && (
                   <ul className="p-2">
                     {item.children.map( (item, ind ) => {
-                      return (<li><NavLink to={item.url}>{item.name}</NavLink></li>)
+                      return (<li key={ind} ><NavLink to={item.url}>{item.name}</NavLink></li>)
                     })}
                   </ul>
                 )}
@@ -147,7 +147,7 @@ function NavBar(props) {
         <ul className="menu menu-horizontal px-1 gap-5">
 
           {navLinkList.map( (item, ind) => {
-              return (<li>
+              return (<li key={ind}>
                 <>
                   {item.children ? (
                     <details>
@@ -155,7 +155,7 @@ function NavBar(props) {
                       {item.children && (
                         <ul className="p-2">
                           {item.children.map( (item, ind ) => {
-                            return (<li><NavLink to={item.url}>{item.name}</NavLink></li>)
+                            return (<li key={ind}><NavLink to={item.url}>{item.name}</NavLink></li>)
                           })}
                         </ul>
                       )}
