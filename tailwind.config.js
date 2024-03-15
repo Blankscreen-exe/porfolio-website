@@ -1,4 +1,5 @@
 module.exports = {
+    darkMode: 'selector',
     content: [
       "./index.html",
       "./src/**/*.{html,jsx,js}",
