@@ -26,9 +26,10 @@ function TechStack(props) {
       <div className="mb-10 flex flex-col md:flex-row gap-10 w-full">
         <div className="container flex flex-col items-center justify-center w-[fit-content] h-[fit-content] mx-auto bg-slate-100 rounded-lg shadow dark:bg-gray-800">
           <ul className="flex flex-col divide-y divide">
-            {stackList.map((item) => {
+            {stackList.map((item, ind) => {
               return (
                 <li
+                  key={ind}
                   onClick={() => handleStackClick(item)}
                   className={classAdd(
                     "flex flex-row hover:text-slate-800 dark:text-white",
@@ -60,8 +61,8 @@ function TechStack(props) {
         </div>
 
         <div className="p-0 w-full flex flex-row flex-wrap align-top content-start gap-2 overflow-visible">
-          {listItem.map((item) => (
-            <a href={item.url} target="_blank" className="h-min">
+          {listItem.map((item, ind) => (
+            <a key={ind} href={item.url} target="_blank" className="h-min">
               <div
                 className="tooltip"
                 data-tip={`Go To ${capitalizeFirstLetter(
@@ -70,7 +71,7 @@ function TechStack(props) {
               >
                 <div
                   key={item.name}
-                  className="w-fit p-2 rounded-md text-slate-600 border border-slate-300 md:text-lg text-sm font-semibold flex flex-row justify-center items-center gap-4 bg-gradient-to-br hover:from-teal-100 hover:to-teal-400 hover:text-teal-900 hover:cursor-pointer transition-all duration-700"
+                  className="w-fit p-2 rounded-md text-slate-600 border border-slate-300 md:text-lg text-sm font-semibold flex flex-row justify-center items-center gap-4 hover:bg-gradient-to-br hover:from-teal-100 hover:to-teal-400 hover:text-teal-900 hover:cursor-pointer transition-all duration-1000"
                 >
                   <img
                     src="https://dummyimage.com/100x100/eee/444"

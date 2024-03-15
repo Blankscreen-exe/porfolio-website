@@ -1,3 +1,5 @@
+import ctaBg from './images/cta-bg.jpg'
+
 export default {
     "certificates": {
         "logo": {
@@ -7,5 +9,8 @@ export default {
             "kaggle": "",
             "cisco": ""
         }
+    },
+    "cta": {
+        "bg": ctaBg
     }
 }

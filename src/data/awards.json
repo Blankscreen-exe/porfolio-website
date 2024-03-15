@@ -1,0 +1,27 @@
+[
+    {
+        "title":"award 1",
+        "description": "Lorem ipwum dolor set amet. Lorem ipwum dolor set amet. Lorem ipwum dolor set amet",
+        "logoType": "coursera"
+    },
+    {
+        "title":"award 2",
+        "description": "Lorem ipwum dolor set amet. Lorem ipwum dolor set amet. Lorem ipwum dolor set amet",
+        "logoType": "coursera"
+    },
+    {
+        "title":"award 3",
+        "description": "Lorem ipwum dolor set amet. Lorem ipwum dolor set amet. Lorem ipwum dolor set amet",
+        "logoType": "coursera"
+    },
+    {
+        "title":"award 4",
+        "description": "Lorem ipwum dolor set amet. Lorem ipwum dolor set amet. Lorem ipwum dolor set amet",
+        "logoType": "coursera"
+    },
+    {
+        "title":"award 5",
+        "description": "Lorem ipwum dolor set amet. Lorem ipwum dolor set amet. Lorem ipwum dolor set amet",
+        "logoType": "coursera"
+    }
+]

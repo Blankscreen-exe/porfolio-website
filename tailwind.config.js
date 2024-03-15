@@ -17,6 +17,13 @@ module.exports = {
         "contrast-dark": "#FC5E79"
       },
       extend: {
+        brightness: {
+          10: '.10',
+          15: '.15',
+          20: '.20',
+          25: '.25',
+          175: '1.75',
+        },
         keyframes: {
           typing: {
             "0%": {
