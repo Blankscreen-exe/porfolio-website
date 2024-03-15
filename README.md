@@ -12,6 +12,7 @@
 - [Redux persistor log rocket](https://blog.logrocket.com/persist-state-redux-persist-redux-toolkit-react/)
 - [TW elements](https://tw-elements.com/docs)
 - [Hero Icons](https://github.com/tailwindlabs/heroicons)
+- [how to use svgs in react](https://www.freecodecamp.org/news/how-to-import-svgs-in-react-and-vite/)
 
 ## Milestones
 
@@ -83,4 +84,7 @@
 - https://tailwindcomponents.com/component/peaceful-mind
 - https://tailwindcomponents.com/component/boilerplates-card
 - https://tailwindcomponents.com/component/card-ai-power-analytics
-- 
+- https://tailwindcomponents.com/component/unordered-list-of-card-items-with-elevation-on-hover
+- https://tailwindcomponents.com/component/hover-button-scale-effect
+- https://tailwindcomponents.com/component/button-11
+- https://tailwindcomponents.com/component/tailwind-css-inbox-view-message
