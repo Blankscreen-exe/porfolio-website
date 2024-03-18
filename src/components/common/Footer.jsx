@@ -5,8 +5,8 @@ import appConstants from '../../constants/appConstants'
 import svgLists from '../../constants/svg'
 function Footer(props) {
   return (
-    <div>
-        <footer className="footer p-10 bg-base-200 text-base-content">
+    <div className='mb-5'>
+        <footer className="footer p-10 bg-base-200 text-base-content rounded-t-md">
           <nav>
             <h6 className="footer-title">Pages</h6> 
             <NavLink to={appConstants.routes.home} className="link link-hover">Home</NavLink >
@@ -36,10 +36,10 @@ function Footer(props) {
             <NavLink to={appConstants.routes.listsResources} className="link link-hover">Dev Resources</NavLink >
           </nav>
         </footer> 
-        <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
+        <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300 rounded-b-md">
           <aside className="items-center grid-flow-col">
             {svgLists.hashIcon}
-            <p>ACME Industries Ltd. <br/>Providing reliable tech since 1992</p>
+            <p><b>M.Hammad Hassan</b> <br/>Code is a language I can speak!</p>
           </aside> 
           <nav className="md:place-self-center md:justify-self-end">
             <div className="grid grid-flow-col gap-4">
