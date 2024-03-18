@@ -8,18 +8,24 @@ import BlockQuote from '../common/BlockQuote'
 function About(props) {
   return (
     <div>
+        {/* TODO: add title */}
         <BlockQuote
-            text="Some great stuff about me. I'm great! Sore dakke do ..."
+            text="Some <b>awesome</b> stuff about me. I'm great! Sore dakke do ..."
         />
         <SectionHeading
             title="Education"
         />
+        {/* TODO: show vertical timeline */}
+        <br/>
         <SectionHeading
             title="Languages"
         />
+        {/* TODO: show two cards side by side like CTA card */}
+        <br/>
         <SectionHeading
             title="Hobbies"
         />
+        {/* TODO: show doughnut chart */}
     </div>
   )
 }
