@@ -162,7 +162,7 @@ function NavBar(props) {
                     </details>
                   ) : 
                     item.name === "Home"
-                    ? (<NavLink to={item.url} className={"border border-slate-400 hover:bg-[#0694a2]"}>{item.name}</NavLink>)
+                    ? (<NavLink to={item.url} className={"border border-slate-400 hover:bg-slate-200"}>{item.name}</NavLink>)
                     : (<NavLink to={item.url}>{item.name}</NavLink>)
                   }
                 </>
