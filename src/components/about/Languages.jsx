@@ -7,8 +7,8 @@ import imgList from "../../constants/img";
 
 function Languages(props) {
   return (
-    <div className='flex flex-row flex-wrap justify-around'>
-    <div className="p-6 w-[45%]">
+    <div className='flex md:flex-row flex-wrap justify-around flex-col'>
+    <div className="p-6 md:w-[45%] w-full">
         <div className="relative overflow-hidden rounded-2xl bg-gray-900 px-6 pb-9 shadow-xl shadow-slate-400">
             <img
             className="absolute inset-0 h-full w-full object-cover brightness-20 saturate-100"
@@ -31,7 +31,7 @@ function Languages(props) {
         </div>
         </div>
         
-        <div className="p-6  w-[45%]">
+        <div className="p-6  md:w-[45%] w-full">
         <div className="relative overflow-hidden rounded-2xl bg-gray-900 px-6 pb-9 shadow-xl shadow-slate-400">
             <img
             className="absolute inset-0 h-full w-full object-cover brightness-20 saturate-100"
