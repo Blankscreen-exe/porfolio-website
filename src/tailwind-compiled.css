@@ -3642,6 +3642,21 @@ input.tab:checked + .tab-content,
   margin-bottom: 2.25rem;
 }
 
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.mx-20 {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.mx-32 {
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
 .-mb-8 {
   margin-bottom: -2rem;
 }
@@ -4674,6 +4689,16 @@ input.tab:checked + .tab-content,
   border-color: rgb(255 255 255 / 0.05);
 }
 
+.border-slate-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(71 85 105 / var(--tw-border-opacity));
+}
+
+.border-\[\#0694a2\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(6 148 162 / var(--tw-border-opacity));
+}
+
 .border-l-neutral-400 {
   --tw-border-opacity: 1;
   border-left-color: rgb(163 163 163 / var(--tw-border-opacity));
@@ -5065,6 +5090,14 @@ input.tab:checked + .tab-content,
   padding-top: 0.36rem;
 }
 
+.pl-6 {
+  padding-left: 1.5rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
 .text-left {
   text-align: left;
 }
@@ -5095,6 +5128,10 @@ input.tab:checked + .tab-content,
 
 .font-bold {
   font-family: "CourierPrime-Bold";
+}
+
+.font-sans {
+  font-family: Roboto, sans-serif;
 }
 
 .text-3xl {
@@ -5449,6 +5486,11 @@ input.tab:checked + .tab-content,
 .text-yellow-600 {
   --tw-text-opacity: 1;
   color: rgb(202 138 4 / var(--tw-text-opacity));
+}
+
+.text-slate-900 {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
 .no-underline {
