@@ -21,6 +21,10 @@
     font-family: CourierPrime-Regular;
     src: url(./assets/fonts/CourierPrime-Regular.ttf);
   }
+
+  body {
+    font-family: CourierPrime-Regular;
+  }
 }
 
 /* ---------------- Colors ------------------ */

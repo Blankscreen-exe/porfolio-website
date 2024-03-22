@@ -17,6 +17,10 @@ module.exports = {
         "tertiary-dark": "#4B5660",
         "contrast-dark": "#FC5E79"
       },
+      fontFamily:{
+        'display': ['Courier'],
+        'body': ['"CourierPrime-Regular"'],
+      },
       extend: {
         brightness: {
           10: '.10',
