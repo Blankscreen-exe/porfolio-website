@@ -102,7 +102,9 @@ function NavBar(props) {
   >
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex="0" role="button" className="btn btn-ghost lg:hidden">
+          {/* MSG: made this dropdown view permanenet */}
+          {/* <div tabIndex="0" role="button" className="btn btn-ghost xl:hidden"> */}
+          <div tabIndex="0" role="button" className="btn btn-ghost ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -125,7 +127,11 @@ function NavBar(props) {
 
             {navLinkList.map( (item, ind) => {
               return (<li key={ind} >
-                {<NavLink to={item.url}>{item.name}</NavLink>}
+                {/* MSG: disabled link on parent element */}
+                {/* {<NavLink to={item.url}>{item.name}</NavLink>} */}
+                {item.children 
+                ? <span className=''>{item.name}</span>
+                : <NavLink to={item.url}>{item.name}</NavLink>}
                 {item.children && (
                   <ul className="p-2">
                     {item.children.map( (item, ind ) => {
@@ -142,8 +148,10 @@ function NavBar(props) {
       </div>
 
       {/* ----------------------------- */}
-
-      <div className="navbar-center hidden lg:flex">
+      
+      {/* MSG: disabled this button view */}
+      {/* <div className="navbar-center hidden xl:flex"> */}
+      <div className="navbar-center hidden">
         <ul className="menu menu-horizontal px-1 gap-5">
 
           {navLinkList.map( (item, ind) => {

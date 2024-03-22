@@ -7007,6 +7007,14 @@ a:hover {
 }
 
 @media (min-width: 640px) {
+  .sm\:flex {
+    display: flex;
+  }
+
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:flex-col {
     flex-direction: column;
   }
@@ -7033,6 +7041,10 @@ a:hover {
 
   .md\:inline {
     display: inline;
+  }
+
+  .md\:flex {
+    display: flex;
   }
 
   .md\:hidden {
@@ -7158,6 +7170,14 @@ a:hover {
 }
 
 @media (min-width: 1280px) {
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:hidden {
+    display: none;
+  }
+
   .xl\:w-7\/12 {
     width: 58.333333%;
   }
