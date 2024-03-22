@@ -8,7 +8,7 @@ function Footer(props) {
     <div className='mb-5'>
         <footer className="footer p-10 bg-base-200 text-base-content rounded-t-md">
           <nav>
-            <h6 className="footer-title">Pages</h6> 
+            <h6 className="footer-title font-bold font-sans text-slate-900 border-b-2 border-[#0694a2]">Pages</h6> 
             <NavLink to={appConstants.routes.home} className="link link-hover">Home</NavLink >
             <NavLink to={appConstants.routes.aboutMe} className="link link-hover">About Me</NavLink >
             <NavLink to={appConstants.routes.projects} className="link link-hover">Projects</NavLink >
@@ -17,24 +17,19 @@ function Footer(props) {
             <NavLink to={appConstants.routes.contacts} className="link link-hover">Contact</NavLink >
           </nav> 
           <nav>
-            <h6 className="footer-title">Services</h6> 
+            <h6 className="footer-title font-bold font-sans text-slate-900 border-b-2 border-[#0694a2]">Services</h6> 
             <NavLink to={appConstants.routes.servicesBackend} className="link link-hover">Backend</NavLink >
             <NavLink to={appConstants.routes.servicesFrontend} className="link link-hover">Frontend</NavLink >
             <NavLink to={appConstants.routes.servicesDataScience} className="link link-hover">Data Science</NavLink >
             <NavLink to={appConstants.routes.servicesMentorship} className="link link-hover">Mentorship</NavLink >
           </nav> 
           <nav>
-            <h6 className="footer-title">Lists</h6> 
+            <h6 className="footer-title font-bold font-sans text-slate-900 border-b-2 border-[#0694a2]">Lists</h6> 
             <NavLink to={appConstants.routes.listsBooks} className="link link-hover">Books</NavLink >
             <NavLink to={appConstants.routes.listsGames} className="link link-hover">Games</NavLink >
             <NavLink to={appConstants.routes.listsResources} className="link link-hover">Dev Resources</NavLink >
           </nav>
-          <nav>
-            <h6 className="footer-title">Lists</h6> 
-            <NavLink to={appConstants.routes.listsBooks} className="link link-hover">Books</NavLink >
-            <NavLink to={appConstants.routes.listsGames} className="link link-hover">Games</NavLink >
-            <NavLink to={appConstants.routes.listsResources} className="link link-hover">Dev Resources</NavLink >
-          </nav>
+
         </footer> 
         <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300 rounded-b-md">
           <aside className="items-center grid-flow-col">
