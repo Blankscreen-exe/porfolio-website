@@ -2,6 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ---------------- Fonts ------------------ */
+
+@layer base {
+  @font-face {
+    font-family: CourierPrime-Bold;
+    src: url(./assets/fonts/CourierPrime-Bold.ttf);
+  }
+  @font-face {
+    font-family: CourierPrime-BoldItalic; 
+    src: url(./assets/fonts/CourierPrime-BoldItalic.ttf);
+  }
+  @font-face {
+    font-family: CourierPrime-Italic;
+    src: url(./assets/fonts/CourierPrime-Italic.ttf);
+  }
+  @font-face {
+    font-family: CourierPrime-Regular;
+    src: url(./assets/fonts/CourierPrime-Regular.ttf);
+  }
+}
+
 /* ---------------- Colors ------------------ */
 :root { 
   --primary: #0694a2; 
