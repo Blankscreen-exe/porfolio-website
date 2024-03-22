@@ -7,6 +7,7 @@ import BlockQuote from '../common/BlockQuote'
 import PageTitle from '../common/PageTitle'
 import Education from './Education'
 import Languages from './Languages'
+import Hobbies from './Hobbies'
 
 function About(props) {
   return (
@@ -34,6 +35,7 @@ function About(props) {
             title="Hobbies"
         />
         {/* TODO: show doughnut chart */}
+        <Hobbies/>
     </div>
   )
 }
