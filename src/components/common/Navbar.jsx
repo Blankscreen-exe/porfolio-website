@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 // Constants
 import appConstants from '../../constants/appConstants'
+import svgList from '../../constants/svg'
 
 // Router
 import { Link, NavLink } from 'react-router-dom'
@@ -12,14 +13,17 @@ function NavBar(props) {
   const navLinkList =  [
     {
       name: "Home",
+      icon: svgList.navIcons.home,
       url: appConstants.routes.home
     },
     {
       name: "About Me",
+      icon: svgList.navIcons.aboutMe,
       url: appConstants.routes.aboutMe,
     },
     {
       name: "Services",
+      icon: svgList.navIcons.services,
       url: appConstants.routes.services,
       children: [
         {
@@ -42,6 +46,7 @@ function NavBar(props) {
     },
     {
       name: "My Experience",
+      icon: svgList.navIcons.experience,
       url: appConstants.routes.experience,
       children: [
         {
@@ -64,6 +69,7 @@ function NavBar(props) {
     },
     {
       name: "Lists",
+      icon: svgList.navIcons.lists,
       url: appConstants.routes.lists,
       // children: [
       //   {
@@ -82,14 +88,17 @@ function NavBar(props) {
     },
     {
       name: "Projects",
+      icon: svgList.navIcons.projects,
       url: appConstants.routes.projects
     },
     {
       name: "Blog",
+      icon: svgList.navIcons.blogs,
       url: appConstants.routes.blog
     },
     {
       name: "Contact",
+      icon: svgList.navIcons.contacts,
       url: appConstants.routes.contacts
     },
     
@@ -110,7 +119,7 @@ function NavBar(props) {
               className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
+              stroke="#000000"
             >
               <path
                 strokeLinecap="round"
@@ -130,8 +139,8 @@ function NavBar(props) {
                 {/* MSG: disabled link on parent element */}
                 {/* {<NavLink to={item.url}>{item.name}</NavLink>} */}
                 {item.children 
-                ? <span className=''>{item.name}</span>
-                : <NavLink to={item.url}>{item.name}</NavLink>}
+                ? <span className='text-gray-500 hover:text-[#0694a2] hover:bg-transparent flex flex-row items-center'>{item.icon}{item.name}</span>
+                : <NavLink to={item.url} className="flex flex-row items-center ">{item.icon ? item.icon: ""}{item.name}</NavLink>}
                 {item.children && (
                   <ul className="p-2">
                     {item.children.map( (item, ind ) => {

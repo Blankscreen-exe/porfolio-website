@@ -4002,10 +4002,6 @@ input.tab:checked + .tab-content,
   width: 40px;
 }
 
-.w-\[45\%\] {
-  width: 45%;
-}
-
 .w-\[60\%\] {
   width: 60%;
 }
@@ -5089,8 +5085,16 @@ input.tab:checked + .tab-content,
   vertical-align: top;
 }
 
+.align-middle {
+  vertical-align: middle;
+}
+
 .align-bottom {
   vertical-align: bottom;
+}
+
+.font-bold {
+  font-family: "CourierPrime-Bold";
 }
 
 .text-3xl {
@@ -6282,6 +6286,10 @@ a:hover {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-transparent:hover {
+  background-color: transparent;
+}
+
 .hover\:bg-gradient-to-br:hover {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
@@ -6338,6 +6346,16 @@ a:hover {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-emerald-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(16 185 129 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#0694a2\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(6 148 162 / var(--tw-text-opacity));
 }
 
 .hover\:no-underline:hover {
@@ -7007,18 +7025,6 @@ a:hover {
 }
 
 @media (min-width: 640px) {
-  .sm\:flex {
-    display: flex;
-  }
-
-  .sm\:hidden {
-    display: none;
-  }
-
-  .sm\:flex-col {
-    flex-direction: column;
-  }
-
   .sm\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -7041,10 +7047,6 @@ a:hover {
 
   .md\:inline {
     display: inline;
-  }
-
-  .md\:flex {
-    display: flex;
   }
 
   .md\:hidden {
@@ -7071,12 +7073,12 @@ a:hover {
     width: 75%;
   }
 
-  .md\:w-\[75\%\] {
-    width: 75%;
-  }
-
   .md\:w-\[45\%\] {
     width: 45%;
+  }
+
+  .md\:w-\[75\%\] {
+    width: 75%;
   }
 
   .md\:basis-1\/2 {
@@ -7085,10 +7087,6 @@ a:hover {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:flex-col {
-    flex-direction: column;
   }
 
   .md\:flex-nowrap {
@@ -7133,24 +7131,8 @@ a:hover {
 }
 
 @media (min-width: 1024px) {
-  .lg\:flex {
-    display: flex;
-  }
-
-  .lg\:hidden {
-    display: none;
-  }
-
   .lg\:max-w-\[80\%\] {
     max-width: 80%;
-  }
-
-  .lg\:flex-row {
-    flex-direction: row;
-  }
-
-  .lg\:flex-col {
-    flex-direction: column;
   }
 
   .lg\:px-8 {
