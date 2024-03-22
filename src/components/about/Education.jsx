@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 function Education(props) {
   return (
-    <div class="p-4 max-w-md mx-auto pt-20 flow-root">
+    <div class="p-4 max-w-md mx-auto flow-root">
   <ul role="list" class="-mb-8">
     
     
@@ -18,7 +18,7 @@ function Education(props) {
               </svg>
             </span>
           </div>
-          <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5 mx-6">
+          <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5 mx-6 pl-3">
             <div>
               <p class="text-sm text-gray-500">packing at <a href="#" class="font-medium text-gray-900">France</a></p>
             </div>
@@ -42,7 +42,7 @@ function Education(props) {
             
             </span>
           </div>
-          <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+          <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5 pl-3">
             <div>
               <p class="text-sm text-gray-500">with driver <a href="#" class="font-medium text-gray-900">on the way to the plane</a></p>
             </div>
@@ -64,7 +64,7 @@ function Education(props) {
             
             </span>
           </div>
-          <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+          <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5 pl-3">
             <div>
               <p class="text-sm text-gray-500">on plane ready to fly <a href="#" class="font-medium text-gray-900"> to london</a></p>
             </div>
@@ -86,7 +86,7 @@ function Education(props) {
               
             </span>
           </div>
-          <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+          <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5 pl-3">
             <div>
               <p class="text-sm text-gray-500">with driver <a href="#" class="font-medium text-gray-900">on the way to you</a></p>
             </div>
@@ -107,7 +107,7 @@ function Education(props) {
               </svg>
             </span>
           </div>
-          <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
+          <div class="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5 pl-3">
             <div>
               <p class="text-sm text-gray-500">wait outside the door <a href="#" class="font-medium text-gray-900">the driver is close</a></p>
             </div>
