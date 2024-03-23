@@ -1,4 +1,4 @@
-import {classes} from '../constants/cssClasses';
+import {classLists} from '../constants/cssClasses';
 
 export function truncateText(text, maxLength) {
   if (text.length <= maxLength) {
@@ -67,8 +67,12 @@ export function classAdd(baseClass, ...args) {
 }
 
 export function getClasses(componentIdentifier) {
-  classArr = classes[componentIdentifier]
+  let classArr = classLists[componentIdentifier]
   return classArr ? classArr.filter(Boolean).join(' ') : "";
+}
+
+export function getClassesFromConstants(arr) {
+  return arr.join(' ');
 }
 
 export function capitalizeWords(str) {
