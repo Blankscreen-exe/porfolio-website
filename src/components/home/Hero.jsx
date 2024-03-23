@@ -16,11 +16,11 @@ function Hero(props) {
           </h1>
           <p class="mt-5 text-1xl text-gray-500">Full Stack Developer (Backend Heavy)</p>
           <div className='flex flex-row flex-wrap gap-2 mt-5'>
-            <a href={socialLinks.linkedin} class="text-1xl text-gray-500 text-primary-light cursor-pointer hover:text-primary-light">Linkedin </a>
-            <a href={socialLinks.github} class=" text-1xl text-gray-500 cursor-pointer hover:text-primary-light">Github </a>
-            <a href={socialLinks.medium} class=" text-1xl text-gray-500 cursor-pointer hover:text-primary-light">Medium </a>
-            <a href={socialLinks.reddit} class="text-1xl text-gray-500 cursor-pointer hover:text-primary-light">Reddit </a>
-            <a href={socialLinks.discord} class="text-1xl text-gray-500 cursor-pointer hover:text-primary-light">Discord </a>
+            <a href={socialLinks.linkedin} class="text-1xl text-gray-500 cursor-pointer hover:text-primary">Linkedin </a>
+            <a href={socialLinks.github} class=" text-1xl text-gray-500 cursor-pointer hover:text-primary">Github </a>
+            <a href={socialLinks.medium} class=" text-1xl text-gray-500 cursor-pointer hover:text-primary">Medium </a>
+            <a href={socialLinks.reddit} class="text-1xl text-gray-500 cursor-pointer hover:text-primary">Reddit </a>
+            <a href={socialLinks.discord} class="text-1xl text-gray-500 cursor-pointer hover:text-primary">Discord </a>
           </div>
         </div>
       </div>

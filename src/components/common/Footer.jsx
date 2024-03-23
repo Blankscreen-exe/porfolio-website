@@ -1,33 +1,43 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { NavLink } from 'react-router-dom'
+
+// Constants
 import appConstants from '../../constants/appConstants'
 import svgLists from '../../constants/svg'
+import {classLists} from '../../constants/cssClasses'
+
+import { getClassesFromConstants, classAdd } from '../../helpers/common'
+
 function Footer(props) {
+
+  const navLinkClasses = getClassesFromConstants(classLists.navLink)
+  console.log(navLinkClasses)
+
   return (
     <div className='mb-5'>
         <footer className="footer p-10 bg-base-200 text-base-content rounded-t-md">
           <nav>
-            <h6 className="footer-title font-bold font-sans text-slate-900 border-b-2 border-[#0694a2]">Pages</h6> 
-            <NavLink to={appConstants.routes.home} className="link link-hover">Home</NavLink >
-            <NavLink to={appConstants.routes.aboutMe} className="link link-hover">About Me</NavLink >
-            <NavLink to={appConstants.routes.projects} className="link link-hover">Projects</NavLink >
-            <NavLink to={appConstants.routes.experience} className="link link-hover">Experience</NavLink >
-            <NavLink to={appConstants.routes.blog} className="link link-hover">Blog</NavLink >
-            <NavLink to={appConstants.routes.contacts} className="link link-hover">Contact</NavLink >
+            <h6 className="footer-title font-bold font-sans text-slate-900 border-b-2 border-b-primary">Pages</h6> 
+            <NavLink to={appConstants.routes.home} className={navLinkClasses}>Home</NavLink >
+            <NavLink to={appConstants.routes.aboutMe} className={navLinkClasses}>About Me</NavLink >
+            <NavLink to={appConstants.routes.projects} className={navLinkClasses}>Projects</NavLink >
+            <NavLink to={appConstants.routes.experience} className={navLinkClasses}>Experience</NavLink >
+            <NavLink to={appConstants.routes.blog} className={navLinkClasses}>Blog</NavLink >
+            <NavLink to={appConstants.routes.contacts} className={navLinkClasses}>Contact</NavLink >
           </nav> 
           <nav>
-            <h6 className="footer-title font-bold font-sans text-slate-900 border-b-2 border-[#0694a2]">Services</h6> 
-            <NavLink to={appConstants.routes.servicesBackend} className="link link-hover">Backend</NavLink >
-            <NavLink to={appConstants.routes.servicesFrontend} className="link link-hover">Frontend</NavLink >
-            <NavLink to={appConstants.routes.servicesDataScience} className="link link-hover">Data Science</NavLink >
-            <NavLink to={appConstants.routes.servicesMentorship} className="link link-hover">Mentorship</NavLink >
+            <h6 className="footer-title font-bold font-sans text-slate-900 border-b-2 border-b-primary">Services</h6> 
+            <NavLink to={appConstants.routes.servicesBackend} className={navLinkClasses}>Backend</NavLink >
+            <NavLink to={appConstants.routes.servicesFrontend} className={navLinkClasses}>Frontend</NavLink >
+            <NavLink to={appConstants.routes.servicesDataScience} className={navLinkClasses}>Data Science</NavLink >
+            <NavLink to={appConstants.routes.servicesMentorship} className={navLinkClasses}>Mentorship</NavLink >
           </nav> 
           <nav>
-            <h6 className="footer-title font-bold font-sans text-slate-900 border-b-2 border-[#0694a2]">Lists</h6> 
-            <NavLink to={appConstants.routes.listsBooks} className="link link-hover">Books</NavLink >
-            <NavLink to={appConstants.routes.listsGames} className="link link-hover">Games</NavLink >
-            <NavLink to={appConstants.routes.listsResources} className="link link-hover">Dev Resources</NavLink >
+            <h6 className="footer-title font-bold font-sans text-slate-900 border-b-2 border-b-primary">Lists</h6> 
+            <NavLink to={appConstants.routes.listsBooks} className={navLinkClasses}>Books</NavLink >
+            <NavLink to={appConstants.routes.listsGames} className={navLinkClasses}>Games</NavLink >
+            <NavLink to={appConstants.routes.listsResources} className={navLinkClasses}>Dev Resources</NavLink >
           </nav>
 
         </footer> 
@@ -39,10 +49,11 @@ function Footer(props) {
           <nav className="md:place-self-center md:justify-self-end">
             <div className="grid grid-flow-col gap-4">
               {/* TODO: icons to add Linkedin, Github, Discord, E business card*/}
-              <NavLink to={""} >{svgLists.socialIcons.twitter}</NavLink >
-              <NavLink to={""} >{svgLists.socialIcons.youtube}</NavLink >
-              <NavLink to={""} >{svgLists.socialIcons.facebook}</NavLink >
-              <NavLink to={""} >{svgLists.socialIcons.medium}</NavLink >
+              <NavLink to={""}  className={navLinkClasses}>{svgLists.socialIcons.twitter}</NavLink >
+              <NavLink to={""}  className={navLinkClasses}>{svgLists.socialIcons.youtube}</NavLink >
+              <NavLink to={""}  className={navLinkClasses}>{svgLists.socialIcons.facebook}</NavLink >
+              <NavLink to={""}  className={navLinkClasses}>{svgLists.socialIcons.medium}</NavLink >
+              
             </div>
           </nav>
         </footer>
