@@ -4,11 +4,16 @@ import PropTypes from 'prop-types'
 // Constants
 import appConstants from '../../constants/appConstants'
 import svgList from '../../constants/svg'
+import { classLists } from '../../constants/cssClasses'
 
 // Router
 import { Link, NavLink } from 'react-router-dom'
 
+import { classAdd, getClassesFromConstants } from '../../helpers/common'
+
 function NavBar(props) {
+
+  const navLinkClasses = classAdd(getClassesFromConstants(classLists.navLink), "flex", "flex-row", "items-center")
 
   const navLinkList =  [
     {
@@ -139,8 +144,8 @@ function NavBar(props) {
                 {/* MSG: disabled link on parent element */}
                 {/* {<NavLink to={item.url}>{item.name}</NavLink>} */}
                 {item.children 
-                ? <span className='text-gray-500 hover:text-[#0694a2] hover:bg-transparent flex flex-row items-center'>{item.icon}{item.name}</span>
-                : <NavLink to={item.url} className="flex flex-row items-center ">{item.icon ? item.icon: ""}{item.name}</NavLink>}
+                ? <span className={classAdd('text-gray-500 hover:text-[#0694a2] hover:bg-transparent', navLinkClasses)}>{item.icon}{item.name}</span>
+                : <NavLink to={item.url} className={navLinkClasses}>{item.icon ? item.icon: ""}{item.name}</NavLink>}
                 {item.children && (
                   <ul className="p-2">
                     {item.children.map( (item, ind ) => {

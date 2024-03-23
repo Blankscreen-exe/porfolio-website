@@ -11,7 +11,7 @@ import { getClassesFromConstants, classAdd } from '../../helpers/common'
 
 function Footer(props) {
 
-  const navLinkClasses = getClassesFromConstants(classLists.navLink)
+  const navLinkClasses = classAdd(getClassesFromConstants(classLists.navLink), "hover:underline", "hover:underline-offset-1")
   console.log(navLinkClasses)
 
   return (
