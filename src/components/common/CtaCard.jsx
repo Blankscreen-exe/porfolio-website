@@ -30,7 +30,7 @@ function CtaCard(props) {
               ceo of ISREN
             </figcaption>
 
-            <div className="flex flex-row justify-around mt-10">
+            <div className="flex flex-col justify-around mt-10 md:flex-row lg:flex-row gap-4 md:gap-4 lg:gap-4">
               <div className="text-white hover:bg-white hover:text-black border rounded-md p-3 hover:cursor-pointer transition-all duration-500">
                 Dummy Button
               </div>
