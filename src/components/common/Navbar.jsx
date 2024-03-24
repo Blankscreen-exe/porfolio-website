@@ -115,7 +115,7 @@ function NavBar(props) {
   return (
     <div
     id="navbar"
-    className="navbar bg-base-100 bg-slate-10 rounded-md shadow-md m-auto mt-10 flex justify-between sticky opacity-90 backdrop-blur-xl bg-white z-[100]"
+    className="navbar bg-base-100 bg-slate-10 rounded-md shadow-md m-auto mt-10 flex justify-between sticky opacity-90 backdrop-blur-xl bg-tertiary/40 z-[100]"
   >
       <div className="navbar-start w-full flex flex-row justify-between ">
         <div className=''>
@@ -128,7 +128,7 @@ function NavBar(props) {
                 className="h-5 w-5"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="#000000"
+                stroke="#C4C4C4"
               >
                 <path
                   strokeLinecap="round"
@@ -148,12 +148,12 @@ function NavBar(props) {
                   {/* MSG: disabled link on parent element */}
                   {/* {<NavLink to={item.url}>{item.name}</NavLink>} */}
                   {item.children 
-                  ? <span className={classAdd('text-gray-500 hover:text-[#0694a2] hover:bg-transparent', navLinkClasses)}>{item.icon}{item.name}</span>
+                  ? <span className={classAdd('text-content hover:text-contentLinkHover hover:bg-transparent', navLinkClasses)}>{item.icon}{item.name}</span>
                   : <NavLink to={item.url} className={navLinkClasses}>{item.icon ? item.icon: ""}{item.name}</NavLink>}
                   {item.children && (
                     <ul className="p-2">
                       {item.children.map( (item, ind ) => {
-                        return (<li key={ind} ><NavLink to={item.url}>{item.name}</NavLink></li>)
+                        return (<li key={ind} ><NavLink to={item.url} className="text-contentLink hover:text-contentLinkHover">{item.name}</NavLink></li>)
                       })}
                     </ul>
                   )}
@@ -162,7 +162,7 @@ function NavBar(props) {
 
             </ul>
           </div>
-          <a className="hover:text-neutral-600 transition-colors text-xl mx-2">{appConstants.common.pageTitle}</a>
+          <a className="text-contentLink hover:text-primary transition-colors text-xl mx-2">{appConstants.common.pageTitle}</a>
         </div>
         <ThemeSwitch/>
       </div>
@@ -190,7 +190,7 @@ function NavBar(props) {
                     </details>
                   ) : 
                     item.name === "Home"
-                    ? (<NavLink to={item.url} className={"border border-slate-400 hover:bg-slate-200"}>{item.name}</NavLink>)
+                    ? (<NavLink to={item.url} className={"border border-secondary hover:bg-tertiary"}>{item.name}</NavLink>)
                     : (<NavLink to={item.url}>{item.name}</NavLink>)
                   }
                 </>

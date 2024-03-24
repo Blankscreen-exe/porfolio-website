@@ -7,8 +7,8 @@ module.exports = {
     ],
     theme: {
       fontFamily:{
-        sans: ['"CourierPrime-Regular"', 'sans-serif'],
-        serif: ['"CourierPrime-Regular"', 'serif'],
+        // sans: ['"CourierPrime-Regular"', 'sans-serif'],
+        // serif: ['"CourierPrime-Regular"', 'serif'],
         
         'display': ['"CourierPrime-Regular"'],
         'body': ['"Courier"'],
@@ -23,9 +23,16 @@ module.exports = {
           "tertiary": "rgb(var(--color-tertiary) / <alpha-value>)",
           "contrast": "rgb(var(--color-contrast) / <alpha-value>)",
           
+          "title": "rgb(var(--color-title) / <alpha-value>)",
           "content": "rgb(var(--color-content) / <alpha-value>)",
-          "content-link": "rgb(var(--color-content-link) / <alpha-value>)",
-          "content-link-hover": "rgb(var(--color-content-link-hover) / <alpha-value>)",
+          "contentLink": "rgb(var(--color-content-link) / <alpha-value>)",
+          "contentLinkHover": "rgb(var(--color-content-link-hover) / <alpha-value>)",
+          
+          "shadow": "rgb(var(--color-shadow) / <alpha-value>)",
+          
+          "bg1": "rgb(var(--color-bg1) / <alpha-value>)",
+          "bg2": "rgb(var(--color-bg2) / <alpha-value>)",
+
         },
 
         brightness: {

@@ -21,7 +21,7 @@ function Home(props) {
     <>
         <Hero/>
         <BlockQuote
-          text="Some witty comments here which are very very long"
+          text="Some <i class='font-italic'>witty</i> <b class='font-bold'>comments</b> here which are very very long"
         />
         <Testimonials/>
         <TechStack/>

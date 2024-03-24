@@ -34,9 +34,15 @@
     --color-tertiary: 241 245 249;
     --color-contrast: 220 76 100;
 
+    --color-title: 52 64 85;
     --color-content: 70 70 70;
     --color-content-link: 106 106 106;
     --color-content-link-hover: 6 148 162;
+    
+    --color-shadow: 159 170 190;
+
+    --color-bg1: 255 255 255;
+    --color-bg2: 239 244 243;
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -44,6 +50,16 @@
       --color-secondary: 138 138 138;
       --color-tertiary: 75 86 96;
       --color-contrast: 252 94 121;
+
+      --color-title: 255 255 255;
+      --color-content: 255 255 255;
+      --color-content-link: 227 227 227;
+      --color-content-link-hover: 12 220 241;
+
+      --color-shadow: 0 0 0;
+
+      --color-bg1: 29 35 42;
+      --color-bg2: 70 82 95;
     }
   }
 
@@ -52,6 +68,16 @@
     --color-secondary: 138 138 138;
     --color-tertiary: 75 86 96;
     --color-contrast: 252 94 121;
+
+    --color-title: 255 255 255;
+    --color-content: 255 255 255;
+    --color-content-link: 227 227 227;
+    --color-content-link-hover: 12 220 241;
+
+    --color-shadow: 0 0 0 ;
+
+    --color-bg1: 29 35 42;
+    --color-bg2: 44 52 61;
   }
 
   @font-face {

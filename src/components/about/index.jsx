@@ -22,14 +22,14 @@ function About(props) {
         />
 
         <SectionHeading
-            title="Education"
+            title="Education Timeline"
         />
         <Education/>
 
         <br/>
 
         <SectionHeading
-            title="Languages"
+            title="Languages I Can Speak~"
         />
         <Languages/>
 

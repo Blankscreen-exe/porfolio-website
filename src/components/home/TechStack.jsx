@@ -24,18 +24,18 @@ function TechStack(props) {
     <div className="flex flex-col justify-center items-center">
       <SectionHeading title={"My Tech Stack"} />
       <div className="mb-10 flex flex-col md:flex-row gap-10 w-full">
-        <div className="container flex flex-col items-center justify-center w-[fit-content] h-[fit-content] mx-auto bg-slate-100 rounded-lg shadow dark:bg-gray-800">
-          <ul className="flex flex-col divide-y divide">
+        <div className="container flex flex-col items-center justify-center w-[fit-content] h-[fit-content] mx-auto bg-bg2 rounded-lg shadow">
+          <ul className="flex flex-col divide-y divide-secondary/70">
             {stackList.map((item, ind) => {
               return (
                 <li
                   key={ind}
                   onClick={() => handleStackClick(item)}
                   className={classAdd(
-                    "flex flex-row hover:text-slate-800 dark:text-white",
+                    "flex flex-row hover:text-primary/50",
                     currentSelectedItem == item
-                      ? "text-slate-800"
-                      : "text-slate-500"
+                      ? "text-primary"
+                      : "text-content"
                   )}
                 >
                   <div className="flex items-center flex-1 p-4 cursor-pointer select-none">
@@ -71,7 +71,7 @@ function TechStack(props) {
               >
                 <div
                   key={item.name}
-                  className="w-fit p-2 rounded-md text-slate-600 border border-slate-300 md:text-lg text-sm font-semibold flex flex-row justify-center items-center gap-4 hover:bg-gradient-to-br hover:from-teal-100 hover:to-teal-400 hover:text-teal-900 hover:cursor-pointer transition-all duration-1000"
+                  className="w-fit p-2 rounded-md text-content border border-slate-300/60 hover:border-primary/0 md:text-lg text-sm font-semibold flex flex-row justify-center items-center gap-4 hover:bg-gradient-to-br hover:from-teal-100 hover:to-primary/60 hover:text-tertiary hover:cursor-pointer transition-all duration-500"
                 >
                   <img
                     src="https://dummyimage.com/100x100/eee/444"
