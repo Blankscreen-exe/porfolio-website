@@ -29,7 +29,7 @@ function ThemeSwitch(props) {
     
     
   return (
-    <div className='h-fit mt-2'>
+    <div className='h-fit mt-2 px-2'>
         <label className="swap swap-rotate" onClick={toggleTheme}>
   
         {/* this hidden checkbox controls the state */}
