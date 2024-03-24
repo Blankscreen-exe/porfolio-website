@@ -60,7 +60,7 @@ function TechStack(props) {
           </ul>
         </div>
 
-        <div className="p-0 w-full flex flex-row flex-wrap align-top content-start gap-2 overflow-visible">
+        <div className="p-0 w-[90%] mx-auto flex flex-row flex-wrap align-top content-start gap-2 overflow-visible justify-center md:justify-start lg:justify-start">
           {listItem.map((item, ind) => (
             <a key={ind} href={item.url} target="_blank" className="h-min">
               <div

@@ -11,6 +11,9 @@ import { Link, NavLink } from 'react-router-dom'
 
 import { classAdd, getClassesFromConstants } from '../../helpers/common'
 
+// Components
+import ThemeSwitch from './ThemeSwitch'
+
 function NavBar(props) {
 
   const navLinkClasses = classAdd(getClassesFromConstants(classLists.navLink), "flex", "flex-row", "items-center")
@@ -114,51 +117,54 @@ function NavBar(props) {
     id="navbar"
     className="navbar bg-base-100 bg-slate-10 rounded-md shadow-md m-auto mt-10 flex justify-between sticky opacity-90 backdrop-blur-xl bg-white z-[100]"
   >
-      <div className="navbar-start">
-        <div className="dropdown">
-          {/* MSG: made this dropdown view permanenet */}
-          {/* <div tabIndex="0" role="button" className="btn btn-ghost xl:hidden"> */}
-          <div tabIndex="0" role="button" className="btn btn-ghost ">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="#000000"
+      <div className="navbar-start w-full flex flex-row justify-between ">
+        <div className=''>
+          <div className="dropdown">
+            {/* MSG: made this dropdown view permanenet */}
+            {/* <div tabIndex="0" role="button" className="btn btn-ghost xl:hidden"> */}
+            <div tabIndex="0" role="button" className="btn btn-ghost ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="#000000"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabIndex="0"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
+
+              {navLinkList.map( (item, ind) => {
+                return (<li key={ind} >
+                  {/* MSG: disabled link on parent element */}
+                  {/* {<NavLink to={item.url}>{item.name}</NavLink>} */}
+                  {item.children 
+                  ? <span className={classAdd('text-gray-500 hover:text-[#0694a2] hover:bg-transparent', navLinkClasses)}>{item.icon}{item.name}</span>
+                  : <NavLink to={item.url} className={navLinkClasses}>{item.icon ? item.icon: ""}{item.name}</NavLink>}
+                  {item.children && (
+                    <ul className="p-2">
+                      {item.children.map( (item, ind ) => {
+                        return (<li key={ind} ><NavLink to={item.url}>{item.name}</NavLink></li>)
+                      })}
+                    </ul>
+                  )}
+                </li>
+              )})}
+
+            </ul>
           </div>
-          <ul
-            tabIndex="0"
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-          >
-
-            {navLinkList.map( (item, ind) => {
-              return (<li key={ind} >
-                {/* MSG: disabled link on parent element */}
-                {/* {<NavLink to={item.url}>{item.name}</NavLink>} */}
-                {item.children 
-                ? <span className={classAdd('text-gray-500 hover:text-[#0694a2] hover:bg-transparent', navLinkClasses)}>{item.icon}{item.name}</span>
-                : <NavLink to={item.url} className={navLinkClasses}>{item.icon ? item.icon: ""}{item.name}</NavLink>}
-                {item.children && (
-                  <ul className="p-2">
-                    {item.children.map( (item, ind ) => {
-                      return (<li key={ind} ><NavLink to={item.url}>{item.name}</NavLink></li>)
-                    })}
-                  </ul>
-                )}
-              </li>
-            )})}
-
-          </ul>
+          <a className="hover:text-neutral-600 transition-colors text-xl mx-2">{appConstants.common.pageTitle}</a>
         </div>
-        <a className="hover:text-neutral-600 transition-colors text-xl mx-2">{appConstants.common.pageTitle}</a>
+        <ThemeSwitch/>
       </div>
 
       {/* ----------------------------- */}
