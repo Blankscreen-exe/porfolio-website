@@ -41,7 +41,7 @@ function ThemeSwitch(props) {
         {/* moon icon */}
         {svgLists.themeButton.dark}
         
-        <span className='ml-8'>{isDarkmode? "Dark Mode" :"Light Mode"}</span>
+        <span className='ml-8 hidden sm:block md:block lg:block'>{isDarkmode? "Dark Mode" :"Light Mode"}</span>
         </label>
 
     </div>
