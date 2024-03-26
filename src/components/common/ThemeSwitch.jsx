@@ -3,37 +3,24 @@ import PropTypes from 'prop-types'
 
 // Constants
 import svgLists from '../../constants/svg'
-import { classAdd } from '../../helpers/common'
 
 function ThemeSwitch(props) {
 
     const [isDarkmode, setIsDarkmode] = useState(false)
-    let toggleTheme;
-
-    toggleTheme = () => {
+    
+    const toggleTheme = () => {
         setIsDarkmode(prevState => !prevState)
+        document.documentElement.setAttribute("data-theme", isDarkmode? "dark" :"light")
         console.log("THEME SWITCHED TO ", isDarkmode? "--DARK--" :"--LIGHT--")
-      }
-    useEffect(() => {
-        toggleTheme = () => {
-          setIsDarkmode(prevState => !prevState)
-          console.log("THEME SWITCHED TO ", isDarkmode? "--DARK--" :"--LIGHT--")
-        }
-      
-    
-      return () => {
-        
-      }
-    }, [isDarkmode])
-    
+      }   
     
     
   return (
     <div className='h-fit mt-2 px-2'>
-        <label className="swap swap-rotate" onClick={toggleTheme}>
+        <label className="swap swap-rotate">
   
         {/* this hidden checkbox controls the state */}
-        <input type="checkbox" className='hidden'/>
+        <input type="checkbox" className='hidden' onClick={toggleTheme}/>
         
         {/* sun icon */}
         {svgLists.themeButton.light}
