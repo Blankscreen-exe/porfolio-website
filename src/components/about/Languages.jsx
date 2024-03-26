@@ -9,9 +9,9 @@ function Languages(props) {
   return (
     <div className='flex md:flex-row flex-wrap justify-around flex-col'>
     <div className="p-6 md:w-[45%] w-full">
-        <div className="relative overflow-hidden rounded-2xl bg-gray-900 px-6 pb-9 shadow-xl shadow-slate-400">
+        <div className="relative overflow-hidden rounded-2xl bg-gray-900 px-6 pb-9 shadow-xl shadow-shadow">
             <img
-            className="absolute inset-0 h-full w-full object-cover brightness-20 saturate-100"
+            className="absolute inset-0 h-full w-full object-cover brightness-25 saturate-100"
             src={imgList.cta.bg}
             alt=""
             />
@@ -32,9 +32,9 @@ function Languages(props) {
     </div>
         
     <div className="p-6  md:w-[45%] w-full">
-        <div className="relative overflow-hidden rounded-2xl bg-gray-900 px-6 pb-9 shadow-xl shadow-slate-400">
+        <div className="relative overflow-hidden rounded-2xl bg-gray-900 px-6 pb-9 shadow-xl shadow-shadow">
             <img
-            className="absolute inset-0 h-full w-full object-cover brightness-20 saturate-100"
+            className="absolute inset-0 h-full w-full object-cover brightness-25 saturate-100"
             src={imgList.cta.bg}
             alt=""
             />
@@ -55,9 +55,9 @@ function Languages(props) {
     </div>
     
     <div className="p-6  md:w-[45%] w-full">
-        <div className="relative overflow-hidden rounded-2xl bg-gray-900 px-6 pb-9 shadow-xl shadow-slate-400">
+        <div className="relative overflow-hidden rounded-2xl bg-gray-900 px-6 pb-9 shadow-xl shadow-shadow">
             <img
-            className="absolute inset-0 h-full w-full object-cover brightness-20 saturate-100"
+            className="absolute inset-0 h-full w-full object-cover brightness-25 saturate-100"
             src={imgList.cta.bg}
             alt=""
             />

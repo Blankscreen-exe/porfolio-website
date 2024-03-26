@@ -12,7 +12,7 @@ function CtaCard(props) {
       <div className="p-6">
         <div className="relative overflow-hidden rounded-2xl bg-bg2 px-6 pb-9 shadow-xl shadow-shadow mx-auto my-7 sm:px-12 lg:max-w-[80%] lg:px-8 lg:pb-8 xl:px-10 xl:pb-10 ">
           <img
-            className="absolute inset-0 h-full w-full object-cover brightness-20 saturate-100"
+            className="absolute inset-0 h-full w-full object-cover brightness-25 saturate-100"
             src={imgList.cta.bg}
             alt=""
           />
