@@ -46,8 +46,8 @@ function Footer(props) {
             {svgLists.hashIcon}
             <p><b className='text-primary'>M.Hammad Hassan</b> <br/>Code is a language I can speak!</p>
           </aside> 
-          <nav className="md:place-self-center md:justify-self-end w-full">
-            <div className="w-full grid grid-flow-col gap-4">
+          <nav className="md:place-self-center md:justify-self-end w-full md:w-fit">
+            <div className="w-full md:w-fit grid grid-flow-col gap-4">
               {/* TODO: icons to add Linkedin, Github, Discord, E business card*/}
               <NavLink to={""}  className={navLinkClasses}>{svgLists.socialIcons.twitter}</NavLink >
               <NavLink to={""}  className={navLinkClasses}>{svgLists.socialIcons.youtube}</NavLink >
