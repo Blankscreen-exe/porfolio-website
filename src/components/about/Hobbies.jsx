@@ -109,10 +109,8 @@ function Hobbies(props) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
     window.addEventListener("resize", function() {
-      console.log("Resized")
-      console.log("---->", windowWidth)
+      setWindowWidth(window.innerWidth)
     })
-    setWindowWidth(window.innerWidth)
     return () => {
       
     }
@@ -122,7 +120,6 @@ function Hobbies(props) {
   const [activeIndex, setActiveIndex] = useState(0);
   const onPieEnter = useCallback(
     (_, index) => {
-      console.log("ACTICE INDEX", _, index)
       setActiveIndex(index);
     },
     [setActiveIndex]
@@ -136,16 +133,6 @@ function Hobbies(props) {
   const cy = pieChartHeight/2;
   const innerRadius = Math.abs((windowWidth*0.1)-((windowWidth*1.5)*0.14));
   const outerRadius = Math.abs(innerRadius+(innerRadius*0.25));
-
-  console.log({
-    pieChartWidth,
-    pieChartHeight,
-    cx,
-    cy,
-    innerRadius,
-    outerRadius
-  })
-
 
   return (
     <div className="">
