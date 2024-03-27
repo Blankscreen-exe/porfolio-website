@@ -9,6 +9,7 @@ import PageTitle from './common/PageTitle'
 // Components
 import Home from './home'
 import About from './about'
+import Contact from './contact'
 
 function RoutesList(props) {
   return (
@@ -38,7 +39,7 @@ function RoutesList(props) {
 
         <Route path={appConstants.routes.projects} element={<PageTitle title="Project"/>}/>
 
-        <Route path={appConstants.routes.contacts} element={<PageTitle title="Contact"/>}/>
+        <Route path={appConstants.routes.contacts} element={<Contact/>}/>
 
         <Route path={"*"} element={<h1 className='text-red-600 font-bold'>404 Not Found</h1>}/>
     </Routes>

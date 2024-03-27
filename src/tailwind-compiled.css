@@ -942,7 +942,7 @@ select {
 
 ::selection {
   /* color: var(--color-content); */
-  background: var(--color-primary);
+  /* background: var(--color-primary); */
 }
 
 /* this removes focus outlines from  */
@@ -5807,6 +5807,16 @@ input.tab:checked + .tab-content,
   color: rgb(202 138 4 / var(--tw-text-opacity));
 }
 
+.text-tertiary {
+  --tw-text-opacity: 1;
+  color: rgb(var(--color-tertiary) / var(--tw-text-opacity));
+}
+
+.text-secondary-content {
+  --tw-text-opacity: 1;
+  color: var(--fallback-sc,oklch(var(--sc)/var(--tw-text-opacity)));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -6799,6 +6809,11 @@ a:hover {
 .focus\:text-white:focus {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.focus\:text-content:focus {
+  --tw-text-opacity: 1;
+  color: rgb(var(--color-content) / var(--tw-text-opacity));
 }
 
 .focus\:no-underline:focus {

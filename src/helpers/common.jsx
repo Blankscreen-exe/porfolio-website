@@ -84,6 +84,7 @@ export function capitalizeFirstLetter(string) {
 }
 
 export function getThemeColor(isDark){
-  const theme = isDark ? colorConstants.light : colorConstants.dark;
+  console.log(`serving ${isDark ? "DARK MODE" : "LIGHT MODE"} theme`)
+  const theme = isDark ? colorConstants.dark : colorConstants.light;
   return theme;
 }
