@@ -15,7 +15,7 @@ function Footer(props) {
   console.log(navLinkClasses)
 
   return (
-    <div className='mb-5'>
+    <div className='mb-5 drop-shadow-sm'>
         <footer className="footer p-10 bg-tertiary/50 text-base-content rounded-t-md">
           <nav>
             <h6 className="footer-title font-bold font-sans text-content border-b-2 border-b-primary">Pages</h6> 
