@@ -1,18 +1,26 @@
 import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 
+// reducer
+import { useDispatch, useSelector } from 'react-redux'
+import { toggleThemeAction } from '../../redux/reducers/colorThemeSlice'
+
 // Constants
 import svgLists from '../../constants/svg'
 
 function ThemeSwitch(props) {
 
-    const [isDarkmode, setIsDarkmode] = useState(false)
-    
-    const toggleTheme = () => {
-        setIsDarkmode(prevState => !prevState)
-        document.documentElement.setAttribute("data-theme", isDarkmode? "dark" :"light")
-        console.log("THEME SWITCHED TO ", isDarkmode? "--DARK--" :"--LIGHT--")
-      }   
+  const dispatch = useDispatch()
+  
+  const isDarkMode = useSelector((state) => {
+    return state.persistedReducer.colorTheme
+  })
+
+  const handleToggleTheme = () => {
+      dispatch(toggleThemeAction())
+      document.documentElement.setAttribute("data-theme", isDarkMode? "dark" :"light")
+      console.log("THEME SWITCHED TO ", isDarkMode? "--DARK--" :"--LIGHT--")
+    }   
     
     
   return (
@@ -20,7 +28,7 @@ function ThemeSwitch(props) {
         <label className="swap swap-rotate">
   
         {/* this hidden checkbox controls the state */}
-        <input type="checkbox" className='hidden' onClick={toggleTheme}/>
+        <input type="checkbox" className='hidden' onClick={handleToggleTheme}/>
         
         {/* moon icon */}
         {svgLists.themeButton.dark}
@@ -28,7 +36,7 @@ function ThemeSwitch(props) {
         {/* sun icon */}
         {svgLists.themeButton.light}
         
-        <span className='ml-8 hidden sm:block md:block lg:block'>{isDarkmode? "Light Mode" :"Dark Mode"}</span>
+        <span className='ml-8 hidden sm:block md:block lg:block'>{isDarkMode? "Light Mode" :"Dark Mode"}</span>
         </label>
 
     </div>

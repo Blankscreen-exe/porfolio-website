@@ -6,6 +6,7 @@ import { thunk } from "redux-thunk";
 // Reducers
 import common from "./reducers/commonSlice";
 import post from "./reducers/postSlice";
+import colorTheme from "./reducers/colorThemeSlice";
 
 const persistConfig = {
     key: 'root',
@@ -15,7 +16,8 @@ const persistConfig = {
 
 const rootReducer = combineReducers({ 
     common,
-    post
+    post,
+    colorTheme
 })
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)
