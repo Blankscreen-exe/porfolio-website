@@ -44,9 +44,9 @@ const renderActiveShape = (props) => {
 
   return (
     <g>
-      <text x={cx} y={cy} dy={8} textAnchor="middle" fill={themeColor.content} className="font-bold text-sm md:text-2xl">
+      {/* <text x={cx} y={cy} dy={8} textAnchor="middle" fill={themeColor.content} className="font-bold text-sm md:text-2xl">
         {(percent * 100).toFixed(1)}%
-      </text>
+      </text> */}
       <Sector
         cx={cx}
         cy={cy}
@@ -137,20 +137,6 @@ function Hobbies(props) {
   return (
     <div className="">
       <TextDisplayBox text={data[activeIndex].name}/>
-      {/* <PieChart width={600} height={400} className="mx-auto text-content">
-        <Pie
-          activeIndex={activeIndex}
-          activeShape={renderActiveShape}
-          data={data}
-          cx={300}
-          cy={200}
-          innerRadius={100}
-          outerRadius={100+30}
-          fill={themeColor.primary}
-          dataKey="value"
-          onMouseEnter={onPieEnter}
-        />
-      </PieChart> */}
       <PieChart width={pieChartWidth} height={pieChartHeight} className="mx-auto text-content overflow-visible">
         <Pie
           activeIndex={activeIndex}
