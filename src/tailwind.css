@@ -111,8 +111,8 @@
   }
   
   ::selection {
-    color: var(--color-content);
-    background: var(--color-primary);
+    /* color: var(--color-content); */
+    /* background: var(--color-primary); */
   }
 
   /* this removes focus outlines from  */
@@ -124,11 +124,8 @@
     height: auto !important;
   } */
 
-  div {
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
-  }
+  
+
 }
 
 

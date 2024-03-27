@@ -101,22 +101,27 @@ const renderActiveShape = (props) => {
 
 function Hobbies(props) {
 
+  // using redux to get the current theme mode
   const isDarkMode = useSelector((state) => {
     return state.persistedReducer.colorTheme
   })
-  const themeColor = getThemeColor(isDarkMode);
+  const themeColor = getThemeColor(true);
 
+  console.log("COMPONENT RAN")
+  // setting a state variable which holds window width dynamically
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
-    window.addEventListener("resize", function() {
-      setWindowWidth(window.innerWidth)
-    })
+    // window.addEventListener("resize", function() {
+    //   setWindowWidth(window.innerWidth)
+    // })
+    console.log("USE EFFECT RAN")
     return () => {
       
     }
-  }, [windowWidth])
+  }, [])
   
 
+  // used for the chart to show the current item selected
   const [activeIndex, setActiveIndex] = useState(0);
   const onPieEnter = useCallback(
     (_, index) => {
@@ -126,7 +131,7 @@ function Hobbies(props) {
   );
 
 
-  // size calculations
+  // chart size calculations
   const pieChartWidth = windowWidth*0.5;
   const pieChartHeight = windowWidth*0.4;
   const cx = pieChartWidth/2;
@@ -135,9 +140,9 @@ function Hobbies(props) {
   const outerRadius = Math.abs(innerRadius+(innerRadius*0.25));
 
   return (
-    <div className="">
+    <div className="" >
       <TextDisplayBox text={data[activeIndex].name}/>
-      <PieChart width={pieChartWidth} height={pieChartHeight} className="mx-auto text-content overflow-visible">
+      <PieChart width={pieChartWidth} height={pieChartHeight} className="mx-auto text-content overflow-visible select-none">
         <Pie
           activeIndex={activeIndex}
           activeShape={renderActiveShape}
