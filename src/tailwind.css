@@ -97,6 +97,38 @@
     src: url(./assets/fonts/CourierPrime-Regular.ttf);
   }
 
+
+  /* a, a:active {
+    color: var(--color-content-link);
+  }
+  a:hover {
+    color: var(--color-primary);
+  } */
+
+  ::-moz-selection { /* Code for Firefox */
+    color: var(--color-content);
+    background: var(--color-primary);
+  }
+  
+  ::selection {
+    color: var(--color-content);
+    background: var(--color-primary);
+  }
+
+  /* this removes focus outlines from  */
+  *:focus {
+    outline: none;
+  }
+  /* .recharts-wrapper{
+    width: auto !important;
+    height: auto !important;
+  } */
+
+  div {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+  }
 }
 
 

@@ -9,6 +9,7 @@ import { useSelector } from 'react-redux';
 
 // constants
 import data from '../../data/hobbies.json';
+import TextDisplayBox from "../common/TextDisplayBox";
 
 const renderActiveShape = (props) => {
 
@@ -43,7 +44,8 @@ const renderActiveShape = (props) => {
 
   return (
     <g>
-      <text x={cx} y={cy-200} dy={8} textAnchor="middle" fill={themeColor.content} dangerouslySetInnerHTML={{ __html: payload.name }}>
+      <text x={cx} y={cy} dy={8} textAnchor="middle" fill={themeColor.content} className="font-bold text-sm md:text-2xl">
+        {(percent * 100).toFixed(1)}%
       </text>
       <Sector
         cx={cx}
@@ -65,11 +67,11 @@ const renderActiveShape = (props) => {
         fill={themeColor.primary}
         stroke="none"
       />
-      <path
+      {/* <path
         d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`}
         stroke={themeColor.primary}
         fill="none"
-      />
+      /> */}
       <circle cx={ex} cy={ey} r={2} fill={themeColor.bg1} stroke="none" />
       {/* <text
         x={ex + (cos >= 0 ? 1 : -1) * 12}
@@ -84,7 +86,7 @@ const renderActiveShape = (props) => {
         textAnchor={textAnchor}
         fill={themeColor.secondary}
       > */}
-      <text
+      {/* <text
         x={ex + (cos >= 0 ? 1 : -1) * 12}
         y={ey-10}
         dy={18}
@@ -92,7 +94,7 @@ const renderActiveShape = (props) => {
         fill={themeColor.content}
       >
         {`${(percent * 100).toFixed(2)}%`}
-      </text>
+      </text> */}
     </g>
   );
 };
@@ -104,27 +106,51 @@ function Hobbies(props) {
   })
   const themeColor = getThemeColor(isDarkMode);
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
-    
-    console.log("---->", window.screen.width)
-  
+    window.addEventListener("resize", function() {
+      console.log("Resized")
+      console.log("---->", windowWidth)
+    })
+    setWindowWidth(window.innerWidth)
     return () => {
       
     }
-  }, [])
+  }, [windowWidth])
   
 
   const [activeIndex, setActiveIndex] = useState(0);
   const onPieEnter = useCallback(
     (_, index) => {
+      console.log("ACTICE INDEX", _, index)
       setActiveIndex(index);
     },
     [setActiveIndex]
   );
 
+
+  // size calculations
+  const pieChartWidth = windowWidth*0.5;
+  const pieChartHeight = windowWidth*0.4;
+  const cx = pieChartWidth/2;
+  const cy = pieChartHeight/2;
+  const innerRadius = Math.abs((windowWidth*0.1)-((windowWidth*1.5)*0.14));
+  const outerRadius = Math.abs(innerRadius+(innerRadius*0.25));
+
+  console.log({
+    pieChartWidth,
+    pieChartHeight,
+    cx,
+    cy,
+    innerRadius,
+    outerRadius
+  })
+
+
   return (
     <div className="">
-      <PieChart width={600} height={400} className="mx-auto text-content">
+      <TextDisplayBox text={data[activeIndex].name}/>
+      {/* <PieChart width={600} height={400} className="mx-auto text-content">
         <Pie
           activeIndex={activeIndex}
           activeShape={renderActiveShape}
@@ -133,6 +159,20 @@ function Hobbies(props) {
           cy={200}
           innerRadius={100}
           outerRadius={100+30}
+          fill={themeColor.primary}
+          dataKey="value"
+          onMouseEnter={onPieEnter}
+        />
+      </PieChart> */}
+      <PieChart width={pieChartWidth} height={pieChartHeight} className="mx-auto text-content overflow-visible">
+        <Pie
+          activeIndex={activeIndex}
+          activeShape={renderActiveShape}
+          data={data}
+          cx={cx}
+          cy={cy}
+          innerRadius={innerRadius}
+          outerRadius={outerRadius}
           fill={themeColor.primary}
           dataKey="value"
           onMouseEnter={onPieEnter}
