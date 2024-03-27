@@ -93,7 +93,7 @@
 - https://tailwindcomponents.com/component/button-11
 - https://tailwindcomponents.com/component/tailwind-css-inbox-view-message
 - https://recharts.org/en-US/examples/CustomActiveShapePieChart
-
+- https://tailwindcomponents.com/component/alpinejs-animated-toggle
 
 TODO:
 - [ ] voice note for language cards
