@@ -19,8 +19,7 @@ export function truncateText(text, maxLength) {
 }
 
 export function formatDate(date) {
-    console.log(date)
-    const dateObject = new Date(date)
+  const dateObject = new Date(date)
   const day = dateObject.getDate();
   const monthNames = [
     "Jan",

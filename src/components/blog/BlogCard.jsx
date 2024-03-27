@@ -6,8 +6,7 @@ import { truncateText, formatDate, sentenceToSlug } from '../../helpers/common';
 
 function BlogCard(props) {
   const { cardTitle, cardDescription, date, tags, imgUrl, postLink } = props;
-  console.log("===blog card===")
-  console.log(props)
+
   return (
 
           <div className="card custom-blog-card bg-base-100 hover:shadow-xl transition-shadow rounded-lg">
