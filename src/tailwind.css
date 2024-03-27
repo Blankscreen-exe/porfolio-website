@@ -2,29 +2,103 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ---------------- Colors ------------------ */
-:root { 
-  --primary: #0694a2; 
-  --secondary: theme(colors.cyan.700); 
-  --tertiary: theme(colors.slate.200); 
-  --bg: theme(colors.emerald.900 / 30%); 
+/* ---------------- Fonts ------------------ */
 
-  --primary-light: #0694a2;
-  --secondary-light: #c4c4c4;
-  --tertiary-light: #f1f5f9;
-  --contrast-light: #dc4c64;
-
-  --primary-dark: #30C3D2;
-  --secondary-dark: #8a8a8a;
-  --tertiary-dark: #4B5660;
-  --contrast-dark: #FC5E79;
-
-  --heading-1-light: rgba(71, 85, 105, 0.75);
-  --heading-2-light: rgba(91, 91, 91, 0.90);
+@layer base {
   
-  --heading-1-dark: rgba(237, 244, 255, 0.80);
-  --heading-2-dark: rgba(187, 187, 187, 0.75);
-} 
+  /* HASH values of the colors */
+  /* --primary-light: "#0694a2";
+  --secondary-light: "#c4c4c4";
+  --tertiary-light: "#f1f5f9";
+  --contrast-light: "#dc4c64";
+  
+  --primary-dark: "#30C3D2";
+  --secondary-dark: "#8a8a8a";
+  --tertiary-dark: "#4B5660";
+  --contrast-dark: "#FC5E79"; */
+  
+  /* RGB values of the colors */
+  /* --color-primary-light: 6 148 162;
+  --color-secondary-light: 196 196 196;
+  --color-tertiary-light: 241 245 249;
+  --color-contrast-light: 220 76 100;
+
+  --color-primary-dark: 48 195 210;
+  --color-secondary-dark: 138 138 138;
+  --color-tertiary-dark: 75 86 96;
+  --color-contrast-dark: 252 94 121; */
+
+  :root {
+    --color-primary: 6 148 162;
+    --color-secondary: 196 196 196;
+    --color-tertiary: 241 245 249;
+    --color-contrast: 220 76 100;
+
+    --color-title: 52 64 85;
+    --color-content: 70 70 70;
+    --color-content-link: 106 106 106;
+    --color-content-link-hover: 6 148 162;
+    
+    --color-shadow: 159 170 190;
+
+    --color-bg1: 255 255 255;
+    --color-bg2: 239 244 243;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-primary: 48 195 210;
+      --color-secondary: 138 138 138;
+      --color-tertiary: 75 86 96;
+      --color-contrast: 252 94 121;
+
+      --color-title: 255 255 255;
+      --color-content: 255 255 255;
+      --color-content-link: 227 227 227;
+      --color-content-link-hover: 12 220 241;
+
+      --color-shadow: 0 0 0;
+
+      --color-bg1: 29 35 42;
+      --color-bg2: 70 82 95;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --color-primary: 48 195 210;
+    --color-secondary: 138 138 138;
+    --color-tertiary: 75 86 96;
+    --color-contrast: 252 94 121;
+
+    --color-title: 255 255 255;
+    --color-content: 255 255 255;
+    --color-content-link: 227 227 227;
+    --color-content-link-hover: 12 220 241;
+
+    --color-shadow: 0 0 0 ;
+
+    --color-bg1: 29 35 42;
+    --color-bg2: 44 52 61;
+  }
+
+  @font-face {
+    font-family: CourierPrime-Bold;
+    src: url(./assets/fonts/CourierPrime-Bold.ttf);
+  }
+  @font-face {
+    font-family: CourierPrime-BoldItalic; 
+    src: url(./assets/fonts/CourierPrime-BoldItalic.ttf);
+  }
+  @font-face {
+    font-family: CourierPrime-Italic;
+    src: url(./assets/fonts/CourierPrime-Italic.ttf);
+  }
+  @font-face {
+    font-family: CourierPrime-Regular;
+    src: url(./assets/fonts/CourierPrime-Regular.ttf);
+  }
+
+}
+
 
 /* ---------------- Body ------------------ */
 /* body {
@@ -62,12 +136,12 @@
 /* ---------------- Anchor tags ------------------ */
 
 a, a:active {
-  color: var(--heading-2-light); 
+  /* color: var();  */
   /* rgb(86, 86, 86); */
 }
 a:hover {
-  /* color: #0694a2; */
-  color: var(--primary-light);
+  color: #0694a2;
+  /* color: var(--color-primary); */
 }
 
 
@@ -116,7 +190,7 @@ a:hover {
     top:-0.1em;
     border-width:4px;
     border-style:solid;
-    border-color:var(--contrast-dark);
+    border-color:red;
     position:absolute;
     border-right-color:transparent;
     width:100%;
@@ -136,7 +210,7 @@ a:hover {
     padding:0.1em 0.25em;
     border-width:3px;
     border-style:solid;
-    border-color:var(--contrast-light);
+    border-color:red;
     border-left-color:transparent;
     border-top-color:transparent;
     position:absolute;

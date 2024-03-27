@@ -1,4 +1,5 @@
-import {classes} from '../constants/cssClasses';
+import {classLists} from '../constants/cssClasses';
+import { colorConstants } from '../constants/colors';
 
 export function truncateText(text, maxLength) {
   if (text.length <= maxLength) {
@@ -67,8 +68,12 @@ export function classAdd(baseClass, ...args) {
 }
 
 export function getClasses(componentIdentifier) {
-  classArr = classes[componentIdentifier]
+  let classArr = classLists[componentIdentifier]
   return classArr ? classArr.filter(Boolean).join(' ') : "";
+}
+
+export function getClassesFromConstants(arr) {
+  return arr.join(' ');
 }
 
 export function capitalizeWords(str) {
@@ -77,4 +82,9 @@ export function capitalizeWords(str) {
 
 export function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+export function getThemeColor(isDark){
+  const theme = isDark ? colorConstants.light : colorConstants.dark;
+  return theme;
 }

@@ -17,16 +17,16 @@ function HorizontalSlider(props) {
             {data.map( (item, ind) => {
 
                 return (
-                    <div key={ind} className="static h-full min-w-[250px] max-w-[300px] snap-center rounded-md from-teal-100 to-teal-200 p-3 shadow-md shadow-slate-400/65 transition-all duration-300 hover:-translate-y-1 hover:cursor-pointer hover:bg-gradient-to-br hover:shadow-lg">
+                    <div key={ind} className="static bg-bg2 h-full min-w-[250px] max-w-[300px] snap-center rounded-md from-primary/10 to-primary/60 p-3 shadow-md shadow-shadow/65 transition-all duration-300 hover:-translate-y-1 hover:cursor-pointer hover:bg-gradient-to-br hover:shadow-lg">
                         <div className="mb-3 flex flex-row items-center justify-between gap-4">
-                        <div className="text-lg font-bold text-slate-600">{item.title}</div>
-                        <img className="w-[40px] rounded-full" 
+                        <div className="text-md font-normal font-sans text-content">{item.title}</div>
+                        <img className="w-[40px] rounded-full border-4 border-contentLink/40" 
                         src={images.certificates.logo[item.logoType]} />
                         </div>
-                        <div className="text-xs text-gray-600">
+                        <div className="text-xs text-content/80">
                             {item.description}
                         </div>
-                        <a href="#" download="/" class="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 hover:text-white bg-gray-100 hover:bg-gradient-to-tr from-teal-300 to-teal-400 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center mt-2">
+                        <a href="#" download="/" class="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 text-secondary hover:text-secondary/70 bg-gray-100 active:bg-gray-100 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center mt-2">
                             {buttonText}
                         </a>
                     </div>
