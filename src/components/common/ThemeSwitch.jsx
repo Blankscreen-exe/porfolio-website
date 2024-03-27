@@ -22,13 +22,13 @@ function ThemeSwitch(props) {
         {/* this hidden checkbox controls the state */}
         <input type="checkbox" className='hidden' onClick={toggleTheme}/>
         
+        {/* moon icon */}
+        {svgLists.themeButton.dark}
+
         {/* sun icon */}
         {svgLists.themeButton.light}
         
-        {/* moon icon */}
-        {svgLists.themeButton.dark}
-        
-        <span className='ml-8 hidden sm:block md:block lg:block'>{isDarkmode? "Dark Mode" :"Light Mode"}</span>
+        <span className='ml-8 hidden sm:block md:block lg:block'>{isDarkmode? "Light Mode" :"Dark Mode"}</span>
         </label>
 
     </div>
