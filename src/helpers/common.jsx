@@ -1,4 +1,5 @@
 import {classLists} from '../constants/cssClasses';
+import { colorConstants } from '../constants/colors';
 
 export function truncateText(text, maxLength) {
   if (text.length <= maxLength) {
@@ -81,4 +82,9 @@ export function capitalizeWords(str) {
 
 export function capitalizeFirstLetter(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+export function getThemeColor(isDark){
+  const theme = isDark ? colorConstants.light : colorConstants.dark;
+  return theme;
 }
