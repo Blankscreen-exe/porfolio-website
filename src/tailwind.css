@@ -29,7 +29,8 @@
   --color-contrast-dark: 252 94 121; */
 
   :root {
-    --color-primary: 6 148 162;
+    /* --color-primary: 6 148 162; */
+    --color-primary: 3 188 207;
     --color-secondary: 196 196 196;
     --color-tertiary: 241 245 249;
     --color-contrast: 220 76 100;

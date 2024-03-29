@@ -20,18 +20,19 @@ function Footer(props) {
             <h6 className="footer-title font-bold font-sans text-content border-b-2 border-b-primary">Pages</h6> 
             <NavLink to={appConstants.routes.home} className={navLinkClasses}>Home</NavLink >
             <NavLink to={appConstants.routes.aboutMe} className={navLinkClasses}>About Me</NavLink >
+            <NavLink to={appConstants.routes.services} className={navLinkClasses}>Services</NavLink >
             <NavLink to={appConstants.routes.projects} className={navLinkClasses}>Projects</NavLink >
             <NavLink to={appConstants.routes.experience} className={navLinkClasses}>Experience</NavLink >
             <NavLink to={appConstants.routes.blog} className={navLinkClasses}>Blog</NavLink >
             <NavLink to={appConstants.routes.contacts} className={navLinkClasses}>Contact</NavLink >
           </nav> 
-          <nav>
+          {/* <nav>
             <h6 className="footer-title font-bold font-sans text-content border-b-2 border-b-primary">Services</h6> 
             <NavLink to={appConstants.routes.servicesBackend} className={navLinkClasses}>Backend</NavLink >
             <NavLink to={appConstants.routes.servicesFrontend} className={navLinkClasses}>Frontend</NavLink >
             <NavLink to={appConstants.routes.servicesDataScience} className={navLinkClasses}>Data Science</NavLink >
             <NavLink to={appConstants.routes.servicesMentorship} className={navLinkClasses}>Mentorship</NavLink >
-          </nav> 
+          </nav>  */}
           <nav>
             <h6 className="footer-title font-bold font-sans text-content border-b-2 border-b-primary">Lists</h6> 
             <NavLink to={appConstants.routes.listsBooks} className={navLinkClasses}>Books</NavLink >

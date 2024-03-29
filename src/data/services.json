@@ -1,0 +1,26 @@
+[
+    {
+        "title": "backend",
+        "type": "TEC",
+        "description": "This is the <b>backend</b> services description.",
+        "deliverables": ["item 1 - BE", "item 2 - BE", "item 3 - BE"]
+    },
+    {
+        "title": "frontend",
+        "type": "TEC",
+        "description": "This is the <b>frontend</b> services <br/>description.",
+        "deliverables": ["item 1 - FE", "item 2 - FE", "item 3 - FE"]
+    },
+    {
+        "title": "ML",
+        "type": "TEC",
+        "description": "This is the <b>Data Science</b> and <b>ML</b>services <br/>description.",
+        "deliverables": ["item 1 - FE", "item 2 - FE", "item 3 - FE"]
+    },
+    {
+        "title": "mentorship",
+        "type": "TCH",
+        "description": "This is the <b>mentorship</b> services <u><a href=''>description</a></u>.",
+        "deliverables": ["item 1 - MEN", "item 2 - MEN", "item 3 - MEN"]
+    }
+]

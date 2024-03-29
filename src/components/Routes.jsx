@@ -4,12 +4,13 @@ import { Route, Routes } from 'react-router-dom'
 
 // Constants
 import appConstants from '../constants/appConstants'
-import PageTitle from './common/PageTitle'
 
 // Components
+import PageTitle from './common/PageTitle'
 import Home from './home'
 import About from './about'
 import Contact from './contact'
+import Services from './services'
 
 function RoutesList(props) {
   return (
@@ -31,7 +32,7 @@ function RoutesList(props) {
         <Route path={appConstants.routes.listsBooks} element={<PageTitle title="Lists of Book"/>}/>
         <Route path={appConstants.routes.listsResources} element={<PageTitle title="Lists Resource"/>}/>
 
-        <Route path={appConstants.routes.services} element={<PageTitle title="Service"/>}/>
+        <Route path={appConstants.routes.services} element={<Services/>}/>
         <Route path={appConstants.routes.servicesBackend} element={<PageTitle title="Services Backend"/>}/>
         <Route path={appConstants.routes.servicesFrontend} element={<PageTitle title="Services Frontend"/>}/>
         <Route path={appConstants.routes.servicesDataScience} element={<PageTitle title="Services DataScience"/>}/>
