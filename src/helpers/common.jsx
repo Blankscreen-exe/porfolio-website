@@ -88,3 +88,32 @@ export function getThemeColor(isDark){
   const theme = isDark ? colorConstants.dark : colorConstants.light;
   return theme;
 }
+
+export function getDataIndex(data) {
+  const result = {};
+  data.forEach((item, index) => {
+    result[item.title.toLowerCase()] = index;
+  });
+  return result;
+}
+
+export function isSubstringPresent(text, substring) {
+  return text.includes(substring);
+}
+
+export function removeSubstring(text, substring, count = 1) {
+  let result = text;
+  let occurrencesRemoved = 0;
+
+  while (count !== 0 && result.includes(substring)) {
+    const index = result.indexOf(substring);
+    result = result.slice(0, index) + result.slice(index + substring.length);
+    occurrencesRemoved++;
+
+    if (count !== -1) {
+      count--;
+    }
+  }
+
+  return result;
+}
