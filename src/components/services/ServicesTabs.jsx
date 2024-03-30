@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { useLocation, useParams, useSearchParams } from "react-router-dom";
 
 // helpers
-import { classAdd, capitalizeFirstLetter } from "../../helpers/common";
+import { classAdd, capitalizeFirstLetter, getDataIndex } from "../../helpers/common";
 
 // data
 import servicesData from "../../data/services.json";

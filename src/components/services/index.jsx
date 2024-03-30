@@ -7,6 +7,7 @@ import PageTitle from '../common/PageTitle'
 import FAQ from './FAQ'
 import SectionHeading from '../common/SectionHeading'
 
+
 function Services(props) {
   window.scrollTo(0, 0);
   return (
@@ -15,7 +16,6 @@ function Services(props) {
         <ServicesTabs/>
         <SectionHeading title="Services FAQ" />
         <FAQ/>
-
     </div>
   )
 }
