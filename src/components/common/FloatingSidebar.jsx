@@ -12,14 +12,14 @@ function FloatingSidebar(props) {
 
   return (
     <div
-        class="relative bg-gray-50 dark:bg-slate-900 w-screen h-max pattern hidden md:display"
+        className="relative bg-gray-50 dark:bg-slate-900 w-screen h-max pattern hidden md:display"
     >
         <nav
-        class="z-20 flex shrink-0 grow-0 justify-around gap-4 border-t border-gray-200 bg-white/50 p-2.5 shadow-lg backdrop-blur-lg dark:border-slate-600/60 dark:bg-slate-800/50 fixed top-2/4 -translate-y-2/4 left-6 min-h-[auto] min-w-[64px] flex-col rounded-lg border"
+        className="z-20 flex shrink-0 grow-0 justify-around gap-4 border-t border-gray-200 bg-white/50 p-2.5 shadow-lg backdrop-blur-lg dark:border-slate-600/60 dark:bg-slate-800/50 fixed top-2/4 -translate-y-2/4 left-6 min-h-[auto] min-w-[64px] flex-col rounded-lg border"
         >
         <a
             href="#profile"
-            class="flex aspect-square min-h-[32px] w-16 flex-col items-center justify-center gap-1 rounded-md p-1.5 bg-indigo-50 text-indigo-600 dark:bg-sky-900 dark:text-sky-50"
+            className="flex aspect-square min-h-[32px] w-16 flex-col items-center justify-center gap-1 rounded-md p-1.5 bg-indigo-50 text-indigo-600 dark:bg-sky-900 dark:text-sky-50"
         >
             {/* <!-- HeroIcon - User --> */}
             <svg
@@ -28,7 +28,7 @@ function FloatingSidebar(props) {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6 shrink-0"
+            className="w-6 h-6 shrink-0"
             >
             <path
                 stroke-linecap="round"
@@ -37,12 +37,12 @@ function FloatingSidebar(props) {
             />
             </svg>
 
-            <small class="text-center text-xs font-medium"> About Me </small>
+            <small className="text-center text-xs font-medium"> About Me </small>
         </a>
 
         <a
             href="#analytics"
-            class="flex aspect-square min-h-[32px] w-16 flex-col items-center justify-center gap-1 rounded-md p-1.5 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-slate-800"
+            className="flex aspect-square min-h-[32px] w-16 flex-col items-center justify-center gap-1 rounded-md p-1.5 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-slate-800"
         >
             {/* <!-- HeroIcon - Chart Bar --> */}
             <svg
@@ -51,7 +51,7 @@ function FloatingSidebar(props) {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6 shrink-0"
+            className="w-6 h-6 shrink-0"
             >
             <path
                 stroke-linecap="round"
@@ -60,12 +60,12 @@ function FloatingSidebar(props) {
             />
             </svg>
 
-            <small class="text-center text-xs font-medium"> Testimonials </small>
+            <small className="text-center text-xs font-medium"> Testimonials </small>
         </a>
 
         <a
             href="#settings"
-            class="flex aspect-square min-h-[32px] w-16 flex-col items-center justify-center gap-1 rounded-md p-1.5 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-slate-800"
+            className="flex aspect-square min-h-[32px] w-16 flex-col items-center justify-center gap-1 rounded-md p-1.5 text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-slate-800"
         >
         {/* <!-- HeroIcon - Cog-6-tooth --> */}
             <svg
@@ -74,7 +74,7 @@ function FloatingSidebar(props) {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6 shrink-0"
+            className="w-6 h-6 shrink-0"
             >
             <path
                 stroke-linecap="round"
@@ -88,14 +88,14 @@ function FloatingSidebar(props) {
             />
             </svg>
 
-            <small class="text-center text-xs font-medium"> Settings </small>
+            <small className="text-center text-xs font-medium"> Settings </small>
         </a>
 
-        <hr class="dark:border-gray-700/60" />
+        <hr className="dark:border-gray-700/60" />
 
         <a
             href="/"
-            class="flex h-16 w-16 flex-col items-center justify-center gap-1 text-fuchsia-900 dark:text-gray-400"
+            className="flex h-16 w-16 flex-col items-center justify-center gap-1 text-fuchsia-900 dark:text-gray-400"
         >
         {/* <!-- HeroIcon - Home Modern --> */}
             <svg
@@ -104,7 +104,7 @@ function FloatingSidebar(props) {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6"
+            className="w-6 h-6"
             >
             <path
                 stroke-linecap="round"

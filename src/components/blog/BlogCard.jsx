@@ -14,11 +14,11 @@ function BlogCard(props) {
               {/* <figure className='rounded-t-lg'><img 
                 className='shadow'
                 src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure> */}
-                <figure class="rounded-t-lg relative h-44">
+                <figure className="rounded-t-lg relative h-44">
                   <img 
-                    class="shadow absolute top-0 right-0 z-10"
+                    className="shadow absolute top-0 right-0 z-10"
                     src={imgUrl} alt={cardTitle} />
-                  <span class="absolute z-10 top-2 right-2 badge badge-secondary">NEW</span>
+                  <span className="absolute z-10 top-2 right-2 badge badge-secondary">NEW</span>
                 </figure>
               <div className="card-body p-6">
                 <div className='flex flex-col '>

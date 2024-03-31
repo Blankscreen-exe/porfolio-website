@@ -75,7 +75,7 @@ function TechStack(props) {
                 >
                   <img
                     src="https://dummyimage.com/100x100/eee/444"
-                    class="md:w-10 w-5 rounded-md"
+                    className="md:w-10 w-5 rounded-md"
                   />
                   <span>{capitalizeFirstLetter(item.name)}</span>
                 </div>
