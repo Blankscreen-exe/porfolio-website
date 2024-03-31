@@ -24,19 +24,24 @@ function ThemeSwitch(props) {
     
     
   return (
-    <div className='h-fit mt-2 px-2'>
-        <label className="swap swap-rotate">
+    <div className='h-fit px-2 py-1 flex items-center rounded-md hover:bg-bg2'>
+        <label className="flex flex-row gap-2">
   
         {/* this hidden checkbox controls the state */}
-        <input type="checkbox" className='hidden' onClick={handleToggleTheme}/>
+        {/* <input type="checkbox" className='hidden' onClick={handleToggleTheme}/> */}
         
+        {isDarkMode
+        ? svgLists.themeButton.light 
+        : svgLists.themeButton.dark
+        }
+
         {/* moon icon */}
-        {svgLists.themeButton.dark}
+        {/* {svgLists.themeButton.dark} */}
 
         {/* sun icon */}
-        {svgLists.themeButton.light}
+        {/* {svgLists.themeButton.light} */}
         
-        <span className='ml-8 hidden sm:block md:block lg:block'>{isDarkMode? "Dark Mode": "Light Mode"}</span>
+        <span className='hidden sm:block md:block lg:block' onClick={handleToggleTheme}>{isDarkMode? "Light Mode": "Dark Mode"}</span>
         </label>
 
     </div>
