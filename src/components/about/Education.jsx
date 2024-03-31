@@ -60,7 +60,7 @@ function Education(props) {
           <div>
             <span className="h-8 w-8 rounded-full flex items-center justify-center ring-8 ring-bg2 drop-shadow-lg shadow-shadow">
               <img className="h-5 w-5 text-content" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
-                src="https://c8.alamy.com/comp/2RC5DTJ/taking-off-plane-logo-2RC5DTJ.jpg" clip-rule="evenodd" />
+                src="https://c8.alamy.com/comp/2RC5DTJ/taking-off-plane-logo-2RC5DTJ.jpg" clipRule="evenodd" />
             
             </span>
           </div>
@@ -103,7 +103,7 @@ function Education(props) {
           <div>
             <span className="h-8 w-8 rounded-full bg-green-500 flex items-center justify-center ring-8 ring-bg2 drop-shadow-lg shadow-shadow">
               <svg className="h-5 w-5 text-content" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+                <path fillRule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clipRule="evenodd" />
               </svg>
             </span>
           </div>
