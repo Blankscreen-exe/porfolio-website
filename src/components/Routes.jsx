@@ -33,10 +33,11 @@ function RoutesList(props) {
         <Route path={appConstants.routes.listsResources} element={<PageTitle title="Lists Resource"/>}/>
 
         <Route path={appConstants.routes.services} element={<Services/>}/>
-        <Route path={appConstants.routes.servicesBackend} element={<PageTitle title="Services Backend"/>}/>
-        <Route path={appConstants.routes.servicesFrontend} element={<PageTitle title="Services Frontend"/>}/>
-        <Route path={appConstants.routes.servicesDataScience} element={<PageTitle title="Services DataScience"/>}/>
-        <Route path={appConstants.routes.servicesMentorship} element={<PageTitle title="Services Mentorship"/>}/>
+        <Route path={appConstants.routes.servicesBackend} element={<Services/>}/>
+        <Route path={appConstants.routes.servicesFrontend} element={<Services/>}/>
+        <Route path={appConstants.routes.servicesMachineLearning} element={<Services/>}/>
+        <Route path={appConstants.routes.servicesMentorship} element={<Services/>}/>
+        <Route path={appConstants.routes.servicesFaq} element={<Services/>}/>
 
         <Route path={appConstants.routes.projects} element={<PageTitle title="Project"/>}/>
 

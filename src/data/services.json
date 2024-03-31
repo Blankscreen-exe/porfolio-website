@@ -9,13 +9,13 @@
         "title": "frontend",
         "type": "TEC",
         "description": "This is the <b>frontend</b> services <br/>description.",
-        "deliverables": ["item 1 - FE", "item 2 - FE", "item 3 - FE"]
+        "deliverables": ["item 1 - FE", "item 2 - FE", "item 3 - FE", "item 1 - FE", "item 2 - FE", "item 3 - FE", "item 1 - FE", "item 2 - FE", "item 3 - FE"]
     },
     {
         "title": "ML",
         "type": "TEC",
         "description": "This is the <b>Data Science</b> and <b>ML</b>services <br/>description.",
-        "deliverables": ["item 1 - FE", "item 2 - FE", "item 3 - FE"]
+        "deliverables": ["item 1 - ML", "item 2 - ML", "item 3 - ML"]
     },
     {
         "title": "mentorship",

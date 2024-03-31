@@ -28,7 +28,7 @@ function FAQ(props) {
         <div className="rounded-none border border-l-0 border-r-0 border-t-0 border-b-0 border-secondary bg-bg1 ">
           {faqData.map((item, ind) => {
             return (
-              <>
+              <div key={ind}>
                 <h2 className="mb-0" id="headingOne">
                   <button
                     className={`${
@@ -73,7 +73,7 @@ function FAQ(props) {
                   <div className="px-5 py-4" dangerouslySetInnerHTML={{ __html: item.answer }}>
                   </div>
                 </TECollapse>
-              </>
+              </div>
             );
           })}
         </div>
