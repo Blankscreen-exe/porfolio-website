@@ -1,68 +1,88 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
 // Components
-import { TEInput } from "tw-elements-react";
+import TextInput from "../common/TextInput";
+import EmailInput from "../common/EmailInput";
+import MultiSelectInput from "../common/MultiSelectInput";
+import CheckBox from "../common/CheckBox";
+import TextArea from "../common/TextArea";
 
 function Form(props) {
+  /**
+   * Full Name
+   * Email (optional)
+   * Purpose of Contact/ What interests you (Services, Just an Inquiry, Wanna hang out)
+   * Want to hire me? as what? SELECT(Tech Resource, Mentor, other?)
+   * Message TEXTAREA
+   *  */
+
+  const hireAsOptions = [
+    {
+      text: "Technical Resource",
+      value: "tech-resource",
+      secondaryText: "I will work on your projects",
+    },
+    {
+      text: "Mentor",
+      value: "mentor",
+      secondaryText: "I will teach you according to a custom tailored syllabus",
+    },
+    {
+      text: "Consultant",
+      value: "consultant",
+      secondaryText:
+        "I will answer your inquiries to the best of my abilities and knowledge",
+    },
+  ];
   return (
-    <div className=''>
-        
-        <form className='flex flex-col'>
+    <div className="mb-16 min-w-[26rem]" id="contact-form-container">
+      <form className="flex flex-col">
+        <TextInput id="contact-name" label="Full Name" isRequired={true} />
+        <EmailInput
+          id="contact-email"
+          label="Email Address"
+          isRequired={true}
+        />
 
-        <TEInput
-            type="text"
-            id="full-name"
-            label={(<span class='bg-bg1 px-2'>Full Name</span>)}
-            className='text-secondary focus:text-primary'
-            required
-        ></TEInput>
-        
-        <TEInput
-            type="email"
-            id="email"
-            label={(<span class='bg-bg1 px-2'>Email Address</span>)}
-            className='text-secondary focus:text-primary'
-            required
-        ></TEInput>
+        <h3 className="text-content/80">Purpose of Contact</h3>
 
-            <label for="full_name">Full Name:</label>
-            <input type="text" id="full_name" name="full_name" placeholder="Enter your full name" required />
+        <CheckBox
+          label="I want one(or more) of your services"
+          id="service"
+          name="service"
+        />
+        <CheckBox
+          label="I want to inquire about something"
+          id="inquiry"
+          name="inquiry"
+        />
+        <CheckBox label="Just want to hang out" id="hangout" name="hangout" />
 
-            <label for="email">Email Address:</label>
-            <input type="email" id="email" name="email" placeholder="youremail@example.com" required />
+        <MultiSelectInput
+          label="You want to hire me as ...?"
+          listData={hireAsOptions}
+        />
 
-            <h3>Purpose of Contact:</h3>
-            <input type="radio" id="avail_service" name="contact_purpose" value="avail_service" required />
-            <label for="avail_service">Avail a Service</label>
-            <input type="radio" id="recruitment" name="contact_purpose" value="recruitment" />
-            <label for="recruitment">Recruitment Inquiry</label>
-            <input type="radio" id="hang_out" name="contact_purpose" value="hang_out" />
-            <label for="hang_out">Just Want to Hang Out</label>
+        <TextArea
+          label="What would you like to tell me?"
+          id="contact-message"
+        />
 
-            <h3>What would you like to hire me as? (Optional)</h3>
-            <select id="hire_as" name="hire_as">
-                <option value="">Select an option (optional)</option>
-                <option value="tech_resource">Tech Resource</option>
-                <option value="mentor">Mentor</option>
-            </select>
-
-            <label for="urgency">Are you in urgency?</label>
-            <input type="radio" id="urgent_yes" name="urgency" value="yes" />
-            <label for="urgent_yes">Yes</label>
-            <input type="radio" id="urgent_no" name="urgency" value="no" checked />
-            <label for="urgent_no">No</label>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
-
-            <input type="submit" value="Submit"/>
-        </form>
-
+        <button
+          data-twe-ripple-init
+          data-twe-ripple-color="light"
+          type="submit"
+          value="Submit"
+          className="transition-all duration-500 text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-lg text-md px-5 py-2.5 text-center my-2 border-0"
+        >
+          Submit
+        </button>
+      </form>
     </div>
-  )
+  );
 }
 
-Form.propTypes = {}
+Form.propTypes = {};
 
-export default Form
+export default Form;

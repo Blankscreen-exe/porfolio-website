@@ -44,6 +44,7 @@
 
     --color-bg1: 255 255 255;
     --color-bg2: 239 244 243;
+
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -62,6 +63,7 @@
       --color-bg1: 29 35 42;
       --color-bg2: 70 82 95;
     }
+
   }
 
   :root[data-theme="dark"] {
@@ -125,10 +127,49 @@
     height: auto !important;
   } */
 
-  
+
+  /* ------------- For pesky TW elements -------------- */
+  #multiselectbox > div > div > input {
+    /* background-color: #ff6db7; */
+    color: rgb(var(--color-content));
+  }
+  #multiselectbox > span  {
+    color: rgb(var(--color-contrast));
+  }
+  #contact-name {
+    color: rgb(var(--color-content));
+  }
+  #contact-name:focus {
+    color: rgb(var(--color-primary));
+  }
+  #contact-email {
+    color: rgb(var(--color-content));
+  }
+  #contact-email:focus {
+    color: rgb(var(--color-primary));
+  }
+  #contact-message {
+    color: rgb(var(--color-content));
+  }
+  #contact-message:focus {
+    color: rgb(var(--color-primary));
+  }
+  body > div.z-\[1070\] > div > div {
+    color: rgb(var(--color-content));
+    background-color: rgb(var(--color-bg2));
+  }
+  body > div.z-\[1070\] > div > div > div.list-none.m-0.p-0 > div > span {
+    color: rgb(var(--color-content));
+  }
+  body > div.z-\[1070\] > div > div > div.list-none.m-0.p-0 > div > span > span{
+    opacity: 0.8;
+    color: rgb(var(--color-content));
+  }
+  body > div.z-\[1070\] > div > div > div.flex.flex-row.items-center.justify-between.w-full.px-4.truncate.select-none.bg-transparent.text-gray-700.dark\:text-gray-200.hover\:bg-black\/5.dark\:hover\:bg-white\/30.cursor-pointer > span {
+    color: rgb(var(--color-content));
+  }
 
 }
-
 
 /* ---------------- Body ------------------ */
 /* body {
