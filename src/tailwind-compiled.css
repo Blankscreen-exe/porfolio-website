@@ -4291,6 +4291,10 @@ input.tab:checked + .tab-content,
   min-width: 24rem;
 }
 
+.min-w-\[26rem\] {
+  min-width: 26rem;
+}
+
 .max-w-\[200px\] {
   max-width: 200px;
 }
