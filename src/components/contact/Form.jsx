@@ -35,6 +35,7 @@ function Form(props) {
         "I will answer your inquiries to the best of my abilities and knowledge",
     },
   ];
+
   return (
     <div className="mb-16 min-w-[26rem]" id="contact-form-container">
       <form className="flex flex-col">
@@ -74,7 +75,7 @@ function Form(props) {
           data-twe-ripple-color="light"
           type="submit"
           value="Submit"
-          className="transition-all duration-500 text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-primary font-medium rounded-lg text-md px-5 py-2.5 text-center my-2 border-0"
+          className="transition-all duration-500 text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl  focus:outline-none focus:ring-primary font-medium rounded-lg text-md px-5 py-2.5 text-center my-2 border-0"
         >
           Submit
         </button>

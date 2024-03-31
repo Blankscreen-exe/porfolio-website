@@ -1,0 +1,17 @@
+[
+    {
+        "icon": "discord",
+        "name": "Discord",
+        "link": "some link"
+    },
+    {
+        "icon": "linkedin",
+        "name": "LinkedIn",
+        "link": "some link"
+    },
+    {
+        "icon": "discord",
+        "name": "SomethingElse",
+        "link": "some link"
+    }
+]
