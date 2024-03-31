@@ -17,6 +17,7 @@ import CtaCard from '../common/CtaCard'
 import BlockQuote from '../common/BlockQuote'
 
 function Home(props) {
+  window.scrollTo(0, 0);
   return (
     <>
         <Hero/>

@@ -1,49 +1,39 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
 
 // Components
-import SectionHeading from '../common/SectionHeading'
-import BlockQuote from '../common/BlockQuote'
-import PageTitle from '../common/PageTitle'
-import Education from './Education'
-import Languages from './Languages'
-import Hobbies from './Hobbies'
+import SectionHeading from "../common/SectionHeading";
+import BlockQuote from "../common/BlockQuote";
+import PageTitle from "../common/PageTitle";
+import Education from "./Education";
+import Languages from "./Languages";
+import Hobbies from "./Hobbies";
 
 function About(props) {
+  window.scrollTo(0, 0);
   return (
     <div>
+      <PageTitle title={"Who Am I?"} />
 
-        <PageTitle
-        title={"Who Am I?"}
-        />
+      <BlockQuote text="Some <b>awesome</b> stuff about me. I'm great! Sore dakke do ..." />
 
-        <BlockQuote
-            text="Some <b>awesome</b> stuff about me. I'm great! Sore dakke do ..."
-        />
+      <SectionHeading title="Education Timeline" />
+      <Education />
 
-        <SectionHeading
-            title="Education Timeline"
-        />
-        <Education/>
+      <br />
 
-        <br/>
+      <SectionHeading title="Languages I Can Speak~" />
+      <Languages />
 
-        <SectionHeading
-            title="Languages I Can Speak~"
-        />
-        <Languages/>
+      <br />
 
-        <br/>
-
-        <SectionHeading
-            title="Hobbies"
-        />
-        {/* FIXME: multiple component runs */}
-        {/* <Hobbies/> */}
+      <SectionHeading title="Hobbies" />
+      {/* FIXME: multiple component runs */}
+      {/* <Hobbies/> */}
     </div>
-  )
+  );
 }
 
-About.propTypes = {}
+About.propTypes = {};
 
-export default About
+export default About;

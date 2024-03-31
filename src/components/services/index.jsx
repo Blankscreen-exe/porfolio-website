@@ -8,6 +8,7 @@ import FAQ from './FAQ'
 import SectionHeading from '../common/SectionHeading'
 
 function Services(props) {
+  window.scrollTo(0, 0);
   return (
     <div>
         <PageTitle title="What Can I Do For You?" />
