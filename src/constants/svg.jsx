@@ -46,7 +46,7 @@ export default {
     <svg
       viewBox="0 0 162 128"
       fill="none"
-      ariaHidden="true"
+      aria-hidden="true"
       className="absolute -left-2 -top-4 -z-10 h-32 stroke-white/20"
     >
       <path
