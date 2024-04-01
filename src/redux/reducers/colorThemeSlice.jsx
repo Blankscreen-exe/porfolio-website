@@ -6,7 +6,7 @@ const initialValue = {
 }
 
 export const colorTheme = createSlice({
-    name: "colorTheme",
+    name: "isDarkMode",
     initialState: initialValue,
     reducers: {
         // Register all action functions here, define them in ../actions/

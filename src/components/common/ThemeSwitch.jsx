@@ -12,7 +12,7 @@ function ThemeSwitch(props) {
   const dispatch = useDispatch();
 
   const isDarkMode = useSelector((state) => {
-    return state.persistedReducer.colorTheme;
+    return state.persistedReducer.isDarkMode;
   });
 
   const handleToggleTheme = () => {
@@ -21,6 +21,8 @@ function ThemeSwitch(props) {
       "data-theme",
       isDarkMode ? "dark" : "light"
     );
+    // TODO: do it without reload
+    // location.reload()
     console.log("THEME SWITCHED TO ", isDarkMode ? "--DARK--" : "--LIGHT--");
   };
 
@@ -33,8 +35,8 @@ function ThemeSwitch(props) {
   });
 
   return (
-    <div className="h-fit px-2 py-1 flex items-center rounded-md hover:bg-bg2">
-      <label className="flex flex-row gap-2" onClick={handleToggleTheme}>
+    <div className="h-fit px-2 py-1 flex items-center rounded-md hover:bg-bg2/80">
+      <label className="flex flex-row gap-2 hover:cursor-pointer" onClick={handleToggleTheme}>
         {/* this hidden checkbox controls the state */}
         {/* <input type="checkbox" className='hidden' onClick={handleToggleTheme}/> */}
 
