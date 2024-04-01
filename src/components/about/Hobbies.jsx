@@ -14,7 +14,7 @@ import TextDisplayBox from "../common/TextDisplayBox";
 const renderActiveShape = (props) => {
 
   const isDarkMode = useSelector((state) => {
-    return state.persistedReducer.colorTheme
+    return state.persistedReducer.isDarkMode
   })
   const themeColor = getThemeColor(isDarkMode);
 
@@ -103,7 +103,7 @@ function Hobbies(props) {
 
   // using redux to get the current theme mode
   const isDarkMode = useSelector((state) => {
-    return state.persistedReducer.colorTheme
+    return state.persistedReducer.isDarkMode;
   })
   const themeColor = getThemeColor(true);
 
