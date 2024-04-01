@@ -7,6 +7,7 @@ import { thunk } from "redux-thunk";
 import common from "./reducers/commonSlice";
 import post from "./reducers/postSlice";
 import isDarkMode from "./reducers/colorThemeSlice";
+import contactForm from "./reducers/contactFormSlice";
 
 const persistConfig = {
     key: 'root',
@@ -17,7 +18,8 @@ const persistConfig = {
 const rootReducer = combineReducers({ 
     common,
     post,
-    isDarkMode
+    isDarkMode,
+    contactForm
 })
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)
