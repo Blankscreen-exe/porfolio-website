@@ -1028,6 +1028,36 @@ body > div.z-\[1070\] > div > div > div.flex.flex-row.items-center.justify-betwe
   color: rgb(var(--color-content));
 }
 
+#contactform-service:focus {
+  background-color: rgb(var(--color-primary));
+  outline: none;
+  border: none;
+}
+
+#contactform-service:hover {
+  background-color: rgb(var(--color-tertiary));
+}
+
+#contactform-inquiry:focus {
+  background-color: rgb(var(--color-primary));
+  outline: none;
+  border: none;
+}
+
+#contactform-inquiry:hover {
+  background-color: rgb(var(--color-tertiary));
+}
+
+#contactform-hangout:focus {
+  background-color: rgb(var(--color-primary));
+  outline: none;
+  border: none;
+}
+
+#contactform-hangout:hover {
+  background-color: rgb(var(--color-tertiary));
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -3987,6 +4017,10 @@ input.tab:checked + .tab-content,
   margin-bottom: 0.125rem;
 }
 
+.ml-8 {
+  margin-left: 2rem;
+}
+
 .ml-auto {
   margin-left: auto;
 }
@@ -4037,18 +4071,6 @@ input.tab:checked + .tab-content,
 
 .mt-\[0\.15rem\] {
   margin-top: 0.15rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
-}
-
-.ml-6 {
-  margin-left: 1.5rem;
-}
-
-.ml-8 {
-  margin-left: 2rem;
 }
 
 .box-border {
@@ -5301,6 +5323,12 @@ input.tab:checked + .tab-content,
 .from-teal-100 {
   --tw-gradient-from: #ccfbf1 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(204 251 241 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-primary {
+  --tw-gradient-from: rgb(var(--color-primary) / 1) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(var(--color-primary) / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -7157,12 +7185,6 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
   --tw-shadow: 0px 0px 0px 13px rgba(0,0,0,0.6);
   --tw-shadow-colored: 0px 0px 0px 13px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.after\:hover\:bg-primary:hover::after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
 }
 
 .after\:hover\:bg-contrast:hover::after {

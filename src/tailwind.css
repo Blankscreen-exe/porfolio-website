@@ -169,6 +169,32 @@
     color: rgb(var(--color-content));
   }
 
+
+  #contactform-service:focus {
+    background-color: rgb(var(--color-primary));
+    outline: none;
+    border: none;
+  }
+  #contactform-service:hover {
+    background-color: rgb(var(--color-tertiary));
+  }
+  #contactform-inquiry:focus {
+    background-color: rgb(var(--color-primary));
+    outline: none;
+    border: none;
+  }
+  #contactform-inquiry:hover {
+    background-color: rgb(var(--color-tertiary));
+  }
+  #contactform-hangout:focus {
+    background-color: rgb(var(--color-primary));
+    outline: none;
+    border: none;
+  }
+  #contactform-hangout:hover {
+    background-color: rgb(var(--color-tertiary));
+  }
+
 }
 
 /* ---------------- Body ------------------ */

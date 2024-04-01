@@ -50,15 +50,15 @@ function Form(props) {
 
         <CheckBox
           label="I want one(or more) of your services"
-          id="service"
+          id="contactform-service"
           name="service"
         />
         <CheckBox
           label="I want to inquire about something"
-          id="inquiry"
+          id="contactform-inquiry"
           name="inquiry"
         />
-        <CheckBox label="Just want to hang out" id="hangout" name="hangout" />
+        <CheckBox label="Just want to hang out" id="contactform-hangout" name="hangout" />
 
         <MultiSelectInput
           label="You want to hire me as ...?"
@@ -75,7 +75,7 @@ function Form(props) {
           data-twe-ripple-color="light"
           type="submit"
           value="Submit"
-          className="transition-all duration-500 text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl  focus:outline-none focus:ring-primary font-medium rounded-lg text-md px-5 py-2.5 text-center my-2 border-0"
+          className="transition-all duration-500 text-white bg-gradient-to-r from-primary to-blue-500 hover:bg-gradient-to-bl  focus:outline-none focus:ring-primary font-medium rounded-lg text-md px-5 py-2.5 text-center my-2 border-0"
         >
           Submit
         </button>
