@@ -6,7 +6,7 @@ import contactList from "../../data/contactAlt.json";
 
 function ContactSideSection(props) {
   return (
-    <div className="px-6 rounded-md mb-16 w-full">
+    <div className="px-6 rounded-md mb-16 w-fit">
       <h1 className="text-3xl font-bold text-title my-3">Hello!</h1>
       <p>You can try the following alternatives to contact me as well.</p>
 
