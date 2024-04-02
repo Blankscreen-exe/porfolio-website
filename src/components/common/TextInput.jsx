@@ -9,17 +9,23 @@ import { updateFormAction } from '../../redux/reducers/contactFormSlice'
 import { TEInput } from "tw-elements-react";
 
 function Input(props) {
-  const { id, label, isRequired } = props;
 
-  const formData = useSelector((state) => {
-    return state.persistedReducer.contactForm
-  })
-
-  const dispatch = useDispatch();
+  const { 
+    id, 
+    label, 
+    name,
+    isRequired, 
+    formData, 
+    setFormData 
+  } = props;
 
   const handleChange = (event) => {
-    const updatedFullName = event.target.value;
-    dispatch(updateFormAction({ fullName: updatedFullName }));
+    setFormData( prevState => {
+      return {
+        ...prevState,
+        [event.target.name]: event.target.value
+      } 
+    })
   };
 
   return (
@@ -28,8 +34,9 @@ function Input(props) {
         <TEInput
           type="text"
           id={id ? id : "customTextInput"}
+          name={name}
           label={<span className="bg-bg1 px-2">{label}</span>}
-          onClick={handleChange}
+          onChange={handleChange}
           value={formData.fullName}
           required
         ></TEInput>
@@ -38,7 +45,8 @@ function Input(props) {
           type="text"
           id={id ? id : "customTextInput"}
           label={<span className="bg-bg1 px-2">{label}</span>}
-          onClick={useDispatch(updateFormAction({fullName:formData.fullName}))}
+          onChange={handleChange}
+          value={formData.fullName}
         ></TEInput>
       )}
     </div>

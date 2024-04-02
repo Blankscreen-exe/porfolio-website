@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 
 // Components
@@ -17,6 +17,16 @@ function Form(props) {
    * Message TEXTAREA
    *  */
 
+  const [formData, setFormData] = useState({
+      fullName: "",
+      email: "",
+      contactPurpose: [],
+      hireAs: [],
+      message: ""
+    })
+
+    console.log("STATE DATA",formData)
+
   const hireAsOptions = [
     {
       text: "Technical Resource",
@@ -31,7 +41,7 @@ function Form(props) {
     {
       text: "Consultant",
       value: "consultant",
-      secondaryText:
+      secondaryText: 
         "I will answer your inquiries to the best of my abilities and knowledge",
     },
   ];
@@ -39,11 +49,21 @@ function Form(props) {
   return (
     <div className="mb-16 min-w-[26rem]" id="contact-form-container">
       <form className="flex flex-col">
-        <TextInput id="contact-name" label="Full Name" isRequired={true} />
+        <TextInput 
+          id="contact-name" 
+          label="Full Name"
+          name="fullName"
+          isRequired={true} 
+          formData={formData} 
+          setFormData={setFormData}
+          />
         <EmailInput
           id="contact-email"
           label="Email Address"
+          name="email"
           isRequired={true}
+          formData={formData} 
+          setFormData={setFormData}
         />
 
         <h3 className="text-content/80">Purpose of Contact</h3>
@@ -52,13 +72,23 @@ function Form(props) {
           label="I want one(or more) of your services"
           id="contactform-service"
           name="service"
+          formData={formData} 
+          setFormData={setFormData}
         />
         <CheckBox
           label="I want to inquire about something"
           id="contactform-inquiry"
           name="inquiry"
+          formData={formData} 
+          setFormData={setFormData}
         />
-        <CheckBox label="Just want to hang out" id="contactform-hangout" name="hangout" />
+        <CheckBox 
+          label="Just want to hang out" 
+          id="contactform-hangout" 
+          name="hangout" 
+          formData={formData} 
+          setFormData={setFormData}
+        />
 
         <MultiSelectInput
           label="You want to hire me as ...?"
