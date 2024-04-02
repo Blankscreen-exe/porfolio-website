@@ -38,11 +38,16 @@ function Form(props) {
     message: "",
   });
 
+  const handleSubmit = () => {
+    console.log("DATA submitted")
+    // TODO: use emailer here
+  }
+
   console.log("STATE DATA", formData);
 
   return (
-    <div className="mb-16 min-w-[26rem]" id="contact-form-container">
-      <form className="flex flex-col">
+    <div className="mb-16" id="contact-form-container">
+      <form className="flex flex-col md:min-w-96">
         <TextInput
           id="contact-name"
           label="Full Name"
@@ -60,7 +65,7 @@ function Form(props) {
           setFormData={setFormData}
         />
 
-        <h3 className="text-content/80">Purpose of Contact</h3>
+        <h3 className="text-content/80 my-2">Purpose of Contact</h3>
 
         <CheckBox
           label="I want one(or more) of your services"
@@ -84,6 +89,17 @@ function Form(props) {
           setFormData={setFormData}
         />
 
+        {formData.contactPurpose.includes(formConstants.purpose.hangout) && (
+          <div className="tooltip tooltip-left mx-12 my-4" data-tip="Not an error! I repeat, not an error!">
+            <p
+              className="text-primary text-left"
+            >
+              You do know that my Discord link is right <br/>beside this form? ...
+              right? <br/>But go on write your message 😊
+            </p>
+          </div>
+        )}
+
         {formData.contactPurpose.includes(formConstants.purpose.services) && (
           <MultiSelectInput
             label="You want to hire me as ...?"
@@ -92,7 +108,6 @@ function Form(props) {
             setFormData={setFormData}
           />
         )}
-        
 
         <TextArea
           label="What would you like to tell me?"
@@ -101,15 +116,26 @@ function Form(props) {
           setFormData={setFormData}
         />
 
-        <button
+        {/* <button
           data-twe-ripple-init
           data-twe-ripple-color="light"
+          onClick={handleSubmit}
           type="submit"
           value="Submit"
-          className="transition-all duration-500 text-white bg-gradient-to-r from-primary to-blue-500 hover:bg-gradient-to-bl  focus:outline-none focus:ring-primary font-medium rounded-lg text-md px-5 py-2.5 text-center my-2 border-0 shadow-md shadow-shadow"
+          className="transition-all duration-500 text-white bg-gradient-to-r from-primary hover:via-cyan-300 hoverto-blue-200 to-blue-500   focus:outline-none focus:ring-primary font-medium rounded-lg text-md px-5 py-2.5 text-center my-2 border-0 shadow-md shadow-shadow ease-in"
         >
           Submit
-        </button>
+        </button> */}
+
+        <a href="#_" 
+          type="submit"
+          value="Submit"
+          onClick={handleSubmit} class="relative p-0.5 inline-flex items-center justify-center overflow-hidden group rounded-md">
+          <span class="w-full h-full bg-gradient-to-br from-primary via-blue-300 to-cyan-300 group-hover:from-primary/40 group-hover:via-cyan-300 group-hover:to-primary absolute"></span>
+          <span class="relative px-6 py-3 w-full transition-all ease-out bg-bg1 rounded-md group-hover:bg-opacity-0 duration-400 flex justify-center">
+          <span class="relative text-content group-hover:text-gray-700 ">Submit</span>
+          </span>
+        </a>
       </form>
     </div>
   );

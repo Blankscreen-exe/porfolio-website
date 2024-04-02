@@ -3870,6 +3870,11 @@ input.tab:checked + .tab-content,
   margin-right: 0px;
 }
 
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -4408,10 +4413,6 @@ input.tab:checked + .tab-content,
 
 .min-w-\[250px\] {
   min-width: 250px;
-}
-
-.min-w-\[26rem\] {
-  min-width: 26rem;
 }
 
 .min-w-\[64px\] {
@@ -5263,12 +5264,8 @@ input.tab:checked + .tab-content,
   background-color: rgb(var(--color-tertiary) / 0.4);
 }
 
-.bg-tertiary\/50 {
-  background-color: rgb(var(--color-tertiary) / 0.5);
-}
-
-.bg-tertiary\/60 {
-  background-color: rgb(var(--color-tertiary) / 0.6);
+.bg-tertiary\/90 {
+  background-color: rgb(var(--color-tertiary) / 0.9);
 }
 
 .bg-transparent {
@@ -5293,8 +5290,9 @@ input.tab:checked + .tab-content,
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
 }
 
-.bg-tertiary\/90 {
-  background-color: rgb(var(--color-tertiary) / 0.9);
+.bg-content {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--color-content) / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -5337,8 +5335,17 @@ input.tab:checked + .tab-content,
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.via-blue-300 {
+  --tw-gradient-to: rgb(147 197 253 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #93c5fd var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
 .to-blue-500 {
   --tw-gradient-to: #3b82f6 var(--tw-gradient-to-position);
+}
+
+.to-cyan-300 {
+  --tw-gradient-to: #67e8f9 var(--tw-gradient-to-position);
 }
 
 .to-primary\/60 {
@@ -5396,6 +5403,10 @@ input.tab:checked + .tab-content,
 
 .p-0 {
   padding: 0px;
+}
+
+.p-0\.5 {
+  padding: 0.125rem;
 }
 
 .p-1 {
@@ -5523,6 +5534,11 @@ input.tab:checked + .tab-content,
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.py-60 {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
 }
 
 .py-\[0\.32rem\] {
@@ -5964,11 +5980,6 @@ input.tab:checked + .tab-content,
   color: rgb(var(--color-primary) / var(--tw-text-opacity));
 }
 
-.text-red-600 {
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
-}
-
 .text-secondary {
   --tw-text-opacity: 1;
   color: rgb(var(--color-secondary) / var(--tw-text-opacity));
@@ -6362,6 +6373,10 @@ input.tab:checked + .tab-content,
   transition-timing-function: cubic-bezier(0.25,0.1,0.25,1.0);
 }
 
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -6684,6 +6699,10 @@ body > div.z-\[1070\] > div > div > .disabled\:select-none:disableddiv.flex.flex
   color: rgb(var(--color-content));
 }
 
+body > div.z-\[1070\] > div > div > .group:hover .group-hover\:text-gray-700div.flex.flex-row.items-center.justify-between.w-full.px-4.truncate.select-none.bg-transparent.dark\:text-gray-200.hover\:bg-black\/5.dark\:hover\:bg-white\/30.cursor-pointer > span {
+  color: rgb(var(--color-content));
+}
+
 body > div.z-\[1070\] > div > div > :is(.dark .dark\:hover\:bg-transparent:hover)div.flex.flex-row.items-center.justify-between.w-full.px-4.truncate.select-none.text-gray-700.dark\:text-gray-200.hover\:bg-black\/5.dark\:hover\:bg-white\/30.cursor-pointer > span {
   color: rgb(var(--color-content));
 }
@@ -6725,6 +6744,31 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
     overflow: hidden;
     border-radius: 40px;
     margin-top: -25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:divider-horizontal {
+    flex-direction: column;
+  }
+
+  .lg\:divider-horizontal:before {
+    height: 100%;
+    width: 0.125rem;
+  }
+
+  .lg\:divider-horizontal:after {
+    height: 100%;
+    width: 0.125rem;
+  }
+
+  .lg\:divider-horizontal {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: auto;
+    width: 1rem;
   }
 }
 
@@ -7064,10 +7108,6 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-gradient-to-bl:hover {
-  background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
-}
-
 .hover\:bg-gradient-to-br:hover {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
@@ -7082,6 +7122,11 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
   --tw-gradient-from: #f0fdfa var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(240 253 250 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.hover\:via-cyan-300:hover {
+  --tw-gradient-to: rgb(103 232 249 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #67e8f9 var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
 .hover\:to-primary\/60:hover {
@@ -7502,6 +7547,30 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
 .group:hover .group-hover\:rotate-180 {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group:hover .group-hover\:bg-opacity-0 {
+  --tw-bg-opacity: 0;
+}
+
+.group:hover .group-hover\:from-primary\/40 {
+  --tw-gradient-from: rgb(var(--color-primary) / 0.4) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(var(--color-primary) / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.group:hover .group-hover\:via-cyan-300 {
+  --tw-gradient-to: rgb(103 232 249 / 0)  var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), #67e8f9 var(--tw-gradient-via-position), var(--tw-gradient-to);
+}
+
+.group:hover .group-hover\:to-primary {
+  --tw-gradient-to: rgb(var(--color-primary) / 1) var(--tw-gradient-to-position);
+}
+
+.group:hover .group-hover\:text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:text-white {

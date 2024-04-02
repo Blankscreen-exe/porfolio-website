@@ -24,7 +24,7 @@ function CheckBox(props) {
 
   return (
     <div>
-      <div className="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem]">
+      <div className="mb-[0.125rem] block min-h-[1.5rem] pl-[1.5rem] flex flex-row flex-nowrap">
         {formData.contactPurpose.includes(name) ? (
           <input
             type="checkbox"
