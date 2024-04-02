@@ -36,7 +36,7 @@ function ThemeSwitch(props) {
   });
 
   return (
-    <div className="h-fit px-2 py-1 flex items-center rounded-md hover:bg-bg2/80">
+    <div className="h-fit px-2 py-1 flex items-center rounded-md hover:bg-bg2/90 hover:text-content/80 transition-colors duration-300">
       <label className="swap swap-rotate hover:cursor-pointer" >
         {/* this hidden checkbox controls the state */}
         <input type="checkbox" className='hidden' onClick={handleToggleTheme}/>
