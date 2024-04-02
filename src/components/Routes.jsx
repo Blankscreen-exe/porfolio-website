@@ -11,6 +11,7 @@ import Home from './home'
 import About from './about'
 import Contact from './contact'
 import Services from './services'
+import Error404 from './common/404'
 
 function RoutesList(props) {
   return (
@@ -43,7 +44,7 @@ function RoutesList(props) {
 
         <Route path={appConstants.routes.contacts} element={<Contact/>}/>
 
-        <Route path={"*"} element={<h1 className='text-red-600 font-bold'>404 Not Found</h1>}/>
+        <Route path={"*"} element={<Error404/>}/>
     </Routes>
   )
 }
