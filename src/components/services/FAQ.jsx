@@ -25,7 +25,7 @@ function FAQ(props) {
   return (
     <div id="faq">
       <div id="accordionExample" className="mb-16">
-        <div className="rounded-none border border-l-0 border-r-0 border-t-0 border-b-0 border-secondary bg-bg1 ">
+        <div className="rounded-none border border-l-0 border-r-0 border-t-0 border-b-0 border-secondary ">
           {faqData.map((item, ind) => {
             return (
               <div key={ind}>
@@ -35,7 +35,7 @@ function FAQ(props) {
                       activeElement === ind 
                       ? `text-primary [box-shadow:inset_0_-1px_0_rgba(229,231,235)] hover:border-secondary/0`
                       : 'text-content/70 hover:border-secondary'
-                    } group relative flex w-full items-center rounded-none border-0 bg-bg1 px-5 py-4 text-left text-base  font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none border-b-2 border-tertiary`}
+                    } group relative flex w-full items-center rounded-none border-0 px-5 py-4 text-left text-base  font-bold transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none border-b-2 border-tertiary`}
                     type="button"
                     onClick={() => handleClick(ind)}
                     aria-expanded="true"

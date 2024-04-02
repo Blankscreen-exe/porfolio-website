@@ -15,7 +15,7 @@ function Footer(props) {
 
   return (
     <div className='mb-5 drop-shadow-sm'>
-        <footer className="footer p-10 bg-tertiary/50 text-base-content rounded-t-md">
+        <footer className="footer p-10 bg-tertiary text-base-content rounded-t-md">
           <nav>
             <h6 className="footer-title font-bold font-sans text-content border-b-2 border-b-primary">Pages</h6> 
             <NavLink to={appConstants.routes.home} className={navLinkClasses}>Home</NavLink >
@@ -41,7 +41,7 @@ function Footer(props) {
           </nav>
 
         </footer> 
-        <footer className="footer px-10 py-4 border-t bg-tertiary/60 text-base-content border-base-300 rounded-b-md">
+        <footer className="footer px-10 py-4 border-t bg-tertiary/90 text-base-content border-base-300 rounded-b-md">
           <aside className="items-center grid-flow-col">
             {svgLists.hashIcon}
             <p><b className='text-primary'>M.Hammad Hassan</b> <br/>Code is a language I can speak!</p>

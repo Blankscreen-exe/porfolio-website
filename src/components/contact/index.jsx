@@ -9,7 +9,7 @@ function Contact(props) {
   return (
     <div>
       <PageTitle title="Let's Get In Touch!" />
-      <div className="flex flex-col md:flex-row justify-between gap-10">
+      <div className="flex flex-col md:flex-row justify-around gap-10">
         <ContactSideSection/>
         <Form />
       </div>
