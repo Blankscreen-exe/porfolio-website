@@ -21,14 +21,7 @@ const scrollButtonClass =
   const [description, setDescription] = useState("");
   const [activeIndex, setActiveIndex] = useState(0);
   const [sliderCounter, setSliderCounter] = useState(0)
-  const [contentToShow, setContentToShow] = useState(
-    <TypeAnimation
-        sequence={[timeLine[0].description]}
-        wrapper="span"
-        cursor={true}
-        repeat={0}
-        />
-    );
+  const [contentToShow, setContentToShow] = useState(workTimeline[0].description);
 
   const intervalRef = useRef(null);
 
@@ -71,98 +64,9 @@ const scrollButtonClass =
     }
   };
 
-
-  // typewriter effect
-
-  // function typewriterEffect(content) {
-  //   for (let index = 0; index < content.length; index++) {
-  //     document.getElementById("timeline-description-1").textContent =
-  //       content.substring(0, i);
-  //   }
-
-  //   // if (isDeleting) {
-  //   //     document.getElementById("timeline-description-1").textContent = currentWord.substring(0, j-1);
-  //   //     j--;
-  //   //     if (j == 0) {
-  //   //     isDeleting = false;
-  //   //     i++;
-  //   //     if (i == content.length) {
-  //   //         i = 0;
-  //   //     }
-  //   //     }
-  //   // } else {
-  //   //     document.getElementById("timeline-description-1").textContent = currentWord.substring(0, j+1);
-  //   //     j++;
-  //   //     if (j == currentWord.length) {
-  //   //     isDeleting = true;
-  //   //     }
-  //   // }
-  //   // setTimeout(typewriterEffect, 100);
-  // }
-
   const handleOpenDescription = (index, content) => {
-    console.log("THIS CLICKED",content);
     setActiveIndex(index);
-
-    setContentToShow(content)
-    // setContentToShow(          
-    // <TypeAnimation
-    //     sequence={content}
-    //     wrapper="span"
-    //     cursor={true}
-    //     repeat={0}
-    //     />
-    // )
-    
-    // const contentToArray = content.split("")
-    // let contentIteration = 0;
-    // setInterval(() => {
-    //     if (contentIteration== content.length-1) return;
-    //     setContentToShow( prevState => prevState+contentToArray[contentIteration])
-    //     contentIteration++
-    // }, 100);
-
-    // content.split("").map( (character) => {
-    //     setInterval(() => {
-    //         setContentToShow( prevState => prevState+character)
-    //     }, 5000);
-    //     setTimeout
-    // })
-
-    // setContentToShow(content);
-    // typewriterEffect(index + " " +content)
-    // console.log(document.getElementById("timeline-description-1-innerspan"))
-    // document.getElementById("timeline-description-1-innerspan").classList.remove("animate-typing")
-    // setTimeout(() => {
-    //     document.getElementById("timeline-description-1-innerspan").classList.add("animate-typing")
-    // }, 300);
-    // setDescription(index + " " +content)
-
-    // const timePerLetter = 300
-    // console.log(content.length)
-    // for (let i=0; i== content.length; i++){
-    //     console.log(i)
-    // }
-
-    // function typeWriter(content, containerId, timePerLetter = 50, isHTML = false) {
-        // let container = document.getElementById("timeline-description-1-innerspan");
-        // if (!container) {
-        //   return console.error(`Element with ID '${"timeline-description-1-innerspan"}' not found.`);
-        // }
-
-        // var i = 0;
-        // let intervalId = setInterval(() => {
-        //   if (i < content.length) {
-        //     console.log("index at ", i)
-        //     console.log("CONTENT  >> " +content)
-        //     const letter = content.charAt(i);
-        //     const content = letter;
-        //     container.insertAdjacentHTML("beforeend", content);
-        //     i++;
-        //   } else {
-        //     clearInterval(intervalId);
-        //   }
-        // }, timePerLetter);
+    setContentToShow(content);
   };
 
   const slideLeft = () => {
@@ -194,7 +98,7 @@ const scrollButtonClass =
           className="scroll overflow-x-scroll whitespace-nowrap scroll-smooth styled-scroll-none"
           style={{ overflowX: "scroll" }}
         >
-          <div className="mt-5 mb-5 px-40">
+          <div className="mt-5 mb-5 md:px-56">
             <ul className="timeline touch-auto ">
               {timeLine.map((item, index) => {
                 let tooltipClass = "";
@@ -215,18 +119,18 @@ const scrollButtonClass =
                 }
 
                 return (
-                  <li>
-                    {index != 0 && <hr />}
+                  <li className="">
+                    {index != 0 && <hr className="bg-secondary/60"/>}
 
                     <div
                       className={classAdd(
                         index % 2 == 0 ? "timeline-end" : "timeline-start",
                         index == activeIndex
-                          ? "bg-gradient-to-br from-teal-100 to-teal-200 bg-opacity-50 border-0 shadow-lg drop-shadow-xl transition-colors duration-300"
-                          : "bg-gradient-to-br hover:from-teal-50 hover:to-teal-100 from-slate-200 to-slate-100 border-0 hover:shadow-lg transition-shadow transition-colors duration-300",
+                          ? "bg-gradient-to-br from-teal-100 to-primary/40 bg-opacity-50 border-0 shadow-lg shadow-shadow drop-shadow-xl transition-colors duration-300 text-content"
+                          : "bg-gradient-to-br hover:from-teal-50 hover:to-teal-100 from-slate-200 to-slate-100 border-0 hover:shadow-lg shadow-shadow transition-shadow transition-colors duration-300 text-gray-500",
                         "timeline-box",
                         "hover:cursor-pointer",
-                        "text-[#4f4f4f]"
+                        ""
                       )}
                       onClick={() =>
                         handleOpenDescription(index, item.description)
@@ -248,7 +152,7 @@ const scrollButtonClass =
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
-                        fill={index == 0 ? "#0694a2" : "#a1a1a1"}
+                        fill={index == 0 ? "#09bbcf" : "#a1a1a1"}
                         className="w-5"
                       >
                         <path
@@ -262,14 +166,14 @@ const scrollButtonClass =
                     <div
                       className={classAdd(
                         index % 2 == 0 ? "timeline-start" : "timeline-end",
-                        index == 0 ? "text-teal-500" : "text-slate-400",
+                        index == 0 ? "text-primary" : "text-content/80",
                         "font-medium"
                       )}
                     >
                       {item.date}
                     </div>
 
-                    {index != timeLine.length - 1 && <hr />}
+                    {index != timeLine.length - 1 && <hr className="bg-secondary/60"/>}
                   </li>
                 );
               })}
@@ -285,21 +189,14 @@ const scrollButtonClass =
         />
       </div>
 
-      <div className="border-2 p-2 mt-5 rounded-md w-[90%]">
+      <div className="border-2 border-tertiary/70 p-2 my-8 rounded-md w-[90%]">
         <div
           id="timeline-description-1-disabled-this"
-          className=" p-3 rounded-md bg-slate-100 transition-all duration-75"
+          className=" p-3 rounded-md bg-tertiary text-content transition-all duration-75 shadow-shadow shadow-md"
+
+          dangerouslySetInnerHTML={{ __html: contentToShow }}
         >
-          {/* <span
-            id="timeline-description-1-innerspan"
-            style={{ whiteSpace: "pre-wrap" }}
-          >
-            {contentToShow ? contentToShow : timeLine[activeIndex].description}
-          </span> */}
-          {/* <span id="timeline-description-1-innerspan" >{contentToShow ? contentToShow : timeLine[activeIndex].description}</span> */}
-          {contentToShow}
         </div>
-        {/* <div id="timeline-description-1" className=' animate-typing w-[100%] h-[200px] p-3 rounded-md bg-slate-100'></div> */}
       </div>
     </div>
   );

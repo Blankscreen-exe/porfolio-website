@@ -22,7 +22,7 @@ function Footer(props) {
             <NavLink to={appConstants.routes.aboutMe} className={navLinkClasses}>About Me</NavLink >
             <NavLink to={appConstants.routes.services} className={navLinkClasses}>Services</NavLink >
             <NavLink to={appConstants.routes.projects} className={navLinkClasses}>Projects</NavLink >
-            <NavLink to={appConstants.routes.experience} className={navLinkClasses}>Experience</NavLink >
+            <NavLink to={appConstants.routes.experience} className={navLinkClasses}>Work Experience</NavLink >
             <NavLink to={appConstants.routes.blog} className={navLinkClasses}>Blog</NavLink >
             <NavLink to={appConstants.routes.contacts} className={navLinkClasses}>Contact</NavLink >
           </nav> 

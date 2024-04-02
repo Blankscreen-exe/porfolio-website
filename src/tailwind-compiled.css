@@ -3945,6 +3945,21 @@ input.tab:checked + .tab-content,
   margin-bottom: 2.25rem;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .\!mt-0 {
   margin-top: 0px !important;
 }
@@ -5099,6 +5114,10 @@ input.tab:checked + .tab-content,
   border-color: rgb(255 255 255 / 0.05);
 }
 
+.border-tertiary\/70 {
+  border-color: rgb(var(--color-tertiary) / 0.7);
+}
+
 .border-b-primary {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(var(--color-primary) / var(--tw-border-opacity));
@@ -5295,6 +5314,37 @@ input.tab:checked + .tab-content,
   background-color: rgb(var(--color-content) / var(--tw-bg-opacity));
 }
 
+.bg-pink-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(219 39 119 / var(--tw-bg-opacity));
+}
+
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--color-secondary) / var(--tw-bg-opacity));
+}
+
+.bg-secondary\/80 {
+  background-color: rgb(var(--color-secondary) / 0.8);
+}
+
+.bg-secondary\/70 {
+  background-color: rgb(var(--color-secondary) / 0.7);
+}
+
+.bg-secondary\/60 {
+  background-color: rgb(var(--color-secondary) / 0.6);
+}
+
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
+}
+
+.bg-secondary\/30 {
+  background-color: rgb(var(--color-secondary) / 0.3);
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -5358,6 +5408,10 @@ input.tab:checked + .tab-content,
 
 .to-teal-200 {
   --tw-gradient-to: #99f6e4 var(--tw-gradient-to-position);
+}
+
+.to-primary\/40 {
+  --tw-gradient-to: rgb(var(--color-primary) / 0.4) var(--tw-gradient-to-position);
 }
 
 .bg-cover {
@@ -6028,6 +6082,11 @@ input.tab:checked + .tab-content,
 .text-yellow-600 {
   --tw-text-opacity: 1;
   color: rgb(202 138 4 / var(--tw-text-opacity));
+}
+
+.text-bg2 {
+  --tw-text-opacity: 1;
+  color: rgb(var(--color-bg2) / var(--tw-text-opacity));
 }
 
 .underline {
@@ -8046,6 +8105,16 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
   .md\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .md\:px-40 {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .md\:px-56 {
+    padding-left: 14rem;
+    padding-right: 14rem;
   }
 
   .md\:text-left {
