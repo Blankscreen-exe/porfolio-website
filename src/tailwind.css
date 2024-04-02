@@ -29,7 +29,8 @@
   --color-contrast-dark: 252 94 121; */
 
   :root {
-    --color-primary: 6 148 162;
+    /* --color-primary: 6 148 162; */
+    --color-primary: 3 188 207;
     --color-secondary: 196 196 196;
     --color-tertiary: 241 245 249;
     --color-contrast: 220 76 100;
@@ -43,6 +44,7 @@
 
     --color-bg1: 255 255 255;
     --color-bg2: 239 244 243;
+
   }
   @media (prefers-color-scheme: dark) {
     :root {
@@ -61,6 +63,7 @@
       --color-bg1: 29 35 42;
       --color-bg2: 70 82 95;
     }
+
   }
 
   :root[data-theme="dark"] {
@@ -97,8 +100,102 @@
     src: url(./assets/fonts/CourierPrime-Regular.ttf);
   }
 
-}
 
+  /* a, a:active {
+    color: var(--color-content-link);
+  }
+  a:hover {
+    color: var(--color-primary);
+  } */
+
+  ::-moz-selection { /* Code for Firefox */
+    color: var(--color-content);
+    background: var(--color-primary);
+  }
+  
+  ::selection {
+    /* color: var(--color-content); */
+    /* background: var(--color-primary); */
+  }
+
+  /* this removes focus outlines from  */
+  *:focus {
+    outline: none;
+  }
+  /* .recharts-wrapper{
+    width: auto !important;
+    height: auto !important;
+  } */
+
+
+  /* ------------- For pesky TW elements -------------- */
+  #multiselectbox > div > div > input {
+    /* background-color: #ff6db7; */
+    color: rgb(var(--color-content));
+  }
+  #multiselectbox > span  {
+    color: rgb(var(--color-contrast));
+  }
+  #contact-name {
+    color: rgb(var(--color-content));
+  }
+  #contact-name:focus {
+    color: rgb(var(--color-primary));
+  }
+  #contact-email {
+    color: rgb(var(--color-content));
+  }
+  #contact-email:focus {
+    color: rgb(var(--color-primary));
+  }
+  #contact-message {
+    color: rgb(var(--color-content));
+  }
+  #contact-message:focus {
+    color: rgb(var(--color-primary));
+  }
+  body > div.z-\[1070\] > div > div {
+    color: rgb(var(--color-content));
+    background-color: rgb(var(--color-bg2));
+  }
+  body > div.z-\[1070\] > div > div > div.list-none.m-0.p-0 > div > span {
+    color: rgb(var(--color-content));
+  }
+  body > div.z-\[1070\] > div > div > div.list-none.m-0.p-0 > div > span > span{
+    opacity: 0.8;
+    color: rgb(var(--color-content));
+  }
+  body > div.z-\[1070\] > div > div > div.flex.flex-row.items-center.justify-between.w-full.px-4.truncate.select-none.bg-transparent.text-gray-700.dark\:text-gray-200.hover\:bg-black\/5.dark\:hover\:bg-white\/30.cursor-pointer > span {
+    color: rgb(var(--color-content));
+  }
+
+
+  #contactform-service:focus {
+    background-color: rgb(var(--color-primary));
+    outline: none;
+    border: none;
+  }
+  #contactform-service:hover {
+    background-color: rgb(var(--color-tertiary));
+  }
+  #contactform-inquiry:focus {
+    background-color: rgb(var(--color-primary));
+    outline: none;
+    border: none;
+  }
+  #contactform-inquiry:hover {
+    background-color: rgb(var(--color-tertiary));
+  }
+  #contactform-hangout:focus {
+    background-color: rgb(var(--color-primary));
+    outline: none;
+    border: none;
+  }
+  #contactform-hangout:hover {
+    background-color: rgb(var(--color-tertiary));
+  }
+
+}
 
 /* ---------------- Body ------------------ */
 /* body {

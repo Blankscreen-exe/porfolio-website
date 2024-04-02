@@ -26,7 +26,7 @@ function HorizontalSlider(props) {
                         <div className="text-xs text-content/80">
                             {item.description}
                         </div>
-                        <a href="#" download="/" class="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 text-secondary hover:text-secondary/70 bg-gray-100 active:bg-gray-100 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center mt-2">
+                        <a href="#" download="/" className="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 text-secondary hover:text-secondary/70 bg-gray-100 active:bg-gray-100 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center mt-2">
                             {buttonText}
                         </a>
                     </div>

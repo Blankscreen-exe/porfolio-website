@@ -16,10 +16,11 @@ export default {
         experienceUpcomingSkills:"/experience/upcoming-skills",
 
         services:"/services",
-        servicesBackend:"/services/backend-development",
-        servicesFrontend:"/services/frontend-development",
-        servicesDataScience:"/services/data-science",
-        servicesMentorship:"/services/mentorship",
+        // these "servicetype" params are based on the sequence in which service data is tored inside the services.json
+        servicesBackend:"/services?servicetype=0",
+        servicesFrontend:"/services?servicetype=1",
+        servicesMachineLearning:"/services?servicetype=2",
+        servicesMentorship:"/services?servicetype=3",
         servicesFaq:"/services#faq",
         
         lists:"/lists",

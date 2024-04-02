@@ -9,11 +9,12 @@ import { useSelector } from 'react-redux';
 
 // constants
 import data from '../../data/hobbies.json';
+import TextDisplayBox from "../common/TextDisplayBox";
 
 const renderActiveShape = (props) => {
 
   const isDarkMode = useSelector((state) => {
-    return state.persistedReducer.colorTheme
+    return state.persistedReducer.isDarkMode
   })
   const themeColor = getThemeColor(isDarkMode);
 
@@ -43,8 +44,9 @@ const renderActiveShape = (props) => {
 
   return (
     <g>
-      <text x={cx} y={cy-200} dy={8} textAnchor="middle" fill={themeColor.content} dangerouslySetInnerHTML={{ __html: payload.name }}>
-      </text>
+      {/* <text x={cx} y={cy} dy={8} textAnchor="middle" fill={themeColor.content} className="font-bold text-sm md:text-2xl">
+        {(percent * 100).toFixed(1)}%
+      </text> */}
       <Sector
         cx={cx}
         cy={cy}
@@ -65,11 +67,11 @@ const renderActiveShape = (props) => {
         fill={themeColor.primary}
         stroke="none"
       />
-      <path
+      {/* <path
         d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`}
         stroke={themeColor.primary}
         fill="none"
-      />
+      /> */}
       <circle cx={ex} cy={ey} r={2} fill={themeColor.bg1} stroke="none" />
       {/* <text
         x={ex + (cos >= 0 ? 1 : -1) * 12}
@@ -84,7 +86,7 @@ const renderActiveShape = (props) => {
         textAnchor={textAnchor}
         fill={themeColor.secondary}
       > */}
-      <text
+      {/* <text
         x={ex + (cos >= 0 ? 1 : -1) * 12}
         y={ey-10}
         dy={18}
@@ -92,28 +94,34 @@ const renderActiveShape = (props) => {
         fill={themeColor.content}
       >
         {`${(percent * 100).toFixed(2)}%`}
-      </text>
+      </text> */}
     </g>
   );
 };
 
 function Hobbies(props) {
 
+  // using redux to get the current theme mode
   const isDarkMode = useSelector((state) => {
-    return state.persistedReducer.colorTheme
+    return state.persistedReducer.isDarkMode;
   })
-  const themeColor = getThemeColor(isDarkMode);
+  const themeColor = getThemeColor(true);
 
+  console.log("COMPONENT RAN")
+  // setting a state variable which holds window width dynamically
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
-    
-    console.log("---->", window.screen.width)
-  
+    // window.addEventListener("resize", function() {
+    //   setWindowWidth(window.innerWidth)
+    // })
+    console.log("USE EFFECT RAN")
     return () => {
       
     }
   }, [])
   
 
+  // used for the chart to show the current item selected
   const [activeIndex, setActiveIndex] = useState(0);
   const onPieEnter = useCallback(
     (_, index) => {
@@ -122,17 +130,27 @@ function Hobbies(props) {
     [setActiveIndex]
   );
 
+
+  // chart size calculations
+  const pieChartWidth = windowWidth*0.5;
+  const pieChartHeight = windowWidth*0.4;
+  const cx = pieChartWidth/2;
+  const cy = pieChartHeight/2;
+  const innerRadius = Math.abs((windowWidth*0.1)-((windowWidth*1.5)*0.14));
+  const outerRadius = Math.abs(innerRadius+(innerRadius*0.25));
+
   return (
-    <div className="">
-      <PieChart width={600} height={400} className="mx-auto text-content">
+    <div className="" >
+      <TextDisplayBox text={data[activeIndex].name}/>
+      <PieChart width={pieChartWidth} height={pieChartHeight} className="mx-auto text-content overflow-visible select-none">
         <Pie
           activeIndex={activeIndex}
           activeShape={renderActiveShape}
           data={data}
-          cx={300}
-          cy={200}
-          innerRadius={100}
-          outerRadius={100+30}
+          cx={cx}
+          cy={cy}
+          innerRadius={innerRadius}
+          outerRadius={outerRadius}
           fill={themeColor.primary}
           dataKey="value"
           onMouseEnter={onPieEnter}

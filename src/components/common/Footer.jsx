@@ -12,15 +12,15 @@ import { getClassesFromConstants, classAdd } from '../../helpers/common'
 function Footer(props) {
 
   const navLinkClasses = classAdd(getClassesFromConstants(classLists.navLink), "hover:underline", "hover:underline-offset-1")
-  console.log(navLinkClasses)
 
   return (
-    <div className='mb-5'>
+    <div className='mb-5 drop-shadow-sm'>
         <footer className="footer p-10 bg-tertiary/50 text-base-content rounded-t-md">
           <nav>
             <h6 className="footer-title font-bold font-sans text-content border-b-2 border-b-primary">Pages</h6> 
             <NavLink to={appConstants.routes.home} className={navLinkClasses}>Home</NavLink >
             <NavLink to={appConstants.routes.aboutMe} className={navLinkClasses}>About Me</NavLink >
+            <NavLink to={appConstants.routes.services} className={navLinkClasses}>Services</NavLink >
             <NavLink to={appConstants.routes.projects} className={navLinkClasses}>Projects</NavLink >
             <NavLink to={appConstants.routes.experience} className={navLinkClasses}>Experience</NavLink >
             <NavLink to={appConstants.routes.blog} className={navLinkClasses}>Blog</NavLink >
@@ -30,7 +30,7 @@ function Footer(props) {
             <h6 className="footer-title font-bold font-sans text-content border-b-2 border-b-primary">Services</h6> 
             <NavLink to={appConstants.routes.servicesBackend} className={navLinkClasses}>Backend</NavLink >
             <NavLink to={appConstants.routes.servicesFrontend} className={navLinkClasses}>Frontend</NavLink >
-            <NavLink to={appConstants.routes.servicesDataScience} className={navLinkClasses}>Data Science</NavLink >
+            <NavLink to={appConstants.routes.servicesMachineLearning} className={navLinkClasses}>Machine Learning</NavLink >
             <NavLink to={appConstants.routes.servicesMentorship} className={navLinkClasses}>Mentorship</NavLink >
           </nav> 
           <nav>

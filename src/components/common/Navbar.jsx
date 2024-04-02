@@ -33,24 +33,28 @@ function NavBar(props) {
       name: "Services",
       icon: svgList.navIcons.services,
       url: appConstants.routes.services,
-      children: [
-        {
-          name: "Backend",
-          url: appConstants.routes.servicesBackend
-        },
-        {
-          name: "Frontend",
-          url: appConstants.routes.servicesFrontend
-        },
-        {
-          name: "Data Science",
-          url: appConstants.routes.servicesDataScience
-        },
-        {
-          name: "Mentorship",
-          url: appConstants.routes.servicesMentorship
-        },
-      ]
+      // children: [
+      //   {
+      //     name: "Backend",
+      //     url: appConstants.routes.servicesBackend
+      //   },
+      //   {
+      //     name: "Frontend",
+      //     url: appConstants.routes.servicesFrontend
+      //   },
+      //   {
+      //     name: "Machine Learnning",
+      //     url: appConstants.routes.servicesMachineLearning
+      //   },
+      //   {
+      //     name: "Mentorship",
+      //     url: appConstants.routes.servicesMentorship
+      //   },
+      //   {
+      //     name: "FAQ",
+      //     url: appConstants.routes.servicesFaq
+      //   },
+      // ]
     },
     {
       name: "My Experience",

@@ -42,7 +42,6 @@ const scrollButtonClass =
 
   const startSliderLeft = () => {
     if (intervalRef.current) return;
-    console.log("THISSSS left");
     intervalRef.current = setInterval(() => {
         
       let slider = document.getElementById(sliderId);
@@ -59,7 +58,6 @@ const scrollButtonClass =
 
   const startSliderRight = () => {
     if (intervalRef.current) return;
-    console.log("THISSSS right");
     intervalRef.current = setInterval(() => {
       let slider = document.getElementById(sliderId);
       slider.scrollLeft = slider.scrollLeft + scrollMagnitude;

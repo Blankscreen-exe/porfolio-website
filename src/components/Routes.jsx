@@ -4,11 +4,13 @@ import { Route, Routes } from 'react-router-dom'
 
 // Constants
 import appConstants from '../constants/appConstants'
-import PageTitle from './common/PageTitle'
 
 // Components
+import PageTitle from './common/PageTitle'
 import Home from './home'
 import About from './about'
+import Contact from './contact'
+import Services from './services'
 
 function RoutesList(props) {
   return (
@@ -30,15 +32,16 @@ function RoutesList(props) {
         <Route path={appConstants.routes.listsBooks} element={<PageTitle title="Lists of Book"/>}/>
         <Route path={appConstants.routes.listsResources} element={<PageTitle title="Lists Resource"/>}/>
 
-        <Route path={appConstants.routes.services} element={<PageTitle title="Service"/>}/>
-        <Route path={appConstants.routes.servicesBackend} element={<PageTitle title="Services Backend"/>}/>
-        <Route path={appConstants.routes.servicesFrontend} element={<PageTitle title="Services Frontend"/>}/>
-        <Route path={appConstants.routes.servicesDataScience} element={<PageTitle title="Services DataScience"/>}/>
-        <Route path={appConstants.routes.servicesMentorship} element={<PageTitle title="Services Mentorship"/>}/>
+        <Route path={appConstants.routes.services} element={<Services/>}/>
+        <Route path={appConstants.routes.servicesBackend} element={<Services/>}/>
+        <Route path={appConstants.routes.servicesFrontend} element={<Services/>}/>
+        <Route path={appConstants.routes.servicesMachineLearning} element={<Services/>}/>
+        <Route path={appConstants.routes.servicesMentorship} element={<Services/>}/>
+        <Route path={appConstants.routes.servicesFaq} element={<Services/>}/>
 
         <Route path={appConstants.routes.projects} element={<PageTitle title="Project"/>}/>
 
-        <Route path={appConstants.routes.contacts} element={<PageTitle title="Contact"/>}/>
+        <Route path={appConstants.routes.contacts} element={<Contact/>}/>
 
         <Route path={"*"} element={<h1 className='text-red-600 font-bold'>404 Not Found</h1>}/>
     </Routes>

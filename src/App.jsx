@@ -22,7 +22,6 @@ function App() {
   })
 
   const posts = useSelector((state) => {
-    console.log(state)
     return state.persistedReducer.post
   })
 
