@@ -119,14 +119,14 @@ function NavBar(props) {
   return (
     <div
     id="navbar"
-    className="navbar bg-base-100 bg-slate-10 rounded-md shadow-md m-auto mt-10 flex justify-between sticky opacity-90 backdrop-blur-xl bg-tertiary/40 z-[100]"
+    className="navbar bg-base-100 bg-bg1 rounded-md shadow-md m-auto mt-10 flex justify-between sticky opacity-80 backdrop-blur-xl bg-tertiary/40 z-[100]"
   >
       <div className="navbar-start w-full flex flex-row justify-between ">
         <div className=''>
           <div className="dropdown">
             {/* MSG: made this dropdown view permanenet */}
             {/* <div tabIndex="0" role="button" className="btn btn-ghost xl:hidden"> */}
-            <div tabIndex="0" role="button" className="btn btn-ghost ">
+            <div tabIndex="0" role="button" className="btn btn-ghost hover:bg-bg2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
