@@ -2,26 +2,29 @@
     {
         "title":"award 1",
         "description": "Lorem ipwum dolor set amet. Lorem ipwum dolor set amet. Lorem ipwum dolor set amet",
-        "logoType": "coursera"
+        "logoType": "coursera",
+        "type": "workshop",
+        "publishLinks": ["https://some/long/link/1/very/very","https://some/long/link/2"]
     },
     {
         "title":"award 2",
         "description": "Lorem ipwum dolor set amet. Lorem ipwum dolor set amet. Lorem ipwum dolor set amet",
-        "logoType": "coursera"
+        "logoType": "coursera",
+        "type": "workshop",
+        "publishLinks": ["https://some/long/link/1/very/very","https://some/long/link/2"]
     },
     {
         "title":"award 3",
         "description": "Lorem ipwum dolor set amet. Lorem ipwum dolor set amet. Lorem ipwum dolor set amet",
-        "logoType": "coursera"
+        "logoType": "coursera",
+        "type": "award",
+        "publishLinks": ["https://some/long/link/1/very/very","https://some/long/link/2"]
     },
     {
         "title":"award 4",
         "description": "Lorem ipwum dolor set amet. Lorem ipwum dolor set amet. Lorem ipwum dolor set amet",
-        "logoType": "coursera"
-    },
-    {
-        "title":"award 5",
-        "description": "Lorem ipwum dolor set amet. Lorem ipwum dolor set amet. Lorem ipwum dolor set amet",
-        "logoType": "coursera"
+        "logoType": "coursera",
+        "type": "award",
+        "publishLinks": ["https://some/long/link/1/very/very","https://some/long/link/2"]
     }
 ]

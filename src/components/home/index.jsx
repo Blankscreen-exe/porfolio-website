@@ -15,6 +15,7 @@ import TechStack from './TechStack'
 import HorizontalSlider from '../common/HorizontalSlider'
 import CtaCard from '../common/CtaCard'
 import BlockQuote from '../common/BlockQuote'
+import Protip from '../common/Protip'
 
 function Home(props) {
   window.scrollTo(0, 0);
@@ -26,11 +27,7 @@ function Home(props) {
         />
         <Testimonials/>
         <TechStack/>
-        <HorizontalSlider
-          data={awards}
-          title={"Honors & Awards"}
-          buttonText={<><span>View</span> {svgList.externalLink}</>}
-        />
+        <Protip/>
         <HorizontalSlider
           data={awards}
           title={"Certificates"}
