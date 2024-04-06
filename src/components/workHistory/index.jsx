@@ -6,6 +6,7 @@ import Awards from './Awards'
 import SectionHeading from '../common/SectionHeading'
 
 function WorkExperience(props) {
+  window.scrollTo(0, 0);
   return (
     <div>
         <PageTitle title="Work Experience"/>
