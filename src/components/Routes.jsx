@@ -11,6 +11,8 @@ import Home from './home'
 import About from './about'
 import Contact from './contact'
 import Services from './services'
+import Error404 from './common/404'
+import WorkExperience from './workHistory'
 
 function RoutesList(props) {
   return (
@@ -19,8 +21,8 @@ function RoutesList(props) {
         <Route path={appConstants.routes.aboutMe} element={<About/>}/>
         <Route path={appConstants.routes.blog} element={<PageTitle title="Blog"/>}/>
 
-        <Route path={appConstants.routes.experience} element={<PageTitle title="Work Experience"/>}/>
-        <Route path={appConstants.routes.experienceWorkHistory} element={<PageTitle title="Work Experience Work History"/>}/>
+        <Route path={appConstants.routes.experience} element={<WorkExperience/>}/>
+        <Route path={appConstants.routes.experienceWorkHistory} element={<WorkExperience/>}/>
         <Route path={appConstants.routes.experienceAwards} element={<PageTitle title="Work Experience Award"/>}/>
         <Route path={appConstants.routes.experienceCertificates} element={<PageTitle title="Work Experience Certificates"/>}/>
         <Route path={appConstants.routes.experienceUpcomingSkills} element={<PageTitle title="Work Experience UpComing Skills"/>}/>
@@ -43,7 +45,7 @@ function RoutesList(props) {
 
         <Route path={appConstants.routes.contacts} element={<Contact/>}/>
 
-        <Route path={"*"} element={<h1 className='text-red-600 font-bold'>404 Not Found</h1>}/>
+        <Route path={"*"} element={<Error404/>}/>
     </Routes>
   )
 }
