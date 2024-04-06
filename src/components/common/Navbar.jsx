@@ -63,7 +63,7 @@ function NavBar(props) {
       children: [
         {
           name: "Work History & Awards",
-          url: appConstants.routes.experienceWorkHistory
+          url: appConstants.routes.experience
         },
         {
           name: "Certificates",
