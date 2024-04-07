@@ -71,7 +71,7 @@ function TechStack(props) {
               >
                 <div
                   key={item.name}
-                  className="w-fit p-2 rounded-md text-content border border-slate-300/60 hover:border-primary/0 md:text-lg text-sm font-semibold flex flex-row justify-center items-center gap-4 hover:bg-gradient-to-br hover:from-teal-100 hover:to-primary/60 hover:text-tertiary hover:cursor-pointer transition-all duration-500"
+                  className="w-fit p-2 rounded-md text-content border border-slate-300/60 hover:border-primary/0 md:text-lg text-sm font-semibold flex flex-row justify-center items-center gap-4 hover:bg-gradient-to-br hover:from-primary/10 hover:to-primary/80 hover:text-content hover:cursor-pointer transition-all duration-500"
                 >
                   <img
                     src="https://dummyimage.com/100x100/eee/444"
