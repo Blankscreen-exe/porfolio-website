@@ -42,6 +42,9 @@ module.exports = {
           25: '.25',
           175: '1.75',
         },
+        blur: {
+          xs: '2px',
+        },
         keyframes: {
           typing: {
             "0%": {

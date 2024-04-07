@@ -8,7 +8,7 @@ import AwardsData from "../../data/awards.json";
 import svgList from "../../constants/svg";
 
 // Helpers
-import { truncateText } from "../../helpers/common";
+import { truncateText, capitalizeFirstLetter, capitalizeWords } from "../../helpers/common";
 
 function Awards(props) {
   return (
@@ -18,22 +18,30 @@ function Awards(props) {
           {AwardsData.map((item, ind) => {
             return (
               <div className="rounded-xl bg-bg2 p-6 text-center shadow-xl mb-12 w-[300px]">
+                
                 <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-primary shadow-lg shadow-shadow/40">
                   {item.type == "award" && svgList.awards.award}
                   {item.type == "workshop" && svgList.awards.workshop}
                 </div>
-                <h1 className="text-darken mb-3 text-xl font-medium lg:px-14 text-content">
-                  {item.title}
+
+                <div className="text-darken mb-3 text-2xs text-content/70 flex flex-row gap-4 justify-center">
+                  <span className="text-primary my-auto">{svgList.calendar}</span> {item.date}
+                </div>
+
+                <h1 className="text-darken mb-3 text-xl font-medium text-primary">
+                  {capitalizeWords(item.title)}
                 </h1>
+
                 <p className="px-4 text-content/60">{item.description}</p>
-                <ul className="mx-6 mt-6">
+
+                <ul className="mx-6 my-4 ">
                   {item.publishLinks.map((item, ind) => {
                     return (
                       <li className="w-fit h-fit">
                         <a
                           href={item}
                           target="_blank"
-                          className=" flex flex-row gap-2 text-sm text-contentLink/90 hover:text-contentLinkHover hover:underline"
+                          className="flex flex-row gap-2 align-middle text-sm text-contentLink/90 hover:text-contentLinkHover hover:underline"
                         >
                           {svgList.link}
                           {truncateText(item, 25)}
@@ -42,6 +50,9 @@ function Awards(props) {
                     );
                   })}
                 </ul>
+
+                <img src={item.imgUrl} className="rounded-md mt-4 hover:filter hover:brightness-125 transition-all duration-300 hover:blur-xs hover:cursor-pointer"/>
+
               </div>
             );
           })}

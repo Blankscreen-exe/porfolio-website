@@ -1,30 +1,38 @@
 [
     {
-        "title":"award 1",
+        "title":"some workshop award 1",
         "description": "Lorem ipwum dolor set amet. Lorem ipwum dolor set amet. Lorem ipwum dolor set amet",
         "logoType": "coursera",
         "type": "workshop",
-        "publishLinks": ["https://some/long/link/1/very/very","https://some/long/link/2"]
+        "date":"20-04-2024",
+        "publishLinks": ["https://some/long/link/1/very/very","https://some/long/link/2"],
+        "imgUrl":"https://dummyimage.com/600x400/9e9e9e/fff"
     },
     {
-        "title":"award 2",
+        "title":"some workshop award 2",
         "description": "Lorem ipwum dolor set amet. Lorem ipwum dolor set amet. Lorem ipwum dolor set amet",
         "logoType": "coursera",
         "type": "workshop",
-        "publishLinks": ["https://some/long/link/1/very/very","https://some/long/link/2"]
+        "date":"20-04-2024",
+        "publishLinks": ["https://some/long/link/1/very/very","https://some/long/link/2"],
+        "imgUrl":"https://dummyimage.com/600x400/9e9e9e/fff"
     },
     {
-        "title":"award 3",
+        "title":"won prize award 3",
         "description": "Lorem ipwum dolor set amet. Lorem ipwum dolor set amet. Lorem ipwum dolor set amet",
         "logoType": "coursera",
         "type": "award",
-        "publishLinks": ["https://some/long/link/1/very/very","https://some/long/link/2"]
+        "date":"20-04-2024",
+        "publishLinks": ["https://some/long/link/1/very/very","https://some/long/link/2"],
+        "imgUrl":"https://dummyimage.com/600x400/9e9e9e/fff"
     },
     {
-        "title":"award 4",
+        "title":"won prize award 4",
         "description": "Lorem ipwum dolor set amet. Lorem ipwum dolor set amet. Lorem ipwum dolor set amet",
         "logoType": "coursera",
         "type": "award",
-        "publishLinks": ["https://some/long/link/1/very/very","https://some/long/link/2"]
+        "date":"20-04-2024",
+        "publishLinks": ["https://some/long/link/1/very/very","https://some/long/link/2"],
+        "imgUrl":"https://dummyimage.com/600x400/9e9e9e/fff"
     }
 ]
