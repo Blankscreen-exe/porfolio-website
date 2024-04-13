@@ -1,0 +1,90 @@
+[
+    {
+        "id": 0,
+        "nodes": 2,
+        "title": "title 1",
+        "status": "finished",
+        "recommendation": 5,
+        "review": "a very very long description of whatever this book is about. All I can say is that I'm in constant need of new books to keep my dopamine levels at an optimum pace.",
+        "author": "author 1",
+        "genre": ["genre 1", "genre 2", "genre 3"],
+        "img": "https://dummyimage.com/600x400/bfbfbf/fff"
+    },
+    {
+        "id": 1,
+        "nodes": 2,
+        "title": "title 2",
+        "status": "finished",
+        "recommendation": 2,
+        "review": "a very very long description of whatever this book is about. All I can say is that I'm in constant need of new books to keep my dopamine levels at an optimum pace.",
+        "author": "author 2",
+        "genre": ["genre 1", "genre 2"],
+        "img": "https://dummyimage.com/600x400/bfbfbf/fff"
+    },
+    {
+        "id": 2,
+        "nodes": 2,
+        "title": "title 3",
+        "status": "reading",
+        "recommendation": 3,
+        "review": "a very very long description of whatever this book is about. All I can say is that I'm in constant need of new books to keep my dopamine levels at an optimum pace.",
+        "author": "author 3",
+        "genre": ["genre 1", "genre 3"],
+        "img": "https://dummyimage.com/600x400/bfbfbf/fff"
+    },
+    {
+        "id": 3,
+        "nodes": 2,
+        "title": "title 4",
+        "status": "finished",
+        "recommendation": 4,
+        "review": "a very very long description of whatever this book is about. All I can say is that I'm in constant need of new books to keep my dopamine levels at an optimum pace.",
+        "author": "author 4",
+        "genre": ["genre 1", "genre 2", "genre 3"],
+        "img": "https://dummyimage.com/600x400/bfbfbf/fff"
+    },
+    {
+        "id": 4,
+        "nodes": 2,
+        "title": "title 5",
+        "status": "inqueue",
+        "recommendation": 1,
+        "review": "a very very long description of whatever this book is about. All I can say is that I'm in constant need of new books to keep my dopamine levels at an optimum pace.",
+        "author": "author 5",
+        "genre": ["genre 1"],
+        "img": "https://dummyimage.com/600x400/bfbfbf/fff"
+    },
+    {
+        "id": 5,
+        "nodes": 2,
+        "title": "title 6",
+        "status": "inqueue",
+        "recommendation": 2,
+        "review": "a very very long description of whatever this book is about. All I can say is that I'm in constant need of new books to keep my dopamine levels at an optimum pace.",
+        "author": "author 6",
+        "genre": ["genre 1", "genre 2", "genre 3"],
+        "img": "https://dummyimage.com/600x400/bfbfbf/fff"
+    },
+    {
+        "id": 6,
+        "nodes": 2,
+        "title": "title 7",
+        "status": "",
+        "recommendation": 3,
+        "review": "a very very long description of whatever this book is about. All I can say is that I'm in constant need of new books to keep my dopamine levels at an optimum pace.",
+        "author": "author 7",
+        "genre": ["genre 2", "genre 3"],
+        "img": "https://dummyimage.com/600x400/bfbfbf/fff"
+    },
+    {
+        "id": 7,
+        "nodes": 2,
+        "title": "title 8",
+        "status": "",
+        "recommendation": 4,
+        "review": "a very very long description of whatever this book is about. All I can say is that I'm in constant need of new books to keep my dopamine levels at an optimum pace.",
+        "author": "author 8",
+        "genre": ["genre 3"],
+        "img": "https://dummyimage.com/600x400/bfbfbf/fff"
+    }
+]
