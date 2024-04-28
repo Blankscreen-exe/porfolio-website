@@ -79,20 +79,20 @@ function NavBar(props) {
       name: "Lists",
       icon: svgList.navIcons.lists,
       url: appConstants.routes.lists,
-      // children: [
-      //   {
-      //     name: "Dev Resources",
-      //     url: appConstants.routes.listsResources
-      //   },
-      //   {
-      //     name: "Games",
-      //     url: appConstants.routes.listsGames
-      //   },
-      //   {
-      //     name: "Books",
-      //     url: appConstants.routes.listsBooks
-      //   },
-      // ]
+      children: [
+        {
+          name: "Dev Resources",
+          url: appConstants.routes.listsResources
+        },
+        {
+          name: "Games",
+          url: appConstants.routes.listsGames
+        },
+        {
+          name: "Books",
+          url: appConstants.routes.listsBooks
+        },
+      ]
     },
     {
       name: "Projects",
