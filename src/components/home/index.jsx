@@ -23,7 +23,7 @@ function Home(props) {
     <>
         <Hero/>
         <BlockQuote
-          text="Some <i class='font-italic'>witty</i> <b class='font-bold'>comments</b> here which are very very long"
+          text="I'm a <span class='font-bold'>Full-stack Software Engineer</span> and a <span class='font-bold'>Data Scientist</span>. But that alone cannot define who I am. Hopefully this site will give you an idea."
         />
         <Testimonials/>
         <TechStack/>
