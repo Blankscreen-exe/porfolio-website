@@ -15,6 +15,7 @@ import Error404 from './common/404'
 import WorkExperience from './workHistory'
 import BookList from './booksList'
 import GameList from './gameList'
+import DevResourceList from './devResourceList'
 
 function RoutesList(props) {
   return (
@@ -34,7 +35,7 @@ function RoutesList(props) {
         <Route path={appConstants.routes.lists} element={<PageTitle title="List"/>}/>
         <Route path={appConstants.routes.listsGames} element={<GameList/>}/>
         <Route path={appConstants.routes.listsBooks} element={<BookList/>}/>
-        <Route path={appConstants.routes.listsResources} element={<PageTitle title="Lists Resource"/>}/>
+        <Route path={appConstants.routes.listsResources} element={<DevResourceList/>}/>
 
         <Route path={appConstants.routes.services} element={<Services/>}/>
         <Route path={appConstants.routes.servicesBackend} element={<Services/>}/>
