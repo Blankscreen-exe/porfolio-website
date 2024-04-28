@@ -874,21 +874,25 @@ select {
   --color-bg2: 239 244 243;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-primary: 48 195 210;
-    --color-secondary: 138 138 138;
-    --color-tertiary: 75 86 96;
-    --color-contrast: 252 94 121;
-    --color-title: 255 255 255;
-    --color-content: 255 255 255;
-    --color-content-link: 227 227 227;
-    --color-content-link-hover: 12 220 241;
-    --color-shadow: 0 0 0;
-    --color-bg1: 29 35 42;
-    --color-bg2: 70 82 95;
-  }
-}
+/* @media (prefers-color-scheme: dark) {
+    :root {
+      --color-primary: 48 195 210;
+      --color-secondary: 138 138 138;
+      --color-tertiary: 75 86 96;
+      --color-contrast: 252 94 121;
+
+      --color-title: 255 255 255;
+      --color-content: 255 255 255;
+      --color-content-link: 227 227 227;
+      --color-content-link-hover: 12 220 241;
+
+      --color-shadow: 0 0 0;
+
+      --color-bg1: 29 35 42;
+      --color-bg2: 70 82 95;
+    }
+
+  } */
 
 :root[data-theme="dark"] {
   --color-primary: 48 195 210;
@@ -6056,10 +6060,6 @@ input.tab:checked + .tab-content,
 
 .font-bold {
   font-family: "CourierPrime-Bold";
-}
-
-.font-italic {
-  font-family: "CourierPrime-Italic";
 }
 
 .font-normal {

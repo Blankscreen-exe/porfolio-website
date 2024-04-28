@@ -46,7 +46,7 @@
     --color-bg2: 239 244 243;
 
   }
-  @media (prefers-color-scheme: dark) {
+  /* @media (prefers-color-scheme: dark) {
     :root {
       --color-primary: 48 195 210;
       --color-secondary: 138 138 138;
@@ -64,7 +64,7 @@
       --color-bg2: 70 82 95;
     }
 
-  }
+  } */
 
   :root[data-theme="dark"] {
     --color-primary: 48 195 210;
