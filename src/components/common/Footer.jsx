@@ -22,9 +22,14 @@ function Footer(props) {
             <NavLink to={appConstants.routes.aboutMe} className={navLinkClasses}>About Me</NavLink >
             <NavLink to={appConstants.routes.services} className={navLinkClasses}>Services</NavLink >
             <NavLink to={appConstants.routes.projects} className={navLinkClasses}>Projects</NavLink >
-            <NavLink to={appConstants.routes.experience} className={navLinkClasses}>Work Experience</NavLink >
             <NavLink to={appConstants.routes.blog} className={navLinkClasses}>Blog</NavLink >
             <NavLink to={appConstants.routes.contacts} className={navLinkClasses}>Contact</NavLink >
+          </nav> 
+          <nav>
+            <h6 className="footer-title font-bold font-sans text-content border-b-2 border-b-primary">My Work</h6> 
+            <NavLink to={appConstants.routes.experience} className={navLinkClasses}>Experience & Awards</NavLink >
+            <NavLink to={appConstants.routes.experienceCertificates} className={navLinkClasses}>Certificates</NavLink >
+            <NavLink to={appConstants.routes.experienceUpcomingSkills} className={navLinkClasses}>Targetted Skills</NavLink >
           </nav> 
           <nav>
             <h6 className="footer-title font-bold font-sans text-content border-b-2 border-b-primary">Services</h6> 

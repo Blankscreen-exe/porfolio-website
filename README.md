@@ -94,6 +94,7 @@
 - https://tailwindcomponents.com/component/tailwind-css-inbox-view-message
 - https://recharts.org/en-US/examples/CustomActiveShapePieChart
 - https://tailwindcomponents.com/component/alpinejs-animated-toggle
+- https://tailwindflex.com/@samuel33/hover-effect-card
 
 TODO:
 - [ ] voice note for language cards

@@ -167,7 +167,7 @@ const scrollButtonClass =
                       className={classAdd(
                         index % 2 == 0 ? "timeline-start" : "timeline-end",
                         index == 0 ? "text-primary" : "text-content/80",
-                        "font-medium"
+                        "font-bold"
                       )}
                     >
                       {item.date}

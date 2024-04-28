@@ -15,7 +15,7 @@ function BlockQuote(props) {
         </svg>
 
         <span className="relative z-10">
-            <p className="text-content sm:text-xl text-center" dangerouslySetInnerHTML={{ __html: text }}>
+            <p className="text-content sm:text-xl text-center font-normal" dangerouslySetInnerHTML={{ __html: text }}>
             </p>
         </span>
         </blockquote>
