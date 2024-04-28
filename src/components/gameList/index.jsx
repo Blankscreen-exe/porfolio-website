@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { flexRender, createColumnHelper } from "@tanstack/react-table";
 
 // Data
-import data from "../../data/booksList";
+import data from "../../data/gamesList";
 
 // helpers
 import { capitalizeFirstLetter, capitalizeWords } from "../../helpers/common";
@@ -18,6 +18,7 @@ import PageTitle from "../common/PageTitle";
 import Paragraph from "../common/Paragraph";
 
 function index(props) {
+  window.scrollTo(0, 0);
   const columnHelper = createColumnHelper();
 
   const columns = [
@@ -35,11 +36,11 @@ function index(props) {
         </h2>
       ),
     }),
-    columnHelper.accessor("author", {
+    columnHelper.accessor("studio", {
       cell: (row) => <i>{capitalizeWords(row.getValue())}</i>,
       header: () => (
         <h2 className="text-lg hover:cursor-pointer hover:text-primary">
-          Author
+          Studio
         </h2>
       ),
     }),
@@ -54,7 +55,7 @@ function index(props) {
             stat = <span>✅ Finished</span>;
             break;
           case "reading":
-            stat = <span className="px-2 py-1 rounded-md text-black bg-yellow-500">⬛️ Reading</span>;
+            stat = <span className="px-2 py-1 rounded-md text-black bg-yellow-500">⬛ Playing</span>;
             break;
           default:
             stat = <span>⚪️ N/A</span>;
@@ -151,8 +152,8 @@ function index(props) {
 
   return (
     <div className="mb-12">
-      <PageTitle title="My Book List"/>
-      <Paragraph text={"Books I have read and books I have reviewed. Hope you <i>will</i> find a <span class='font-bold'>good read</span> somewhere in there!<br/><br/>We can also share thoughts on a particular book if you like, <a href="+appConstants.routes.contacts+" class='text-contentLink underline hover:text-contentLinkHover'>connect with me here</a>"}/>
+      <PageTitle title="My Games List"/>
+      <Paragraph text={"Games I have read and reviewed. Hope you <i>will</i> find something <span class='font-bold'>to your liking</span> somewhere in there!<br/><br/>We can also share thoughts on a particular game if you like, <a href="+appConstants.routes.contacts+" class='text-contentLink underline hover:text-contentLinkHover'>connect with me here</a>"}/>
       <DataTable data={data} columns={columns} />
     </div>
   );

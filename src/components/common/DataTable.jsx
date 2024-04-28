@@ -64,9 +64,6 @@ export default function DataTable({ data, columns }) {
     setCurrentPageNumber(table.getPageCount());
   };
   
-
-  console.log("CURRENT PAGE NUMBER", currentPageNumber)
-
   return (
     <div className="">
       <TextInputFilter
@@ -152,7 +149,6 @@ export default function DataTable({ data, columns }) {
             Prev
           </button>
           <button className="join-item btn bg-tertiary focus:outline-none">
-            {console.log(table.options.state)}
             Page {table.options.state.pagination.pageIndex + 1} out of{" "}
             {table.getPageCount()}
           </button>
@@ -172,7 +168,7 @@ export default function DataTable({ data, columns }) {
         </div>
 
         <span>
-          <label className="my-auto" for="page-number-input">
+          <label className="my-auto" htmlFor="page-number-input">
             Page
           </label>
           <input

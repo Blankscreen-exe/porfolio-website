@@ -18,6 +18,7 @@ import PageTitle from "../common/PageTitle";
 import Paragraph from "../common/Paragraph";
 
 function index(props) {
+  window.scrollTo(0, 0);
   const columnHelper = createColumnHelper();
 
   const columns = [
