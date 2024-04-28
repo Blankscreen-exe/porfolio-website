@@ -10,11 +10,12 @@ import { capitalizeFirstLetter, capitalizeWords } from "../../helpers/common";
 
 // Constants
 import svgList from "../../constants/svg";
+import appConstants from "../../constants/appConstants";
 
 // Components
 import DataTable from "../common/DataTable";
 import PageTitle from "../common/PageTitle";
-import BlockQuote from "../common/BlockQuote";
+import Paragraph from "../common/Paragraph";
 
 function index(props) {
   const columnHelper = createColumnHelper();
@@ -56,7 +57,7 @@ function index(props) {
             stat = <span className="px-2 py-1 rounded-md text-black bg-yellow-500">⬛️ Reading</span>;
             break;
           default:
-            stat = <span>⚪️ Wakarimasen~</span>;
+            stat = <span>⚪️ N/A</span>;
         }
         return (stat);
       },
@@ -151,7 +152,7 @@ function index(props) {
   return (
     <div className="mb-12">
       <PageTitle title="My Book List"/>
-      <BlockQuote text="Books I have read and books I have reviewed. Hope you will find a good read somewhere in there!" />
+      <Paragraph text={"Books I have read and books I have reviewed. Hope you <i>will</i> find a <span class='font-bold'>good read</span> somewhere in there!<br/><br/>We can also share thoughts on a particular book if you like, <a href="+appConstants.routes.contacts+" class='text-contentLink underline hover:text-contentLinkHover'>connect with me here</a>"}/>
       <DataTable data={data} columns={columns} />
     </div>
   );
