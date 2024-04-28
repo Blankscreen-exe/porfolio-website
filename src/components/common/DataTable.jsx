@@ -13,6 +13,7 @@ import TextInputFilter from "./TextInputFilter";
 export default function DataTable({ data, columns }) {
   const [sorting, setSorting] = useState([]);
   const [filtering, setFiltering] = useState("");
+  const [currentPageNumber, setCurrentPageNumber] = useState(1);
 
   const table = useReactTable({
     data,
@@ -29,63 +30,94 @@ export default function DataTable({ data, columns }) {
     onGlobalFilterChange: setFiltering,
   });
 
+  const handleInputChange = (event) => {
+    const newPageIndex = parseInt(event.target.value, 10) - 1; // Adjust for zero-based indexing
+
+    // Handle invalid input (non-numeric or out-of-range values)
+    if (
+      isNaN(newPageIndex) ||
+      newPageIndex < 0 ||
+      newPageIndex >= table.getPageCount()
+    ) {
+      console.warn("Invalid page number entered.");
+      return;
+    }
+
+    table.setPageIndex(newPageIndex);
+
+    setCurrentPageNumber(newPageIndex+1);
+  };
+  const handleNextPage = (event) => {
+    table.nextPage();
+    setCurrentPageNumber(prevState => table.options.state.pagination.pageIndex+1);
+  };
+  const handlePrevPage = (event) => {
+    table.previousPage();
+    setCurrentPageNumber(table.options.state.pagination.pageIndex);
+  };
+  const handleFirstPage = (event) => {
+    table.setPageIndex(0);
+    setCurrentPageNumber(1);
+  };
+  const handleLastPage = (event) => {
+    table.setPageIndex(table.getPageCount() - 1);
+    setCurrentPageNumber(table.getPageCount());
+  };
+  
+
+  console.log("CURRENT PAGE NUMBER", currentPageNumber)
+
   return (
     <div className="">
-      {/* <input
-        type="text"
-        value={filtering}
-        onChange={(e) => setFiltering(e.target.value)}
-        className="rounded-md border-2 border-primary"
-      /> */}
       <TextInputFilter
         handleChange={setFiltering}
         value={filtering}
-        id={'booklist-filter'}
-        label={"Search"} 
-        name={'booklist-filter'}
+        id={"booklist-filter"}
+        label={"Search"}
+        name={"booklist-filter"}
         isRequired={true}
       />
       <div className="overflow-x-auto">
         <table className="table overflow-x-auto min-w-[1000px]">
-            <thead>
+          <thead>
             {table.getHeaderGroups().map((headerGroup) => (
-                <tr key={headerGroup.id}>
+              <tr key={headerGroup.id}>
                 {headerGroup.headers.map((header) => (
-                    <th
+                  <th
                     key={header.id}
                     onClick={header.column.getToggleSortingHandler()}
-                    >
+                  >
                     {header.isPlaceholder ? null : (
-                        <div>
+                      <div>
                         {flexRender(
-                            header.column.columnDef.header,
-                            header.getContext()
+                          header.column.columnDef.header,
+                          header.getContext()
                         )}
                         {
-                            { asc: "🔼", desc: "🔽" }[
+                          { asc: "🔼", desc: "🔽" }[
                             header.column.getIsSorted() ?? null
-                            ]
+                          ]
                         }
-                        </div>
+                      </div>
                     )}
-                    </th>
+                  </th>
                 ))}
-                </tr>
+              </tr>
             ))}
-            </thead>
+          </thead>
 
-            <tbody>
+          <tbody>
             {table.getRowModel().rows.map((row) => (
-                <tr key={row.id}>
+              <tr key={row.id}>
                 {row.getVisibleCells().map((cell) => (
-                    <td key={cell.id}>
+                  <td key={cell.id}>
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
-                    </td>
+                  </td>
                 ))}
-                </tr>
+              </tr>
             ))}
-            </tbody>
-            {/* <tfoot>
+          </tbody>
+          {/* <tfoot>
                 {table.getFooterGroups().map(footerGroup => (
                 <tr key={footerGroup.id}>
                     {footerGroup.headers.map(header => (
@@ -103,24 +135,58 @@ export default function DataTable({ data, columns }) {
             </tfoot> */}
         </table>
       </div>
-      <div>
-        <button onClick={() => table.setPageIndex(0)}>First page</button>
-        <button
-          disabled={!table.getCanPreviousPage()}
-          onClick={() => table.previousPage()}
-        >
-          Previous page
-        </button>
-        <button
-          disabled={!table.getCanNextPage()}
-          onClick={() => table.nextPage()}
-        >
-          Next page
-        </button>
-        <button onClick={() => table.setPageIndex(table.getPageCount() - 1)}>
-          Last page
-        </button>
+
+      <div className="my-4 w-full flex flex-row flex-start flex-wrap gap-2 sm:gap-12">
+        <div className="join">
+          <button
+            className="join-item btn bg-tertiary focus:outline-none"
+            onClick={handleFirstPage}
+          >
+            «
+          </button>
+          <button
+            className="join-item btn bg-tertiary focus:outline-none"
+            disabled={!table.getCanPreviousPage()}
+            onClick={handlePrevPage}
+          >
+            Prev
+          </button>
+          <button className="join-item btn bg-tertiary focus:outline-none">
+            {console.log(table.options.state)}
+            Page {table.options.state.pagination.pageIndex + 1} out of{" "}
+            {table.getPageCount()}
+          </button>
+          <button
+            className="join-item btn bg-tertiary focus:outline-none"
+            disabled={!table.getCanNextPage()}
+            onClick={handleNextPage}
+          >
+            Next
+          </button>
+          <button
+            className="join-item btn bg-tertiary focus:outline-none"
+            onClick={handleLastPage}
+          >
+            »
+          </button>
+        </div>
+
+        <span>
+          <label className="my-auto" for="page-number-input">
+            Page
+          </label>
+          <input
+            type="number"
+            name="page-number-input"
+            className="mx-2 border border-gray-300 hover:border-primary focus:border-primary bg-bg1 rounded px-2 py-1 w-20 h-full"
+            onChange={handleInputChange}
+            value={currentPageNumber}
+            max={table.getPageCount()}
+            min={1}
+          />
+        </span>
       </div>
+
     </div>
   );
 }
