@@ -15,16 +15,23 @@ function ThemeSwitch(props) {
     return state.persistedReducer.isDarkMode;
   });
 
+  document.documentElement.setAttribute(
+    "data-theme",
+    isDarkMode ? "dark" : "light"
+    );
+
   const handleToggleTheme = () => {
     console.log("isdarkmode === ", isDarkMode)
-    document.documentElement.setAttribute(
-      "data-theme",
-      isDarkMode ? "light" : "dark"
-      );
-      // TODO: do it without reload
-      dispatch(toggleThemeAction());
-      // location.reload()
-      console.log("THEME SWITCHED TO ", isDarkMode ? "--DARK--" : "--LIGHT--");
+  
+    // TODO: do it without reload
+    dispatch(toggleThemeAction());
+    // location.reload()
+    console.log("THEME SWITCHED TO ", isDarkMode ? "--DARK--" : "--LIGHT--");
+
+    // document.documentElement.setAttribute(
+    //   "data-theme",
+    //   isDarkMode ? "light" : "dark"
+    //   );
   };
 
   window.addEventListener("load", (event) => {
@@ -41,17 +48,17 @@ function ThemeSwitch(props) {
         {/* this hidden checkbox controls the state */}
         <input type="checkbox" className='hidden' onClick={handleToggleTheme}/>
 
-        {/* {isDarkMode ? svgLists.themeButton.light : svgLists.themeButton.dark} */}
+        {isDarkMode ? svgLists.themeButton.light : svgLists.themeButton.dark}
 
         {/* moon icon */}
-        {svgLists.themeButton.dark}
+        {/* {svgLists.themeButton.dark} */}
 
         {/* sun icon */}
-        {svgLists.themeButton.light}
+        {/* {svgLists.themeButton.light} */}
 
-        <span className="hidden sm:block md:block lg:block ml-8">
+        {/* <span className="hidden sm:block md:block lg:block ml-8">
           {isDarkMode ? "Light Mode" : "Dark Mode"}
-        </span>
+        </span> */}
       </label>
     </div>
   );
