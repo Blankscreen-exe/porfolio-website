@@ -28,8 +28,7 @@ function About(props) {
       <br />
 
       <SectionHeading title="Hobbies" />
-      {/* FIXME: multiple component runs */}
-      {/* <Hobbies/> */}
+      <Hobbies/>
     </div>
   );
 }
