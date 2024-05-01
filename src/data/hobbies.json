@@ -1,22 +1,27 @@
 [
   {
-    "name": "I develop <b>hobby projects</b> whenever I have free time. As for ideas, I have no shortage of them.",
-    "value": 3
+    "desc": "I develop <b>hobby projects</b> whenever I have free time. As for ideas, I have no shortage of them.",
+    "name": "Develop Hobby Projects",
+    "value": 400
   },
   {
-    "name": "I write <b>blog articles</b> on <a href='#' target='__blank' class='underline hover:text-primary'>medium.com</a>. I write about the <i>projects</i> that I have built, Some difficult-to-grasp <i>Data Science</i> and <i>Machine Learning</i> concepts and stuff that helps a developer in their daily lives.",
-    "value": 3
+    "desc": "I write <b>blog articles</b> on <a href='#' target='__blank' class='underline hover:text-primary'>medium.com</a>. I write about the <i>projects</i> that I have built, Some difficult-to-grasp <i>Data Science</i> and <i>Machine Learning</i> concepts and stuff that helps a developer in their daily lives.",
+    "name": "Writing blog on medium.com",
+    "value": 335
   },
   {
-    "name": "I have a habit of <b>helping young enthusiasts</b> who want to pursue <i>Computer Science</i> or some specific niche in this domain. I have successfully mentored several people online (on personal basis ofc). My audience is spread across the world!",
-    "value": 2
+    "desc": "I have a habit of <b>helping young enthusiasts</b> who want to pursue <i>Computer Science</i> or some specific niche in this domain. I have successfully mentored several people online (on personal basis ofc). My audience is spread across the world!",
+    "name": "Helping coding enthusiasts worldwide",
+    "value": 274
   },
   {
-    "name": "I just love <b>reading research papers</b>. Honestly speaking I'd go anywhere as long as they have good reading material but recently my go-to place have been <b>IEEE Xplore</b>.",
-    "value": 1
+    "desc": "I just love <b>reading research papers</b>. Honestly speaking I'd go anywhere as long as they have good reading material but recently my go-to place have been <b>IEEE Xplore</b>.",
+    "name": "Reading research papers on IEEE XPlore",
+    "value": 235
   },
   {
-    "name": "I didn't go to any art school, just self taught myself to draw and here I am, <b>sketching</b> realistic faces of famous characters and <b>drawing</b> OCs.",
-    "value": 1
+    "desc": "I didn't go to any art school, just self taught myself to draw and here I am, <b>sketching</b> realistic faces of famous characters and <b>drawing</b> OCs.",
+    "name": "Sketching portraits, scenery and anime OCs",
+    "value": 310
   }
 ]

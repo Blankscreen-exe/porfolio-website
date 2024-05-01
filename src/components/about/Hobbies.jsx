@@ -1,21 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
+// constants
+import hobbyData from '../../data/hobbies.json';
+
 import ReactEcharts from "echarts-for-react"; 
+import TextDisplayBox from '../common/TextDisplayBox';
 
 function Hobbies(props) {
+    const [displayText, setDisplayText] = useState(hobbyData[0].desc)
+
     const option = {
-        // backgroundColor: '#2c343c00',
-        // title: {
-        //   text: 'Customized Pie',
-        //   left: 'center',
-        //   top: 20,
-        //   textStyle: {
-        //     color: '#ccc'
-        //   }
-        // },
         tooltip: {
-          trigger: 'item'
+          trigger: 'item',
+          formatter: (data) => {
+            console.log("FOUND IT",data);
+            setDisplayText(data.data.desc)
+          }
         },
         visualMap: {
           show: false,
@@ -32,17 +33,14 @@ function Hobbies(props) {
             radius: '55%',
             center: ['50%', '50%'],
             data: [
-              { value: 335, name: 'Write articles on medium.com' },
-              { value: 310, name: 'Sketching portraits, \nscenery and anime OCs' },
-              { value: 274, name: 'Helping programing \nenthusiasts worldwide' },
-              { value: 235, name: 'Reading research papers \nfrom IEEE XPlore' },
-              { value: 400, name: 'Develop hobby projects' }
+              ...hobbyData
             ].sort(function (a, b) {
               return a.value - b.value;
             }),
             roseType: 'radius',
             label: {
-              color: 'gray'
+              color: 'gray',
+              fontSize: 11
             },
             labelLine: {
               lineStyle: {
@@ -61,11 +59,15 @@ function Hobbies(props) {
             animationEasing: 'elasticOut',
             animationDelay: function (idx) {
               return Math.random() * 20;
-            }
+            },
           }
         ]
       };
-      return <ReactEcharts option={option} className='w-[80%] mx-auto'/>;
+      return (
+      <div className='mb-12'>
+      <ReactEcharts option={option} className='w-[80%] mx-auto'/>
+      <TextDisplayBox text={displayText}/>
+      </div>);
 }
 
 Hobbies.propTypes = {}
