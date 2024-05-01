@@ -33,9 +33,9 @@ function Hobbies(props) {
             center: ['50%', '50%'],
             data: [
               { value: 335, name: 'Write articles on medium.com' },
-              { value: 310, name: 'Sketching portraits, scenery and anime OCs' },
-              { value: 274, name: 'Helping programing enthusiasts worldwide' },
-              { value: 235, name: 'Reading research papers from IEEE XPlore' },
+              { value: 310, name: 'Sketching portraits, \nscenery and anime OCs' },
+              { value: 274, name: 'Helping programing \nenthusiasts worldwide' },
+              { value: 235, name: 'Reading research papers \nfrom IEEE XPlore' },
               { value: 400, name: 'Develop hobby projects' }
             ].sort(function (a, b) {
               return a.value - b.value;
@@ -65,7 +65,7 @@ function Hobbies(props) {
           }
         ]
       };
-      return <ReactEcharts option={option} />;
+      return <ReactEcharts option={option} className='w-[80%] mx-auto'/>;
 }
 
 Hobbies.propTypes = {}
