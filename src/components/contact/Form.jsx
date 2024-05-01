@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import PropTypes from "prop-types";
+
+import emailjs from '@emailjs/browser';
 
 // Components
 import TextInput from "./TextInput";
@@ -38,9 +40,29 @@ function Form(props) {
     message: "",
   });
 
-  const handleSubmit = () => {
+  const form = useRef();
+
+  const handleSubmit = async () => {
     console.log("DATA submitted")
-    // TODO: use emailer here
+    emailjs.init({
+      publicKey: "2u2IBkz4SNHuJ3jqF",
+    })
+    emailjs.send("service_jjms90v","template_he0fd6r",{
+      from_name: formData.fullName,
+      message: formData.message,
+      email: formData.email ? formData.email : "none",
+      hireAs: formData.hireAs.reduce( (acc, curr) => acc + ", " + curr),
+      purpose: formData.contactPurpose.reduce( (acc, curr) => acc + ", " + curr),
+      
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   }
 
   console.log("STATE DATA", formData);

@@ -5685,6 +5685,11 @@ input.tab:checked + .tab-content,
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
 }
 
+.bg-cyan-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(165 243 252 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
