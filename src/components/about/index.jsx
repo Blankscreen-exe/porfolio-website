@@ -15,7 +15,7 @@ function About(props) {
     <div>
       <PageTitle title={"Who Am I?"} />
 
-      <BlockQuote text="Some <b>awesome</b> stuff about me. I'm great! Sore dakke do ..." />
+      <BlockQuote text="<span class='font-italic'>Code is a language I can speak</span>, therefore I can communicate with computers and make them do what I want." />
 
       <SectionHeading title="Education Timeline" />
       <Education />
