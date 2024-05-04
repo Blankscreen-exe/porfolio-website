@@ -1,4 +1,5 @@
 import ctaBg from './images/cta-bg.jpg'
+import langBg from './images/lang-bg.jpg'
 
 export default {
     "certificates": {
@@ -12,5 +13,8 @@ export default {
     },
     "cta": {
         "bg": ctaBg
+    },
+    "lang": {
+        "bg": langBg
     }
 }
