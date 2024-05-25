@@ -115,7 +115,7 @@ function NavBar(props) {
   return (
     <div
     id="navbar"
-    className="navbar bg-base-100 bg-bg1 rounded-md shadow-md m-auto mt-10 flex justify-between sticky opacity-80 backdrop-blur-xl bg-tertiary/40 z-[100]"
+    className="navbar bg-bg1 rounded-md shadow-md m-auto mt-10 flex justify-between sticky opacity-80 backdrop-blur-xl bg-tertiary/40 z-[100]"
   >
       <div className="navbar-start w-full flex flex-row justify-between ">
         <div className=''>

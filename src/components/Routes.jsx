@@ -17,6 +17,7 @@ import BookList from './booksList'
 import GameList from './gameList'
 import DevResourceList from './devResourceList'
 import TargetSkillSet from './targetSkillSet'
+import Certificates from './certificates'
 
 function RoutesList(props) {
   return (
@@ -25,15 +26,15 @@ function RoutesList(props) {
         <Route path={appConstants.routes.aboutMe} element={<About/>}/>
         <Route path={appConstants.routes.blog} element={<PageTitle title="Blog"/>}/>
 
-        <Route path={appConstants.routes.experience} element={<WorkExperience/>}/>
+        {/* <Route path={appConstants.routes.experience} element={<WorkExperience/>}/> */}
         <Route path={appConstants.routes.experienceWorkHistory} element={<WorkExperience/>}/>
-        <Route path={appConstants.routes.experienceAwards} element={<PageTitle title="Work Experience Award"/>}/>
-        <Route path={appConstants.routes.experienceCertificates} element={<PageTitle title="Work Experience Certificates"/>}/>
+        {/* <Route path={appConstants.routes.experienceAwards} element={<PageTitle title="Work Experience Award"/>}/> */}
+        <Route path={appConstants.routes.experienceCertificates} element={<Certificates/>}/>
         <Route path={appConstants.routes.experienceUpcomingSkills} element={<TargetSkillSet/>}/>
 
         <Route path={appConstants.routes.faq} element={<PageTitle title="FAQ"/>}/>
 
-        <Route path={appConstants.routes.lists} element={<PageTitle title="List"/>}/>
+        {/* <Route path={appConstants.routes.lists} element={<PageTitle title="List"/>}/> */}
         <Route path={appConstants.routes.listsGames} element={<GameList/>}/>
         <Route path={appConstants.routes.listsBooks} element={<BookList/>}/>
         <Route path={appConstants.routes.listsResources} element={<DevResourceList/>}/>
