@@ -1,0 +1,74 @@
+[
+    {
+        "prefix": "$",
+        "colorType": "info",
+        "isHighlight": false,
+        "text": "📌 Backend Technologies"
+    },
+    {
+        "prefix": ">",
+        "colorType": "secondary",
+        "isHighlight": false,
+        "text": "[ ] Learning <a target='_blank' href='https://nestjs.com/' class='underline hover:cyan-200'>Nest.js</a>"
+    },
+    {
+        "prefix": ">",
+        "colorType": "secondary",
+        "isHighlight": false,
+        "text": "[ ] Improving on <a target='_blank' href='https://www.djangoproject.com/' class='underline hover:cyan-200'>Django</a>"
+    },
+    {
+        "prefix": "$",
+        "colorType": "secondary",
+        "isHighlight": false,
+        "text": ""
+    },
+    {
+        "prefix": "$",
+        "colorType": "info",
+        "isHighlight": false,
+        "text": "📌 Frontend Technologies"
+    },
+    {
+        "prefix": ">",
+        "colorType": "secondary",
+        "isHighlight": false,
+        "text": "[ ] Learning <a target='_blank' href='https://reactnative.dev/' class='underline hover:cyan-200'>React-Native</a>"
+    },
+    {
+        "prefix": ">",
+        "colorType": "secondary",
+        "isHighlight": false,
+        "text": "[ ] Improving <a target='_blank' href='https://react.dev/' class='underline !hover:text-warning'>React.js</a>"
+    },
+    {
+        "prefix": "$",
+        "colorType": "secondary",
+        "isHighlight": false,
+        "text": ""
+    },
+    {
+        "prefix": "$",
+        "colorType": "info",
+        "isHighlight": false,
+        "text": "📌 Other Skills and Technologies"
+    },
+    {
+        "prefix": "~",
+        "colorType": "secondary",
+        "isHighlight": false,
+        "text": "Thinking of learning <a target='_blank' href='https://www.jenkins.io/' class='underline !hover:text-warning'>Jenkins</a> or <a target='_blank' href='https://aws.amazon.com/' class='underline !hover:text-warning'>AWS</a> (help me pick)"
+    },
+    {
+        "prefix": "~",
+        "colorType": "secondary",
+        "isHighlight": false,
+        "text": "Business Communications (got any recommendatioins where to learn?)"
+    },
+    {
+        "prefix": "~",
+        "colorType": "secondary",
+        "isHighlight": false,
+        "text": "Tkinter in Python (I already made an applet on it <a target='_blank' href='https://github.com/Blankscreen-exe/tkinter-mod-manager' class='underline !hover:text-warning'>here</a>)"
+    }
+]

@@ -16,6 +16,7 @@ import WorkExperience from './workHistory'
 import BookList from './booksList'
 import GameList from './gameList'
 import DevResourceList from './devResourceList'
+import TargetSkillSet from './targetSkillSet'
 
 function RoutesList(props) {
   return (
@@ -28,7 +29,7 @@ function RoutesList(props) {
         <Route path={appConstants.routes.experienceWorkHistory} element={<WorkExperience/>}/>
         <Route path={appConstants.routes.experienceAwards} element={<PageTitle title="Work Experience Award"/>}/>
         <Route path={appConstants.routes.experienceCertificates} element={<PageTitle title="Work Experience Certificates"/>}/>
-        <Route path={appConstants.routes.experienceUpcomingSkills} element={<PageTitle title="Work Experience UpComing Skills"/>}/>
+        <Route path={appConstants.routes.experienceUpcomingSkills} element={<TargetSkillSet/>}/>
 
         <Route path={appConstants.routes.faq} element={<PageTitle title="FAQ"/>}/>
 
