@@ -27,7 +27,7 @@ function Footer(props) {
           </nav> 
           <nav>
             <h6 className="footer-title font-bold font-sans text-content border-b-2 border-b-primary">My Work</h6> 
-            <NavLink to={appConstants.routes.experience} className={navLinkClasses}>Experience & Awards</NavLink >
+            <NavLink to={appConstants.routes.experienceWorkHistory} className={navLinkClasses}>Experience & Awards</NavLink >
             <NavLink to={appConstants.routes.experienceCertificates} className={navLinkClasses}>Certificates</NavLink >
             <NavLink to={appConstants.routes.experienceUpcomingSkills} className={navLinkClasses}>Targetted Skills</NavLink >
           </nav> 
