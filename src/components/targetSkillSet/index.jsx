@@ -6,6 +6,7 @@ import SectionHeading from '../common/SectionHeading'
 import SkillsListTerminal from './SkillsListTerminal'
 
 function index() {
+    window.scrollTo(0, 0);
     return (
         <div>
             <PageTitle title='Upcoming Skills' />

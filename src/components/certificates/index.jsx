@@ -15,7 +15,7 @@ import Paragraph from '../common/Paragraph'
 import CertificateStats from './certificateStats'
 
 function index() {
-
+    window.scrollTo(0, 0);
     const allData = {
         featured: featuredData,
         dataScience360: dataScience360Data,
