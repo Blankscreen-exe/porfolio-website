@@ -12,7 +12,7 @@ import PageTitle from '../common/PageTitle'
 import SectionHeading from '../common/SectionHeading'
 import HorizontalSlider from '../common/HorizontalSlider'
 import Paragraph from '../common/Paragraph'
-import CertificateStats from './certificateStats'
+import CertificateStats from './CertificateStats'
 
 function index() {
     window.scrollTo(0, 0);
