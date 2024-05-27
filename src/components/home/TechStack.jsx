@@ -24,17 +24,18 @@ function TechStack(props) {
     <div className="flex flex-col justify-center items-center">
       <SectionHeading title={"My Tech Stack"} />
       <div className="mb-10 flex flex-col md:flex-row gap-10 w-full">
-        <div className="container flex flex-col items-center justify-center w-[fit-content] h-[fit-content] mx-auto bg-slate-100 rounded-lg shadow dark:bg-gray-800">
-          <ul className="flex flex-col divide-y divide">
-            {stackList.map((item) => {
+        <div className="container flex flex-col items-center justify-center w-[fit-content] h-[fit-content] mx-auto bg-bg2 rounded-lg shadow">
+          <ul className="flex flex-col divide-y divide-secondary/70">
+            {stackList.map((item, ind) => {
               return (
                 <li
+                  key={ind}
                   onClick={() => handleStackClick(item)}
                   className={classAdd(
-                    "flex flex-row hover:text-slate-800 dark:text-white",
+                    "flex flex-row hover:text-primary/50",
                     currentSelectedItem == item
-                      ? "text-slate-800"
-                      : "text-slate-500"
+                      ? "text-primary"
+                      : "text-content"
                   )}
                 >
                   <div className="flex items-center flex-1 p-4 cursor-pointer select-none">
@@ -59,9 +60,9 @@ function TechStack(props) {
           </ul>
         </div>
 
-        <div className="p-0 w-full flex flex-row flex-wrap align-top content-start gap-2 overflow-visible">
-          {listItem.map((item) => (
-            <a href={item.url} target="_blank" className="h-min">
+        <div className="p-0 w-[80%] mx-auto flex flex-row flex-wrap align-top content-start gap-2 overflow-visible justify-center md:justify-start lg:justify-start">
+          {listItem.map((item, ind) => (
+            <a key={ind} href={item.url} target="_blank" className="h-min">
               <div
                 className="tooltip"
                 data-tip={`Go To ${capitalizeFirstLetter(
@@ -70,11 +71,11 @@ function TechStack(props) {
               >
                 <div
                   key={item.name}
-                  className="w-fit p-2 rounded-md text-slate-600 border border-slate-300 md:text-lg text-sm font-semibold flex flex-row justify-center items-center gap-4 hover:shadow hover:shadow-sm hover:shadow-[#0694a2] hover:bg-slate-100 hover:cursor-pointer transition-shadow duration-400"
+                  className="w-fit p-2 rounded-md text-content border border-slate-300/60 hover:border-primary/0 md:text-lg text-sm font-semibold flex flex-row justify-center items-center gap-4 hover:bg-gradient-to-br hover:from-primary/10 hover:to-primary/80 hover:text-content hover:cursor-pointer transition-all duration-500"
                 >
                   <img
                     src="https://dummyimage.com/100x100/eee/444"
-                    class="md:w-10 w-5 rounded-md"
+                    className="md:w-10 w-5 rounded-md"
                   />
                   <span>{capitalizeFirstLetter(item.name)}</span>
                 </div>

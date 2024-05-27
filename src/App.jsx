@@ -8,7 +8,7 @@ import { increment, decrement } from './redux/reducers/commonSlice'
 import "tw-elements-react/dist/css/tw-elements-react.min.css";
 
 // Components
-import NavBar from './components/common/navbar'
+import NavBar from './components/common/Navbar'
 import Footer from './components/common/Footer';
 
 //data
@@ -22,7 +22,6 @@ function App() {
   })
 
   const posts = useSelector((state) => {
-    console.log(state)
     return state.persistedReducer.post
   })
 

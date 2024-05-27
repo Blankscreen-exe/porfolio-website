@@ -11,6 +11,11 @@
 - [Redux persist](https://medium.com/@xbstrxct/persisting-state-in-your-react-app-with-redux-persist-1e7dd877c58a)
 - [Redux persistor log rocket](https://blog.logrocket.com/persist-state-redux-persist-redux-toolkit-react/)
 - [TW elements](https://tw-elements.com/docs)
+- [Hero Icons](https://github.com/tailwindlabs/heroicons)
+- [how to use svgs in react](https://www.freecodecamp.org/news/how-to-import-svgs-in-react-and-vite/)
+- [LinearIcons](https://linearicons.com/free)
+- [how to use dark mode in tailwind](https://www.youtube.com/watch?v=WTchW0LdWL0)
+- [dev dojo tailwind buttons](https://devdojo.com/tailwindcss/buttons#_)
 
 ## Milestones
 
@@ -23,7 +28,7 @@
 
 ## Sitemap
 ```
-- Home
+- ✅Home
     |- About Me
     |- Testimonials
     |- Tech Stack
@@ -53,6 +58,7 @@
     |- Games
 - Blog
     |- Blog roll 
+    |- Buy Me a coffee
 - Contact
     |- Form
     |- Social Links
@@ -82,4 +88,15 @@
 - https://tailwindcomponents.com/component/peaceful-mind
 - https://tailwindcomponents.com/component/boilerplates-card
 - https://tailwindcomponents.com/component/card-ai-power-analytics
-- 
+- https://tailwindcomponents.com/component/unordered-list-of-card-items-with-elevation-on-hover
+- https://tailwindcomponents.com/component/hover-button-scale-effect
+- https://tailwindcomponents.com/component/button-11
+- https://tailwindcomponents.com/component/tailwind-css-inbox-view-message
+- https://recharts.org/en-US/examples/CustomActiveShapePieChart
+- https://tailwindcomponents.com/component/alpinejs-animated-toggle
+- https://tailwindflex.com/@samuel33/hover-effect-card
+
+TODO:
+- [ ] voice note for language cards
+- [ ] dark mode button in nav bar
+- [ ] animated PDF download button for CTA card

@@ -8,28 +8,27 @@ import SectionHeading from "./SectionHeading";
 
 function HorizontalSlider(props) {
 
-    const {data, title} = props;
+    const {data, title, buttonText} = props;
 
   return (
-    <div>
+    <div className="my-9">
         <SectionHeading title={title}/>
         <div className="mx-auto flex w-[90%] snap-x snap-mandatory flex-row flex-nowrap gap-3 overflow-x-scroll rounded-md p-6">
             {data.map( (item, ind) => {
 
                 return (
-                    <div className="static h-full min-w-[250px] max-w-[300px] snap-center rounded-md from-teal-100 to-teal-200 p-3 shadow-md shadow-slate-400/65 transition-all duration-300 hover:-translate-y-1 hover:cursor-pointer hover:bg-gradient-to-br hover:shadow-lg">
+                    <div key={ind} className="static bg-bg2 h-full min-w-[250px] max-w-[300px] snap-center rounded-md from-primary/10 to-primary/60 p-3 shadow-md shadow-shadow/65 transition-all duration-300 hover:-translate-y-1 hover:cursor-pointer hover:bg-gradient-to-br hover:shadow-lg border-r-4 border-primary">
                         <div className="mb-3 flex flex-row items-center justify-between gap-4">
-                        <div className="text-lg font-bold text-slate-600">Long Long Long Long Heading</div>
-                        <img className="w-[40px] rounded-full" 
+                        <div className="text-md font-normal font-sans text-content">{item.title}</div>
+                        <img className="w-[40px] rounded-full border-4 border-contentLink/40" 
                         src={images.certificates.logo[item.logoType]} />
                         </div>
-                        <div className="text-xs text-gray-600">
+                        <div className="text-xs text-content/80">
                             {item.description}
                         </div>
-                        <a href="#" download="/" class="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 dark:disabled:border-gray-800/50 disabled:dark:bg-gray-900 dark:*:disabled:!text-white text-gray-950 hover:text-white bg-gray-100 hover:bg-gradient-to-tr from-teal-300 to-teal-400 active:bg-gray-100 dark:text-white dark:bg-gray-500/10 dark:hover:bg-gray-500/15 dark:active:bg-gray-500/10 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center mt-2">
-                            <span>Download</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m17 13l-5 5m0 0l-5-5m5 5V6"></path></svg>
-                        </a>
+                        {/* <a href="#" download="/" className="group rounded-xl disabled:border *:select-none [&>*:not(.sr-only)]:relative *:disabled:opacity-20 disabled:text-gray-950 disabled:border-gray-200 disabled:bg-gray-100 text-secondary hover:text-secondary/70 bg-gray-100 active:bg-gray-100 flex gap-1.5 items-center text-sm h-8 px-3.5 justify-center mt-2">
+                            {buttonText}
+                        </a> */}
                     </div>
                 )
             })}

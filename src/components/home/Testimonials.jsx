@@ -42,7 +42,7 @@ function Testimonials(props) {
     <TECarousel showControls  ride="carousel"
     prevBtnIcon={
           <div className='hidden md:inline'>
-            <span className="inline-block text-black h-8 w-8 [&>svg]:h-8">
+            <span className="inline-block text-content h-8 w-8 [&>svg]:h-8">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -64,7 +64,7 @@ function Testimonials(props) {
         }
     nextBtnIcon={
         <div className='hidden md:inline'>
-        <span className="inline-block text-black h-8 w-8 [&>svg]:h-8">
+        <span className="inline-block text-content h-8 w-8 [&>svg]:h-8">
             <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -99,11 +99,11 @@ function Testimonials(props) {
                             className="w-32 h-32 rounded-full"
                             alt={item.title}
                             />
-                        <h3 className='text-xl font-medium text-gray-600 mt-5'>{item.title}</h3>
-                        <h4 className='text-lg italic font-medium text-gray-400'>{item.designation}</h4>
+                        <h3 className='text-xl font-medium text-content mt-5'>{item.title}</h3>
+                        <h4 className='text-lg italic font-medium text-content/60'>{item.designation}</h4>
                         <div className='flex flex-col justify-between h-full'>
-                          <p className='font-light text-gray-600 mt-5  w-full text-center mb-8'>{item.content}</p>
-                    <div className='text-sm text-slate-400 md:hidden inline w-full flex justify-center border-white/5 border-t-slate-300'> slide for more testimonials </div>
+                          <p className='font-light text-content mt-5  w-full text-center mb-8'>{item.content}</p>
+                    <div className='text-sm text-content/40 md:hidden inline w-full flex justify-center border-white/5 border-t-slate-300'> slide for more testimonials </div>
                         </div>
                     </div>
                 </TECarouselItem>);

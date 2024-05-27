@@ -1,22 +1,50 @@
 module.exports = {
+    darkMode: 'selector',
     content: [
       "./index.html",
       "./src/**/*.{html,jsx,js}",
       "./node_modules/tw-elements-react/dist/js/**/*.js"
     ],
     theme: {
-      color:{
-        "primary-light": "#0694a2",
-        "secondary-light": "#c4c4c4",
-        "tertiary-light": "#f1f5f9",
-        "contrast-light": "#dc4c64",
-      
-        "primary-dark": "#30C3D2",
-        "secondary-dark": "#8a8a8a",
-        "tertiary-dark": "#4B5660",
-        "contrast-dark": "#FC5E79"
+      fontFamily:{
+        // sans: ['"CourierPrime-Regular"', 'sans-serif'],
+        // serif: ['"CourierPrime-Regular"', 'serif'],
+        
+        'display': ['"CourierPrime-Regular"'],
+        'body': ['"Courier"'],
+        'normal': ['"CourierPrime-Regular"'],
+        'bold': ['"CourierPrime-Bold"'],
+        'italic': ['"CourierPrime-Italic"'],
       },
       extend: {
+        colors:{
+          "primary": "rgb(var(--color-primary) / <alpha-value>)",
+          "secondary": "rgb(var(--color-secondary) / <alpha-value>)",
+          "tertiary": "rgb(var(--color-tertiary) / <alpha-value>)",
+          "contrast": "rgb(var(--color-contrast) / <alpha-value>)",
+          
+          "title": "rgb(var(--color-title) / <alpha-value>)",
+          "content": "rgb(var(--color-content) / <alpha-value>)",
+          "contentLink": "rgb(var(--color-content-link) / <alpha-value>)",
+          "contentLinkHover": "rgb(var(--color-content-link-hover) / <alpha-value>)",
+          
+          "shadow": "rgb(var(--color-shadow) / <alpha-value>)",
+          
+          "bg1": "rgb(var(--color-bg1) / <alpha-value>)",
+          "bg2": "rgb(var(--color-bg2) / <alpha-value>)",
+
+        },
+
+        brightness: {
+          10: '.10',
+          15: '.15',
+          20: '.20',
+          25: '.25',
+          175: '1.75',
+        },
+        blur: {
+          xs: '2px',
+        },
         keyframes: {
           typing: {
             "0%": {

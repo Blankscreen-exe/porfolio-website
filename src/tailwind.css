@@ -2,29 +2,206 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ---------------- Colors ------------------ */
-:root { 
-  --primary: #0694a2; 
-  --secondary: theme(colors.cyan.700); 
-  --tertiary: theme(colors.slate.200); 
-  --bg: theme(colors.emerald.900 / 30%); 
+/* ---------------- Fonts ------------------ */
 
-  --primary-light: #0694a2;
-  --secondary-light: #c4c4c4;
-  --tertiary-light: #f1f5f9;
-  --contrast-light: #dc4c64;
-
-  --primary-dark: #30C3D2;
-  --secondary-dark: #8a8a8a;
-  --tertiary-dark: #4B5660;
-  --contrast-dark: #FC5E79;
-
-  --heading-1-light: rgba(71, 85, 105, 0.75);
-  --heading-2-light: rgba(91, 91, 91, 0.90);
+@layer base {
   
-  --heading-1-dark: rgba(237, 244, 255, 0.80);
-  --heading-2-dark: rgba(187, 187, 187, 0.75);
-} 
+  /* HASH values of the colors */
+  /* --primary-light: "#0694a2";
+  --secondary-light: "#c4c4c4";
+  --tertiary-light: "#f1f5f9";
+  --contrast-light: "#dc4c64";
+  
+  --primary-dark: "#30C3D2";
+  --secondary-dark: "#8a8a8a";
+  --tertiary-dark: "#4B5660";
+  --contrast-dark: "#FC5E79"; */
+  
+  /* RGB values of the colors */
+  /* --color-primary-light: 6 148 162;
+  --color-secondary-light: 196 196 196;
+  --color-tertiary-light: 241 245 249;
+  --color-contrast-light: 220 76 100;
+
+  --color-primary-dark: 48 195 210;
+  --color-secondary-dark: 138 138 138;
+  --color-tertiary-dark: 75 86 96;
+  --color-contrast-dark: 252 94 121; */
+
+  :root {
+    /* --color-primary: 6 148 162; */
+    --color-primary: 3 188 207;
+    --color-secondary: 196 196 196;
+    --color-tertiary: 241 245 249;
+    --color-contrast: 220 76 100;
+
+    --color-title: 52 64 85;
+    --color-content: 70 70 70;
+    --color-content-link: 106 106 106;
+    --color-content-link-hover: 6 148 162;
+    
+    --color-shadow: 159 170 190;
+
+    --color-bg1: 255 255 255;
+    --color-bg2: 239 244 243;
+
+  }
+  /* @media (prefers-color-scheme: dark) {
+    :root {
+      --color-primary: 48 195 210;
+      --color-secondary: 138 138 138;
+      --color-tertiary: 75 86 96;
+      --color-contrast: 252 94 121;
+
+      --color-title: 255 255 255;
+      --color-content: 255 255 255;
+      --color-content-link: 227 227 227;
+      --color-content-link-hover: 12 220 241;
+
+      --color-shadow: 0 0 0;
+
+      --color-bg1: 29 35 42;
+      --color-bg2: 70 82 95;
+    }
+
+  } */
+
+  :root[data-theme="dark"] {
+    --color-primary: 48 195 210;
+    --color-secondary: 138 138 138;
+    --color-tertiary: 75 86 96;
+    --color-contrast: 252 94 121;
+
+    --color-title: 255 255 255;
+    --color-content: 255 255 255;
+    --color-content-link: 227 227 227;
+    --color-content-link-hover: 12 220 241;
+
+    --color-shadow: 0 0 0 ;
+
+    --color-bg1: 29 35 42;
+    --color-bg2: 44 52 61;
+  }
+
+  @font-face {
+    font-family: CourierPrime-Bold;
+    src: url(./assets/fonts/CourierPrime-Bold.ttf);
+  }
+  @font-face {
+    font-family: CourierPrime-BoldItalic; 
+    src: url(./assets/fonts/CourierPrime-BoldItalic.ttf);
+  }
+  @font-face {
+    font-family: CourierPrime-Italic;
+    src: url(./assets/fonts/CourierPrime-Italic.ttf);
+  }
+  @font-face {
+    font-family: CourierPrime-Regular;
+    src: url(./assets/fonts/CourierPrime-Regular.ttf);
+  }
+
+
+  /* a, a:active {
+    color: var(--color-content-link);
+  }
+  a:hover {
+    color: var(--color-primary);
+  } */
+
+  ::-moz-selection { /* Code for Firefox */
+    color: var(--color-content);
+    background: var(--color-primary);
+  }
+  
+  ::selection {
+    /* color: var(--color-content); */
+    /* background: var(--color-primary); */
+  }
+
+  /* this removes focus outlines from  */
+  *:focus {
+    outline: none;
+  }
+  /* .recharts-wrapper{
+    width: auto !important;
+    height: auto !important;
+  } */
+
+
+  /* ------------- For pesky TW elements -------------- */
+  #multiselectbox > div > div > input {
+    /* background-color: #ff6db7; */
+    color: rgb(var(--color-content));
+  }
+  #multiselectbox > span  {
+    color: rgb(var(--color-contrast));
+  }
+  #contact-name {
+    color: rgb(var(--color-content));
+  }
+  #contact-name:focus {
+    color: rgb(var(--color-primary));
+  }
+  #contact-email {
+    color: rgb(var(--color-content));
+  }
+  #contact-email:focus {
+    color: rgb(var(--color-primary));
+  }
+  #contact-message {
+    color: rgb(var(--color-content));
+  }
+  #contact-message:focus {
+    color: rgb(var(--color-primary));
+  }
+  body > div.z-\[1070\] > div > div {
+    color: rgb(var(--color-content));
+    background-color: rgb(var(--color-bg2));
+  }
+  body > div.z-\[1070\] > div > div > div.list-none.m-0.p-0 > div > span {
+    color: rgb(var(--color-content));
+  }
+  body > div.z-\[1070\] > div > div > div.list-none.m-0.p-0 > div > span > span{
+    opacity: 0.8;
+    color: rgb(var(--color-content));
+  }
+  body > div.z-\[1070\] > div > div > div.flex.flex-row.items-center.justify-between.w-full.px-4.truncate.select-none.bg-transparent.text-gray-700.dark\:text-gray-200.hover\:bg-black\/5.dark\:hover\:bg-white\/30.cursor-pointer > span {
+    color: rgb(var(--color-content));
+  }
+
+
+  #contactform-service:focus {
+    background-color: rgb(var(--color-primary));
+    outline: none;
+    border: none;
+  }
+  #contactform-service:hover {
+    background-color: rgb(var(--color-tertiary));
+  }
+  #contactform-inquiry:focus {
+    background-color: rgb(var(--color-primary));
+    outline: none;
+    border: none;
+  }
+  #contactform-inquiry:hover {
+    background-color: rgb(var(--color-tertiary));
+  }
+  #contactform-hangout:focus {
+    background-color: rgb(var(--color-primary));
+    outline: none;
+    border: none;
+  }
+  #contactform-hangout:hover {
+    background-color: rgb(var(--color-tertiary));
+  }
+  html{
+    background-color: rgb(var(--color-bg1));
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23aeaeae' fill-opacity='0.14'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  
+  /* background-color: rgb(var(--color-bg1));
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23c0bfc2' fill-opacity='0.18'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+  }
+}
 
 /* ---------------- Body ------------------ */
 /* body {
@@ -62,12 +239,12 @@
 /* ---------------- Anchor tags ------------------ */
 
 a, a:active {
-  color: var(--heading-2-light); 
+  /* color: var();  */
   /* rgb(86, 86, 86); */
 }
 a:hover {
-  /* color: #0694a2; */
-  color: var(--primary-light);
+  color: #0694a2;
+  /* color: var(--color-primary); */
 }
 
 
@@ -116,7 +293,7 @@ a:hover {
     top:-0.1em;
     border-width:4px;
     border-style:solid;
-    border-color:var(--contrast-dark);
+    border-color:red;
     position:absolute;
     border-right-color:transparent;
     width:100%;
@@ -136,7 +313,7 @@ a:hover {
     padding:0.1em 0.25em;
     border-width:3px;
     border-style:solid;
-    border-color:var(--contrast-light);
+    border-color:red;
     border-left-color:transparent;
     border-top-color:transparent;
     position:absolute;
