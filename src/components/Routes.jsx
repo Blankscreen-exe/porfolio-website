@@ -19,6 +19,7 @@ import DevResourceList from './devResourceList'
 import TargetSkillSet from './targetSkillSet'
 import Certificates from './certificates'
 import Blog from './blog'
+import Project from './projects'
 
 function RoutesList(props) {
   return (
@@ -33,7 +34,7 @@ function RoutesList(props) {
         <Route path={appConstants.routes.experienceCertificates} element={<Certificates/>}/>
         <Route path={appConstants.routes.experienceUpcomingSkills} element={<TargetSkillSet/>}/>
 
-        <Route path={appConstants.routes.faq} element={<PageTitle title="FAQ"/>}/>
+        {/* <Route path={appConstants.routes.faq} element={<PageTitle title="FAQ"/>}/> */}
 
         {/* <Route path={appConstants.routes.lists} element={<PageTitle title="List"/>}/> */}
         <Route path={appConstants.routes.listsGames} element={<GameList/>}/>
@@ -47,7 +48,7 @@ function RoutesList(props) {
         <Route path={appConstants.routes.servicesMentorship} element={<Services/>}/>
         <Route path={appConstants.routes.servicesFaq} element={<Services/>}/>
 
-        <Route path={appConstants.routes.projects} element={<PageTitle title="Project"/>}/>
+        <Route path={appConstants.routes.projects} element={<Project/>}/>
 
         <Route path={appConstants.routes.contacts} element={<Contact/>}/>
 
