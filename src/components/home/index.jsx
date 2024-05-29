@@ -16,6 +16,7 @@ import HorizontalSlider from '../common/HorizontalSlider'
 import CtaCard from '../common/CtaCard'
 import BlockQuote from '../common/BlockQuote'
 import Protip from '../common/Protip'
+import Paragraph from '../common/Paragraph'
 
 function Home(props) {
   window.scrollTo(0, 0);
@@ -23,9 +24,12 @@ function Home(props) {
     <>
         <Hero/>
         <BlockQuote
-          text="I'm a <span class='font-bold'>Full-stack Software Engineer</span> and a <span class='font-bold'>Data Scientist</span>. But that alone cannot define who I am. Hopefully this site will give you an idea."
+          text="I'm a <span class='font-bold'>Full-stack Software Engineer</span> and a <span class='font-bold'>Data Scientist</span>. But that alone cannot define who I am. I have developed this site in hopes of conveying that message."
         />
         <Testimonials/>
+        {/* <div class="flex justify-center">
+          <Paragraph text={"Note: The testimonials above are taken from my linkedin page."}/>
+        </div> */}
         <TechStack/>
         <Protip/>
         <HorizontalSlider

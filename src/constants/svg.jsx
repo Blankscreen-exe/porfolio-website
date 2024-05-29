@@ -1,3 +1,5 @@
+import TechStack from "../components/home/TechStack";
+
 export default {
   hashIcon: (
     <svg
@@ -713,5 +715,13 @@ export default {
       <rect height="4.5" width="3" y="9.75" x="9.75" />
       <path d="m3.25 14.25h3m-3-4.5h1.5v4" />
     </svg>)
+  },
+  techStack: {
+    languages: {},
+    databases: {},
+    mlDsAi: {},
+    other: {},
+    frontend: {},
+    backend: {},
   }
 };

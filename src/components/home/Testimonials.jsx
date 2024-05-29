@@ -93,16 +93,16 @@ function Testimonials(props) {
                     itemID={ind+1} // itemID starts from 1
                     className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 >
-                    <div className="flex flex-col justify-items-center items-center h-[550px] md:h-[350px]">
+                    <div className="flex flex-col justify-items-center items-center h-[650px] md:h-[400px]">
                         <img
                             src={item.avatarUrl}
-                            className="w-32 h-32 rounded-full"
+                            className="w-32 h-32 rounded-full font-bold"
                             alt={item.title}
                             />
-                        <h3 className='text-xl font-medium text-content mt-5'>{item.title}</h3>
+                        <h3 className='text-2xl font-bold text-content mt-5'>{item.title}</h3>
                         <h4 className='text-lg italic font-medium text-content/60'>{item.designation}</h4>
                         <div className='flex flex-col justify-between h-full'>
-                          <p className='font-light text-content mt-5  w-full text-center mb-8'>{item.content}</p>
+                          <p className='font-normal text-content mt-5  w-full text-center mb-8' dangerouslySetInnerHTML={{ __html: item.content }}></p>
                     <div className='text-sm text-content/40 md:hidden inline w-full flex justify-center border-white/5 border-t-slate-300'> slide for more testimonials </div>
                         </div>
                     </div>

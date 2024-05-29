@@ -274,5 +274,56 @@
             "fontColor":"",
             "bgColor":""
         }
+    ],
+    "other": [
+        {
+            "name":"Docker",
+            "url":"https://www.docker.com/",
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"Wordpress",
+            "url":"https://wordpress.com/",
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"NGINX",
+            "url":"https://nginx.org/en/",
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"Figma",
+            "url":"https://www.figma.com/",
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"JIRA",
+            "url":"https://www.atlassian.com/software/jira",
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"Git",
+            "url":"https://git-scm.com/",
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"Github",
+            "url":"https://github.com/",
+            "imgUrl":"#",
+            "fontColor":"",
+            "bgColor":""
+        }
     ]
 }

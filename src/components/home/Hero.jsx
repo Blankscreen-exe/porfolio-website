@@ -14,13 +14,13 @@ function Hero(props) {
           {/* MSG: for more highlighting options https://www.coding-dude.com/wp/css/highlight-text-css/ */}
           <h1 className="font-bold text-4xl text-title"> <span className="circle-sketch-highlight md:before:w-sm">M. Hammad Hassan </span> 
           </h1>
-          <p className="mt-5 text-1xl text-content/50">Full Stack Developer (Backend Heavy)</p>
+          <p className="mt-5 text-2xl font-bold text-content/80">Full Stack Developer (Backend Heavy)</p>
           <div className='flex flex-row flex-wrap gap-2 mt-5'>
-            <a href={socialLinks.linkedin} className="text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Linkedin </a>
-            <a href={socialLinks.github} className=" text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Github </a>
-            <a href={socialLinks.medium} className=" text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Medium </a>
-            <a href={socialLinks.reddit} className="text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Reddit </a>
-            <a href={socialLinks.discord} className="text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Discord </a>
+            <a target="_blank" href={socialLinks.linkedin} className="text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Linkedin </a>
+            <a target="_blank" href={socialLinks.github} className=" text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Github </a>
+            <a target="_blank" href={socialLinks.medium} className=" text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Medium </a>
+            <a target="_blank" href={socialLinks.reddit} className="text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Reddit </a>
+            <a target="_blank" href={socialLinks.discord} className="text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Discord </a>
           </div>
         </div>
       </div>

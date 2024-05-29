@@ -1,37 +1,51 @@
 [
     {
-      "title": "James Bond",
-      "designation": "Super Spy",
-      "avatarUrl": "https://dummyimage.com/250x250/a9a9a9/fff",
+      "title": "Ahsan Furqan",
+      "designation": "Software Engineer - Siliconplex",
+      "avatarUrl": "https://media.licdn.com/dms/image/C4E03AQEdSdkqfVBtZg/profile-displayphoto-shrink_400_400/0/1644469072209?e=1722470400&v=beta&t=qle9Buo4IFbQ7xzG6Qt-eVSyGEg6JLRtGqySIu9aKJA",
       "profileUrl":"#",
-      "content": "[Professional's name] was a pleasure to work with. They were responsive, communicative, and always went the extra mile to ensure my satisfaction. The results they achieved were exceptional and helped us achieve our business goals."
+      "content": "I have had the pleasure of working alongside hammad for a year at Siliconplex. He is an exceptional Python/Django with an impressive ability to deliver high-quality solutions.<br/>Hammad brings a deep understanding of web development technologies and consistently goes above and beyond in tackling complex challenges.<br/>I wholeheartedly recommend Hammad to anyone seeking a highly skilled and reliable Python/Django developer. He would be a valuable asset to any team or project."
     },
     {
-      "title": "Johnny English",
-      "designation": "British Spy",
-      "avatarUrl": "https://dummyimage.com/250x250/a9a9a9/fff",
+      "title": "Saqib Najam",
+      "designation": "Senior Software Engineer - Siliconplex",
+      "avatarUrl": "https://media.licdn.com/dms/image/C4D03AQHk226Z_Y2VRQ/profile-displayphoto-shrink_400_400/0/1529916025369?e=1722470400&v=beta&t=7GO2X63UkRlCMOc1RUwc7Asvz7cRsyuVUuyVFHSkVc8",
       "profileUrl":"#",
-      "content": "I was incredibly impressed with [professional's name]'s expertise and professionalism. They exceeded my expectations and delivered results that went above and beyond. I highly recommend them to anyone seeking [professional's field of expertise]."
+      "content": "I have been supervising Hammad for quite some time. I can say that he is a hardworking and professional individual. He tends to write clean code and follow best practices to the best of his abilities to deliver quality solutions to critical problems."
     },
     {
-      "title": "Bruce Wayne",
-      "designation": "CEO, Wayne Tech",
-      "avatarUrl": "https://dummyimage.com/250x250/a9a9a9/fff",
+      "title": "Qamar Abbas",
+      "designation": "iOS Developer - Siliconplex",
+      "avatarUrl": "https://media.licdn.com/dms/image/D4D03AQElfHJgOZOWFQ/profile-displayphoto-shrink_400_400/0/1667479245961?e=1722470400&v=beta&t=0kOWCVSl5BfMU20Q0eSx5-bklRB2DtQlWoVaEJ70ZrM",
       "profileUrl":"#",
-      "content": "[Professional's name] was a pleasure to work with. They were responsive, communicative, and always went the extra mile to ensure my satisfaction. The results they achieved were exceptional and helped us achieve our business goals."
+      "content": "Hammad has proven to be a competent and valuable team member. He has excellent skills in Django and Django Rest Framework. He always tends delivers high-quality code on time with great and professional work ethics. During my time with him, he worked on a diverse set of technologies, which is a sign of a good developer. Definitely recommend him for any web development project which requires Django expertise and creativity."
     },
     {
-      "title": "Prof. Chalres",
-      "designation": "Professor, University of X",
-      "avatarUrl": "https://dummyimage.com/250x250/a9a9a9/fff",
+      "title": "Chander Harwani",
+      "designation": "Category Specialist - Daraz",
+      "avatarUrl": "https://media.licdn.com/dms/image/C5603AQETedK7WJTNAA/profile-displayphoto-shrink_400_400/0/1660077093662?e=1722470400&v=beta&t=9HwlshYFqyK5RnkAxR4yTyob4dJQeLyxcdvYbJ5u0ZU",
       "profileUrl":"#",
-      "content": "[Professional's name] is a true expert in their field. Their knowledge and insights were invaluable, and they were able to communicate complex concepts in a clear and concise way. I highly recommend them for any consultation or training needs."
+      "content": "Hammad has great technical knowledge, specially he is expert in Python. I also got to learn a lot about docker, gitflow and streamlit from Hammad, he is great leader to work with!"
     },
     {
-      "title": "Sans",
-      "designation": "Comic Skeleton",
-      "avatarUrl": "https://dummyimage.com/250x250/a9a9a9/fff",
+      "title": "Muhammad Hammad",
+      "designation": "Software Engineer - Paysys Labs",
+      "avatarUrl": "https://media.licdn.com/dms/image/D4D03AQGng_1ihN-FgA/profile-displayphoto-shrink_400_400/0/1703940958917?e=1722470400&v=beta&t=gYhBndodYnsrYG5x8kwjaVNYp9PMiTN22lmJZ9jjZaM",
       "profileUrl":"#",
-      "content": "Working with [professional's name] was an outstanding experience. They were flexible, adaptable, and always willing to go the extra mile. They delivered high-quality work on time and within budget. I would definitely recommend them to anyone looking for a reliable and skilled professional."
+      "content": "His knowledge in overall Python stack is remarkable, specifically in Django framework. We both have worked on a project in Pumpjack Dataworks and there he proved to be a worthy teammate."
+    },
+    {
+      "title": "Zain-ul-Abidin",
+      "designation": "Full Stack Developer",
+      "avatarUrl": "https://media.licdn.com/dms/image/D4D03AQEHdL1naCmpdw/profile-displayphoto-shrink_400_400/0/1693758746505?e=1722470400&v=beta&t=2HZ7wCo1_iZFwMg490NmgJEOTOxTomqqEQHRb6Q4dak",
+      "profileUrl":"#",
+      "content": "He is honestly good at handling the backend APIs in Node/Express. He had been a great support to the team. Nice working with you and looking forward to more opportunities to work together."
+    },
+    {
+      "title": "Muhammad Taha Hassan",
+      "designation": "IELTS Instructor - Eunoia Education",
+      "avatarUrl": "https://media.licdn.com/dms/image/C4E03AQEiJf4djflg0A/profile-displayphoto-shrink_400_400/0/1603390001416?e=1722470400&v=beta&t=hosPa0dHAPgDB2PWMuUZKOh-eNJzB5xEhFjxS0MPaXE",
+      "profileUrl":"#",
+      "content": "His Django development skills are excellent. Not only he knows the framework inside out but can develop fully functional backend in it. We were working on a Final Year Project together as students and that was when he demonstrated his strong skills.in python programming and django development."
     }
   ]
