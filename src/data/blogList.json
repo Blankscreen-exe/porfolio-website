@@ -1,6 +1,6 @@
 [
     {
-        "title": "some very good title",
+        "title": "TMUX",
         "description": "Curabitur tristique, mi a mollis sagittis, metus felis mattis arcu, non vehicula nisl dui quis diam. Mauris ut risus eget massa volutpat feugiat. Donec.",
         "tags": [
             "ML", 
@@ -13,7 +13,7 @@
         "thumbnailUrl": "https://mdbcdn.b-cdn.net/img/new/standard/city/059.jpg"
     },
     {
-        "title": "some very good title",
+        "title": "VIM",
         "description": "Curabitur tristique, mi a mollis sagittis, metus felis mattis arcu, non vehicula nisl dui quis diam. Mauris ut risus eget massa volutpat feugiat. Donec.",
         "tags": [
             "ML", 
@@ -26,7 +26,7 @@
         "thumbnailUrl": "https://mdbcdn.b-cdn.net/img/new/standard/city/032.jpg"
     },
     {
-        "title": "some very good title",
+        "title": "NEXT.js",
         "description": "Curabitur tristique, mi a mollis sagittis, metus felis mattis arcu, non vehicula nisl dui quis diam. Mauris ut risus eget massa volutpat feugiat. Donec.",
         "tags": [
             "ML", 
@@ -39,7 +39,7 @@
         "thumbnailUrl": "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg"
     },
     {
-        "title": "some very good title",
+        "title": "Django",
         "description": "Curabitur tristique, mi a mollis sagittis, metus felis mattis arcu, non vehicula nisl dui quis diam. Mauris ut risus eget massa volutpat feugiat. Donec.",
         "tags": [
             "ML", 
@@ -52,7 +52,7 @@
         "thumbnailUrl": "https://mdbcdn.b-cdn.net/img/new/standard/city/012.jpg"
     },
     {
-        "title": "some very good title",
+        "title": "Bun",
         "description": "Curabitur tristique, mi a mollis sagittis, metus felis mattis arcu, non vehicula nisl dui quis diam. Mauris ut risus eget massa volutpat feugiat. Donec.",
         "tags": [
             "ML", 

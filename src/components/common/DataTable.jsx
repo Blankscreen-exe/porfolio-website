@@ -10,10 +10,11 @@ import { useState } from "react";
 
 import TextInputFilter from "./TextInputFilter";
 
-export default function DataTable({ data, columns }) {
+export default function DataTable({ data, columns, colVisibility={} }) {
   const [sorting, setSorting] = useState([]);
   const [filtering, setFiltering] = useState("");
   const [currentPageNumber, setCurrentPageNumber] = useState(1);
+  const [columnVisibility, setColumnVisibility] = useState(colVisibility);
 
   const table = useReactTable({
     data,
@@ -25,6 +26,7 @@ export default function DataTable({ data, columns }) {
     state: {
       sorting: sorting,
       globalFilter: filtering,
+      columnVisibility,
     },
     onSortingChange: setSorting,
     onGlobalFilterChange: setFiltering,

@@ -18,13 +18,14 @@ import GameList from './gameList'
 import DevResourceList from './devResourceList'
 import TargetSkillSet from './targetSkillSet'
 import Certificates from './certificates'
+import Blog from './blog'
 
 function RoutesList(props) {
   return (
     <Routes>
         <Route path={appConstants.routes.home} element={<Home/>}/>
         <Route path={appConstants.routes.aboutMe} element={<About/>}/>
-        <Route path={appConstants.routes.blog} element={<PageTitle title="Blog"/>}/>
+        <Route path={appConstants.routes.blog} element={<Blog/>}/>
 
         {/* <Route path={appConstants.routes.experience} element={<WorkExperience/>}/> */}
         <Route path={appConstants.routes.experienceWorkHistory} element={<WorkExperience/>}/>
