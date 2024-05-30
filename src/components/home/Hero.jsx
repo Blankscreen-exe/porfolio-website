@@ -12,8 +12,13 @@ function Hero(props) {
         <div>
 
           {/* MSG: for more highlighting options https://www.coding-dude.com/wp/css/highlight-text-css/ */}
-          <h1 className="font-bold text-4xl text-title"> <span className="circle-sketch-highlight md:before:w-sm">M. Hammad Hassan </span> 
+          {/* <h1 className="font-bold text-4xl text-title"> <span className="circle-sketch-highlight md:before:w-sm">M. Hammad Hassan </span> 
+          </h1> */}
+          
+          <h1 id='hero-title-name' className="font-bold text-4xl text-title">
+            <strong id='hero-title-name-inner'>M. Hammad </strong> Hassan
           </h1>
+
           <p className="mt-5 text-2xl font-bold text-content/80">Full Stack Developer (Backend Heavy)</p>
           <div className='flex flex-row flex-wrap gap-2 mt-5'>
             <a target="_blank" href={socialLinks.linkedin} className="text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Linkedin </a>

@@ -5,6 +5,10 @@ import PropTypes from "prop-types";
 import svgList from "../../constants/svg";
 import imgList from "../../constants/img";
 
+const ctaText = "Have a Project in Mind? Let's Talk.<br/><br/>No matter how big or small your project is, I'm always interested in hearing new ideas. Drop me a line and let's discuss your vision and how I can help make it a reality.";
+const ctaName = "M. Hammad Hassan";
+const ctaDesignation = "";
+
 function CtaCard(props) {
 
   return (
@@ -21,14 +25,15 @@ function CtaCard(props) {
             {/* MAAL Starts */}
 
             {svgList.quotationMarksCTA}
-            <blockquote className="mt-6 text-xl font-semibold leading-8 text-white">
-              <p>Some witty comment here</p>
+            <blockquote className="mt-6 text-sm md:text-xl font-normal leading-8 text-white">
+              <p dangerouslySetInnerHTML={{ __html : ctaText}}></p>
             </blockquote>
-            <figcaption className="mt-6 text-sm leading-6 text-gray-300">
-              <strong className="font-semibold text-white">
-                Shehab Najib,
+            <figcaption className="mt-6 text-lg leading-6 ">
+              <strong className="font-bold text-white">
+              &#8211; {ctaName}
               </strong>{" "}
-              ceo of ISREN
+              {/* REVIEW: we don't need this do we? */}
+              {/* {ctaDesignation} */}
             </figcaption>
 
             <div className="flex flex-col justify-around mt-10 md:flex-row lg:flex-row gap-4 md:gap-4 lg:gap-4">
