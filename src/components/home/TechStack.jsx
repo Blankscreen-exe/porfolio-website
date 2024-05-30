@@ -11,6 +11,9 @@ import SectionHeading from "../common/SectionHeading";
 // data
 import techStack from "../../data/techStack.json";
 
+// constants
+import imgList from '../../constants/img'
+
 function TechStack(props) {
   const stackList = Object.keys(techStack);
   const [listItem, setListItem] = useState(techStack["languages"]);
@@ -78,7 +81,7 @@ function TechStack(props) {
                   className="w-fit p-2 rounded-md text-content border border-slate-300/60 hover:border-primary/0 md:text-lg text-sm font-semibold flex flex-row justify-center items-center gap-4 hover:bg-gradient-to-br hover:from-primary/10 hover:to-primary/80 hover:text-content hover:cursor-pointer transition-all duration-500"
                 >
                   <img
-                    src="https://dummyimage.com/100x100/eee/444"
+                    src={imgList.techStack[currentSelectedItem][item.imgUrl]}
                     className="md:w-10 w-5 rounded-md"
                   />
                   {/* <div className="md:w-10 w-5 md:h-10 h-5 rounded-md bg-content/20"></div> */}
