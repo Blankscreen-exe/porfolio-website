@@ -5,6 +5,9 @@ import { TECarousel, TECarouselItem } from 'tw-elements-react'
 // data
 import testimonialData from '../../data/testimonials.json';
 
+// constants
+import imgList from '../../constants/img'
+
 function Testimonials(props) {
 
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -95,7 +98,7 @@ function Testimonials(props) {
                 >
                     <div className="flex flex-col justify-items-center items-center h-[650px] md:h-[400px]">
                         <img
-                            src={item.avatarUrl}
+                            src={imgList.testimonials[item.avatarUrl]}
                             className="w-32 h-32 rounded-full font-bold"
                             alt={item.title}
                             />
