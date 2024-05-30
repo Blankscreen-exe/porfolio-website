@@ -6946,7 +6946,7 @@ a:hover {
 }
 
 #hero-title-name-inner::before {
-  background-color: rgba(255, 78, 78, 0.774);
+  background-color: rgba(255, 116, 116, 0.853);
   content: "";
   position: absolute;
   width: calc(100% + 4px);
@@ -7148,7 +7148,7 @@ body > div.z-\[1070\] > div > div > div.flex.flex-row.items-center.justify-betwe
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
-  'wght' 400,
+  'wght' 300,
   'GRAD' 0,
   'opsz' 24
 }

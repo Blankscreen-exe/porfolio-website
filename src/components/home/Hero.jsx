@@ -16,7 +16,7 @@ function Hero(props) {
           </h1> */}
           
           <h1 id='hero-title-name' className="font-bold text-4xl text-title">
-            <strong id='hero-title-name-inner'>M. Hammad </strong> Hassan
+          M.Ham<strong id='hero-title-name-inner'>mad Hassan</strong> 
           </h1>
 
           <p className="mt-5 text-2xl font-bold text-content/80">Full Stack Developer (Backend Heavy)</p>

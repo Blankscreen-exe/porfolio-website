@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 // Constants
 import svgList from "../../constants/svg";
 import imgList from "../../constants/img";
+import socialLinks from '../../data/socialLinks.json'
 
 const ctaText = "Have a Project in Mind? Let's Talk.<br/><br/>No matter how big or small your project is, I'm always interested in hearing new ideas. Drop me a line and let's discuss your vision and how I can help make it a reality.";
 const ctaName = "M. Hammad Hassan";
@@ -37,15 +38,26 @@ function CtaCard(props) {
             </figcaption>
 
             <div className="flex flex-col justify-around mt-10 md:flex-row lg:flex-row gap-4 md:gap-4 lg:gap-4">
-              <div className="text-white hover:bg-white hover:text-black border rounded-md p-3 hover:cursor-pointer transition-all duration-500">
-                Dummy Button
-              </div>
-              <div className="text-white hover:bg-white hover:text-black border rounded-md p-3 hover:cursor-pointer transition-all duration-500">
-                Dummy Button
-              </div>
-              <div className="text-white hover:bg-white hover:text-black border rounded-md p-3 hover:cursor-pointer transition-all duration-500">
-                Dummy Button
-              </div>
+              <a href={socialLinks.linkedin} target='_blank'>
+                <div className="text-white hover:bg-white hover:text-black border rounded-md p-3 hover:cursor-pointer transition-all duration-500 flex justify-center gap-2">
+                  {svgList.socialIcons.linkedin }
+                  LinkedIn
+                </div>
+              </a>
+              <a href={socialLinks.upwork} target='_blank'>
+                <div className="text-white hover:bg-white hover:text-black border rounded-md p-3 hover:cursor-pointer transition-all duration-500 flex justify-center gap-2">
+                  {svgList.socialIcons.upwork }
+                  Upwork
+                </div>
+              </a>
+              <a href={socialLinks.eBizCard} target='_blank'>
+                <div className="text-white hover:bg-white hover:text-black border rounded-md p-3 hover:cursor-pointer transition-all duration-500 flex justify-center gap-2">
+                  <span class="material-symbols-outlined">
+                  id_card
+                  </span>
+                  E-Business Card
+                </div>
+              </a>
             </div>
 
             {/* MAAL Ends */}
