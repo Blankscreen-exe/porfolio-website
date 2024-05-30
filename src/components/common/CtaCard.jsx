@@ -26,11 +26,11 @@ function CtaCard(props) {
             {/* MAAL Starts */}
 
             {svgList.quotationMarksCTA}
-            <blockquote className="mt-6 text-sm md:text-xl font-normal leading-8 text-white">
+            <blockquote className="mt-6 text-sm md:text-lg font-normal leading-8 text-white">
               <p dangerouslySetInnerHTML={{ __html : ctaText}}></p>
             </blockquote>
-            <figcaption className="mt-6 text-lg leading-6 ">
-              <strong className="font-bold text-white">
+            <figcaption className="mt-6 text-lg leading-6 text-right">
+              <strong className="font-italic text-white">
               &#8211; {ctaName}
               </strong>{" "}
               {/* REVIEW: we don't need this do we? */}
