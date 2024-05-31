@@ -5,42 +5,42 @@
             "url":"https://www.python.org/",
             "imgUrl":"python",
             "fontColor":"",
-            "bgColor":""
+            "bgColor":"#3470a0"
         },
         {
             "name":"JavaScript",
             "url":"https://developer.mozilla.org/en-US/docs/Web/JavaScript",
             "imgUrl":"javascript",
             "fontColor":"",
-            "bgColor":""
+            "bgColor":"#efd81d"
         },
         {
             "name":"PHP",
             "url":"https://www.php.net/",
             "imgUrl":"php",
             "fontColor":"",
-            "bgColor":""
+            "bgColor":"#7377ad;"
         },
         {
             "name":"Node.js",
             "url":"https://nodejs.org/en",
             "imgUrl":"nodejs",
             "fontColor":"",
-            "bgColor":""
+            "bgColor":"#74ad5e"
         },
         {
             "name":"Solidity",
             "url":"https://soliditylang.org/",
             "imgUrl":"solidity",
             "fontColor":"",
-            "bgColor":""
+            "bgColor":"#e6e3ec"
         },
         {
             "name":"HTML",
             "url":"https://developer.mozilla.org/en-US/docs/Web/HTML",
             "imgUrl":"html",
             "fontColor":"",
-            "bgColor":""
+            "bgColor":"#e96228"
         },
         {
             "name":"CSS",
