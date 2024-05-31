@@ -60,6 +60,12 @@ export function sentenceToSlug(sentence) {
     return slug;
   }
 
+export function convertToUnderscoreSlug(str) {
+  // Use the replace() method with a regular expression
+  // to replace all spaces with underscores globally
+  return str.toLowerCase().replace(/\s/g, "_");
+}
+
 export function classAdd(baseClass, ...args) {
   const allClasses = [baseClass, ...args];
   const filteredClasses = allClasses.filter(className => className);

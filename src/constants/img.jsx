@@ -119,7 +119,7 @@ export default {
             sass,
             streamlit
         },
-        databases: {
+        database: {
             postgresql,
             mysql,
             mssql,
@@ -136,6 +136,18 @@ export default {
             github,
             nginx,
             wordpress
+        },
+        ml_ds_ai: {
+            ibmwatson,
+            mlflow,
+            langchain,
+            numpy,
+            pandas,
+            openai,
+            powerbi,
+            scikitlearn,
+            tensorflow,
+            weka
         }
     }
 }
