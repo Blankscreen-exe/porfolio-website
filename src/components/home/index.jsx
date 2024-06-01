@@ -34,11 +34,6 @@ function Home(props) {
         <Protip/>
         <HorizontalSlider
           data={awards}
-          title={"Certificates"}
-          buttonText={<><span>View</span> {svgList.externalLink}</>}
-        />
-        <HorizontalSlider
-          data={awards}
           title={"Projects"}
           buttonText={<><span>View</span> {svgList.externalLink}</>}
         />
