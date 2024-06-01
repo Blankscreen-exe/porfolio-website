@@ -1,26 +1,62 @@
 [
     {
         "title": "backend",
+        "optionTitle": "backend",
         "type": "TEC",
-        "description": "This is the <b>backend</b> services description.",
-        "deliverables": ["item 1 - BE", "item 2 - BE", "item 3 - BE"]
+        "description": "I specialize in building robust and scalable <b>backend systems</b>. I can handle your application's <i>core logic, data storage, and server-side functionality</i>, allowing you to focus on the user experience. <br/><br/>My expertise in backend technologies ensures efficient and secure operations.",
+        "deliverables": [
+            "Payment Gateways", 
+            "APIs", 
+            "Server-side Rendering",
+            "Caching",
+            "Unit testing",
+            "Deployment",
+            "Databases",
+            "... and more"
+        ]
     },
     {
         "title": "frontend",
+        "optionTitle": "frontend",
         "type": "TEC",
-        "description": "This is the <b>frontend</b> services <br/>description.",
-        "deliverables": ["item 1 - FE", "item 2 - FE", "item 3 - FE", "item 1 - FE", "item 2 - FE", "item 3 - FE", "item 1 - FE", "item 2 - FE", "item 3 - FE"]
+        "description": "As a Full Stack Developer, I can design quality wireframes and generate the outline of your app while also fusing those ideas into code. <br/><br/>Currently I am providing my services for the <b>Web Application</b> domain where I can perform all kinds of tasks in youur web application.",
+        "deliverables": [
+            "API Integration",
+            "Translate Designs to Code",
+            "Responsive Design",
+            "Cross-Browser Compatibility",
+            "Unit Testing",
+            "Theme Integration",
+            "... and more"
+        ]
     },
     {
-        "title": "ML",
+        "title": "Machine Learning",
+        "optionTitle": "ML",
         "type": "TEC",
-        "description": "This is the <b>Data Science</b> and <b>ML</b>services <br/>description.",
-        "deliverables": ["item 1 - ML", "item 2 - ML", "item 3 - ML"]
+        "description": "I'm a <b>machine learning engineer</b> here to help you unlock the power of data. I can tackle your machine learning challenges, from building models for tasks like prediction and classification to ensuring they run smoothly in real-world applications. <br/><br/>I'll handle everything, from data wrangling to deployment and monitoring, so you can focus on the insights your models deliver.",
+        "deliverables": [
+            "Model Development & Training",
+            "Model Deployment & Integration",
+            "Model Evaluation & Monitoring",
+            "Data Analysis & Exploration",
+            "ETL Pipelines",
+            "Data Aggregation & Munging", 
+            "Business Presentations",
+            "... and more"
+        ]
     },
     {
         "title": "mentorship",
+        "optionTitle": "mentorship",
         "type": "TCH",
-        "description": "This is the <b>mentorship</b> services <u><a href=''>description</a></u>.",
-        "deliverables": ["item 1 - MEN", "item 2 - MEN", "item 3 - MEN"]
+        "description": "I'm passionate about fostering the growth of aspiring developers. I offer <b>mentorship programs</b> designed to empower individuals at various stages of their careers. Whether you're seeking guidance on building your first machine learning model or refining your full-stack development skills, I can provide a structured learning environment. Through collaboration on real-world projects and open communication, I aim to equip you with the knowledge and confidence to thrive in the dynamic tech industry. Let's discuss your goals and how I can help you achieve them.",
+        "deliverables": [
+            "Technical Skill Development",
+            "Career Path Coaching",
+            "Project Assisstance & Guidance",
+            "Industry Insights",
+            "... and more" 
+        ]
     }
 ]

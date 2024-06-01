@@ -48,7 +48,7 @@ function ServicesTabs(props) {
                     )}
                     onClick={() => handleTabClick(ind)}
                   >
-                    {capitalizeFirstLetter(item.title)}
+                    {capitalizeFirstLetter(item.optionTitle)}
                   </button>
                 );
               })}
@@ -68,9 +68,9 @@ function ServicesTabs(props) {
 
           <div className="w-full md:min-w-96 border border-secondary drop-shadow-sm rounded-md p-4 relative">
             <h3 className="text-contentLink/80 text-xs bg-bg1 absolute -top-2 px-2 shadow-none">I can do the following</h3>
-            <ul>
+            <ul className="space-y-2">
               {servicesData[activeTab].deliverables.map((item, ind) => {
-                return <li key={ind}>{capitalizeFirstLetter(item)}</li>;
+                return <li key={ind}><span className="w-1 h-1 rounded-3xl p bg-primary text-primary">.</span> <pre className="inline"> </pre>{ capitalizeFirstLetter(item)}</li>;
               })}
             </ul>
           </div>
