@@ -46,6 +46,10 @@ import jira from './svg/techstack/other/jira.svg'
 import nginx from './svg/techstack/other/nginx.svg'
 import wordpress from './svg/techstack/other/wordpress.svg'
 import figma from './svg/techstack/other/figma.svg'
+import apachekafka from './svg/techstack/other/apachekafka.svg'
+import apacheserver from './svg/techstack/other/apacheserver.svg'
+import celery from './svg/techstack/other/celery.svg'
+import rabbitmq from './svg/techstack/other/rabbitmq.svg'
 // database
 import postgresql from './svg/techstack/database/postgresql.svg'
 import redis from './svg/techstack/database/redis.svg'
@@ -815,6 +819,10 @@ export default {
       nginx, 
       wordpress, 
       figma, 
+      apachekafka,
+      apacheserver,
+      celery,
+      rabbitmq
     },
     frontend: {
       reactjs,

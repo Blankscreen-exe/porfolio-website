@@ -305,6 +305,13 @@
             "bgColor":""
         },
         {
+            "name":"Apache Server",
+            "url":"https://httpd.apache.org/",
+            "imgUrl":"apacheserver",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
             "name":"NGINX",
             "url":"https://nginx.org/en/",
             "imgUrl":"nginx",
@@ -322,6 +329,27 @@
             "name":"JIRA",
             "url":"https://www.atlassian.com/software/jira",
             "imgUrl":"jira",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"Apache Kafka",
+            "url":"https://kafka.apache.org/",
+            "imgUrl":"apachekafka",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"Rabbit MQ",
+            "url":"https://www.rabbitmq.com/",
+            "imgUrl":"rabbitmq",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"Celery",
+            "url":"https://docs.celeryq.dev/en/stable/index.html",
+            "imgUrl":"celery",
             "fontColor":"",
             "bgColor":""
         },
