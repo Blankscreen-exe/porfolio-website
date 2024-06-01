@@ -13,7 +13,7 @@ import SectionHeading from "../common/SectionHeading";
 import techStack from "../../data/techStack.json";
 
 // constants
-import imgList from '../../constants/img'
+import svgList from '../../constants/svg'
 
 function TechStack(props) {
   const stackList = Object.keys(techStack);
@@ -68,7 +68,7 @@ function TechStack(props) {
           </ul>
         </div>
 
-        <div className="p-2 w-full sm:w-[50%] mx-auto flex flex-row flex-wrap align-middle content-start overflow-visible justify-center md:justify-start lg:justify-start gap-6 ">
+        <div className="p-2 w-full sm:w-[70%] mx-auto flex flex-row flex-wrap align-middle content-start overflow-visible justify-center md:justify-start lg:justify-start gap-6 ">
           {listItem.map((item, ind) => (
             <a key={ind} href={item.url} target="_blank" className="h-min">
               <div
@@ -80,12 +80,19 @@ function TechStack(props) {
                 <div
                   key={item.name}
                   className="w-fit p-2 rounded-md text-content border border-slate-300/60 hover:border-primary/0 md:text-lg text-sm font-semibold flex flex-row justify-center items-center gap-4 hover:bg-gradient-to-br hover:from-primary/10 hover:to-primary/80 hover:text-content hover:cursor-pointer transition-all duration-500"
-                > {console.log(convertToUnderscoreSlug(currentSelectedItem), currentSelectedItem, item.imgUrl) && console.log(imgList.techStack[currentSelectedItem][item.imgUrl])}
-                  <img
-                    src={imgList.techStack[convertToUnderscoreSlug(currentSelectedItem)][item.imgUrl]}
+                > 
+                
+                { item.imgUrl in svgList.techStack[convertToUnderscoreSlug(currentSelectedItem)]  
+                  ? (<img
+                    src={svgList.techStack[convertToUnderscoreSlug(currentSelectedItem)][item.imgUrl]}
                     className="md:w-10 w-5 rounded-md"
-                  />
-                  {/* <div className="md:w-10 w-5 md:h-10 h-5 rounded-md bg-content/20"></div> */}
+                    alt={item.imgUrl}
+                  />)
+                  : (<div className={`md:w-8 md:h-8 w-5 h-5 rounded-md bg-primary border-4 border-tertiary ${"[#aeaeae]"}`}></div>)
+                }
+
+                {/* <div className="md:w-10 w-5 md:h-10 h-5 rounded-md bg-content/20"></div> */}
+                
                   <span>{capitalizeFirstLetter(item.name)}</span>
                 </div>
               </div>
