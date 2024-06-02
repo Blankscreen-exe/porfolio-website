@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom'
 import appConstants from '../../constants/appConstants'
 import svgLists from '../../constants/svg'
 import {classLists} from '../../constants/cssClasses'
+import socialLinks from '../../data/socialLinks.json'
 
 import { getClassesFromConstants, classAdd } from '../../helpers/common'
 
@@ -54,10 +55,11 @@ function Footer(props) {
           <nav className="md:place-self-center md:justify-self-end w-full md:w-fit">
             <div className="w-full md:w-fit grid grid-flow-col gap-4">
               {/* TODO: icons to add Linkedin, Github, Discord, E business card*/}
-              <NavLink to={""}  className={navLinkClasses}>{svgLists.socialIcons.twitter}</NavLink >
-              <NavLink to={""}  className={navLinkClasses}>{svgLists.socialIcons.youtube}</NavLink >
-              <NavLink to={""}  className={navLinkClasses}>{svgLists.socialIcons.facebook}</NavLink >
-              <NavLink to={""}  className={navLinkClasses}>{svgLists.socialIcons.medium}</NavLink >
+              <NavLink to={socialLinks.upwork}  className={navLinkClasses}>{svgLists.socialIcons.upwork}</NavLink >
+              <NavLink to={socialLinks.discord}  className={navLinkClasses}>{svgLists.socialIcons.discord}</NavLink >
+              <NavLink to={socialLinks.github}  className={navLinkClasses}>{svgLists.socialIcons.github}</NavLink >
+              <NavLink to={socialLinks.linkedin}  className={navLinkClasses}>{svgLists.socialIcons.linkedin}</NavLink >
+              <NavLink to={socialLinks.medium}  className={navLinkClasses}>{svgLists.socialIcons.medium}</NavLink >
               
             </div>
           </nav>
