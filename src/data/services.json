@@ -50,12 +50,14 @@
         "title": "mentorship",
         "optionTitle": "mentorship",
         "type": "TCH",
-        "description": "I'm passionate about fostering the growth of aspiring developers. I offer <b>mentorship programs</b> designed to empower individuals at various stages of their careers. Whether you're seeking guidance on building your first machine learning model or refining your full-stack development skills, I can provide a structured learning environment. Through collaboration on real-world projects and open communication, I aim to equip you with the knowledge and confidence to thrive in the dynamic tech industry. Let's discuss your goals and how I can help you achieve them.",
+        "description": "I'm passionate about fostering the growth of aspiring developers. I offer <b>mentorship programs</b> designed to empower individuals at various stages of their careers. <br/><br/>Whether you're seeking guidance on building your first <b>machine learning model</b> or refining your <b>full-stack development</b> skills, I can provide a structured learning environment. Through collaboration on real-world projects and open communication, I aim to equip you with the knowledge and confidence to thrive in the dynamic tech industry. Let's discuss your goals and how I can help you achieve them.",
         "deliverables": [
             "Technical Skill Development",
             "Career Path Coaching",
             "Project Assisstance & Guidance",
             "Industry Insights",
+            "Resume Improvement",
+            "Interview Preparation",
             "... and more" 
         ]
     }
