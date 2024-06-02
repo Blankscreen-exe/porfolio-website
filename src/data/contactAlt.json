@@ -1,17 +1,14 @@
 [
     {
-        "icon": "discord",
-        "name": "Discord",
-        "link": "some link"
-    },
-    {
         "icon": "linkedin",
-        "name": "LinkedIn",
-        "link": "some link"
+        "name": "LinkedIn"
+    },
+    {
+        "icon": "upwork",
+        "name": "Upwork"
     },
     {
         "icon": "discord",
-        "name": "SomethingElse",
-        "link": "some link"
+        "name": "Discord (Blankscreen.exe)"
     }
 ]
