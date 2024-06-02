@@ -12,15 +12,15 @@ function BlogCard(props) {
   return (
     <div>
         <a href={postLink}>
-      <div className="mb-6 flex flex-wrap">
+      <div className="mb-6 flex flex-wrap w-full">
         <div className="mb-6 ml-auto w-full h-36 shrink-0 grow-0 basis-auto px-3 md:mb-0 md:w-3/12">
           <div
             className="relative mb-6 overflow-hidden rounded-lg bg-cover bg-no-repeat shadow-lg dark:shadow-black/20"
             data-te-ripple-init
             data-te-ripple-color="light"
           >
-            <img src={imgUrl} className="w-full h-36 object-cover"  alt="Louvre" />
-            <a href="#!">
+            <img src={imgUrl} className="w-full h-40 object-cover"  alt="Louvre" />
+            <a href={postLink}>
               <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]"></div>
             </a>
           </div>

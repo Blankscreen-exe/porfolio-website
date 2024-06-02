@@ -77,7 +77,7 @@ export default function DataTable({ data, columns, colVisibility={} }) {
         isRequired={true}
       />
       <div className="overflow-x-auto">
-        <table className="table overflow-x-auto min-w-[1000px]">
+        <table className="table overflow-x-auto">
           <thead>
             {table.getHeaderGroups().map((headerGroup) => (
               <tr key={headerGroup.id}>
