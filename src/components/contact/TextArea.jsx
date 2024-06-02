@@ -24,7 +24,7 @@ function TextArea(props) {
             id={id}
             label={<span className="bg-bg1 px-2">{label}</span>}
             rows={rows ? rows : 4}
-            className="text-secondary focus:text-primary"
+            className="text-secondary focus:text-primary min-h-36"
             value={formData.message}
             onChange={handleChange}
           ></TETextarea>

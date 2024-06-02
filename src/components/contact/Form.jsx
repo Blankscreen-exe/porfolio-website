@@ -43,7 +43,6 @@ function Form(props) {
   const form = useRef();
 
   const handleSubmit = async () => {
-    console.log("DATA submitted")
     emailjs.init({
       publicKey: "2u2IBkz4SNHuJ3jqF",
     })
@@ -64,8 +63,6 @@ function Form(props) {
         },
       );
   }
-
-  console.log("STATE DATA", formData);
 
   return (
     <div className="mb-16" id="contact-form-container">

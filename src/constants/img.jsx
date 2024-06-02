@@ -10,64 +10,6 @@ import saqibNajam from './images/testimonials/saqibNajam.jpg'
 import zainUlAbidin from './images/testimonials/zainUlAbidin.jpg'
 import mTahaHassan from './images/testimonials/mTahaHassan.jpg'
 
-// tech stack
-
-// languages
-import python from './images/techstack/languages/python.png'
-import php from './images/techstack/languages/php.png'
-import solidity from './images/techstack/languages/solidity.png'
-import javascript from './images/techstack/languages/javascript.png'
-import html from './images/techstack/languages/html.png'
-import css from './images/techstack/languages/css.png'
-import nodejs from './images/techstack/languages/nodejs.png'
-
-// backend
-import django from './images/techstack/backend/django.png'
-import flask from './images/techstack/backend/flask.png'
-import fastapi from './images/techstack/backend/fastapi.png'
-import expressjs from './images/techstack/backend/expressjs.png'
-import laravel from './images/techstack/backend/laravel.png'
-
-// frontend
-import reactjs from './images/techstack/frontend/reactjs.png'
-import bootstrap from './images/techstack/frontend/bootstrap.png'
-import tailwind from './images/techstack/frontend/tailwind.png'
-import reactrouter from './images/techstack/frontend/reactrouter.png'
-import redux from './images/techstack/frontend/redux.png'
-import sass from './images/techstack/frontend/sass.png'
-import streamlit from './images/techstack/frontend/streamlit.png'
-
-// databases
-import postgresql from './images/techstack/databases/postgresql.png'
-import mysql from './images/techstack/databases/mysql.png'
-import mssql from './images/techstack/databases/mssql.png'
-import mongodb from './images/techstack/databases/mongodb.png'
-import redis from './images/techstack/databases/redis.png'
-import sqlite from './images/techstack/databases/sqlite.png'
-import firebase from './images/techstack/databases/firebase.png'
-
-// ml ds ai
-import ibmwatson from './images/techstack/ml_ds_ai/ibmwatson.png'
-import mlflow from './images/techstack/ml_ds_ai/mlflow.png'
-import langchain from './images/techstack/ml_ds_ai/langchain.png'
-import numpy from './images/techstack/ml_ds_ai/numpy.png'
-import pandas from './images/techstack/ml_ds_ai/pandas.png'
-import openai from './images/techstack/ml_ds_ai/openai.png'
-import powerbi from './images/techstack/ml_ds_ai/powerbi.png'
-import scikitlearn from './images/techstack/ml_ds_ai/scikitlearn.png'
-import tensorflow from './images/techstack/ml_ds_ai/tensorflow.png'
-import weka from './images/techstack/ml_ds_ai/weka.png'
-
-// others
-import docker from './images/techstack/other/docker.png'
-import jira from './images/techstack/other/jira.png'
-import figma from './images/techstack/other/figma.png'
-import git from './images/techstack/other/git.png'
-import github from './images/techstack/other/github.png'
-import nginx from './images/techstack/other/nginx.png'
-import wordpress from './images/techstack/other/wordpress.png'
-
-
 export default {
     certificates: {
         logo: {

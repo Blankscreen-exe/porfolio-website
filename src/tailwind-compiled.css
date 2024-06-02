@@ -4704,6 +4704,14 @@ input.tab:checked + .tab-content,
   min-height: 100%;
 }
 
+.min-h-10 {
+  min-height: 2.5rem;
+}
+
+.min-h-36 {
+  min-height: 9rem;
+}
+
 .\!w-px {
   width: 1px !important;
 }
