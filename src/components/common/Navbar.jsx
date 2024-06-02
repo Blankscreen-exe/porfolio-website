@@ -162,7 +162,11 @@ function NavBar(props) {
 
             </ul>
           </div>
-          <a className="text-contentLink hover:text-primary transition-colors text-xl mx-2">{appConstants.common.pageTitle}</a>
+            <NavLink to={appConstants.routes.home} className="text-contentLink hover:text-primary transition-colors text-xl mx-2">
+              <span className=''>
+                {appConstants.common.pageTitle}
+              </span>
+            </NavLink>
         </div>
         <ThemeSwitch/>
       </div>

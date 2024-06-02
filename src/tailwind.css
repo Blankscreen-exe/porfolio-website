@@ -282,7 +282,7 @@ a:hover {
   content: "";
   position: absolute;
   width: calc(100% + 4px);
-  height: 60%;
+  height: 90%;
   left: -2px;
   bottom: 0;
   z-index: -1;
