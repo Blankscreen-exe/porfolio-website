@@ -1,18 +1,30 @@
 [
     {
-        "question": "what is a banana?",
-        "answer": "It is a <b>cake</b>"
+        "question": "What type of Web applications do you work with?",
+        "answer": "I have worked with <b>E-Commerce</b>, <b>Analytics Dashboards</b>, <b>Service Platforms</b>, <b>Educational Web Apps</b> etc. But don't worry, I am open to work with new ideas and domains."
     },
     {
-        "question": "what is a apple?",
-        "answer": "Get your articles right dummkopf"
+        "question": "Do you work on Mobile frontend?",
+        "answer": "No. not yet anyways. But I plan on making that a part of my skillset."
     },
     {
-        "question": "what is a siphoning strike?",
-        "answer": "go and ask <b>machamp</b>"
+        "question": "How can I contact you if I have a project I want you to work on?",
+        "answer": "You can reach me out on <a href='https://www.upwork.com/freelancers/~01f9b5bc6f481f0385' target='_blank' class='underline'>Upwork</a> for this."
     },
     {
-        "question": "what is a haks?",
-        "answer": "Something you wont be able to do"
+        "question": "What is your workflow like?",
+        "answer": "I like to keep it straightforward:<br/><ol><li>1- You come to me with your idea and I ask you some questions about it (requirement gathering)</li><li>2- Once I understand the depths & details of the task, I will give you a breakdown of the task as milestones along with time estimations.</li><li>3- We discuss if the breakdown(point 2) needs to be changed</li><li>4- Once all of that is settled, I begin my work and provide you timely reports until it is done.</li></ol><br/>📌 But all of this may not apply to small tasks. There is no point in making you wait for task as small as writing unit tests for a small project."
+    },
+    {
+        "question": "How often will you communicate with me during the project?",
+        "answer": "As often as there is a need to discuss something critical. But in general, if everything is going according to plan, you will ge a daily report from me."
+    },
+    {
+        "question": "How can I provide you with feedback on your work?",
+        "answer": "We can use the Upwork chat, as it is safe and secure for both of our interests. As for video calls, I'm open to use any medium you are comfortable in."
+    },
+    {
+        "question": "What happens if I change my mind about a certain feature of the project?",
+        "answer": "Nothing much happens, except that you and I will revisit the time and work estimations and finalize it in a single meeting (if possible). After your change of mind is taken care of, I will resume working. <br/><br/>📌 Please keep in mind that it might cost us some delays and I might need to revert some things that I have already done. This can take some time, so it is always better to have a clear communication in the initial stages of work."
     }
 ]
