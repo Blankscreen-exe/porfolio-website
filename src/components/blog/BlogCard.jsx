@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 // helpers
-import { truncateText } from "../../helpers/common";
+import { capitalizeWords, truncateText } from "../../helpers/common";
 
 function BlogCard(props) {
   const { cardTitle, cardDescription, date, tags, imgUrl, postLink } = props;
@@ -19,7 +19,7 @@ function BlogCard(props) {
             data-te-ripple-init
             data-te-ripple-color="light"
           >
-            <img src={imgUrl} className="w-full h-40 object-cover"  alt="Louvre" />
+            <img src={imgUrl} className="w-full h-40 object-cover"  alt="blog image" />
             <a href={postLink}>
               <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]"></div>
             </a>
@@ -27,7 +27,7 @@ function BlogCard(props) {
         </div>
 
         <div className="mb-6 mr-auto w-full shrink-0 grow-0 basis-auto px-3 md:mb-0 md:w-9/12 xl:w-7/12">
-          <h5 className="mb-1 text-lg font-bold">{cardTitle}</h5>
+          <h5 className="mb-1 text-lg font-bold text-content hover:text-primary">{cardTitle}</h5>
           {/* REVIEW: enable svg ? */}
           {/* <div className="mb-3 flex items-center justify-center text-sm font-medium text-danger dark:text-danger-500 md:justify-start">
             <svg
@@ -57,8 +57,8 @@ function BlogCard(props) {
             {tags.map((item) => {
               console.log(item);
               return (
-                <div className="badge text-content hover:bg-primary/60 hover:text-white hover:cursor-default font-bold rounded-md border border-primary/30 px-2 py-0.5">
-                  {item}
+                <div className="badge text-content hover:bg-contrast/70 hover:text-white hover:cursor-default font-bold rounded-md border border-contrast/50 px-2 py-0.5">
+                  {capitalizeWords(item)}
                 </div>
               );
             })}

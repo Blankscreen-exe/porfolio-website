@@ -1,67 +1,308 @@
 [
     {
-        "title": "TMUX",
-        "description": "Curabitur tristique, mi a mollis sagittis, metus felis mattis arcu, non vehicula nisl dui quis diam. Mauris ut risus eget massa volutpat feugiat. Donec.",
+        "title": "How I Learned TMUX & Became A Workflow Ninja",
+        "description": "This is a breakdown of how I learned TMUX without getting tangled into the plethora of features it offers, and how I mastered it bit by bit.",
         "tags": [
-            "ML", 
-            "Tensorflow",
-            "AI"
+            "TMUX", 
+            "command line", 
+            "Developer tools", 
+            "Workflow managmenet",
+            "Tutorial"       
         ],
-        "mediumUrl": "#",
+        "mediumUrl": "https://medium.com/@hammad.ai/how-i-learned-tmux-became-a-workflow-ninja-7d33cc796793",
         "hashnodeUrl": "#",
-        "publishDate": "Feb 2024",
-        "thumbnailUrl": "https://mdbcdn.b-cdn.net/img/new/standard/city/059.jpg"
+        "publishDate": "Jan 2024",
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:750/format:webp/1*-rMNuwYtuj-48e_hesml7g.png"
     },
     {
-        "title": "VIM",
-        "description": "Curabitur tristique, mi a mollis sagittis, metus felis mattis arcu, non vehicula nisl dui quis diam. Mauris ut risus eget massa volutpat feugiat. Donec.",
+        "title": "Create An Invoice Generator Using Python, Jinja2 & Weasyprint",
+        "description": "Whenever a client asks you to do a minor task as a freelance project, what do you do? You whip up an invoice which lists the tasks you are going to do for the client and the charges that are associated with each task. ",
         "tags": [
-            "ML", 
-            "Tensorflow",
-            "AI"
+            "python", 
+            "HTML", 
+            "CSS", 
+            "Factory Pattern",
+            "Projects"       
         ],
         "mediumUrl": "https://medium.com/@hammad.ai/create-an-invoice-generator-using-python-jinja2-weasyprint-48ef1f450ac5",
         "hashnodeUrl": "#",
         "publishDate": "Dec 2023",
-        "thumbnailUrl": "https://mdbcdn.b-cdn.net/img/new/standard/city/032.jpg"
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:828/format:webp/0*-PqEQRD9o4k2FYwq"
     },
     {
-        "title": "NEXT.js",
-        "description": "Curabitur tristique, mi a mollis sagittis, metus felis mattis arcu, non vehicula nisl dui quis diam. Mauris ut risus eget massa volutpat feugiat. Donec.",
+        "title": "Will Learning AI Make Me Future Proof? (Answered With Different Perspectives)",
+        "description": "This is something many young and professional experts of their fields have been asking me recently. This article is my compilation of all the answers I gave them to satisfy their questions, as well as their follow-up questions.",
         "tags": [
-            "ML", 
-            "Tensorflow",
-            "AI"
+            "future of work", 
+            "machine learning", 
+            "AI", 
+            "chatGPT",
+            "bardAI"       
         ],
-        "mediumUrl": "#",
+        "mediumUrl": "https://medium.com/@hammad.ai/will-learning-ai-make-me-future-proof-answered-with-different-perspectives-d8e45d1b51f8",
         "hashnodeUrl": "#",
-        "publishDate": "Feb 2024",
-        "thumbnailUrl": "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg"
+        "publishDate": "Dec 2023",
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*UiuIybzcKeh-IBXn8R4wkg.jpeg"
     },
     {
-        "title": "Django",
-        "description": "Curabitur tristique, mi a mollis sagittis, metus felis mattis arcu, non vehicula nisl dui quis diam. Mauris ut risus eget massa volutpat feugiat. Donec.",
+        "title": "Tuning Model Hyperparameters With Random Search",
+        "description": "Random Search is a hyperparameter optimization technique in machine learning that randomly samples a defined number of hyperparameter combinations from specified distributions. By distributions, I mean sets or ranges of possible parameter values.",
         "tags": [
-            "ML", 
-            "Tensorflow",
-            "AI"
+            "python", 
+            "randomsearchCV", 
+            "data science", 
+            "machine learning",
+            "hyperparameter tuning"       
         ],
-        "mediumUrl": "#",
+        "mediumUrl": "https://medium.com/@hammad.ai/tuning-model-hyperparameters-with-random-search-f4c1cc88f528",
         "hashnodeUrl": "#",
-        "publishDate": "May 2024",
-        "thumbnailUrl": "https://mdbcdn.b-cdn.net/img/new/standard/city/012.jpg"
+        "publishDate": "Nov 2023",
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:828/format:webp/0*M24XYSuRGHEWgOCN"
     },
     {
-        "title": "Bun",
-        "description": "Curabitur tristique, mi a mollis sagittis, metus felis mattis arcu, non vehicula nisl dui quis diam. Mauris ut risus eget massa volutpat feugiat. Donec.",
+        "title": "Create a simple TCP & UDP clients in Python & Websocket",
+        "description": "Whipping up your own clients in any programming languages can be an extremely useful knowledge for a lot of purposes.",
         "tags": [
-            "ML", 
+            "python", 
+            "websocket", 
+            "TCP", 
+            "UDP",
+            "client",
+            "networking"       
+        ],
+        "mediumUrl": "https://medium.com/@hammad.ai/create-a-simple-tcp-udp-clients-in-python-56da716fb250",
+        "hashnodeUrl": "#",
+        "publishDate": "Nov 2023",
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:828/format:webp/0*aoQs_dYFJ-dc_WgU"
+    },
+    {
+        "title": "How I learned VIM and flexed in front of other developers",
+        "description": "I would assume that you are here because you wanted to flex too. Honestly, which programmer doesn’t? 😁",
+        "tags": [
+            "VIM", 
+            "command line", 
+            "programming tips", 
+            "text editor",
+            "developer tools"       
+        ],
+        "mediumUrl": "https://medium.com/@hammad.ai/how-i-learned-vim-and-flexed-in-front-of-other-developers-fb2a1051f814",
+        "hashnodeUrl": "#",
+        "publishDate": "Oct 2023",
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*sPCfodxZ9L0b_Uy0Un1KXA.jpeg"
+    },
+    {
+        "title": "Using Grid Search For Hyper-Parameter Tuning",
+        "description": "Here we are going to explore an efficient way to tune our model’s hyperparameters using Grid Search. We would be exploring the facilities that it provides as well as run some scenarios with Python code.",
+        "tags": [
+            "python", 
+            "gridsearchCV", 
+            "data science", 
+            "machine learning",
+            "hyperparameter tuning"       
+        ],
+        "mediumUrl": "https://medium.com/@hammad.ai/using-grid-search-for-hyper-parameter-tuning-bad6756324cc",
+        "hashnodeUrl": "#",
+        "publishDate": "Oct 2023",
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:828/format:webp/0*Tgy73ctK_RMAeTPo"
+    },
+    {
+        "title": "Machine Learning Problem-Solving Checklist",
+        "description": "I’m going to introduce you to a checklist which you can use to solve most Machine Learning problems. It should serve you as guidelines for your next steps while trying to solve a simple or even complex Machine Learning Problem.",
+        "tags": [
+            "data science", 
+            "machine learning", 
+            "methodology", 
+            "checklist"       
+        ],
+        "mediumUrl": "https://medium.com/@hammad.ai/machine-learning-problem-solving-checklist-e5584793cc47",
+        "hashnodeUrl": "#",
+        "publishDate": "Oct 2023",
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:828/format:webp/0*reFjb8hEm6io-0cT"
+    },
+    {
+        "title": "Make a Screen Magnification Tool Using Python With PyQT5",
+        "description": "I recall using a tool in the past for online presentations, which allowed me to zoom in on specific parts of my screen to better illustrate my code or sections of my essays as I explained them to my audience.",
+        "tags": [
+            "python", 
+            "pyQT5", 
+            "GUI", 
+            "utilities",
+            "project"       
+        ],
+        "mediumUrl": "https://medium.com/@hammad.ai/make-a-screen-magnification-tool-using-python-with-pyqt5-44ef47dc3325",
+        "hashnodeUrl": "#",
+        "publishDate": "Sep 2023",
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:828/format:webp/0*4kXFjAzbGNAugm6P"
+    },
+    {
+        "title": "Benefits Of Working With Real Data, What Artificial Datasets Don’t Give You",
+        "description": "I see a lot of new enthusiastic about-to-be data scientists out there who spend most of their time dealing with problem generated by artificial datasets.",
+        "tags": [
+            "data science", 
+            "data science training", 
+            "practical advice", 
+            "practical application"
+        ],
+        "mediumUrl": "https://medium.com/@hammad.ai/benefits-of-working-with-real-data-17982de83bd",
+        "hashnodeUrl": "#",
+        "publishDate": "Sep 2023",
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:828/format:webp/0*sVNgCEvz6zXE-Jqm"
+    },
+    {
+        "title": "Keep Your Desktop From Cluttering Using Python Desktop App",
+        "description": "We will create a minimalistic desktop app using Python, which will keep icons from cluttering our desktop. However, the main goal of this article is to show you the way around PysimpleGUI framework using an OOP approach. This approach comes with many benefits which you will see as we move on as compared to using the plain script file.",
+        "tags": [
+            "python", 
+            "oop", 
+            "pysimpleGUI", 
+            "convention"       
+        ],
+        "mediumUrl": "https://medium.com/@hammad.ai/keep-your-desktop-from-cluttering-using-python-desktop-app-9598b1969e3e",
+        "hashnodeUrl": "#",
+        "publishDate": "Sep 2023",
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*6ahnGDYe6jGqXJdBceyGSQ.png"
+    },
+    {
+        "title": "3 Ways To Detect Multicollinearity & Reasons Why To Expect It",
+        "description": "First up, we are going to recap what multicollinearity is. If you are familiar with that part, by all means, you can skip it. Then we are going to explore ways we can identify the presence of this abnormality in our dataset.",
+        "tags": [
+            "variance inflation factor", 
+            "multicollinearity", 
+            "statistics", 
+            "python"
+        ],
+        "mediumUrl": "https://medium.com/@hammad.ai/3-ways-to-detect-multicollinearity-in-your-dataset-6ee1776b7aa8",
+        "hashnodeUrl": "#",
+        "publishDate": "Sep 2023",
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*MKrynl8LApD-9khR95Wlgg.png"
+    },
+    {
+        "title": "Variance Inflation Factor & The Intuition Behind It",
+        "description": "I’m going to assume that you came here looking for an explanation which will let you understand the intuition behind Variance Inflation Factor(aka VIF).",
+        "tags": [
+            "python", 
+            "data science", 
+            "statsmodels",     
+            "statistics"     
+        ],
+        "mediumUrl": "https://medium.com/@hammad.ai/variance-inflation-factor-c1d4404f4dd9",
+        "hashnodeUrl": "#",
+        "publishDate": "Sep 2023",
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:828/format:webp/0*Gq8jF5ZN_sgFtYw_"
+    },
+    {
+        "title": "Manage README.md with Github Actions & Python",
+        "description": "We will add/remove text lines from our README file using Github Actions and Python string manipulation. We will do this by following a specific scenario.",
+        "tags": [
+            "github", 
+            "github actions", 
+            "automation", 
+            "CI/CD",
+            "python"       
+        ],
+        "mediumUrl": "https://medium.com/@hammad.ai/manage-readme-md-with-github-actions-python-96222cb26b58",
+        "hashnodeUrl": "#",
+        "publishDate": "Aug 2023",
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*y7TIlZIrwbCxi1HoHyt-kA.png"
+    },
+    {
+        "title": "Explain ACF and PACF plots like I’m 5",
+        "description": "Stuck like everyone else? I don’t blame you. Let’s explore this with a story! What will we be doing here? I will be telling you a story which will help you understand what ACF and PACF is about.",
+        "tags": [
+            "time series analysis", 
+            "time series forecasting", 
+            "data science", 
+            "data analysis"
+        ],
+        "mediumUrl": "https://medium.com/@hammad.ai/explain-acf-and-pacf-plots-like-im-5-2041a629809",
+        "hashnodeUrl": "#",
+        "publishDate": "Aug 2023",
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*1lFTA9NaBZF0sIDC3n2ogA.png"
+    },
+    {
+        "title": "Visualize your Machine Learning Model with TensorBoard",
+        "description": "Want to see what your ML models look from the inside? lets do it with TensorBoard. This article will prove to be a good starting point for beginners who want to know the basic stuff related to TensorBoard and how they can use it.",
+        "tags": [
+            "python", 
+            "visualization", 
+            "tensorboard", 
             "Tensorflow",
+            "deployment"       
+        ],
+        "mediumUrl": "https://medium.com/@hammad.ai/visualize-your-machine-learning-model-with-tensorboard-dd3a057925e9",
+        "hashnodeUrl": "#",
+        "publishDate": "Jul 2023",
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*Vxt_xqlxSU1rdKlX-y4k5g.png"
+    },
+    {
+        "title": "How To Use A Trained Model In An Application Using TensorFlow",
+        "description": "I will show you how to use any model inside your custom application using TensorFlow in Python. And we will use that to make an app with Tkinter.",
+        "tags": [
+            "python", 
+            "ML", 
+            "kaggle", 
+            "Tensorflow",
+            "tkinter"       
+        ],
+        "mediumUrl": "https://medium.com/@hammad.ai/how-to-use-a-trained-model-in-an-application-using-tensorflow-cd8b4024bb28",
+        "hashnodeUrl": "#",
+        "publishDate": "Jul 2023",
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:640/format:webp/1*EY1uHzTyYmIG7qGcGkYrNQ.png"
+    },
+    {
+        "title": "Don’t Believe The Hype: Understanding A.I. Trends Early 2023 (Non-Technical Guide)",
+        "description": "Sure, AI seems scary and tempting but are we measuring its potency with the right scale? Who sets the scale for us? Are we judging its power accurately? Who decides how we measure it, and what information do we gather from those measurements?",
+        "tags": [
+            "chatGPT", 
+            "technical analysis",
             "AI"
         ],
-        "mediumUrl": "#",
+        "mediumUrl": "https://medium.com/@hammad.ai/dont-believe-the-hype-understanding-a-i-trends-2023-non-technical-guide-fb5988874919",
         "hashnodeUrl": "#",
-        "publishDate": "Mar 2024",
-        "thumbnailUrl": "https://mdbcdn.b-cdn.net/img/new/standard/city/021.jpg"
+        "publishDate": "Jul 2023",
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:828/format:webp/0*8u1gXDzc2hGrXWBi"
+    },
+    {
+        "title": "Create Python Dependency Report(Docx) using Python Itself",
+        "description": "I, along with several other developers in my circle faced the need to compile a comprehensive report on all the dependencies that a certain project of ours used.",
+        "tags": [
+            "docs", 
+            "dependency management",
+            "python",
+            "report",
+            "automation"
+        ],
+        "mediumUrl": "https://medium.com/@hammad.ai/create-python-dependency-report-docx-using-python-itself-760b3bb8db48",
+        "hashnodeUrl": "#",
+        "publishDate": "Jul 2023",
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:828/format:webp/0*t4at15uHcpuxqiRR"
+    },
+    {
+        "title": "3 Frequently Used Pandas Features for Timeseries Data Wrangling",
+        "description": "Here I’m demonstrating 3 most frequently used pandas features to wrangle timeseries data.",
+        "tags": [
+            "time series", 
+            "data science",
+            "data wrangling",
+            "pandas",
+            "data analysis"
+        ],
+        "mediumUrl": "https://medium.com/@hammad.ai/3-frequently-used-pandas-features-for-timeseries-data-wrangling-34847b315f45",
+        "hashnodeUrl": "#",
+        "publishDate": "Jan 2023",
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:828/format:webp/1*b8PkPromvekH6Za4FIP5oA.png"
+    },
+    {
+        "title": "Learn OOP Concepts Without any Language Context(Starter Pack)",
+        "description": "Want to learn OOP programming without hustling with any syntax specific programming language? You’re in luck!",
+        "tags": [
+            "programming", 
+            "oop",
+            "object oriented"
+        ],
+        "mediumUrl": "https://medium.com/@hammad.ai/learn-oop-concepts-without-any-language-context-11d56b161f4",
+        "hashnodeUrl": "#",
+        "publishDate": "Dec 2022",
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:828/format:webp/0*Ar_oSUfrp2IqwNEq"
     }
 ]

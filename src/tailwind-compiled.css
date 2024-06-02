@@ -5599,6 +5599,14 @@ input.tab:checked + .tab-content,
   border-color: rgb(255 255 255 / 0.05);
 }
 
+.border-contrast\/30 {
+  border-color: rgb(var(--color-contrast) / 0.3);
+}
+
+.border-contrast\/50 {
+  border-color: rgb(var(--color-contrast) / 0.5);
+}
+
 .border-b-primary {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(var(--color-primary) / var(--tw-border-opacity));
@@ -7680,6 +7688,14 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-contrast\/60:hover {
+  background-color: rgb(var(--color-contrast) / 0.6);
+}
+
+.hover\:bg-contrast\/70:hover {
+  background-color: rgb(var(--color-contrast) / 0.7);
 }
 
 .hover\:bg-gradient-to-br:hover {
