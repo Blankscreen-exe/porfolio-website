@@ -14,7 +14,6 @@ function Services(props) {
     <div>
         <PageTitle title="What Can I Do For You?" />
         <ServicesTabs/>
-        <SectionHeading title="Services FAQ" />
         <FAQ/>
     </div>
   )
