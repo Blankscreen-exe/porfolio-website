@@ -10,6 +10,12 @@ import saqibNajam from './images/testimonials/saqibNajam.jpg'
 import zainUlAbidin from './images/testimonials/zainUlAbidin.jpg'
 import mTahaHassan from './images/testimonials/mTahaHassan.jpg'
 
+// awards
+import codebit from './images/awards/codebit.jpg'
+import digitaleducationawareness from './images/awards/digitaleducationawareness.jpg'
+import reachinglocalinitiatives from './images/awards/reachinglocalinitiatives.jpg'
+import siliconplexanniversary from './images/awards/siliconplexanniversary.jpg'
+
 export default {
     certificates: {
         logo: {
@@ -35,4 +41,10 @@ export default {
         mHammad,
         chanderHarwani,
     },
+    awards: {
+        codebit,
+        siliconplexanniversary,
+        digitaleducationawareness,
+        reachinglocalinitiatives,
+    }
 }

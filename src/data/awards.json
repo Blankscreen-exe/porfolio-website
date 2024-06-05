@@ -1,38 +1,38 @@
 [
     {
-        "title":"some workshop award 1",
-        "description": "Lorem ipwum dolor set amet. Lorem ipwum dolor set amet. Lorem ipwum dolor set amet",
-        "logoType": "coursera",
-        "type": "workshop",
-        "date":"20-04-2024",
-        "publishLinks": ["https://some/long/link/1/very/very","https://some/long/link/2"],
-        "imgUrl":"https://dummyimage.com/600x400/9e9e9e/fff"
-    },
-    {
-        "title":"some workshop award 2",
-        "description": "Lorem ipwum dolor set amet. Lorem ipwum dolor set amet. Lorem ipwum dolor set amet",
-        "logoType": "coursera",
-        "type": "workshop",
-        "date":"20-04-2024",
-        "publishLinks": ["https://some/long/link/1/very/very","https://some/long/link/2"],
-        "imgUrl":"https://dummyimage.com/600x400/9e9e9e/fff"
-    },
-    {
-        "title":"won prize award 3",
-        "description": "Lorem ipwum dolor set amet. Lorem ipwum dolor set amet. Lorem ipwum dolor set amet",
-        "logoType": "coursera",
+        "title":"Performance Award By Siliconplex",
+        "description": "A performance award was presented to me by Siliconplex on their 10th Anniversary. It was fun.",
         "type": "award",
-        "date":"20-04-2024",
-        "publishLinks": ["https://some/long/link/1/very/very","https://some/long/link/2"],
-        "imgUrl":"https://dummyimage.com/600x400/9e9e9e/fff"
+        "date":"May 2024",
+        "publishLinks": [
+            "https://www.linkedin.com/posts/siliconplex_10yearanniversary-celebration-techinnovation-activity-7201624243120308224-70C8?utm_source=share&utm_medium=member_desktop"
+        ],
+        "imgUrl":"siliconplexanniversary"
     },
     {
-        "title":"won prize award 4",
+        "title":"Certificate of Appreciation By IEEE Region 10 Reaching Local Initiatives",
+        "description": "Awarded to me for working behind the scenes and presenting besides of IEEE Educational Activities Chair and UBIT UoK Chair Dr. M. Sadiq Ali Khan",
+        "type": "workshop",
+        "date":"Aug 2022",
+        "publishLinks": [
+            "https://ea.ieeer10.org/2022-result-announcement-for-eac-call-for-proposals/#:~:text=IEEE%20Karachi%20Internet%20Literacy%20workshop%20for%20underdeveloped%20areas"
+        ],
+        "imgUrl":"reachinglocalinitiatives"
+    },
+    {
+        "title":"Certificate of Appreciation IEEE Digital Education Awareness",
+        "description": "Awarded to me for working behind the scenes and presenting besides of IEEE Educational Activities Chair and UBIT UoK Chair Dr. M. Sadiq Ali Khan",
+        "type": "workshop",
+        "date":"Jun 2022",
+        "publishLinks": ["https://qsimpact.org/impacts/202/two-days-workshop-on-capacity-building-/"],
+        "imgUrl":"digitaleducationawareness"
+    },
+    {
+        "title":"CodeBIT - Final Year Project Symposium",
         "description": "Lorem ipwum dolor set amet. Lorem ipwum dolor set amet. Lorem ipwum dolor set amet",
-        "logoType": "coursera",
         "type": "award",
-        "date":"20-04-2024",
-        "publishLinks": ["https://some/long/link/1/very/very","https://some/long/link/2"],
-        "imgUrl":"https://dummyimage.com/600x400/9e9e9e/fff"
+        "date":"Mar 2022",
+        "publishLinks": ["https://www.nawaiwaqt.com.pk/E-Paper/karachi/2022-03-12/page-2"],
+        "imgUrl":"codebit"
     }
 ]
