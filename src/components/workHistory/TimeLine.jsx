@@ -193,9 +193,13 @@ const scrollButtonClass =
         <div
           id="timeline-description-1-disabled-this"
           className=" p-3 rounded-md bg-tertiary text-content transition-all duration-75 shadow-shadow shadow-md"
-
-          dangerouslySetInnerHTML={{ __html: contentToShow }}
         >
+          <ul className="gap-10">
+            {contentToShow.map( (item, ind) => {
+              return (<li key={ind} className="mb-2"><span className="w-1 h-1 rounded-3xl p bg-primary text-primary">.</span> <pre className="inline"> </pre> <span dangerouslySetInnerHTML={{ __html: item }}></span>
+              </li>);
+            })}
+          </ul>
         </div>
       </div>
     </div>
