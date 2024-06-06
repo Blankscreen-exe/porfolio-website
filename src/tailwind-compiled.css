@@ -1032,6 +1032,10 @@ body > div.z-\[1070\] > div > div > div.flex.flex-row.items-center.justify-betwe
   color: rgb(var(--color-content));
 }
 
+body > div.z-\[1070\] > div > div > div.flex.flex-row.items-center.\!justify-between.w-full.px-4.truncate.select-none.bg-transparent.text-gray-700.dark\:text-gray-200.hover\:bg-black\/5.dark\:hover\:bg-white\/30.cursor-pointer > span {
+  color: rgb(var(--color-content)) !important;
+}
+
 #contactform-service:focus {
   background-color: rgb(var(--color-primary));
   outline: none;
@@ -4685,6 +4689,34 @@ input.tab:checked + .tab-content,
   height: 0.75rem;
 }
 
+.h-72 {
+  height: 18rem;
+}
+
+.h-\[700px\] {
+  height: 700px;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[80\%\] {
+  height: 80%;
+}
+
+.h-\[300px\] {
+  height: 300px;
+}
+
+.h-\[px\] {
+  height: px;
+}
+
+.h-\[486px\] {
+  height: 486px;
+}
+
 .max-h-14 {
   max-height: 3.5rem;
 }
@@ -5202,6 +5234,10 @@ input.tab:checked + .tab-content,
 
 .justify-between {
   justify-content: space-between;
+}
+
+.\!justify-between {
+  justify-content: space-between !important;
 }
 
 .justify-around {

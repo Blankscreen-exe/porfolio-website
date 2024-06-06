@@ -18,44 +18,45 @@ function Awards(props) {
         <div className="flex flex-row flex-wrap gap-12 justify-center items-center">
           {AwardsData.map((item, ind) => {
             return (
-              <div className="rounded-xl bg-bg2 p-6 text-center shadow-xl mb-12 w-[300px] h-[600px] flex flex-col align-middle space-between">
-                
-                <div>
-                  <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-primary shadow-lg shadow-shadow/40">
-                    {item.type == "award" && svgList.awards.award}
-                    {item.type == "workshop" && svgList.awards.workshop}
-                  </div>
-
-                  <div className="text-darken mb-3 text-2xs text-content/70 flex flex-row gap-4 justify-center">
-                    <span className="text-primary my-auto">{svgList.calendar}</span> {item.date}
-                  </div>
-
-                  <h1 className="text-darken mb-3 text-xl font-medium text-primary">
-                    {capitalizeWords(item.title)}
-                  </h1>
-
-                  <p className="px-4 text-content/60">{item.description}</p>
+              <div className="rounded-xl bg-bg2 p-6 text-center shadow-xl mb-12 w-[300px] h-[600px]">
+                <div className="mx-auto flex h-16 w-16 -translate-y-12 transform items-center justify-center rounded-full bg-primary shadow-lg shadow-shadow/40">
+                  {item.type == "award" && svgList.awards.award}
+                  {item.type == "workshop" && svgList.awards.workshop}
                 </div>
+                
+                <div className="h-[486px] flex flex-col align-middle justify-between">
+                  <div className="">
+                    <div className="text-darken mb-3 text-2xs text-content/70 flex flex-row gap-4 justify-center">
+                      <span className="text-primary my-auto">{svgList.calendar}</span> {item.date}
+                    </div>
 
-                <div>
-                  <ul className="mx-6 my-4 ">
-                    {item.publishLinks.map((item, ind) => {
-                      return (
-                        <li className="w-fit h-fit">
-                          <a
-                            href={item}
-                            target="_blank"
-                            className="flex flex-row gap-2 align-middle text-sm text-contentLink/90 hover:text-contentLinkHover hover:underline"
-                          >
-                            {svgList.link}
-                            {truncateText(item, 20)}
-                          </a>
-                        </li>
-                      );
-                    })}
-                  </ul>
+                    <h1 className="text-darken mb-3 text-xl font-medium text-primary">
+                      {capitalizeWords(item.title)}
+                    </h1>
 
-                  <img src={imgList.awards[item.imgUrl]} className="rounded-md mt-4 hover:filter brightness-110 hover:brightness-100 transition-all duration-300 hover:cursor-pointer w-full h-40 object-cover"/>
+                    <p className="px-4 text-content/60">{item.description}</p>
+                  </div>
+
+                  <div className="">
+                    <ul className="mx-6 my-4 ">
+                      {item.publishLinks.map((item, ind) => {
+                        return (
+                          <li className="w-fit h-fit">
+                            <a
+                              href={item}
+                              target="_blank"
+                              className="flex flex-row gap-2 align-middle text-sm text-contentLink/90 hover:text-contentLinkHover hover:underline"
+                            >
+                              {svgList.link}
+                              {truncateText(item, 20)}
+                            </a>
+                          </li>
+                        );
+                      })}
+                    </ul>
+
+                    <img src={imgList.awards[item.imgUrl]} className="rounded-md mt-4 hover:filter brightness-110 hover:brightness-100 transition-all duration-300 hover:cursor-pointer w-full h-40 object-cover"/>
+                  </div>
                 </div>
 
               </div>
