@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 // Data
-import awards from '../../data/awards.json'
+import projectsData from '../../data/projectList.json'
 
 // Constant
 import svgList from '../../constants/svg'
@@ -33,7 +33,7 @@ function Home(props) {
         <TechStack/>
         <Protip/>
         <HorizontalSlider
-          data={awards}
+          data={projectsData}
           title={"Projects"}
           buttonText={<><span>View</span> {svgList.externalLink}</>}
         />

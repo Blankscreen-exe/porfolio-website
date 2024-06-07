@@ -34,7 +34,7 @@ function Awards(props) {
                       {capitalizeWords(item.title)}
                     </h1>
 
-                    <p className="px-4 text-content/60">{item.description}</p>
+                    <p className=" text-content/60">{truncateText(item.description,160)}</p>
                   </div>
 
                   <div className="">
@@ -45,17 +45,32 @@ function Awards(props) {
                             <a
                               href={item}
                               target="_blank"
-                              className="flex flex-row gap-2 align-middle text-sm text-contentLink/90 hover:text-contentLinkHover hover:underline"
+                              className="flex flex-row gap-2 align-middle text-sm text-contentLinkHover/90 hover:text-contentLinkHover hover:underline"
                             >
                               {svgList.link}
-                              {truncateText(item, 20)}
+                              {truncateText(item, 24)}
                             </a>
                           </li>
                         );
                       })}
                     </ul>
 
-                    <img src={imgList.awards[item.imgUrl]} className="rounded-md mt-4 hover:filter brightness-110 hover:brightness-100 transition-all duration-300 hover:cursor-pointer w-full h-40 object-cover"/>
+                    <img src={imgList.awards[item.imgUrl]} className="rounded-md mt-4 hover:filter hover:shadow-lg hover:shadow-shadow/50 brightness-125 hover:brightness-100 transition-all duration-300 hover:cursor-pointer w-full h-40 object-cover"
+                     onClick={() =>
+                      document.getElementById(`award_modal_${ind}`).showModal()
+                    }/>
+
+                    <dialog id={`award_modal_${ind}`} className="modal">
+                      <div className="modal-box bg-bg2">
+                        <h3 className="font-bold text-lg">{capitalizeWords(item.title)}</h3>
+                        <p className="py-4">{item.description}</p>
+                        <img src={imgList.awards[item.imgUrl]} className="rounded-md"/> 
+                      </div>
+                      <form method="dialog" className="modal-backdrop">
+                        <button>close</button>
+                      </form>
+                    </dialog>
+
                   </div>
                 </div>
 
