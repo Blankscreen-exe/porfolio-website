@@ -8482,6 +8482,22 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
     width: 65%;
   }
 
+  .sm\:w-\[60\%\] {
+    width: 60%;
+  }
+
+  .sm\:w-\[55\%\] {
+    width: 55%;
+  }
+
+  .sm\:w-\[40\%\] {
+    width: 40%;
+  }
+
+  .sm\:w-\[85\%\] {
+    width: 85%;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }

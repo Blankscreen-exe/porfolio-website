@@ -28,7 +28,7 @@ function TechStack(props) {
   return (
     <div className="flex flex-col justify-center items-center">
       <SectionHeading title={"My Tech Stack"} />
-      <div className="mb-10 flex flex-col md:flex-row gap-10 w-full sm:w-[80%]">
+      <div className="mb-10 flex flex-col md:flex-row gap-10 w-full sm:w-[85%]">
         <div className="container flex flex-col items-center justify-center w-[fit-content] h-[fit-content] mx-auto bg-bg2 rounded-lg shadow">
           <ul className="flex flex-col divide-y divide-secondary/70">
             {stackList.map((item, ind) => {
@@ -68,7 +68,7 @@ function TechStack(props) {
           </ul>
         </div>
 
-        <div className="p-2 w-full sm:w-[65%] mx-auto flex flex-row flex-wrap align-middle content-start overflow-visible justify-center md:justify-start lg:justify-start gap-6 ">
+        <div className="p-2 w-[80%] mx-auto flex flex-row flex-wrap align-middle content-start overflow-visible justify-center md:justify-start lg:justify-start gap-6 ">
           {listItem.map((item, ind) => (
             <a key={ind} href={item.url} target="_blank" className="h-min">
               <div
@@ -90,8 +90,6 @@ function TechStack(props) {
                   />)
                   : (<div className={`md:w-8 md:h-8 w-5 h-5 rounded-md bg-primary border-4 border-tertiary ${"[#aeaeae]"}`}></div>)
                 }
-
-                {/* <div className="md:w-10 w-5 md:h-10 h-5 rounded-md bg-content/20"></div> */}
                 
                   <span>{capitalizeFirstLetter(item.name)}</span>
                 </div>
