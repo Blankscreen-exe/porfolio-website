@@ -43,7 +43,7 @@ function TechStack(props) {
                       : "text-content"
                   )}
                 >
-                  <div className="flex items-center flex-1 p-4 cursor-pointer select-none">
+                  <div className="flex items-center flex-1 p-0 md:p-4 cursor-pointer select-none">
                     <div className="flex flex-col items-center justify-center w-10 h-10 mr-4">
                       <a href="#" className="relative block font-serif">
                         <span class="material-symbols-outlined">
@@ -57,7 +57,7 @@ function TechStack(props) {
                       </a>
                     </div>
                     <div className="flex-1 pl-1 mr-16">
-                      <div className="font-bold text-xl">
+                      <div className="font-bold  text-sm md:text-xl">
                         {capitalizeWords(item)}
                       </div>
                     </div>
@@ -68,7 +68,7 @@ function TechStack(props) {
           </ul>
         </div>
 
-        <div className="p-2 w-full sm:w-[70%] mx-auto flex flex-row flex-wrap align-middle content-start overflow-visible justify-center md:justify-start lg:justify-start gap-6 ">
+        <div className="p-2 w-full sm:w-[65%] mx-auto flex flex-row flex-wrap align-middle content-start overflow-visible justify-center md:justify-start lg:justify-start gap-6 ">
           {listItem.map((item, ind) => (
             <a key={ind} href={item.url} target="_blank" className="h-min">
               <div
