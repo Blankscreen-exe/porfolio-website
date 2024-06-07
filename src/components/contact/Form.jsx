@@ -60,12 +60,13 @@ function Form(props) {
       .then(
         () => {
           console.log('SUCCESS!');
+          setFormState( prevState => !prevState)
         },
         (error) => {
           console.log('FAILED...', error.text);
         },
       );
-      setFormState( prevState => !prevState)
+
   }
 
   const handleFillAgain = () => {
