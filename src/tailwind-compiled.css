@@ -6542,6 +6542,11 @@ input.tab:checked + .tab-content,
   color: rgb(var(--color-content-link-hover) / 0.9);
 }
 
+.text-contentLinkHover {
+  --tw-text-opacity: 1;
+  color: rgb(var(--color-content-link-hover) / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }

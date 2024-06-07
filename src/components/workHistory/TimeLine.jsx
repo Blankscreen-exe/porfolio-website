@@ -16,7 +16,7 @@ const sliderId = "timeline-slider-1";
 const scrollMagnitude = 150;
 const scrollButtonSize = 60;
 const scrollButtonClass =
-  "opacity-50 cursor-pointer rounded-full hover:opacity-100 h-fit ease-in-out duration-300";
+  "opacity-50 cursor-pointer rounded-full hover:opacity-100 h-fit ease-in-out duration-300 invisible md:visible";
 
   const [description, setDescription] = useState("");
   const [activeIndex, setActiveIndex] = useState(0);
@@ -127,7 +127,7 @@ const scrollButtonClass =
                         index % 2 == 0 ? "timeline-end" : "timeline-start",
                         index == activeIndex
                           ? "bg-gradient-to-br from-teal-100 to-primary/40 bg-opacity-50 border-0 shadow-lg shadow-shadow drop-shadow-xl transition-colors duration-300 text-content"
-                          : "bg-gradient-to-br hover:from-teal-50 hover:to-teal-100 from-slate-200 to-slate-100 border-0 hover:shadow-lg shadow-shadow transition-shadow transition-colors duration-300 text-gray-500",
+                          : "bg-gradient-to-br hover:from-teal-50 hover:to-teal-100 from-slate-200 to-slate-100 border-0 hover:shadow-lg shadow-shadow transition-all duration-300 text-gray-500",
                         "timeline-box",
                         "hover:cursor-pointer",
                         ""
@@ -194,6 +194,7 @@ const scrollButtonClass =
           id="timeline-description-1-disabled-this"
           className=" p-3 rounded-md bg-tertiary text-content transition-all duration-75 shadow-shadow shadow-md"
         >
+          <div className="mb-2"><a className="font-bold text-2xl md:text-4xl text-contentLinkHover hover:underline mb-6" href={workTimeline[activeIndex].orgUrl}>{workTimeline[activeIndex].title}</a></div>
           <ul className="gap-10">
             {contentToShow.map( (item, ind) => {
               return (<li key={ind} className="mb-2"><span className="w-1 h-1 rounded-3xl p bg-primary text-primary">.</span> <pre className="inline"> </pre> <span dangerouslySetInnerHTML={{ __html: item }}></span>
