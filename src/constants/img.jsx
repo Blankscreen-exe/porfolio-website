@@ -38,6 +38,8 @@ import abstract18 from './images/abstract/18.jpg'
 
 // projects
 import ebs from './images/projects/ebs.png'
+import practical from './images/projects/practical.png'
+import nftshowroom from './images/projects/nftshowroom.png'
 
 export default {
     certificates: {
@@ -91,6 +93,8 @@ export default {
         abstract18,
     ],
     projects: {
-        ebs
+        ebs,
+        practical,
+        nftshowroom,
     }
 }

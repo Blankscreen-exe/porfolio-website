@@ -15,6 +15,38 @@
         "openToContrib": false
     },
     {
+        "title": "PractiCal Food Ordering System",
+        "description": "PractiCal is a food ordering system which is managed and run by a nutritionist. This software, not only helps deliver you your desired meals, but also gives you an extensive and customized meal plan based on your dietary needs. Whether you are looking forward to lose some weight or to build muscles, PractiCal can give you a very personalized meal roadmap. PractiCal also features an admin panel with granular management controls.",
+        "tags": [
+            "PHP", 
+            "Laravel",
+            "Next.js"
+        ],
+        "projUrl": "https://practical.me/",
+        "githubUrl": null,
+        "publishDate": "Live and Ongoing",
+        "thumbnailUrl":"project:practical",
+        "category":"corporate",
+        "status": "ongoing",
+        "openToContrib": false
+    },
+    {
+        "title": "NFT Showroom",
+        "description": "Nft Showroom is a platform which showcases and authenticates the best and most innovative digital assets while providing a user friendly, accessible and a safe way for art enthusiasts and collectors to engage with the world of NFTs.",
+        "tags": [
+            "Python", 
+            "Django",
+            "React-native"
+        ],
+        "projUrl": "https://nft-showroom.com/",
+        "githubUrl": null,
+        "publishDate": "Live and Ongoing",
+        "thumbnailUrl":"project:nftshowroom",
+        "category":"corporate",
+        "status": "ongoing",
+        "openToContrib": false
+    },
+    {
         "title": "Tkinter Mod Manager",
         "description": "This is a simple mod manager built on Tkinter. This applet is named mod manager because there are certain games which have an option to add or remove mods by copying/pasting/deleting files from one directory to another. The mod files in questions are named in a non-human-friendly way (e.g. 1234567.mod), now copying and pasting those files from directory to another will of course work but not when you want to keep track of which files belong to which mod. This applet makes that task easy.",
         "tags": [
