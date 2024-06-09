@@ -115,7 +115,7 @@ function NavBar(props) {
   return (
     <div
     id="navbar"
-    className="navbar bg-bg1 rounded-md shadow-md m-auto mt-10 flex justify-between sticky opacity-80 backdrop-blur-xl bg-tertiary/40 z-[100]"
+    className="navbar bg-bg1 rounded-md shadow-md m-auto mt-10 flex justify-between sticky opacity-90  backdrop-blur-3xl bg-tertiary/40 z-[100]"
   >
       <div className="navbar-start w-full flex flex-row justify-between ">
         <div className=''>
@@ -125,7 +125,7 @@ function NavBar(props) {
             <div tabIndex="0" role="button" className="btn btn-ghost hover:bg-bg2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-5 w-5 fill-current"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="#C4C4C4"
@@ -163,7 +163,7 @@ function NavBar(props) {
             </ul>
           </div>
             <NavLink to={appConstants.routes.home} className="text-contentLink hover:text-primary transition-colors text-xl mx-2">
-              <span className=''>
+              <span className='text-content hover:text-primary '>
                 {appConstants.common.pageTitle}
               </span>
             </NavLink>
