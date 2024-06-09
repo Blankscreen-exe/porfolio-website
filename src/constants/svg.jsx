@@ -59,6 +59,16 @@ import mysql from './svg/techstack/database/mysql.svg'
 import mssql from './svg/techstack/database/mssql.svg'
 import firebase from './svg/techstack/database/firebase.svg'
 
+// Project List
+import projectUrl from './svg/projectList/projectUrl.svg'
+import open from './svg/projectList/open.svg'
+import close from './svg/projectList/close.svg'
+import finished from './svg/projectList/finished.svg'
+import ongoing from './svg/projectList/ongoing.svg'
+import hobby from './svg/projectList/hobby.svg'
+import collab from './svg/projectList/collab.svg'
+import corporate from './svg/projectList/corporate.svg'
+
 export default {
   hashIcon: (
     <svg
@@ -846,5 +856,27 @@ export default {
       flask,
       fastapi,
     },
+  },
+  projectList: {
+    projectUrl: (<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      viewBox="0 0 500 500" width='1.2em' height='1.2em' xml:space="preserve" className="fill-current">
+   <path id="形状" d="M250,7.5c133.9,0,242.5,108.6,242.5,242.5c0,133.9-108.6,242.5-242.5,242.5C116.1,492.5,7.5,383.9,7.5,250
+     C7.5,116.1,116.1,7.5,250,7.5z M298.5,283.9l-37.9,30.3c-5.6,4.5-6.1,12.9-1,18l30,30c5.8,5.8,10.1,13,12.3,21l4.2,14.9
+     c3.8,13.4,13.2,23.2,24.7,28.2c23.3-10.7,44.2-25.9,61.4-44.5l-5.7-45.5c-2-16.1-11.9-30.1-26.4-37.4l-35.7-17.8
+     C316,277,305.9,278,298.5,283.9z M250,56c-62.5,0-118.1,29.6-153.6,75.5l-4,5.4v40.9c0,30.5,18.9,57.5,47.2,68.1l4.3,1.5l31.3,9.6
+     c33.3,10.2,65.7-16.9,62.5-50.8l-0.5-3.5l-4.2-25.4c-2-11.8,4.9-23,15.9-26.9l2.6-0.8l14.8-3.4c24.8-5.7,44-25.4,49-50.3
+     c2-9.8,1.6-19.6-0.8-28.7C294.3,59.9,272.6,56,250,56z" fill="currentColor"/>
+   </svg>),
+    contrib: {
+      open,
+      close,
+    },
+    status: {
+      finished,
+      ongoing,
+    },
+    hobby,
+    collab,
+    corporate,
   }
 };

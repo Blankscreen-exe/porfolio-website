@@ -16,6 +16,29 @@ import digitaleducationawareness from './images/awards/digitaleducationawareness
 import reachinglocalinitiatives from './images/awards/reachinglocalinitiatives.jpg'
 import siliconplexanniversary from './images/awards/siliconplexanniversary.jpg'
 
+// Abstract
+import abstract1 from './images/abstract/1.jpg'
+import abstract2 from './images/abstract/2.jpg'
+import abstract3 from './images/abstract/3.jpg'
+import abstract4 from './images/abstract/4.jpg'
+import abstract5 from './images/abstract/5.jpg'
+import abstract6 from './images/abstract/6.jpg'
+import abstract7 from './images/abstract/7.jpg'
+import abstract8 from './images/abstract/8.jpg'
+import abstract9 from './images/abstract/9.jpg'
+import abstract10 from './images/abstract/10.jpg'
+import abstract11 from './images/abstract/11.jpg'
+import abstract12 from './images/abstract/12.jpg'
+import abstract13 from './images/abstract/13.jpg'
+import abstract14 from './images/abstract/14.jpg'
+import abstract15 from './images/abstract/15.jpg'
+import abstract16 from './images/abstract/16.jpg'
+import abstract17 from './images/abstract/17.jpg'
+import abstract18 from './images/abstract/18.jpg'
+
+// projects
+import ebs from './images/projects/ebs.png'
+
 export default {
     certificates: {
         logo: {
@@ -46,5 +69,28 @@ export default {
         siliconplexanniversary,
         digitaleducationawareness,
         reachinglocalinitiatives,
+    },
+    abstract: [
+        abstract1,
+        abstract2,
+        abstract3,
+        abstract4,
+        abstract5,
+        abstract6,
+        abstract7,
+        abstract8,
+        abstract9,
+        abstract10,
+        abstract11,
+        abstract12,
+        abstract13,
+        abstract14,
+        abstract15,
+        abstract16,
+        abstract17,
+        abstract18,
+    ],
+    projects: {
+        ebs
     }
 }

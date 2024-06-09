@@ -2008,6 +2008,18 @@ html{
   flex-shrink: 0;
 }
 
+.progress {
+  position: relative;
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  overflow: hidden;
+  height: 0.5rem;
+  border-radius: var(--rounded-box, 1rem);
+  background-color: var(--fallback-bc,oklch(var(--bc)/0.2));
+}
+
 .rating {
   position: relative;
   display: inline-flex;
@@ -2917,6 +2929,51 @@ input.tab:checked + .tab-content,
   0% {
     opacity: 0;
   }
+}
+
+.progress::-moz-progress-bar {
+  border-radius: var(--rounded-box, 1rem);
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-bg-opacity)));
+}
+
+.progress:indeterminate {
+  --progress-color: var(--fallback-bc,oklch(var(--bc)/1));
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--progress-color) -1%,
+    var(--progress-color) 10%,
+    transparent 10%,
+    transparent 90%
+  );
+  background-size: 200%;
+  background-position-x: 15%;
+  animation: progress-loading 5s ease-in-out infinite;
+}
+
+.progress::-webkit-progress-bar {
+  border-radius: var(--rounded-box, 1rem);
+  background-color: transparent;
+}
+
+.progress::-webkit-progress-value {
+  border-radius: var(--rounded-box, 1rem);
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-bc,oklch(var(--bc)/var(--tw-bg-opacity)));
+}
+
+.progress:indeterminate::-moz-progress-bar {
+  background-color: transparent;
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--progress-color) -1%,
+    var(--progress-color) 10%,
+    transparent 10%,
+    transparent 90%
+  );
+  background-size: 200%;
+  background-position-x: 15%;
+  animation: progress-loading 5s ease-in-out infinite;
 }
 
 @keyframes progress-loading {
@@ -4477,6 +4534,10 @@ input.tab:checked + .tab-content,
   margin-top: 0.15rem;
 }
 
+.mt-\[2px\] {
+  margin-top: 2px;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -5526,10 +5587,6 @@ input.tab:checked + .tab-content,
   border-color: rgb(var(--color-primary) / var(--tw-border-opacity));
 }
 
-.border-primary\/30 {
-  border-color: rgb(var(--color-primary) / 0.3);
-}
-
 .border-secondary {
   --tw-border-opacity: 1;
   border-color: rgb(var(--color-secondary) / var(--tw-border-opacity));
@@ -6516,6 +6573,11 @@ input.tab:checked + .tab-content,
 .text-yellow-600 {
   --tw-text-opacity: 1;
   color: rgb(202 138 4 / var(--tw-text-opacity));
+}
+
+.\!text-primary {
+  --tw-text-opacity: 1 !important;
+  color: rgb(var(--color-primary) / var(--tw-text-opacity)) !important;
 }
 
 .underline {
@@ -7562,6 +7624,10 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
   cursor: pointer;
 }
 
+.hover\:cursor-help:hover {
+  cursor: help;
+}
+
 .hover\:border-0:hover {
   border-width: 0px;
 }
@@ -7628,10 +7694,6 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
 .hover\:bg-primary:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
-}
-
-.hover\:bg-primary\/60:hover {
-  background-color: rgb(var(--color-primary) / 0.6);
 }
 
 .hover\:bg-slate-400:hover {
@@ -8495,10 +8557,6 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
     flex-direction: row;
   }
 
-  .sm\:flex-col {
-    flex-direction: column;
-  }
-
   .sm\:justify-center {
     justify-content: center;
   }
@@ -8511,11 +8569,6 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
     --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .sm\:bg-green-200 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(187 247 208 / var(--tw-bg-opacity));
   }
 
   .sm\:px-12 {
@@ -8615,16 +8668,8 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
     width: 100%;
   }
 
-  .md\:w-11\/12 {
-    width: 91.666667%;
-  }
-
   .md\:min-w-96 {
     min-width: 24rem;
-  }
-
-  .md\:max-w-52 {
-    max-width: 13rem;
   }
 
   .md\:basis-1\/2 {
@@ -8633,10 +8678,6 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:flex-col {
-    flex-direction: column;
   }
 
   .md\:flex-nowrap {
@@ -8665,11 +8706,6 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
 
   .md\:justify-self-end {
     justify-self: end;
-  }
-
-  .md\:bg-red-200 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(254 202 202 / var(--tw-bg-opacity));
   }
 
   .md\:p-4 {
@@ -8739,14 +8775,6 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
     height: 11rem;
   }
 
-  .lg\:h-56 {
-    height: 14rem;
-  }
-
-  .lg\:h-full {
-    height: 100%;
-  }
-
   .lg\:w-52 {
     width: 13rem;
   }
@@ -8766,14 +8794,6 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
 
   .lg\:max-w-\[80\%\] {
     max-width: 80%;
-  }
-
-  .lg\:max-w-52 {
-    max-width: 13rem;
-  }
-
-  .lg\:max-w-4 {
-    max-width: 1rem;
   }
 
   .lg\:basis-1\/2 {
@@ -8796,17 +8816,8 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
     gap: 1rem;
   }
 
-  .lg\:rounded-xl {
-    border-radius: 0.75rem;
-  }
-
   .lg\:rounded-lg {
     border-radius: 0.5rem;
-  }
-
-  .lg\:bg-blue-400 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(96 165 250 / var(--tw-bg-opacity));
   }
 
   .lg\:px-14 {
@@ -8821,16 +8832,6 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
 
   .lg\:pb-8 {
     padding-bottom: 2rem;
-  }
-
-  .lg\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .lg\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .lg\:text-lg {
@@ -8863,21 +8864,16 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
     height: 11rem;
   }
 
-  .xl\:w-7\/12 {
-    width: 58.333333%;
-  }
-
   .xl\:w-52 {
     width: 13rem;
   }
 
-  .xl\:rounded-lg {
-    border-radius: 0.5rem;
+  .xl\:w-7\/12 {
+    width: 58.333333%;
   }
 
-  .xl\:bg-purple-400 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(192 132 252 / var(--tw-bg-opacity));
+  .xl\:rounded-lg {
+    border-radius: 0.5rem;
   }
 
   .xl\:px-10 {

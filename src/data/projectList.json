@@ -1,67 +1,212 @@
 [
     {
-        "title": "TMUX",
-        "description": "Curabitur tristique, mi a mollis sagittis, metus felis mattis arcu, non vehicula nisl dui quis diam. Mauris ut risus eget massa volutpat feugiat. Donec.",
+        "title": "Entrepreneur's Business Simulator",
+        "description": "Entrepreneur’s Business Simulator is a software designed to train young entrepreneurs within all aspects of business and financial management. It is a complete Online Business Coach’s solution for young entrepreneurs to become market-ready leaders of startups and learn hands-on techniques of business, management, finance and making critical business decisions. The project is built on Django Framework and it contains interfaces for coaches, entrepreneurs, administrators along with permission structure to maintain knowledge security.",
         "tags": [
-            "ML", 
-            "Tensorflow",
-            "AI"
+            "Python", 
+            "Django"
         ],
-        "projUrl": "#",
-        "githubUrl": "#",
-        "publishDate": "Feb 2024",
-        "thumbnailUrl": "https://mdbcdn.b-cdn.net/img/new/standard/city/059.jpg"
+        "projUrl": "https://ebs.org/",
+        "githubUrl": null,
+        "publishDate": "Live and Ongoing",
+        "thumbnailUrl":"project:ebs",
+        "category":"corporate",
+        "status": "ongoing",
+        "openToContrib": false
     },
     {
-        "title": "VIM",
-        "description": "Curabitur tristique, mi a mollis sagittis, metus felis mattis arcu, non vehicula nisl dui quis diam. Mauris ut risus eget massa volutpat feugiat. Donec.",
+        "title": "Tkinter Mod Manager",
+        "description": "This is a simple mod manager built on Tkinter. This applet is named mod manager because there are certain games which have an option to add or remove mods by copying/pasting/deleting files from one directory to another. The mod files in questions are named in a non-human-friendly way (e.g. 1234567.mod), now copying and pasting those files from directory to another will of course work but not when you want to keep track of which files belong to which mod. This applet makes that task easy.",
         "tags": [
-            "ML", 
-            "Tensorflow",
-            "AI"
+            "Python", 
+            "GUI",
+            "TKinter"
         ],
-        "projUrl": "#",
-        "githubUrl": "#",
-        "publishDate": "Jan 2024",
-        "thumbnailUrl": "https://mdbcdn.b-cdn.net/img/new/standard/city/032.jpg"
-    },
-    {
-        "title": "NEXT.js",
-        "description": "Curabitur tristique, mi a mollis sagittis, metus felis mattis arcu, non vehicula nisl dui quis diam. Mauris ut risus eget massa volutpat feugiat. Donec.",
-        "tags": [
-            "ML", 
-            "Tensorflow",
-            "AI"
-        ],
-        "projUrl": "#",
-        "githubUrl": "#",
-        "publishDate": "Feb 2024",
-        "thumbnailUrl": "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg"
-    },
-    {
-        "title": "Django",
-        "description": "Curabitur tristique, mi a mollis sagittis, metus felis mattis arcu, non vehicula nisl dui quis diam. Mauris ut risus eget massa volutpat feugiat. Donec.",
-        "tags": [
-            "ML", 
-            "Tensorflow",
-            "AI"
-        ],
-        "projUrl": "#",
-        "githubUrl": "#",
+        "projUrl": null,
+        "githubUrl": "https://github.com/Blankscreen-exe/tkinter-mod-manager",
         "publishDate": "May 2024",
-        "thumbnailUrl": "https://mdbcdn.b-cdn.net/img/new/standard/city/012.jpg"
+        "thumbnailUrl": null,
+        "category":"hobby",
+        "status": "finished",
+        "openToContrib": true
     },
     {
-        "title": "Bun",
-        "description": "Curabitur tristique, mi a mollis sagittis, metus felis mattis arcu, non vehicula nisl dui quis diam. Mauris ut risus eget massa volutpat feugiat. Donec.",
+        "title": "Shortcut Keeper",
+        "description": "An icon grouper applet for windows, inspired by icon grouping feature in GNOME and android desktops. This is just like the icon grouping found in android and GNOME desktops.",
         "tags": [
-            "ML", 
-            "Tensorflow",
-            "AI"
+            "Python", 
+            "GUI",
+            "PySimpleGUI"
         ],
-        "projUrl": "#",
-        "githubUrl": "#",
+        "projUrl": null,
+        "githubUrl": "https://github.com/Blankscreen-exe/shortcut_keeper/tree/dev",
+        "publishDate": "Nov 2023",
+        "thumbnailUrl": "https://github.com/Blankscreen-exe/shortcut_keeper/raw/dev/docs/images/preview.png",
+        "category":"hobby",
+        "status": "finished",
+        "openToContrib": true
+    },
+    {
+        "title": "Jevil's Dilemma",
+        "description": "This is a Web-based version of the tabletop party game called Dilemma. In the traditional version of this game you have a pack of flash cards, all of which contain a question. This question describes a scenario which forces you to choose an 'action'. There are no scores, no correct answers, no winners ... just pure brimming creativity.",
+        "tags": [
+            "JavaScript", 
+            "React.js",
+            "Node.js",
+            "Vite.js",
+            "game"
+        ],
+        "projUrl": "https://jevils-dilemma.vercel.app/",
+        "githubUrl": "https://github.com/Blankscreen-exe/jevils-dilemma",
+        "publishDate": null,
+        "thumbnailUrl": null,
+        "category":"collab",
+        "status": "ongoing",
+        "openToContrib": true
+    },
+    {
+        "title": "Color To GrayScale Converter",
+        "description": "I made this to assist me in picking out the grayscale version of colors during my pixel art practice. Nothing too fancy about it.",
+        "tags": [
+            "JavaScript", 
+            "Tailwind"
+        ],
+        "projUrl": "https://blankscreen-exe.github.io/ColorToGrayScale-converter/",
+        "githubUrl": "https://github.com/Blankscreen-exe/ColorToGrayScale-converter",
         "publishDate": "Mar 2024",
-        "thumbnailUrl": "https://mdbcdn.b-cdn.net/img/new/standard/city/021.jpg"
+        "thumbnailUrl": null,
+        "category":"hobby",
+        "status": "finished",
+        "openToContrib": false
+    },
+    {
+        "title": "Triple Triad Card Maker",
+        "description": "This is a game card generator which takes in .png assets and compiles them into a game card which can then be printed.",
+        "tags": [
+            "Python", 
+            "OpenCV",
+            "Numpy",
+            "tripletriad",
+            "game"
+        ],
+        "projUrl": null,
+        "githubUrl": "https://github.com/Blankscreen-exe/triple-trial-card-maker",
+        "publishDate": null,
+        "thumbnailUrl": null,
+        "category":"hobby",
+        "status": "ongoing",
+        "openToContrib": true
+    },
+    {
+        "title": "Docker Practice/Tutorial Repo",
+        "description": "This is a repo which contains docker related shenanigans. These are the things I have tried with docker and wrote a tutorial about it.",
+        "tags": [
+            "Docker", 
+            "Python",
+            "Shell"
+        ],
+        "projUrl": "https://blankscreen-exe.github.io/docker-practice/",
+        "githubUrl": "https://github.com/Blankscreen-exe/docker-practice",
+        "publishDate": null,
+        "thumbnailUrl": null,
+        "category":"hobby",
+        "status": "ongoing",
+        "openToContrib": true
+    },
+    {
+        "title": "Invoice Generator",
+        "description": "This is an invoice generator built with Jinja2 and WeasyPrint. You can use this to make a pdf and an html invoice. Before you can use this script, you will need to customize some settings beforehand.",
+        "tags": [
+            "Python", 
+            "Jinja2",
+            "WeasyPrint",
+            "HTML",
+            "CSS"
+        ],
+        "projUrl": null,
+        "githubUrl": "https://github.com/Blankscreen-exe/invoice_generator",
+        "publishDate": "Nov 2023",
+        "thumbnailUrl": null,
+        "category":"hobby",
+        "status": "finished",
+        "openToContrib": false
+    },
+    {
+        "title": "Screen Magnifier",
+        "description": "An app for magnifying a portion of the screen. Useful for when you want to enlarge a portion of the screen while presentating a lot code and text.",
+        "tags": [
+            "Python", 
+            "OpenCV",
+            "Pillow"
+        ],
+        "projUrl": null,
+        "githubUrl": "https://github.com/Blankscreen-exe/screen_magnifier",
+        "publishDate": "Sep 2023",
+        "thumbnailUrl": null,
+        "category":"hobby",
+        "status": "finished",
+        "openToContrib": false
+    },
+    {
+        "title": "Image Classifier App",
+        "description": "This is a simple image classification app made with using MobileNetV2 model and Tensorflow.",
+        "tags": [
+            "Python", 
+            "Machine Learning",
+            "Tensorflow"
+        ],
+        "projUrl": null,
+        "githubUrl": "https://github.com/Blankscreen-exe/Image-Classification-App",
+        "publishDate": "Jul 2023",
+        "thumbnailUrl": "https://github.com/Blankscreen-exe/Image-Classification-App/raw/main/docs/images/app_preview.png",
+        "category":"hobby",
+        "status": "finished",
+        "openToContrib": false
+    },
+    {
+        "title": "Python Dependency Report Generator",
+        "description": "It produces a docx format document which lists out all the dependencies that a certain python environments uses.",
+        "tags": [
+            "Python", 
+            "python-docx"
+        ],
+        "projUrl": null,
+        "githubUrl": "https://github.com/Blankscreen-exe/python_dependency_report_generator",
+        "publishDate": "Jul 2023",
+        "thumbnailUrl": "https://github.com/Blankscreen-exe/python_dependency_report_generator/raw/main/docs/img/preview.png",
+        "category":"hobby",
+        "status": "finished",
+        "openToContrib": true
+    },
+    {
+        "title": "Usagi Chan's Number Guessing Game",
+        "description": "This is a number guessing game where the player will be given a number and they will have to guess if the next number will be larger or smaller. Based on their answer they will either get a point or loose a life.",
+        "tags": [
+            "Python", 
+            "OpenCV",
+            "Numpy"
+        ],
+        "projUrl": "https://usagichan-numbergame.netlify.app/",
+        "githubUrl": "https://github.com/Blankscreen-exe/Usagi-chans-number-guessing-game",
+        "publishDate": "Nov 2022",
+        "thumbnailUrl": "https://github.com/Blankscreen-exe/Usagi-chans-number-guessing-game/raw/main/docs/Screenshot_8.png",
+        "category":"hobby",
+        "status": "finished",
+        "openToContrib": true
+    },
+    {
+        "title": "WebGL Fluid Simulation",
+        "description": "This is a small side project to simulate fluid effects on an html document using vanilla JS, HTML and CSS.",
+        "tags": [
+            "JavaScript", 
+            "WebGL"
+        ],
+        "projUrl": "https://blankscreen-exe.github.io/webGL-fluid-simulation/",
+        "githubUrl": "https://github.com/Blankscreen-exe/webGL-fluid-simulation",
+        "publishDate": "Aug 2022",
+        "thumbnailUrl": null,
+        "category":"hobby",
+        "status": "finished",
+        "openToContrib": false
     }
 ]

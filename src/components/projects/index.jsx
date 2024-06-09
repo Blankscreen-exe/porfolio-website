@@ -7,11 +7,14 @@ import ProjData from '../../data/projectList.json'
 // Helpers
 import { capitalizeFirstLetter, capitalizeWords } from '../../helpers/common'
 
+
 // Components
 import PageTitle from '../common/PageTitle'
 import DataTable from '../common/DataTable'
 import { createColumnHelper } from '@tanstack/react-table'
-import BlogCard from './BlogCard'
+import ProjectCard from './ProjectCard'
+import Paragraph from '../common/Paragraph'
+import ProjectKeys from './ProjectKeys'
 
 function index(props) {
     window.scrollTo(0, 0);
@@ -23,7 +26,7 @@ function index(props) {
             let rowData = row.row.original;
             console.log(rowData)
             return (<>
-                <BlogCard
+                <ProjectCard
                     cardTitle={rowData.title}
                     cardDescription={rowData.description}
                     date={rowData.publishDate}
@@ -31,6 +34,9 @@ function index(props) {
                     imgUrl={rowData.thumbnailUrl}
                     projLink={rowData.projUrl}
                     githubLink={rowData.githubUrl}
+                    category={rowData.category}
+                    status={rowData.status}
+                    openToContrib={rowData.openToContrib}
                 />
             </>)
         },
@@ -50,6 +56,13 @@ function index(props) {
   return (
     <div>
         <PageTitle title={"Projects"}/>
+        <Paragraph text={"This portfolio represents a selection of my endeavors, encompassing both professional undertakings within the confines of my employment and those born from personal pursuits.<br/><br/>In case you are woried about the symbols below, here's the key:"}/>
+
+        <ProjectKeys/>
+
+            <br/>
+            <br/>
+
         <DataTable data={ProjData} columns={columns} colVisibility={colVisibility}/>
     </div>
   )
