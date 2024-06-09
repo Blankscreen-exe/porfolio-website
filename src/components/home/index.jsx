@@ -17,6 +17,8 @@ import CtaCard from '../common/CtaCard'
 import BlockQuote from '../common/BlockQuote'
 import Protip from '../common/Protip'
 import Paragraph from '../common/Paragraph'
+import GoToProjectButton from './GoToProjectButton'
+import SectionHeading from '../common/SectionHeading'
 
 function Home(props) {
   window.scrollTo(0, 0);
@@ -31,13 +33,17 @@ function Home(props) {
           <Paragraph text={"Note: The testimonials above are taken from my linkedin page."}/>
         </div> */}
         <TechStack/>
-        <Protip/>
-        <HorizontalSlider
+        {/* <Protip/> */}
+        {/* <HorizontalSlider
           data={projectsData}
           title={"Projects"}
           buttonText={<><span>View</span> {svgList.externalLink}</>}
-        />
+        /> */}
         <CtaCard/>
+        <SectionHeading title="Want to see my projects?"/>
+        <GoToProjectButton/>
+        <br/>
+        <br/>
     </>
   )
 }

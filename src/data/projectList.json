@@ -182,9 +182,8 @@
         "title": "Usagi Chan's Number Guessing Game",
         "description": "This is a number guessing game where the player will be given a number and they will have to guess if the next number will be larger or smaller. Based on their answer they will either get a point or loose a life.",
         "tags": [
-            "Python", 
-            "OpenCV",
-            "Numpy"
+            "JavaScript",
+            "React.js"
         ],
         "projUrl": "https://usagichan-numbergame.netlify.app/",
         "githubUrl": "https://github.com/Blankscreen-exe/Usagi-chans-number-guessing-game",

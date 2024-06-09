@@ -458,3 +458,40 @@ a:hover {
   'GRAD' 0,
   'opsz' 24
 }
+
+/* home project visit button */
+
+.i::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  opacity: 20%;
+  background: white;
+/*   background: #3B82F6; */
+  /* Centering */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.homeProjectVisitButton:hover:before {
+  animation: anim-in 0.7s forwards ease-out;
+}
+
+@keyframes anim-in {
+  100% {
+    opacity: 0%;
+    border-radius: 0;
+    width: 600px;
+    height: 600px;
+  }
+  0% {
+    width: 0px;
+    height: 0px;
+    border-radius: 100%;
+    opacity: 20%;
+  }
+}
