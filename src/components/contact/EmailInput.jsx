@@ -1,10 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import PropTypes from "prop-types";
 
 // Components
 import { TEInput } from "tw-elements-react";
 
+function validateEmail(email) {
+
+  var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+  if (email.match(validRegex)) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 function Input(props) {
+	const [isInvalidEmail, setIsInvalidEmail] = useState(false);
+
   const { 
     id, 
     label, 
@@ -21,6 +34,12 @@ function Input(props) {
         [event.target.name]: event.target.value
       } 
     })
+    
+    validateEmail(formData.email) 
+    ? setIsInvalidEmail(false)
+    : setIsInvalidEmail(true)
+    
+    console.log(isInvalidEmail)
   };
 
   return (
@@ -45,6 +64,7 @@ function Input(props) {
           value={formData.email}
         ></TEInput>
       )}
+      	{isInvalidEmail && <p>Please use a valid email address</p>}
     </div>
   );
 }
