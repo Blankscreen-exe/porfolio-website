@@ -12,24 +12,12 @@ import TextArea from "./TextArea";
 import { Turnstile } from '@marsidev/react-turnstile'
 
 function Form(props) {
-  /**
-   * Full Name
-   * Email (optional)
-   * Purpose of Contact/ What interests you (Services, Just an Inquiry, Wanna hang out)
-   * Want to hire me? as what? SELECT(Tech Resource, Mentor, other?)
-   * Message TEXTAREA
-   *  */
-
-  // 1= ready for submission, 0=submitted
-  const [formState, setFormState] = useState(1)
   const tsStatusConst = {
   	empty: null,
   	success: 'success',
   	error: 'error',
   	expired: 'expired'
   }
-  const [trunstileStatus, setTrunstileStatus] = useState(tsStatusConst.empty)
-
   const formConstants = {
     purpose: {
       services: "services",
@@ -43,6 +31,12 @@ function Form(props) {
     },
   };
 
+  // 1= ready for submission, 0=submitted
+  const [formState, setFormState] = useState(1)
+  const [trunstileStatus, setTrunstileStatus] = useState(tsStatusConst.empty)
+  const [isEmailValid, setIsEmailValid] = useState(false)
+
+
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
@@ -54,7 +48,14 @@ function Form(props) {
   const form = useRef();
 
   const handleSubmit = async () => {
-  	if (trunstileStatus===tsStatusConst.success) {
+  
+		console.log("trunstileStatus -> success", trunstileStatus===tsStatusConst.success)
+		console.log("is email valid", isEmailValid)
+  	
+  	if (
+  		trunstileStatus===tsStatusConst.success 
+  		&& isEmailValid
+		) {
 		  emailjs.init({
 		    publicKey: "2u2IBkz4SNHuJ3jqF",
 		  })
@@ -88,6 +89,8 @@ function Form(props) {
       message: "",
     })
     setFormState( prevState => !prevState)
+    setIsEmailValid(false)
+    setTrunstileStatus(tsStatusConst.empty)
   }
 
   return (
@@ -109,6 +112,8 @@ function Form(props) {
           isRequired={true}
           formData={formData}
           setFormData={setFormData}
+          isEmailValid={isEmailValid}
+          setIsEmailValid={setIsEmailValid}
         />
 
         <h3 className="text-content/80 my-2">Purpose of Contact</h3>
@@ -161,17 +166,6 @@ function Form(props) {
           formData={formData}
           setFormData={setFormData}
         />
-
-        {/* <button
-          data-twe-ripple-init
-          data-twe-ripple-color="light"
-          onClick={handleSubmit}
-          type="submit"
-          value="Submit"
-          className="transition-all duration-500 text-white bg-gradient-to-r from-primary hover:via-cyan-300 hoverto-blue-200 to-blue-500   focus:outline-none focus:ring-primary font-medium rounded-lg text-md px-5 py-2.5 text-center my-2 border-0 shadow-md shadow-shadow ease-in"
-        >
-          Submit
-        </button> */}
 
           <Turnstile 
 				  	siteKey='0x4AAAAAAAcY1yqOBIph005P'

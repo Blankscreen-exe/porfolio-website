@@ -13,7 +13,9 @@ function Input(props) {
     name,
     isRequired, 
     formData, 
-    setFormData 
+    setFormData,
+    isEmailValid,
+    setIsEmailValid,
   } = props;
 
   const handleChange = (event) => {
@@ -24,7 +26,8 @@ function Input(props) {
       } 
     })
     
-    console.log(validate(formData.email))
+    console.log("is email valid? Email input ==> ", validate(formData.email))
+    setIsEmailValid(validate(formData.email))
   };
 
   return (
@@ -49,7 +52,7 @@ function Input(props) {
           value={formData.email}
         ></TEInput>
       )}
-      	{ !validate(formData.email) && <p>Please use a valid email address</p> }
+      	{ !isEmailValid && <p>Please use a valid email address</p> }
     </div>
   );
 }
