@@ -3,20 +3,9 @@ import PropTypes from "prop-types";
 
 // Components
 import { TEInput } from "tw-elements-react";
-
-function validateEmail(email) {
-
-  var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-  if (email.match(validRegex)) {
-    return true;
-  } else {
-    return false;
-  }
-}
+import {validate} from "react-email-validator";
 
 function Input(props) {
-	const [isInvalidEmail, setIsInvalidEmail] = useState(false);
 
   const { 
     id, 
@@ -35,11 +24,7 @@ function Input(props) {
       } 
     })
     
-    validateEmail(formData.email) 
-    ? setIsInvalidEmail(false)
-    : setIsInvalidEmail(true)
-    
-    console.log(isInvalidEmail)
+    console.log(validate(formData.email))
   };
 
   return (
@@ -64,7 +49,7 @@ function Input(props) {
           value={formData.email}
         ></TEInput>
       )}
-      	{isInvalidEmail && <p>Please use a valid email address</p>}
+      	{ !validate(formData.email) && <p>Please use a valid email address</p> }
     </div>
   );
 }
