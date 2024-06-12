@@ -22,6 +22,13 @@ function Form(props) {
 
   // 1= ready for submission, 0=submitted
   const [formState, setFormState] = useState(1)
+  const tsStatusConst = {
+  	empty: null,
+  	success: 'success',
+  	error: 'error',
+  	expired: 'expired'
+  }
+  const [trunstileStatus, setTrunstileStatus] = useState(tsStatusConst.empty)
 
   const formConstants = {
     purpose: {
@@ -47,26 +54,28 @@ function Form(props) {
   const form = useRef();
 
   const handleSubmit = async () => {
-    emailjs.init({
-      publicKey: "2u2IBkz4SNHuJ3jqF",
-    })
-    emailjs.send("service_jjms90v","template_he0fd6r",{
-      from_name: formData.fullName,
-      message: formData.message,
-      email: formData.email ? formData.email : "none",
-      hireAs: formData.hireAs.reduce( (acc, curr) => acc + ", " + curr),
-      purpose: formData.contactPurpose.reduce( (acc, curr) => acc + ", " + curr),
-      
-      })
-      .then(
-        () => {
-          console.log('SUCCESS!');
-          setFormState( prevState => !prevState)
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
+  	if (trunstileStatus===tsStatusConst.success) {
+		  emailjs.init({
+		    publicKey: "2u2IBkz4SNHuJ3jqF",
+		  })
+		  emailjs.send("service_jjms90v","template_he0fd6r",{
+		    from_name: formData.fullName,
+		    message: formData.message,
+		    email: formData.email ? formData.email : "none",
+		    hireAs: formData.hireAs.reduce( (acc, curr) => acc + ", " + curr),
+		    purpose: formData.contactPurpose.reduce( (acc, curr) => acc + ", " + curr),
+		    
+		    })
+		    .then(
+		      () => {
+		        console.log('SUCCESS!');
+		        setFormState( prevState => !prevState)
+		      },
+		      (error) => {
+		        console.log('FAILED...', error.text);
+		      },
+		    );
+	   } 
 
   }
 
@@ -170,7 +179,17 @@ function Form(props) {
 						  size: 'normal'
 						}}
 						className='mx-auto my-4'
+						onError={() => setTrunstileStatus(tsStatusConst.error)}
+						onExpire={() => setTrunstileStatus(tsStatusConst.expired)}
+						onSuccess={() => setTrunstileStatus(tsStatusConst.success)}
 			  	/>
+			  	
+			  {
+			  	trunstileStatus !== tsStatusConst.success
+			  	&& trunstileStatus !== tsStatusConst.empty
+			  	&& <p className='text-contrast'>You need to solve the Captcha</p>
+			  }
+			  
         <a href="#_" 
           type="submit"
           value="Submit"
