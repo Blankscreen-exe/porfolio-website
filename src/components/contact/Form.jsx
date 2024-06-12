@@ -9,6 +9,7 @@ import EmailInput from "./EmailInput";
 import MultiSelectInput from "./MultiSelectInput";
 import CheckBox from "./CheckBox";
 import TextArea from "./TextArea";
+import { Turnstile } from '@marsidev/react-turnstile'
 
 function Form(props) {
   /**
@@ -163,6 +164,13 @@ function Form(props) {
           Submit
         </button> */}
 
+          <Turnstile 
+				  	siteKey='0x4AAAAAAAcY1yqOBIph005P'
+				  	options={{
+						  size: 'normal'
+						}}
+						className='mx-auto my-4'
+			  	/>
         <a href="#_" 
           type="submit"
           value="Submit"
@@ -179,6 +187,7 @@ function Form(props) {
         <p className="mb-4">Thank you or taking the time to write a wonderful message. I'll make sure to read it and get back to you as soon as possible (probably within 24 hours)</p>
         <p>But hey! if you would like to send another <span className="text-primary hover:underline cursor-pointer" onClick={handleFillAgain}>click here</span></p>
       </div>)}
+      {/**<div class="cf-turnstile" data-sitekey="0x4AAAAAAAcY1yqOBIph005P" data-callback="() => console.log('CAptcha RAN!!')"></div>**/}
     </div>
   );
 }
