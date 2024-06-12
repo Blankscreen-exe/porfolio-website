@@ -52,7 +52,7 @@ function Input(props) {
           value={formData.email}
         ></TEInput>
       )}
-      	{ !isEmailValid && <p>Please use a valid email address</p> }
+      	{ !isEmailValid && <p className='text-contrast mx-auto'>Please use a valid email address</p> }
     </div>
   );
 }

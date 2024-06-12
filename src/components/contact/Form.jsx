@@ -55,6 +55,8 @@ function Form(props) {
   	if (
   		trunstileStatus===tsStatusConst.success 
   		&& isEmailValid
+      && formData.fullName !== ""
+      && formData.message !== ""
 		) {
 		  emailjs.init({
 		    publicKey: "2u2IBkz4SNHuJ3jqF",
