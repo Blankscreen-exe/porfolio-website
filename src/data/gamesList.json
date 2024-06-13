@@ -1,103 +1,91 @@
 [
     {
       "id": 1,
-      "title": "Nokia N9",
-      "status": "inqueue",
+      "title": "Undertale",
+      "status": "finished",
       "recommendation": 5,
-      "review": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
-      "studio": "Tudor Riggs",
-      "genre": ["genre9","fantasy","horror","scifi"],
-      "img": "http://dummyimage.com/188x100.png/dddddd/000000"
+      "review": "I just loved the pixel art, the concept and pretty much everything about it.",
+      "studio": "Toby Fox",
+      "genre": ["indie","roleplaying","adventure","bullet-hell"]
     },
     {
       "id": 2,
-      "title": "Prestigio MultiPad 7.0 Ultra",
-      "status": "reading",
-      "recommendation": 3,
-      "review": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.\n\nMaecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
-      "studio": "Thedrick Osant",
-      "genre": ["genre6","fantasy","horror","scifi"],
-      "img": "http://dummyimage.com/212x100.png/5fa2dd/ffffff"
+      "title": "Koudelka",
+      "status": null,
+      "recommendation": null,
+      "review": "Not yet",
+      "studio": "Sacnoth",
+      "genre": ["roleplaying","survival","horror","adventure"]
     },
     {
       "id": 3,
-      "title": "Sagem my400X",
-      "status": "reading",
-      "recommendation": 5,
-      "review": "Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.\n\nCurabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
-      "studio": "Hy Maryska",
-      "genre": ["genre3","fantasy","horror","scifi"],
-      "img": "http://dummyimage.com/174x100.png/5fa2dd/ffffff"
+      "title": "Baroque",
+      "status": null,
+      "recommendation": null,
+      "review": "Not yet",
+      "studio": "Sting Entertainment",
+      "genre": ["roguelike", "roleplaying","survival","horror","adventure"]
     },
     {
       "id": 4,
-      "title": "LG G3",
-      "status": "inqueue",
-      "recommendation": 4,
-      "review": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
-      "studio": "Christie Eliet",
-      "genre": ["genre9","fantasy","horror","scifi"],
-      "img": "http://dummyimage.com/240x100.png/cc0000/ffffff"
+      "title": "Illbleed",
+      "status": null,
+      "recommendation": null,
+      "review": "Not yet",
+      "studio": "Crazy Games Inc.",
+      "genre": ["survival","horror","adventure","action"]
     },
     {
       "id": 5,
-      "title": "Karbonn Titanium Hexa",
-      "status": "inqueue",
-      "recommendation": 0,
-      "review": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.\n\nSed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
-      "studio": "Larina Kike",
-      "genre": ["genre7","fantasy","horror","scifi"],
-      "img": "http://dummyimage.com/173x100.png/dddddd/000000"
+      "title": "Souldiers",
+      "status": "playing",
+      "recommendation": 5,
+      "review": "Not Yet",
+      "studio": "",
+      "genre": ["platformer", "adventure"]
     },
     {
       "id": 6,
-      "title": "Sony Xperia M2",
+      "title": "Fran Bow",
       "status": "inqueue",
       "recommendation": 0,
-      "review": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.\n\nFusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
-      "studio": "Denice Mattson",
-      "genre": ["genre5","fantasy","horror","scifi"],
-      "img": "http://dummyimage.com/172x100.png/dddddd/000000"
+      "review": "",
+      "studio": "",
+      "genre": ["genre5","fantasy","horror","scifi"]
     },
     {
       "id": 7,
-      "title": "Plum Ram 4",
-      "status": "reading",
+      "title": "Hollow Knight",
+      "status": "finished",
       "recommendation": 5,
-      "review": "Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.\n\nCurabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.",
-      "studio": "Sharl Jakobsson",
-      "genre": ["genre6","fantasy","horror","scifi"],
-      "img": "http://dummyimage.com/230x100.png/cc0000/ffffff"
+      "review": "Is Silksong out yet?<br/>Also I couldn't clear the white palace, so there's that.",
+      "genre": ["platformer","action","adventure"]
     },
     {
       "id": 8,
-      "title": "Micromax A45",
-      "status": "reading",
-      "recommendation": 4,
-      "review": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
-      "studio": "Yolande Hendrichs",
-      "genre": ["genre2","fantasy","horror","scifi"],
-      "img": "http://dummyimage.com/107x100.png/5fa2dd/ffffff"
+      "title": "Yuppie Psycho",
+      "status": "finished",
+      "recommendation": 5,
+      "review": "Spoiler alert: I had fun doing both ... killing the witch and working together with her",
+      "studio": "",
+      "genre": []
     },
     {
       "id": 9,
-      "title": "NIU Niutek 3.5D2",
-      "status": "finished",
+      "title": "Touhou Luna Nights",
+      "status": "playing",
       "recommendation": 5,
-      "review": "Phasellus in felis. Donec semper sapien a libero. Nam dui.\n\nProin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
-      "studio": "Janeva Maulden",
-      "genre": ["genre7","fantasy","horror","scifi"],
-      "img": "http://dummyimage.com/112x100.png/5fa2dd/ffffff"
+      "review": "Playing as DIO ... I mean Sakuya ... you get to fight other characters in the touhou lore. The game itself seems inspired by Castlevania cuz there were some pretty interesting easter eggs that referenced Castlevania. For example, there was a scene where Richter Belmont(Sakuya) enters Dracula's(Nitori+???) throne room and have a dialogue there before throwing puches at each other.",
+      "studio": "Lady Bug Games",
+      "genre": ["platformer","fantasy","bullet-hell","adventure"]
     },
     {
       "id": 10,
-      "title": "Panasonic Eluga L2",
-      "status": "reading",
+      "title": "Harvest Moon: Friends Of Mineral Town",
+      "status": "finished",
       "recommendation": 0,
-      "review": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.\n\nMorbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.",
-      "studio": "Maurie Bouzek",
-      "genre": ["genre2","fantasy","horror","scifi"],
-      "img": "http://dummyimage.com/215x100.png/cc0000/ffffff"
+      "review": "Well honestly I didn't finish it. The game can go as far as you can. But It was a great playtime.",
+      "genre": []
     },
     {
       "id": 11,
