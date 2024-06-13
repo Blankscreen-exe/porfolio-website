@@ -37,7 +37,7 @@ function index(props) {
       ),
     }),
     columnHelper.accessor("studio", {
-      cell: (row) => <i>{capitalizeWords(row.getValue())}</i>,
+      cell: (row) => <i>{row.getValue() ? capitalizeWords(row.getValue()) : ""}</i>,
       header: () => (
         <h2 className="text-lg hover:cursor-pointer hover:text-primary">
           Studio
@@ -54,11 +54,11 @@ function index(props) {
           case "finished":
             stat = <span>✅ Finished</span>;
             break;
-          case "reading":
+          case "playing":
             stat = <span className="px-2 py-1 rounded-md text-black bg-yellow-500">⬛ Playing</span>;
             break;
           default:
-            stat = <span>⚪️ N/A</span>;
+            stat = <span></span>;
         }
         return (stat);
       },
@@ -103,7 +103,7 @@ function index(props) {
               <dialog id={`booklist_modal_${row.row.id}`} className="modal">
                 <div className="modal-box bg-bg2">
                   <h3 className="font-bold text-lg">Review</h3>
-                  <p className="py-4">{row.getValue()}</p>
+                  <p className="py-4" dangerouslySetInnerHTML={{ __html : row.getValue() }}></p>
                 </div>
                 <form method="dialog" className="modal-backdrop">
                   <button>close</button>
