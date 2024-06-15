@@ -153,7 +153,8 @@ function index(props) {
   return (
     <div className="mb-12">
       <PageTitle title="My Games List"/>
-      <Paragraph text={"Games I have read and reviewed. Hope you <i>will</i> find something <span class='font-bold'>to your liking</span> somewhere in there!<br/><br/>We can also share thoughts on a particular game if you like, <a href="+appConstants.routes.contacts+" class='text-contentLink underline hover:text-contentLinkHover'>connect with me here</a>"}/>
+      <Paragraph text={"This is a list of games I have played, reviewed or I am looking forward to play. Hope you <i>will</i> find something <span class='font-bold'>to your liking</span> somewhere in there!<br/><br/>If there is a game you want me to checkout, review or you just want to share thoughts on a particular game, we can do any or all of those if you like. You can <a href="+appConstants.routes.contacts+" class='text-contentLink underline hover:text-contentLinkHover'>connect with me here</a>"}/>
+      <Paragraph text={"Note that this is an incomplete list and it is still WIP."}/>
       <DataTable data={data} columns={columns} />
     </div>
   );
