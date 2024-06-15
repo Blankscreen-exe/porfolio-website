@@ -29,9 +29,9 @@ function index() {
         <PageTitle title="My Certificates"/>
         <div className='flex justify-center'>
             <Paragraph text={"some description i want to talk about some description i want to talk about vsome description i want to talk about some description i want to talk about some description i want to talk about some description i want to talk about"} />
-            <Paragraph text={"<span class='font-bold'>Note</span> that this is an incomplete list and it is still WIP."}/>
 
         </div>
+        <Paragraph text={"<span class='font-bold'>Note</span> that this is an incomplete list and it is still WIP."}/>
 
         <CertificateStats data={allData}/>
 
