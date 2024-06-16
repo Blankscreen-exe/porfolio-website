@@ -37,7 +37,7 @@ function index(props) {
       ),
     }),
     columnHelper.accessor("provider", {
-      cell: (row) => <b>{capitalizeWords(row.getValue())}</b>,
+      cell: (row) => <i>{capitalizeWords(row.getValue())}</i>,
       header: () => (
         <h2 className="text-lg hover:cursor-pointer hover:text-primary w-[100px]">
           Provider
