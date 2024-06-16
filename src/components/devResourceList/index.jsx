@@ -137,8 +137,7 @@ function index(props) {
   return (
     <div className="mb-12">
       <PageTitle title="My Dev Resource List"/>
-      <Paragraph text={"List of various tools which have helped me during my career. Some of these tools are top-notch while other are just one of a kind. Within this <span class='font-bold'>mass of URLs</span>, you are sure to find something of use in there.<br/><br/>If there is a resource which you don't see listed here, be sure to <a href="+appConstants.routes.contacts+" class='text-contentLink underline hover:text-contentLinkHover'>tell me</a> about it. My goal is to make this list as diverse as possible."}/>
-      <Paragraph text={"<span class='font-bold'>Note</span> that this is an incomplete list and it is still WIP."}/>
+      <Paragraph text={"List of various tools which have helped me during my career. Some of these tools are top-notch while other are just one of a kind. Within this <span class='font-bold'>mass of URLs</span>, you are sure to find something of use in there.<br/><br/>If there is a resource which you want to see listed here, be sure to <a href="+appConstants.routes.contacts+" class='text-contentLink underline hover:text-contentLinkHover'>tell me</a> about it. My goal is to make this list as diverse as possible and to help as many learners as I can."}/>
       <DataTable data={data} columns={columns} />
     </div>
   );
