@@ -87,7 +87,7 @@ function index(props) {
               <dialog id={`booklist_modal_${row.row.id}`} className="modal">
                 <div className="modal-box bg-bg2">
                   <h3 className="font-bold text-lg">Review</h3>
-                  <p className="py-4">{row.getValue()}</p>
+                  <p className="py-4" dangerouslySetInnerHTML={{ __html : row.getValue() }}></p>
                 </div>
                 <form method="dialog" className="modal-backdrop">
                   <button>close</button>
