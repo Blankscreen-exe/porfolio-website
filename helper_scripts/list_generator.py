@@ -1,6 +1,7 @@
 import sqlite3
 import json
 
+DB_NAME = "gamesList.db"
 
 def create_game_object(id, title, status, recommendation, review, studio, genre):
     """
@@ -66,15 +67,24 @@ def main():
     """
     Prompts the user for game information and stores it in a SQLite database.
     """
-    db_name = "games.db"
+    db_name = DB_NAME
     create_database(db_name)  # Create the database if it doesn't exist
 
     num_games = int(input("Enter the number of games: "))
     for _ in range(num_games):
         title = input("Enter game title: ")
+        
         status = input("Enter game status (finished, playing, etc.): ")
-        recommendation = int(input("Enter recommendation rating (out of 5): "))
+        status = None if status == "" else status
+        
+        try:
+            recommendation = int(input("Enter recommendation rating (out of 5): "))
+        except:
+            recommendation = None
+            
         review = input("Enter your review (optional): ")
+        review = None if review == "" else review
+        
         studio = input("Enter game studio: ")
         genre = input("Enter game genres (comma-separated): ").split(",")
 
@@ -165,3 +175,5 @@ def load_games_from_json(db_name, json_file):
 
 if __name__ == "__main__":
     main()
+    # create_database(db_name)
+    # load_games_from_json(db_name, "../src/data/gamesList.json")
