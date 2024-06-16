@@ -36,6 +36,14 @@ function index(props) {
         </h2>
       ),
     }),
+    columnHelper.accessor("provider", {
+      cell: (row) => <b>{capitalizeWords(row.getValue())}</b>,
+      header: () => (
+        <h2 className="text-lg hover:cursor-pointer hover:text-primary w-[100px]">
+          Provider
+        </h2>
+      ),
+    }),
     columnHelper.accessor("link", {
       cell: (row) => <a href={row.getValue()} target="_blank" className="underline">{truncateText(row.getValue(), 20)}</a>,
       header: () => (

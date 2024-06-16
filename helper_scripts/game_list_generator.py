@@ -1,7 +1,7 @@
 import sqlite3
 import json
 
-DB_NAME = "gamesList.db"
+DB_NAME = "Lists.db"
 
 def create_game_object(id, title, status, recommendation, review, studio, genre):
     """
