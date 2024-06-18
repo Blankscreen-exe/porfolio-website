@@ -569,6 +569,20 @@
     },
     {
         "id": 43,
+        "title": "MoonScars",
+        "status": null,
+        "recommendation": null,
+        "review": null,
+        "studio": "Black Mermaid",
+        "genre": [
+            "platformer",
+            "adventure",
+            "indie",
+            "action"
+        ]
+    },
+    {
+        "id": 44,
         "title": "Octopath Traveller",
         "status": null,
         "recommendation": null,
@@ -581,7 +595,19 @@
         ]
     },
     {
-        "id": 44,
+        "id": 45,
+        "title": "Parasite Eve 1",
+        "status": null,
+        "recommendation": null,
+        "review": null,
+        "studio": "Square",
+        "genre": [
+            "RPG",
+            "action"
+        ]
+    },
+    {
+        "id": 46,
         "title": "Phenotopia: Awakening",
         "status": null,
         "recommendation": null,
@@ -593,7 +619,7 @@
         ]
     },
     {
-        "id": 45,
+        "id": 47,
         "title": "Signalis",
         "status": null,
         "recommendation": null,
@@ -608,7 +634,7 @@
         ]
     },
     {
-        "id": 46,
+        "id": 48,
         "title": "Souldiers",
         "status": "playing",
         "recommendation": 5,
@@ -620,7 +646,7 @@
         ]
     },
     {
-        "id": 47,
+        "id": 49,
         "title": "Super Castlevania IV",
         "status": "finished",
         "recommendation": 5,
@@ -634,7 +660,7 @@
         ]
     },
     {
-        "id": 48,
+        "id": 50,
         "title": "Touhou Luna Nights",
         "status": "playing",
         "recommendation": 5,
@@ -649,7 +675,7 @@
         ]
     },
     {
-        "id": 49,
+        "id": 51,
         "title": "Turnip Boy",
         "status": null,
         "recommendation": null,
@@ -663,7 +689,7 @@
         ]
     },
     {
-        "id": 50,
+        "id": 52,
         "title": "Undertale",
         "status": "finished",
         "recommendation": 5,
@@ -677,7 +703,7 @@
         ]
     },
     {
-        "id": 51,
+        "id": 53,
         "title": "Valkyrie Profile: Lenneth",
         "status": "finished",
         "recommendation": 5,
@@ -691,7 +717,7 @@
         ]
     },
     {
-        "id": 52,
+        "id": 54,
         "title": "World Of Horror",
         "status": "playing",
         "recommendation": 5,
@@ -706,7 +732,7 @@
         ]
     },
     {
-        "id": 53,
+        "id": 55,
         "title": "Yuppie Psycho",
         "status": "finished",
         "recommendation": 5,
@@ -720,7 +746,7 @@
         ]
     },
     {
-        "id": 54,
+        "id": 56,
         "title": "infernax",
         "status": "finished",
         "recommendation": 3,
@@ -734,7 +760,7 @@
         ]
     },
     {
-        "id": 55,
+        "id": 57,
         "title": "steel assault",
         "status": null,
         "recommendation": null,
