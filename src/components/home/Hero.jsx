@@ -22,7 +22,7 @@ function Hero(props) {
             <a target="_blank" href={socialLinks.linkedin} className="text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Linkedin </a>
             <a target="_blank" href={socialLinks.github} className=" text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Github </a>
             <a target="_blank" href={socialLinks.medium} className=" text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Medium </a>
-            {/* <a target="_blank" href={socialLinks.reddit} className="text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Reddit </a> */}
+            <a target="_blank" href={socialLinks.upwork} className="text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Upwork </a>
             <a target="_blank" href={socialLinks.discord} className="text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Discord </a>
           </div>
         </div>
