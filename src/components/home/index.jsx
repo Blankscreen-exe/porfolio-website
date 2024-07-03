@@ -11,6 +11,7 @@ import appConstants from '../../constants/appConstants'
 // Components
 import Hero from './Hero'
 import Testimonials from './Testimonials'
+import PastClientReachout from './PastClientReachout'
 import TechStack from './TechStack'
 import HorizontalSlider from '../common/HorizontalSlider'
 import CtaCard from '../common/CtaCard'
@@ -39,7 +40,11 @@ function Home(props) {
           title={"Projects"}
           buttonText={<><span>View</span> {svgList.externalLink}</>}
         /> */}
+        <br/>
+        <SectionHeading title="Have a project in mind? Let's talk!"/>
         <CtaCard/>
+        <SectionHeading title="Are you one of my students/clients?"/>
+        <PastClientReachout />
         <SectionHeading title="Want to see my projects?"/>
         <GoToProjectButton/>
         <br/>
