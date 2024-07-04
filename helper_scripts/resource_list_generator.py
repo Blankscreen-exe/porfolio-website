@@ -1,5 +1,6 @@
 import sqlite3
 import json
+import sys
 
 DB_NAME = "Lists.db"
 
@@ -177,5 +178,14 @@ def load_games_from_json(db_name, json_file):
 if __name__ == "__main__":
     # main()
     # create_database(db_name)
-    # load_games_from_json(db_name, "../src/data/gamesList.json")
-    export_resources_to_json(DB_NAME, 'devResourceList.json')
+    # load_games_from_json(db_name, "../src/data/devResourceList.json")
+    # export_resources_to_json(DB_NAME, '../src/data/devResourceList.json')
+    arg = sys.argv[1]
+    if arg == "entry":
+        main()
+    elif arg == "load_json":
+        load_games_from_json(db_name, "../src/data/devResourceList.json")
+    elif arg == "create_db":
+        create_database(DB_NAME)
+    elif arg == "export_json":
+        export_resources_to_json(DB_NAME, "../src/data/devResourceList.json")

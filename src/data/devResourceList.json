@@ -376,6 +376,17 @@
     },
     {
         "id": 32,
+        "title": "IBM Trainin Center",
+        "provider": "IBM",
+        "recommendation": 4,
+        "review": "The cover a wide variety of topics including IT infrastructure, Automation, cloud, BI, AI, Asset Management, Supply chain, Security etc. A good place to learn a lot of things",
+        "link": "https://www.ibm.com/training/",
+        "topics": [
+            "Learning Platform"
+        ]
+    },
+    {
+        "id": 33,
         "title": "Introduction to Statistics",
         "provider": "Stanford",
         "recommendation": null,
@@ -386,7 +397,7 @@
         ]
     },
     {
-        "id": 33,
+        "id": 34,
         "title": "JIRA Tutorial for beginners",
         "provider": "Guru99",
         "recommendation": null,
@@ -397,7 +408,7 @@
         ]
     },
     {
-        "id": 34,
+        "id": 35,
         "title": "Jenkins Basics Tutorial",
         "provider": "Guru99",
         "recommendation": null,
@@ -408,7 +419,7 @@
         ]
     },
     {
-        "id": 35,
+        "id": 36,
         "title": "JetBrains Academy",
         "provider": "JetBrains",
         "recommendation": 5,
@@ -424,7 +435,7 @@
         ]
     },
     {
-        "id": 36,
+        "id": 37,
         "title": "Learn MongoDB",
         "provider": "MongoDB",
         "recommendation": 5,
@@ -437,7 +448,7 @@
         ]
     },
     {
-        "id": 37,
+        "id": 38,
         "title": "Learn Spring Boot",
         "provider": "Baeldung",
         "recommendation": null,
@@ -449,7 +460,7 @@
         ]
     },
     {
-        "id": 38,
+        "id": 39,
         "title": "Learn Three.js By Building 5 Projects",
         "provider": "FreeCodeCamp",
         "recommendation": null,
@@ -460,7 +471,7 @@
         ]
     },
     {
-        "id": 39,
+        "id": 40,
         "title": "List of Free Learning Resources In Many Languages",
         "provider": "EbookFoundation",
         "recommendation": null,
@@ -472,7 +483,7 @@
         ]
     },
     {
-        "id": 40,
+        "id": 41,
         "title": "Network Technician Course",
         "provider": "SkillsForAll",
         "recommendation": null,
@@ -483,7 +494,7 @@
         ]
     },
     {
-        "id": 41,
+        "id": 42,
         "title": "Neuromatch computational neuroscience course",
         "provider": "Neuromatch",
         "recommendation": null,
@@ -496,7 +507,7 @@
         ]
     },
     {
-        "id": 42,
+        "id": 43,
         "title": "Operating System Course",
         "provider": "Guru99",
         "recommendation": null,
@@ -507,7 +518,7 @@
         ]
     },
     {
-        "id": 43,
+        "id": 44,
         "title": "Operations Research By Solomon Getachew",
         "provider": "Solomon Getachew",
         "recommendation": null,
@@ -519,7 +530,7 @@
         ]
     },
     {
-        "id": 44,
+        "id": 45,
         "title": "Operations Research by Yong Wang",
         "provider": "Binghamton University",
         "recommendation": null,
@@ -531,7 +542,7 @@
         ]
     },
     {
-        "id": 45,
+        "id": 46,
         "title": "Postgresql Tutorial",
         "provider": "Postgresql",
         "recommendation": null,
@@ -543,7 +554,7 @@
         ]
     },
     {
-        "id": 46,
+        "id": 47,
         "title": "Power Shell Utilities",
         "provider": "farag2",
         "recommendation": null,
@@ -557,7 +568,7 @@
         ]
     },
     {
-        "id": 47,
+        "id": 48,
         "title": "Python For Everybody",
         "provider": "Dr. Chuck",
         "recommendation": null,
@@ -569,7 +580,7 @@
         ]
     },
     {
-        "id": 48,
+        "id": 49,
         "title": "REST API Tutorial",
         "provider": "Restfulapi",
         "recommendation": null,
@@ -582,7 +593,7 @@
         ]
     },
     {
-        "id": 49,
+        "id": 50,
         "title": "React Hooks Simplified",
         "provider": "Web Dev Simplified",
         "recommendation": null,
@@ -594,7 +605,7 @@
         ]
     },
     {
-        "id": 50,
+        "id": 51,
         "title": "Software Engineering Tutorial",
         "provider": "Guru99",
         "recommendation": null,
@@ -605,7 +616,7 @@
         ]
     },
     {
-        "id": 51,
+        "id": 52,
         "title": "Spring Quick Start Guide",
         "provider": "Spring",
         "recommendation": null,
@@ -617,7 +628,7 @@
         ]
     },
     {
-        "id": 52,
+        "id": 53,
         "title": "System Design Primer",
         "provider": "donnemartin",
         "recommendation": null,
@@ -628,7 +639,7 @@
         ]
     },
     {
-        "id": 53,
+        "id": 54,
         "title": "Test Driven Development in Django",
         "provider": "PSF",
         "recommendation": 4,
@@ -641,7 +652,7 @@
         ]
     },
     {
-        "id": 54,
+        "id": 55,
         "title": "The Complete PyQT6 Tutorial",
         "provider": "pythonguis",
         "recommendation": null,
@@ -653,7 +664,7 @@
         ]
     },
     {
-        "id": 55,
+        "id": 56,
         "title": "The Documentation System",
         "provider": "Divio",
         "recommendation": null,
@@ -664,7 +675,7 @@
         ]
     },
     {
-        "id": 56,
+        "id": 57,
         "title": "Training Custom Object Detector",
         "provider": "Tensorflow",
         "recommendation": null,
@@ -677,7 +688,7 @@
         ]
     },
     {
-        "id": 57,
+        "id": 58,
         "title": "What is Microsoft Fabric? How to Build a Customer Segmentation Project",
         "provider": "FreeCodeCamp",
         "recommendation": null,
