@@ -45,7 +45,7 @@ function Home(props) {
         <CtaCard/>
         <SectionHeading title="Are you one of my students/clients?"/>
         <PastClientReachout />
-        <SectionHeading title="Want to see my projects?"/>
+        <SectionHeading title="Or are you interested in my projects?"/>
         <GoToProjectButton/>
         <br/>
         <br/>
