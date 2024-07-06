@@ -14,7 +14,7 @@ function ProjectKeys(props) {
                         <h3 class="flex h-14 cursor-pointer items-center font-bold">Show/Hide Keys</h3>
                         <div class="mb-2 z-50">
                             {/* keys go here */}
-                            <div className='mx-auto w-[70%] px-0 lg:px-14'>
+                            <div className=' w-[100%] px-0 lg:px-14'>
                               <ul>
                                 <li className='flex flex-row gap-3 mb-2'><img src={svgList.projectList.collab} className='w-4 h-4 my-auto'/>  Me and some other developers are wokring on it together</li>
                                 <li className='flex flex-row gap-3 mb-2'><img src={svgList.projectList.corporate} className='w-4 h-4 my-auto'/>  I worked on this as a part of my Job</li>
