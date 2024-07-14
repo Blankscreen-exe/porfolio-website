@@ -180,7 +180,10 @@ if __name__ == "__main__":
     # create_database(db_name)
     # load_games_from_json(db_name, "../src/data/devResourceList.json")
     # export_resources_to_json(DB_NAME, '../src/data/devResourceList.json')
-    arg = sys.argv[1]
+    try:
+        arg = sys.argv[1]
+    except:
+        print('available args: entry, load_json, create_db, export_json')
     if arg == "entry":
         main()
     elif arg == "load_json":

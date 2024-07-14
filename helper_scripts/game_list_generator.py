@@ -175,7 +175,10 @@ def load_games_from_json(db_name, json_file):
 
 
 if __name__ == "__main__":
-    arg = sys.argv[1]
+    try:
+        arg = sys.argv[1]
+    except:
+        print('available args: entry, load_json, create_db, export_json')
     if arg == "entry":
         main()
     elif arg == "load_json":
