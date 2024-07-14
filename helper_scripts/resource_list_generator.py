@@ -184,6 +184,7 @@ if __name__ == "__main__":
         arg = sys.argv[1]
     except:
         print('available args: entry, load_json, create_db, export_json')
+        exit()
     if arg == "entry":
         main()
     elif arg == "load_json":
