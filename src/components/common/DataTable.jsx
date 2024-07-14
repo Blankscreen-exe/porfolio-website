@@ -51,11 +51,11 @@ export default function DataTable({ data, columns, colVisibility={} }) {
   };
   const handleNextPage = (event) => {
     table.nextPage();
-    setCurrentPageNumber(prevState => table.options.state.pagination.pageIndex+1);
+    setCurrentPageNumber(table.options.state.pagination.pageIndex+1);
   };
   const handlePrevPage = (event) => {
     table.previousPage();
-    setCurrentPageNumber(table.options.state.pagination.pageIndex);
+    setCurrentPageNumber(table.options.state.pagination.pageIndex-1);
   };
   const handleFirstPage = (event) => {
     table.setPageIndex(0);
