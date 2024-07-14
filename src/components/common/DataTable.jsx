@@ -51,11 +51,12 @@ export default function DataTable({ data, columns, colVisibility={} }) {
   };
   const handleNextPage = (event) => {
     table.nextPage();
-    setCurrentPageNumber(prevState => table.options.state.pagination.pageIndex+1);
+    // console.log(table.getState())
+    setCurrentPageNumber(prevState => table.getState().pagination.pageIndex+1);
   };
   const handlePrevPage = (event) => {
     table.previousPage();
-    setCurrentPageNumber(prevState => table.options.state.pagination.pageIndex+1);
+    setCurrentPageNumber(prevState => table.getState().pagination.pageIndex+1);
   };
   const handleFirstPage = (event) => {
     table.setPageIndex(0);
@@ -65,7 +66,7 @@ export default function DataTable({ data, columns, colVisibility={} }) {
     table.setPageIndex(table.getPageCount() - 1);
     setCurrentPageNumber(table.getPageCount());
   };
-  
+  console.log(table.getState()) 
   return (
     <div className="">
       <TextInputFilter
