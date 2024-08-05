@@ -188,7 +188,7 @@ if __name__ == "__main__":
     if arg == "entry":
         main()
     elif arg == "load_json":
-        load_games_from_json(db_name, "../src/data/devResourceList.json")
+        load_games_from_json(DB_NAME, "../src/data/devResourceList.json")
     elif arg == "create_db":
         create_database(DB_NAME)
     elif arg == "export_json":
