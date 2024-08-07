@@ -689,6 +689,18 @@
     },
     {
         "id": 58,
+        "title": "SQL Academy",
+        "provider": "SQL Academy",
+        "recommendation": 4,
+        "review": "It is a good place to learn SQL from.",
+        "link": "https://sql-academy.org/en",
+        "topics": [
+            "SQL",
+            "Database"
+        ]
+    },
+    {
+        "id": 59,
         "title": "Software Engineering Tutorial",
         "provider": "Guru99",
         "recommendation": null,
@@ -699,7 +711,7 @@
         ]
     },
     {
-        "id": 59,
+        "id": 60,
         "title": "Spring Quick Start Guide",
         "provider": "Spring",
         "recommendation": null,
@@ -711,7 +723,7 @@
         ]
     },
     {
-        "id": 60,
+        "id": 61,
         "title": "System Design Primer",
         "provider": "donnemartin",
         "recommendation": null,
@@ -722,7 +734,7 @@
         ]
     },
     {
-        "id": 61,
+        "id": 62,
         "title": "Test Driven Development in Django",
         "provider": "PSF",
         "recommendation": 4,
@@ -735,7 +747,7 @@
         ]
     },
     {
-        "id": 62,
+        "id": 63,
         "title": "The Complete PyQT6 Tutorial",
         "provider": "pythonguis",
         "recommendation": null,
@@ -747,7 +759,7 @@
         ]
     },
     {
-        "id": 63,
+        "id": 64,
         "title": "The Documentation System",
         "provider": "Divio",
         "recommendation": null,
@@ -758,7 +770,7 @@
         ]
     },
     {
-        "id": 64,
+        "id": 65,
         "title": "Training Custom Object Detector",
         "provider": "Tensorflow",
         "recommendation": null,
@@ -771,7 +783,7 @@
         ]
     },
     {
-        "id": 65,
+        "id": 66,
         "title": "What is Microsoft Fabric? How to Build a Customer Segmentation Project",
         "provider": "FreeCodeCamp",
         "recommendation": null,
@@ -782,7 +794,7 @@
         ]
     },
     {
-        "id": 66,
+        "id": 67,
         "title": "flat assembler",
         "provider": "Tomasz Grysztar",
         "recommendation": 5,
@@ -793,7 +805,7 @@
         ]
     },
     {
-        "id": 67,
+        "id": 68,
         "title": "hackerone",
         "provider": "hackerone",
         "recommendation": null,
