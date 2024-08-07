@@ -783,6 +783,17 @@
     },
     {
         "id": 66,
+        "title": "flat assembler",
+        "provider": "Tomasz Grysztar",
+        "recommendation": 5,
+        "review": null,
+        "link": "https://flatassembler.net",
+        "topics": [
+            "assembly"
+        ]
+    },
+    {
+        "id": 67,
         "title": "hackerone",
         "provider": "hackerone",
         "recommendation": null,
