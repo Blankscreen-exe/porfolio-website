@@ -894,6 +894,19 @@
     },
     {
         "id": 69,
+        "title": "Tenchu: Shadow Assassins",
+        "status": "finished",
+        "recommendation": 5,
+        "review": "I absolutely loved the game mechanics more than I did the atmosphere and story which was also great. You play as a ninja and feel the environment around you. Unlike other FPS games where you go and kill whatever you see, this game is focused on stealth, just like a how a ninja should go about doing their thing. You have an arsenal of ways for insta killing. <br/>It almost felt like playing Thief but that game is also good on its own too. A true masterpiece overall and a must play for a ninja nerd.",
+        "studio": "From Software",
+        "genre": [
+            "stealth",
+            "action",
+            "adventure"
+        ]
+    },
+    {
+        "id": 70,
         "title": "The Punisher",
         "status": "finished",
         "recommendation": 3,
@@ -904,7 +917,7 @@
         ]
     },
     {
-        "id": 70,
+        "id": 71,
         "title": "Toejam And Earl",
         "status": "finished",
         "recommendation": 5,
@@ -917,7 +930,7 @@
         ]
     },
     {
-        "id": 71,
+        "id": 72,
         "title": "Touhou Luna Nights",
         "status": "playing",
         "recommendation": 5,
@@ -932,7 +945,7 @@
         ]
     },
     {
-        "id": 72,
+        "id": 73,
         "title": "Turnip Boy",
         "status": null,
         "recommendation": null,
@@ -946,7 +959,7 @@
         ]
     },
     {
-        "id": 73,
+        "id": 74,
         "title": "Undertale",
         "status": "finished",
         "recommendation": 5,
@@ -960,7 +973,7 @@
         ]
     },
     {
-        "id": 74,
+        "id": 75,
         "title": "Valkyrie Profile: Lenneth",
         "status": "finished",
         "recommendation": 5,
@@ -974,7 +987,7 @@
         ]
     },
     {
-        "id": 75,
+        "id": 76,
         "title": "World Of Horror",
         "status": "playing",
         "recommendation": 5,
@@ -989,7 +1002,7 @@
         ]
     },
     {
-        "id": 76,
+        "id": 77,
         "title": "Yuppie Psycho",
         "status": "finished",
         "recommendation": 5,
@@ -1003,7 +1016,7 @@
         ]
     },
     {
-        "id": 77,
+        "id": 78,
         "title": "infernax",
         "status": "finished",
         "recommendation": 3,
@@ -1017,7 +1030,7 @@
         ]
     },
     {
-        "id": 78,
+        "id": 79,
         "title": "steel assault",
         "status": null,
         "recommendation": null,
