@@ -1,5 +1,20 @@
 [
     {
+        "title": "When You Get Started As A Junior Developer",
+        "description": "I will be sharing stories about what I did (or at least wished that I should have done) when I first got hired as a junior developer. There were some things that I was right about and some which I didn't think of much but proved to be very beneficial in the long run.",
+        "tags": [
+            "development", 
+            "advice", 
+            "career advice", 
+            "software development",
+            "careers"       
+        ],
+        "mediumUrl": "https://medium.com/@hammad.ai/when-you-get-started-as-a-junior-developer-d2c65057b4bf",
+        "hashnodeUrl": "#",
+        "publishDate": "Aug 2024",
+        "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:828/format:webp/0*5Z9CifeMjlxj7f0X"
+    },
+    {
         "title": "Useful TMUX Plugins Which I Frequently Use At Work",
         "description": "Looking forward to expanding your arsenal in TMUX? I can tell you which weapons to choose and where to use them.",
         "tags": [
@@ -14,7 +29,7 @@
         "publishDate": "Aug 2024",
         "thumbnailUrl": "https://miro.medium.com/v2/resize:fit:640/format:webp/1*YFqlTszYpVHQcFayo5-l2g.png"
     },
-	{
+    {
         "title": "How I Learned TMUX & Became A Workflow Ninja",
         "description": "This is a breakdown of how I learned TMUX without getting tangled into the plethora of features it offers, and how I mastered it bit by bit.",
         "tags": [
