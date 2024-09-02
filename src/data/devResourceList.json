@@ -715,6 +715,18 @@
     },
     {
         "id": 60,
+        "title": "Programming Zero Knowledge Proof: From Zero To Hero",
+        "provider": "zkintro.com",
+        "recommendation": null,
+        "review": null,
+        "link": "https://zkintro.com/articles/programming-zkps-from-zero-to-hero",
+        "topics": [
+            "zeroknowledge proof",
+            "group signatures"
+        ]
+    },
+    {
+        "id": 61,
         "title": "Programming in assembly language tutorial",
         "provider": "mschwartz",
         "recommendation": 5,
@@ -726,7 +738,7 @@
         ]
     },
     {
-        "id": 61,
+        "id": 62,
         "title": "Python For Everybody",
         "provider": "Dr. Chuck",
         "recommendation": null,
@@ -738,7 +750,7 @@
         ]
     },
     {
-        "id": 62,
+        "id": 63,
         "title": "REST API Tutorial",
         "provider": "Restfulapi",
         "recommendation": null,
@@ -751,7 +763,7 @@
         ]
     },
     {
-        "id": 63,
+        "id": 64,
         "title": "React Hooks Simplified",
         "provider": "Web Dev Simplified",
         "recommendation": null,
@@ -763,7 +775,7 @@
         ]
     },
     {
-        "id": 64,
+        "id": 65,
         "title": "Reverse Engineering For Everyone",
         "provider": "mytechnotalent",
         "recommendation": null,
@@ -775,7 +787,7 @@
         ]
     },
     {
-        "id": 65,
+        "id": 66,
         "title": "SQL Academy",
         "provider": "SQL Academy",
         "recommendation": 4,
@@ -787,7 +799,7 @@
         ]
     },
     {
-        "id": 66,
+        "id": 67,
         "title": "Software Engineering Tutorial",
         "provider": "Guru99",
         "recommendation": null,
@@ -798,7 +810,7 @@
         ]
     },
     {
-        "id": 67,
+        "id": 68,
         "title": "Spring Quick Start Guide",
         "provider": "Spring",
         "recommendation": null,
@@ -810,7 +822,7 @@
         ]
     },
     {
-        "id": 68,
+        "id": 69,
         "title": "System Design Primer",
         "provider": "donnemartin",
         "recommendation": null,
@@ -821,7 +833,7 @@
         ]
     },
     {
-        "id": 69,
+        "id": 70,
         "title": "Test Driven Development in Django",
         "provider": "PSF",
         "recommendation": 4,
@@ -834,7 +846,7 @@
         ]
     },
     {
-        "id": 70,
+        "id": 71,
         "title": "The Complete PyQT6 Tutorial",
         "provider": "pythonguis",
         "recommendation": null,
@@ -846,7 +858,7 @@
         ]
     },
     {
-        "id": 71,
+        "id": 72,
         "title": "The Documentation System",
         "provider": "Divio",
         "recommendation": null,
@@ -857,7 +869,7 @@
         ]
     },
     {
-        "id": 72,
+        "id": 73,
         "title": "Training Custom Object Detector",
         "provider": "Tensorflow",
         "recommendation": null,
@@ -870,7 +882,7 @@
         ]
     },
     {
-        "id": 73,
+        "id": 74,
         "title": "What is Microsoft Fabric? How to Build a Customer Segmentation Project",
         "provider": "FreeCodeCamp",
         "recommendation": null,
@@ -881,7 +893,7 @@
         ]
     },
     {
-        "id": 74,
+        "id": 75,
         "title": "flat assembler",
         "provider": "Tomasz Grysztar",
         "recommendation": 5,
@@ -892,7 +904,7 @@
         ]
     },
     {
-        "id": 75,
+        "id": 76,
         "title": "hackerone",
         "provider": "hackerone",
         "recommendation": null,
