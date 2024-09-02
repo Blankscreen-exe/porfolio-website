@@ -427,6 +427,23 @@
     },
     {
         "id": 36,
+        "title": "How To Do In Java",
+        "provider": "howtodoinjava.com",
+        "recommendation": null,
+        "review": "It contains tutorials on java and its related technologies like Spring, Spring Boot, JUnit, Hibernate and also Interview preparation.",
+        "link": "https://howtodoinjava.com/",
+        "topics": [
+            "java",
+            "tutorials",
+            "spring",
+            "springboot",
+            "JUnit",
+            "Hibernate",
+            "interview"
+        ]
+    },
+    {
+        "id": 37,
         "title": "How to get started with Milvus",
         "provider": "Milvus",
         "recommendation": null,
@@ -437,7 +454,7 @@
         ]
     },
     {
-        "id": 37,
+        "id": 38,
         "title": "IBM Trainin Center",
         "provider": "IBM",
         "recommendation": 4,
@@ -448,7 +465,7 @@
         ]
     },
     {
-        "id": 38,
+        "id": 39,
         "title": "Introduction to Statistics",
         "provider": "Stanford",
         "recommendation": null,
@@ -459,7 +476,7 @@
         ]
     },
     {
-        "id": 39,
+        "id": 40,
         "title": "JIRA Tutorial for beginners",
         "provider": "Guru99",
         "recommendation": null,
@@ -470,7 +487,7 @@
         ]
     },
     {
-        "id": 40,
+        "id": 41,
         "title": "Jenkins Basics Tutorial",
         "provider": "Guru99",
         "recommendation": null,
@@ -481,7 +498,7 @@
         ]
     },
     {
-        "id": 41,
+        "id": 42,
         "title": "JetBrains Academy",
         "provider": "JetBrains",
         "recommendation": 5,
@@ -497,7 +514,7 @@
         ]
     },
     {
-        "id": 42,
+        "id": 43,
         "title": "Learn Assembly The Hard Way",
         "provider": "MahadMuhammad",
         "recommendation": null,
@@ -509,7 +526,7 @@
         ]
     },
     {
-        "id": 43,
+        "id": 44,
         "title": "Learn MongoDB",
         "provider": "MongoDB",
         "recommendation": 5,
@@ -522,7 +539,7 @@
         ]
     },
     {
-        "id": 44,
+        "id": 45,
         "title": "Learn Python",
         "provider": "ronreiter",
         "recommendation": null,
@@ -534,7 +551,7 @@
         ]
     },
     {
-        "id": 45,
+        "id": 46,
         "title": "Learn Spring Boot",
         "provider": "Baeldung",
         "recommendation": null,
@@ -546,7 +563,7 @@
         ]
     },
     {
-        "id": 46,
+        "id": 47,
         "title": "Learn Three.js By Building 5 Projects",
         "provider": "FreeCodeCamp",
         "recommendation": null,
@@ -557,7 +574,7 @@
         ]
     },
     {
-        "id": 47,
+        "id": 48,
         "title": "Libhunt",
         "provider": "libhunt.com",
         "recommendation": 5,
@@ -570,7 +587,7 @@
         ]
     },
     {
-        "id": 48,
+        "id": 49,
         "title": "Linux Guide",
         "provider": "Baeldung",
         "recommendation": null,
@@ -583,7 +600,7 @@
         ]
     },
     {
-        "id": 49,
+        "id": 50,
         "title": "List of Free Learning Resources In Many Languages",
         "provider": "EbookFoundation",
         "recommendation": null,
@@ -595,7 +612,7 @@
         ]
     },
     {
-        "id": 50,
+        "id": 51,
         "title": "MalAPI",
         "provider": "mrd0x",
         "recommendation": null,
@@ -606,7 +623,7 @@
         ]
     },
     {
-        "id": 51,
+        "id": 52,
         "title": "Network Technician Course",
         "provider": "SkillsForAll",
         "recommendation": null,
@@ -617,7 +634,7 @@
         ]
     },
     {
-        "id": 52,
+        "id": 53,
         "title": "Neuromatch computational neuroscience course",
         "provider": "Neuromatch",
         "recommendation": null,
@@ -630,7 +647,7 @@
         ]
     },
     {
-        "id": 53,
+        "id": 54,
         "title": "OWASP",
         "provider": "OWASP",
         "recommendation": null,
@@ -641,7 +658,7 @@
         ]
     },
     {
-        "id": 54,
+        "id": 55,
         "title": "Operating System Course",
         "provider": "Guru99",
         "recommendation": null,
@@ -652,7 +669,7 @@
         ]
     },
     {
-        "id": 55,
+        "id": 56,
         "title": "Operations Research By Solomon Getachew",
         "provider": "Solomon Getachew",
         "recommendation": null,
@@ -664,7 +681,7 @@
         ]
     },
     {
-        "id": 56,
+        "id": 57,
         "title": "Operations Research by Yong Wang",
         "provider": "Binghamton University",
         "recommendation": null,
@@ -676,7 +693,7 @@
         ]
     },
     {
-        "id": 57,
+        "id": 58,
         "title": "Play With Docker Classroom",
         "provider": "Marcos Nils, Jonathan Leibiusky",
         "recommendation": 5,
@@ -688,7 +705,7 @@
         ]
     },
     {
-        "id": 58,
+        "id": 59,
         "title": "Postgresql Tutorial",
         "provider": "Postgresql",
         "recommendation": null,
@@ -700,7 +717,7 @@
         ]
     },
     {
-        "id": 59,
+        "id": 60,
         "title": "Power Shell Utilities",
         "provider": "farag2",
         "recommendation": null,
@@ -714,7 +731,7 @@
         ]
     },
     {
-        "id": 60,
+        "id": 61,
         "title": "Programming Zero Knowledge Proof: From Zero To Hero",
         "provider": "zkintro.com",
         "recommendation": null,
@@ -726,7 +743,7 @@
         ]
     },
     {
-        "id": 61,
+        "id": 62,
         "title": "Programming in assembly language tutorial",
         "provider": "mschwartz",
         "recommendation": 5,
@@ -738,7 +755,7 @@
         ]
     },
     {
-        "id": 62,
+        "id": 63,
         "title": "Python For Everybody",
         "provider": "Dr. Chuck",
         "recommendation": null,
@@ -750,7 +767,7 @@
         ]
     },
     {
-        "id": 63,
+        "id": 64,
         "title": "REST API Tutorial",
         "provider": "Restfulapi",
         "recommendation": null,
@@ -763,7 +780,7 @@
         ]
     },
     {
-        "id": 64,
+        "id": 65,
         "title": "React Hooks Simplified",
         "provider": "Web Dev Simplified",
         "recommendation": null,
@@ -775,7 +792,7 @@
         ]
     },
     {
-        "id": 65,
+        "id": 66,
         "title": "Reverse Engineering For Everyone",
         "provider": "mytechnotalent",
         "recommendation": null,
@@ -787,7 +804,7 @@
         ]
     },
     {
-        "id": 66,
+        "id": 67,
         "title": "SQL Academy",
         "provider": "SQL Academy",
         "recommendation": 4,
@@ -799,7 +816,7 @@
         ]
     },
     {
-        "id": 67,
+        "id": 68,
         "title": "Software Engineering Tutorial",
         "provider": "Guru99",
         "recommendation": null,
@@ -810,7 +827,7 @@
         ]
     },
     {
-        "id": 68,
+        "id": 69,
         "title": "Spring Quick Start Guide",
         "provider": "Spring",
         "recommendation": null,
@@ -822,7 +839,7 @@
         ]
     },
     {
-        "id": 69,
+        "id": 70,
         "title": "System Design Primer",
         "provider": "donnemartin",
         "recommendation": null,
@@ -833,7 +850,7 @@
         ]
     },
     {
-        "id": 70,
+        "id": 71,
         "title": "Test Driven Development in Django",
         "provider": "PSF",
         "recommendation": 4,
@@ -846,7 +863,7 @@
         ]
     },
     {
-        "id": 71,
+        "id": 72,
         "title": "The Complete PyQT6 Tutorial",
         "provider": "pythonguis",
         "recommendation": null,
@@ -858,7 +875,7 @@
         ]
     },
     {
-        "id": 72,
+        "id": 73,
         "title": "The Documentation System",
         "provider": "Divio",
         "recommendation": null,
@@ -869,7 +886,7 @@
         ]
     },
     {
-        "id": 73,
+        "id": 74,
         "title": "Training Custom Object Detector",
         "provider": "Tensorflow",
         "recommendation": null,
@@ -882,7 +899,7 @@
         ]
     },
     {
-        "id": 74,
+        "id": 75,
         "title": "What is Microsoft Fabric? How to Build a Customer Segmentation Project",
         "provider": "FreeCodeCamp",
         "recommendation": null,
@@ -893,7 +910,7 @@
         ]
     },
     {
-        "id": 75,
+        "id": 76,
         "title": "flat assembler",
         "provider": "Tomasz Grysztar",
         "recommendation": 5,
@@ -904,7 +921,7 @@
         ]
     },
     {
-        "id": 76,
+        "id": 77,
         "title": "hackerone",
         "provider": "hackerone",
         "recommendation": null,
