@@ -736,6 +736,18 @@
     },
     {
         "id": 61,
+        "title": "Operating Systems: Three Easy Pieces",
+        "provider": "University of Wisconsin-Madison",
+        "recommendation": 5,
+        "review": "First of all it a FREE online book. Although I haven't read it in detail but I have crawled through the topics it discusses.<br/>I remember that learning about OS was very boring, especially when there was no code involved. After all, we don't understand unless there is some tangible mechanics to understand. Not only this book has got your back on tangible examples, but also contains comprehension questions, homework(which includes code) and projects.",
+        "link": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+        "topics": [
+            "OS",
+            "projects"
+        ]
+    },
+    {
+        "id": 62,
         "title": "Operations Research By Solomon Getachew",
         "provider": "Solomon Getachew",
         "recommendation": null,
@@ -747,7 +759,7 @@
         ]
     },
     {
-        "id": 62,
+        "id": 63,
         "title": "Operations Research by Yong Wang",
         "provider": "Binghamton University",
         "recommendation": null,
@@ -759,7 +771,7 @@
         ]
     },
     {
-        "id": 63,
+        "id": 64,
         "title": "Play With Docker Classroom",
         "provider": "Marcos Nils, Jonathan Leibiusky",
         "recommendation": 5,
@@ -771,7 +783,7 @@
         ]
     },
     {
-        "id": 64,
+        "id": 65,
         "title": "Postgresql Tutorial",
         "provider": "Postgresql",
         "recommendation": null,
@@ -783,7 +795,7 @@
         ]
     },
     {
-        "id": 65,
+        "id": 66,
         "title": "Power Shell Utilities",
         "provider": "farag2",
         "recommendation": null,
@@ -797,7 +809,7 @@
         ]
     },
     {
-        "id": 66,
+        "id": 67,
         "title": "Programming Zero Knowledge Proof: From Zero To Hero",
         "provider": "zkintro.com",
         "recommendation": null,
@@ -809,7 +821,7 @@
         ]
     },
     {
-        "id": 67,
+        "id": 68,
         "title": "Programming in assembly language tutorial",
         "provider": "mschwartz",
         "recommendation": 5,
@@ -821,7 +833,7 @@
         ]
     },
     {
-        "id": 68,
+        "id": 69,
         "title": "Python For Everybody",
         "provider": "Dr. Chuck",
         "recommendation": null,
@@ -833,7 +845,7 @@
         ]
     },
     {
-        "id": 69,
+        "id": 70,
         "title": "REST API Tutorial",
         "provider": "Restfulapi",
         "recommendation": null,
@@ -846,7 +858,7 @@
         ]
     },
     {
-        "id": 70,
+        "id": 71,
         "title": "React Hooks Simplified",
         "provider": "Web Dev Simplified",
         "recommendation": null,
@@ -858,7 +870,7 @@
         ]
     },
     {
-        "id": 71,
+        "id": 72,
         "title": "Reverse Engineering For Everyone",
         "provider": "mytechnotalent",
         "recommendation": null,
@@ -870,7 +882,7 @@
         ]
     },
     {
-        "id": 72,
+        "id": 73,
         "title": "SQL Academy",
         "provider": "SQL Academy",
         "recommendation": 4,
@@ -882,7 +894,7 @@
         ]
     },
     {
-        "id": 73,
+        "id": 74,
         "title": "Software Engineering Tutorial",
         "provider": "Guru99",
         "recommendation": null,
@@ -893,7 +905,7 @@
         ]
     },
     {
-        "id": 74,
+        "id": 75,
         "title": "Spring Quick Start Guide",
         "provider": "Spring",
         "recommendation": null,
@@ -905,7 +917,7 @@
         ]
     },
     {
-        "id": 75,
+        "id": 76,
         "title": "System Design Primer",
         "provider": "donnemartin",
         "recommendation": null,
@@ -916,7 +928,7 @@
         ]
     },
     {
-        "id": 76,
+        "id": 77,
         "title": "Test Driven Development in Django",
         "provider": "PSF",
         "recommendation": 4,
@@ -929,7 +941,7 @@
         ]
     },
     {
-        "id": 77,
+        "id": 78,
         "title": "The Complete PyQT6 Tutorial",
         "provider": "pythonguis",
         "recommendation": null,
@@ -941,7 +953,7 @@
         ]
     },
     {
-        "id": 78,
+        "id": 79,
         "title": "The Documentation System",
         "provider": "Divio",
         "recommendation": null,
@@ -952,7 +964,7 @@
         ]
     },
     {
-        "id": 79,
+        "id": 80,
         "title": "Training Custom Object Detector",
         "provider": "Tensorflow",
         "recommendation": null,
@@ -965,7 +977,7 @@
         ]
     },
     {
-        "id": 80,
+        "id": 81,
         "title": "What is Microsoft Fabric? How to Build a Customer Segmentation Project",
         "provider": "FreeCodeCamp",
         "recommendation": null,
@@ -976,7 +988,7 @@
         ]
     },
     {
-        "id": 81,
+        "id": 82,
         "title": "flat assembler",
         "provider": "Tomasz Grysztar",
         "recommendation": 5,
@@ -987,7 +999,7 @@
         ]
     },
     {
-        "id": 82,
+        "id": 83,
         "title": "hackerone",
         "provider": "hackerone",
         "recommendation": null,
