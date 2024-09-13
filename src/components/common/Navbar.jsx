@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
 // Constants
@@ -15,6 +15,7 @@ import { classAdd, getClassesFromConstants } from '../../helpers/common'
 import ThemeSwitch from './ThemeSwitch'
 
 function NavBar(props) {
+  const [isDropdownOpen, setDropdownOpen] = useState(false); // Add state to track dropdown visibility
 
   const navLinkClasses = classAdd(getClassesFromConstants(classLists.navLink), "flex", "flex-row", "items-center")
 
@@ -110,7 +111,15 @@ function NavBar(props) {
       url: appConstants.routes.contacts
     },
     
-  ]
+  ];
+
+  const toggleDropdown = () => {
+    setDropdownOpen(!isDropdownOpen); // Toggle dropdown open/close state
+  };
+
+  const closeDropdown = () => {
+    setDropdownOpen(false); // Close dropdown when a link is clicked
+  };
 
   return (
     <div
@@ -122,7 +131,7 @@ function NavBar(props) {
           <div className="dropdown">
             {/* MSG: made this dropdown view permanenet */}
             {/* <div tabIndex="0" role="button" className="btn btn-ghost xl:hidden"> */}
-            <div tabIndex="0" role="button" className="btn btn-ghost hover:bg-bg2">
+            <div tabIndex="0" role="button" className="btn btn-ghost hover:bg-bg2" onClick={toggleDropdown}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5 fill-current"
@@ -138,13 +147,14 @@ function NavBar(props) {
                 />
               </svg>
             </div>
+            {isDropdownOpen && (
             <ul
               tabIndex="0"
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
 
               {navLinkList.map( (item, ind) => {
-                return (<li key={ind} >
+                return (<li key={ind} onClick={closeDropdown}>
                   {/* MSG: disabled link on parent element */}
                   {/* {<NavLink to={item.url}>{item.name}</NavLink>} */}
                   {item.children 
@@ -153,7 +163,7 @@ function NavBar(props) {
                   {item.children && (
                     <ul className="p-2">
                       {item.children.map( (item, ind ) => {
-                        return (<li key={ind} ><NavLink to={item.url} className="text-contentLink hover:text-contentLinkHover">{item.name}</NavLink></li>)
+                        return (<li key={ind} onClick={closeDropdown}><NavLink to={item.url} className="text-contentLink hover:text-contentLinkHover">{item.name}</NavLink></li>)
                       })}
                     </ul>
                   )}
@@ -161,6 +171,7 @@ function NavBar(props) {
               )})}
 
             </ul>
+            )}
           </div>
             <NavLink to={appConstants.routes.home} className="text-contentLink hover:text-primary transition-colors text-xl mx-2">
               <span className='text-content hover:text-primary '>
@@ -179,7 +190,7 @@ function NavBar(props) {
         <ul className="menu menu-horizontal px-1 gap-5">
 
           {navLinkList.map( (item, ind) => {
-              return (<li key={ind}>
+              return (<li key={ind} onClick={closeDropdown}>
                 <>
                   {item.children ? (
                     <details>
@@ -187,7 +198,7 @@ function NavBar(props) {
                       {item.children && (
                         <ul className="p-2">
                           {item.children.map( (item, ind ) => {
-                            return (<li key={ind}><NavLink to={item.url}>{item.name}</NavLink></li>)
+                            return (<li key={ind} onClick={closeDropdown}><NavLink to={item.url}>{item.name}</NavLink></li>)
                           })}
                         </ul>
                       )}
