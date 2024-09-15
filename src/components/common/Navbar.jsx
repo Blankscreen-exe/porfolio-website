@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef  } from 'react'
 import PropTypes from 'prop-types'
 
 // Constants
@@ -16,6 +16,7 @@ import ThemeSwitch from './ThemeSwitch'
 
 function NavBar(props) {
   const [isDropdownOpen, setDropdownOpen] = useState(false); // Add state to track dropdown visibility
+  const dropdownRef = useRef(null); // Reference for the dropdown menu
 
   const navLinkClasses = classAdd(getClassesFromConstants(classLists.navLink), "flex", "flex-row", "items-center")
 
@@ -121,13 +122,32 @@ function NavBar(props) {
     setDropdownOpen(false); // Close dropdown when a link is clicked
   };
 
+  // Add event listener to handle clicks outside the dropdown
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setDropdownOpen(false); // Close the dropdown if clicked outside
+      }
+    };
+
+    if (isDropdownOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside); // Clean up the event listener on unmount
+    };
+  }, [isDropdownOpen]);
+
   return (
     <div
     id="navbar"
     className="navbar bg-bg1 rounded-md shadow-md m-auto mt-10 flex justify-between sticky opacity-90  backdrop-blur-3xl bg-tertiary/40 z-[100]"
   >
       <div className="navbar-start w-full flex flex-row justify-between ">
-        <div className=''>
+        <div className='' ref={dropdownRef}>
           <div className="dropdown">
             {/* MSG: made this dropdown view permanenet */}
             {/* <div tabIndex="0" role="button" className="btn btn-ghost xl:hidden"> */}
