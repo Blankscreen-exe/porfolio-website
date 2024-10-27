@@ -735,6 +735,20 @@
     },
     {
         "id": 61,
+        "title": "Online Labs and Playground",
+        "provider": "labex.io",
+        "recommendation": 5,
+        "review": "They have several online in-browser labs to mess around with ranging from linux terminals tp C++ labs. It's in a virtual and isolated environment so you don't have to worry about breaking anything. Good for those who are just starting to learn about stuff without the hassle of setting up an environment dedicated to the technologies they want to use.<br/><br/>They also have skill trees, which can assist you in figuring out what to learn next in your career path.<br/><br/>Adding icing on top, they have several project guidelines and tutorials as well which can get you some hand-on.",
+        "link": "https://labex.io/tutorials/linux-online-linux-playground-372915",
+        "topics": [
+            "labs",
+            "playgrounds",
+            "tutorials",
+            "roadmaps"
+        ]
+    },
+    {
+        "id": 62,
         "title": "OpenStax",
         "provider": "openstax.org",
         "recommendation": 5,
@@ -747,7 +761,7 @@
         ]
     },
     {
-        "id": 62,
+        "id": 63,
         "title": "Operating System Course",
         "provider": "Guru99",
         "recommendation": null,
@@ -758,7 +772,7 @@
         ]
     },
     {
-        "id": 63,
+        "id": 64,
         "title": "Operating Systems: Three Easy Pieces",
         "provider": "University of Wisconsin-Madison",
         "recommendation": 5,
@@ -770,7 +784,7 @@
         ]
     },
     {
-        "id": 64,
+        "id": 65,
         "title": "Operations Research By Solomon Getachew",
         "provider": "Solomon Getachew",
         "recommendation": null,
@@ -782,7 +796,7 @@
         ]
     },
     {
-        "id": 65,
+        "id": 66,
         "title": "Operations Research by Yong Wang",
         "provider": "Binghamton University",
         "recommendation": null,
@@ -794,7 +808,7 @@
         ]
     },
     {
-        "id": 66,
+        "id": 67,
         "title": "Play With Docker Classroom",
         "provider": "Marcos Nils, Jonathan Leibiusky",
         "recommendation": 5,
@@ -806,7 +820,7 @@
         ]
     },
     {
-        "id": 67,
+        "id": 68,
         "title": "Postgresql Tutorial",
         "provider": "Postgresql",
         "recommendation": null,
@@ -818,7 +832,7 @@
         ]
     },
     {
-        "id": 68,
+        "id": 69,
         "title": "Power Shell Utilities",
         "provider": "farag2",
         "recommendation": null,
@@ -832,7 +846,7 @@
         ]
     },
     {
-        "id": 69,
+        "id": 70,
         "title": "Programming Zero Knowledge Proof: From Zero To Hero",
         "provider": "zkintro.com",
         "recommendation": null,
@@ -844,7 +858,7 @@
         ]
     },
     {
-        "id": 70,
+        "id": 71,
         "title": "Programming in assembly language tutorial",
         "provider": "mschwartz",
         "recommendation": 5,
@@ -856,7 +870,7 @@
         ]
     },
     {
-        "id": 71,
+        "id": 72,
         "title": "Python For Everybody",
         "provider": "Dr. Chuck",
         "recommendation": null,
@@ -868,7 +882,7 @@
         ]
     },
     {
-        "id": 72,
+        "id": 73,
         "title": "REST API Tutorial",
         "provider": "Restfulapi",
         "recommendation": null,
@@ -881,7 +895,7 @@
         ]
     },
     {
-        "id": 73,
+        "id": 74,
         "title": "React Hooks Simplified",
         "provider": "Web Dev Simplified",
         "recommendation": null,
@@ -893,7 +907,7 @@
         ]
     },
     {
-        "id": 74,
+        "id": 75,
         "title": "Reverse Engineering For Everyone",
         "provider": "mytechnotalent",
         "recommendation": null,
@@ -905,7 +919,7 @@
         ]
     },
     {
-        "id": 75,
+        "id": 76,
         "title": "SQL Academy",
         "provider": "SQL Academy",
         "recommendation": 4,
@@ -917,7 +931,7 @@
         ]
     },
     {
-        "id": 76,
+        "id": 77,
         "title": "Software Engineering Tutorial",
         "provider": "Guru99",
         "recommendation": null,
@@ -928,7 +942,7 @@
         ]
     },
     {
-        "id": 77,
+        "id": 78,
         "title": "Spring Quick Start Guide",
         "provider": "Spring",
         "recommendation": null,
@@ -940,7 +954,7 @@
         ]
     },
     {
-        "id": 78,
+        "id": 79,
         "title": "System Design Primer",
         "provider": "donnemartin",
         "recommendation": null,
@@ -951,7 +965,7 @@
         ]
     },
     {
-        "id": 79,
+        "id": 80,
         "title": "Test Driven Development in Django",
         "provider": "PSF",
         "recommendation": 4,
@@ -964,7 +978,7 @@
         ]
     },
     {
-        "id": 80,
+        "id": 81,
         "title": "The Complete PyQT6 Tutorial",
         "provider": "pythonguis",
         "recommendation": null,
@@ -976,7 +990,7 @@
         ]
     },
     {
-        "id": 81,
+        "id": 82,
         "title": "The Documentation System",
         "provider": "Divio",
         "recommendation": null,
@@ -987,7 +1001,7 @@
         ]
     },
     {
-        "id": 82,
+        "id": 83,
         "title": "Training Custom Object Detector",
         "provider": "Tensorflow",
         "recommendation": null,
@@ -1000,7 +1014,7 @@
         ]
     },
     {
-        "id": 83,
+        "id": 84,
         "title": "What is Microsoft Fabric? How to Build a Customer Segmentation Project",
         "provider": "FreeCodeCamp",
         "recommendation": null,
@@ -1011,7 +1025,7 @@
         ]
     },
     {
-        "id": 84,
+        "id": 85,
         "title": "flat assembler",
         "provider": "Tomasz Grysztar",
         "recommendation": 5,
@@ -1022,7 +1036,7 @@
         ]
     },
     {
-        "id": 85,
+        "id": 86,
         "title": "hackerone",
         "provider": "hackerone",
         "recommendation": null,
