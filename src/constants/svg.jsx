@@ -50,6 +50,7 @@ import apachekafka from './svg/techstack/other/apachekafka.svg'
 import apacheserver from './svg/techstack/other/apacheserver.svg'
 import celery from './svg/techstack/other/celery.svg'
 import rabbitmq from './svg/techstack/other/rabbitmq.svg'
+import sentry from './svg/techstack/other/sentry.svg'
 // database
 import postgresql from './svg/techstack/database/postgresql.svg'
 import redis from './svg/techstack/database/redis.svg'
@@ -835,7 +836,8 @@ export default {
       apachekafka,
       apacheserver,
       celery,
-      rabbitmq
+      rabbitmq,
+      sentry
     },
     frontend: {
       reactjs,
