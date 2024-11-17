@@ -366,6 +366,13 @@
             "imgUrl":"github",
             "fontColor":"",
             "bgColor":""
+        },
+        {
+            "name":"Sentry",
+            "url":"https://sentry.io/",
+            "imgUrl":"sentry",
+            "fontColor":"",
+            "bgColor":""
         }
     ]
 }
