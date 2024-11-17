@@ -2,10 +2,10 @@
     {
         "id": 1,
         "title": "AZ-104 Microsoft Azure Administrator Certification",
-        "provider": "Cybrary",
+        "link": "https://www.cybrary.it/course/az-104-microsoft-azure-administrator",
         "recommendation": null,
         "review": null,
-        "link": "https://www.cybrary.it/course/az-104-microsoft-azure-administrator",
+        "provider": "Cybrary",
         "topics": [
             "Azure"
         ]
@@ -13,10 +13,10 @@
     {
         "id": 2,
         "title": "Agile Methodology",
-        "provider": "Guru99",
+        "link": "https://www.guru99.com/agile-testing-course.html",
         "recommendation": null,
         "review": null,
-        "link": "https://www.guru99.com/agile-testing-course.html",
+        "provider": "Guru99",
         "topics": [
             "agile",
             "testing"
@@ -25,10 +25,10 @@
     {
         "id": 3,
         "title": "Agile Methodology: A beginners guide to agile method and SCRUM",
-        "provider": "softwaretestinghelp",
+        "link": "https://www.softwaretestinghelp.com/agile-scrum-methodology-for-development-and-testing/",
         "recommendation": null,
         "review": null,
-        "link": "https://www.softwaretestinghelp.com/agile-scrum-methodology-for-development-and-testing/",
+        "provider": "softwaretestinghelp",
         "topics": [
             "agile",
             "SCRUM"
@@ -37,10 +37,10 @@
     {
         "id": 4,
         "title": "Agile Project Management",
-        "provider": "Google",
+        "link": "https://www.coursera.org/learn/agile-project-management",
         "recommendation": null,
         "review": null,
-        "link": "https://www.coursera.org/learn/agile-project-management",
+        "provider": "Google",
         "topics": [
             "project management",
             "agile"
@@ -49,10 +49,10 @@
     {
         "id": 5,
         "title": "Apache Kafka Quick Start",
-        "provider": "Apache Kafka",
+        "link": "https://kafka.apache.org/quickstart",
         "recommendation": null,
         "review": null,
-        "link": "https://kafka.apache.org/quickstart",
+        "provider": "Apache Kafka",
         "topics": [
             "Apache Kafka"
         ]
@@ -60,10 +60,10 @@
     {
         "id": 6,
         "title": "Applied Data Science Lab",
-        "provider": "World Quant University",
+        "link": "https://www.wqu.edu/adsl",
         "recommendation": 5,
         "review": "Their course was very comprehensive and covered almost everything a data scientist should know. This course is a great choice for any beginner out there.",
-        "link": "https://www.wqu.edu/adsl",
+        "provider": "World Quant University",
         "topics": [
             "data science",
             "machine learning"
@@ -72,10 +72,10 @@
     {
         "id": 7,
         "title": "Artificial Intelligence roadmap",
-        "provider": "i.am.ai",
+        "link": "https://i.am.ai/roadmap/#note",
         "recommendation": 5,
         "review": "Out of all the roadmaps out there this one really hits the nail. It contains tangible instructions on \"what to do\" unlike several other roadmaps which only state the obvious.<br/>I personally found it likable that they explicitly said that jumping directly to deep learning is a \"no go\".",
-        "link": "https://i.am.ai/roadmap/#note",
+        "provider": "i.am.ai",
         "topics": [
             "roadmaps",
             "artificial intelligence",
@@ -86,10 +86,10 @@
     {
         "id": 8,
         "title": "Awesome Ricing",
-        "provider": "fosslife",
+        "link": "https://github.com/fosslife/awesome-ricing",
         "recommendation": 5,
         "review": "An extensive guide to ricing your linux distro. It seems to have everything wms, cli tools etc. It actually is an awesome repo.",
-        "link": "https://github.com/fosslife/awesome-ricing",
+        "provider": "fosslife",
         "topics": [
             "rice"
         ]
@@ -97,10 +97,10 @@
     {
         "id": 9,
         "title": "Basics of BrainF*ck",
-        "provider": "Katie",
+        "link": "https://gist.github.com/roachhd/dce54bec8ba55fb17d3a",
         "recommendation": null,
         "review": null,
-        "link": "https://gist.github.com/roachhd/dce54bec8ba55fb17d3a",
+        "provider": "Katie",
         "topics": [
             "BrainF*ck",
             "programming"
@@ -109,10 +109,10 @@
     {
         "id": 10,
         "title": "Books By Agiliq",
-        "provider": "Agiliq",
+        "link": "https://books.agiliq.com/en/latest/README.html",
         "recommendation": 5,
         "review": null,
-        "link": "https://books.agiliq.com/en/latest/README.html",
+        "provider": "Agiliq",
         "topics": [
             "python",
             "django"
@@ -121,10 +121,10 @@
     {
         "id": 11,
         "title": "Build a Free Website with Wordpress",
-        "provider": "Coursera",
+        "link": "https://www.coursera.org/projects/build-free-website-wordpress",
         "recommendation": null,
         "review": null,
-        "link": "https://www.coursera.org/projects/build-free-website-wordpress",
+        "provider": "Coursera",
         "topics": [
             "wordpress",
             "website design"
@@ -133,10 +133,10 @@
     {
         "id": 12,
         "title": "Building LLMs from the Ground Up",
-        "provider": "Ahead Of AI",
+        "link": "https://magazine.sebastianraschka.com/p/building-llms-from-the-ground-up",
         "recommendation": null,
         "review": null,
-        "link": "https://magazine.sebastianraschka.com/p/building-llms-from-the-ground-up",
+        "provider": "Ahead Of AI",
         "topics": [
             "AI",
             "LLM",
@@ -147,10 +147,10 @@
     {
         "id": 13,
         "title": "Business Analytics with Excel: Elementary to Advanced",
-        "provider": "John Hopkins University",
+        "link": "https://www.coursera.org/learn/business-analytics-excel",
         "recommendation": null,
         "review": null,
-        "link": "https://www.coursera.org/learn/business-analytics-excel",
+        "provider": "John Hopkins University",
         "topics": [
             "Business Analytics",
             "Excel",
@@ -160,10 +160,10 @@
     {
         "id": 14,
         "title": "CCNA Basics",
-        "provider": "Guru99",
+        "link": "https://www.guru99.com/introduction-ccna.html",
         "recommendation": null,
         "review": null,
-        "link": "https://www.guru99.com/introduction-ccna.html",
+        "provider": "Guru99",
         "topics": [
             "Networking"
         ]
@@ -171,10 +171,10 @@
     {
         "id": 15,
         "title": "CURL Cook Book",
-        "provider": "Catonmat",
+        "link": "https://catonmat.net/cookbooks/curl",
         "recommendation": null,
         "review": null,
-        "link": "https://catonmat.net/cookbooks/curl",
+        "provider": "Catonmat",
         "topics": [
             "CURL"
         ]
@@ -182,10 +182,10 @@
     {
         "id": 16,
         "title": "Caching in Django with REDIS",
-        "provider": "RealPython",
+        "link": "https://realpython.com/caching-in-django-with-redis/",
         "recommendation": 5,
         "review": "It explains everything there is to know about caching in django. Pretty much simplified to newbies to understand",
-        "link": "https://realpython.com/caching-in-django-with-redis/",
+        "provider": "RealPython",
         "topics": [
             "redis",
             "django",
@@ -195,10 +195,10 @@
     {
         "id": 17,
         "title": "Celery + Redis + Django",
-        "provider": "codingforentrepreneurs",
+        "link": "https://www.codingforentrepreneurs.com/blog/celery-redis-django/",
         "recommendation": null,
         "review": null,
-        "link": "https://www.codingforentrepreneurs.com/blog/celery-redis-django/",
+        "provider": "codingforentrepreneurs",
         "topics": [
             "celery",
             "redis",
@@ -210,10 +210,10 @@
     {
         "id": 18,
         "title": "Cloudflare Learning Center",
-        "provider": "Cloudflare",
+        "link": "https://www.cloudflare.com/learning/",
         "recommendation": 5,
         "review": null,
-        "link": "https://www.cloudflare.com/learning/",
+        "provider": "Cloudflare",
         "topics": [
             "cloudflare",
             "networking",
@@ -223,10 +223,10 @@
     {
         "id": 19,
         "title": "Code Project",
-        "provider": "codeproject.com",
+        "link": "https://www.codeproject.com",
         "recommendation": 5,
         "review": "This is a site where developers from around the world share their knowledge. Their are a plethora of resources/topics/code you can find here.",
-        "link": "https://www.codeproject.com",
+        "provider": "codeproject.com",
         "topics": [
             "tutorials",
             "knowledgebase"
@@ -235,10 +235,10 @@
     {
         "id": 20,
         "title": "Collection of Books By Al Sweigart",
-        "provider": "inventwithpython",
+        "link": "https://inventwithpython.com/",
         "recommendation": null,
         "review": null,
-        "link": "https://inventwithpython.com/",
+        "provider": "inventwithpython",
         "topics": [
             "programming",
             "python"
@@ -247,10 +247,10 @@
     {
         "id": 21,
         "title": "CompTIA A+ Full Video Course for Beginners",
-        "provider": "BurningIceTech",
+        "link": "https://www.youtube.com/watch?v=Yi3L8ZCX8zc&list=PLc6LqxQFwub_rksUc1FnWB9rwO2rf7qoz",
         "recommendation": null,
         "review": null,
-        "link": "https://www.youtube.com/watch?v=Yi3L8ZCX8zc&list=PLc6LqxQFwub_rksUc1FnWB9rwO2rf7qoz",
+        "provider": "BurningIceTech",
         "topics": [
             "networking"
         ]
@@ -258,10 +258,10 @@
     {
         "id": 22,
         "title": "Crackmes",
-        "provider": "crackmes",
+        "link": "https://crackmes.one",
         "recommendation": 5,
         "review": "A go-to place for software cracking practice",
-        "link": "https://crackmes.one",
+        "provider": "crackmes",
         "topics": [
             "crack",
             "reverse engineering"
@@ -270,10 +270,10 @@
     {
         "id": 23,
         "title": "Crow's Nest",
-        "provider": "cr-0w",
+        "link": "https://www.crow.rip/crows-nest",
         "recommendation": 5,
         "review": "Recommended to me by one hellova hacker friend of mine. She disappeared in the internet cables without a trace.",
-        "link": "https://www.crow.rip/crows-nest",
+        "provider": "cr-0w",
         "topics": [
             "malware development",
             "exploitation",
@@ -283,10 +283,10 @@
     {
         "id": 24,
         "title": "Cybersecurity Tutorial",
-        "provider": "golinuxcloud",
+        "link": "https://www.golinuxcloud.com/kali-linux-bootable-usb/",
         "recommendation": null,
         "review": "This is a text-based extensive walkthrough for different cybersecurity concepts.",
-        "link": "https://www.golinuxcloud.com/kali-linux-bootable-usb/",
+        "provider": "golinuxcloud",
         "topics": [
             "cybersecurity"
         ]
@@ -294,10 +294,10 @@
     {
         "id": 25,
         "title": "Database Engineering Complete Course",
-        "provider": "Nerd's Lesson",
+        "link": "https://www.youtube.com/watch?v=iwRneX7GIGI",
         "recommendation": null,
         "review": null,
-        "link": "https://www.youtube.com/watch?v=iwRneX7GIGI",
+        "provider": "Nerd's Lesson",
         "topics": [
             "database",
             "SQL"
@@ -306,10 +306,10 @@
     {
         "id": 26,
         "title": "Deep Dive Into Modern Web Development",
-        "provider": "fullstackopen",
+        "link": "https://fullstackopen.com/en/",
         "recommendation": null,
         "review": null,
-        "link": "https://fullstackopen.com/en/",
+        "provider": "fullstackopen",
         "topics": [
             "web dev",
             "react.js",
@@ -324,10 +324,10 @@
     {
         "id": 27,
         "title": "Design Patterns",
-        "provider": "Refactoring Guru",
+        "link": "https://refactoring.guru/",
         "recommendation": 5,
         "review": "This is one of the best resources to learn Design Patterns from",
-        "link": "https://refactoring.guru/",
+        "provider": "Refactoring Guru",
         "topics": [
             "design patterns"
         ]
@@ -335,10 +335,10 @@
     {
         "id": 28,
         "title": "Design Patterns Video Tutorial",
-        "provider": "Derek Banas",
+        "link": "https://www.youtube.com/playlist?list=PLF206E906175C7E07",
         "recommendation": null,
         "review": null,
-        "link": "https://www.youtube.com/playlist?list=PLF206E906175C7E07",
+        "provider": "Derek Banas",
         "topics": [
             "design patterns"
         ]
@@ -346,10 +346,10 @@
     {
         "id": 29,
         "title": "Developer Roadmap",
-        "provider": "roadmap",
+        "link": "https://roadmap.sh/",
         "recommendation": 5,
         "review": "This is the only stop for you if you are looking forward to a guided learning experience, You can find several roadmaps here, backend, frontend, devops, blockchain you name it. More are coming soon.",
-        "link": "https://roadmap.sh/",
+        "provider": "roadmap",
         "topics": [
             "guidelines",
             "roadmaps"
@@ -358,10 +358,10 @@
     {
         "id": 30,
         "title": "Django For Everybody",
-        "provider": "Dr. Chuck",
+        "link": "https://www.dj4e.com/",
         "recommendation": 5,
         "review": "He starts with the very basics and then dives deep into Django. Awesome choice for beginners, but I would recommend that you understand python and a few things about backend frameworks before taking this course.",
-        "link": "https://www.dj4e.com/",
+        "provider": "Dr. Chuck",
         "topics": [
             "django",
             "python"
@@ -370,10 +370,10 @@
     {
         "id": 31,
         "title": "Docker Hands-on Labs",
-        "provider": "Peitro Manzoni",
+        "link": "https://hackmd.io/@pmanzoni/Bremen2020/%2F%40pmanzoni%2FBJcpeAcML",
         "recommendation": null,
         "review": null,
-        "link": "https://hackmd.io/@pmanzoni/Bremen2020/%2F%40pmanzoni%2FBJcpeAcML",
+        "provider": "Peitro Manzoni",
         "topics": [
             "docker",
             "networking",
@@ -383,10 +383,10 @@
     {
         "id": 32,
         "title": "Docker Networking Hands-on Lab",
-        "provider": "Docker",
+        "link": "https://training.play-with-docker.com/docker-networking-hol/",
         "recommendation": 5,
         "review": null,
-        "link": "https://training.play-with-docker.com/docker-networking-hol/",
+        "provider": "Docker",
         "topics": [
             "docker",
             "networking"
@@ -395,10 +395,10 @@
     {
         "id": 33,
         "title": "Ethical Hacking Tutorial",
-        "provider": "Guru99",
+        "link": "https://www.guru99.com/ethical-hacking-tutorials.html",
         "recommendation": null,
         "review": null,
-        "link": "https://www.guru99.com/ethical-hacking-tutorials.html",
+        "provider": "Guru99",
         "topics": [
             "hacking"
         ]
@@ -406,10 +406,10 @@
     {
         "id": 34,
         "title": "Foundational C# Course with Microsoft",
-        "provider": "FreeCodeCamp",
+        "link": "https://www.freecodecamp.org/learn/foundational-c-sharp-with-microsoft/",
         "recommendation": 5,
         "review": null,
-        "link": "https://www.freecodecamp.org/learn/foundational-c-sharp-with-microsoft/",
+        "provider": "FreeCodeCamp",
         "topics": [
             "C#",
             "programming"
@@ -418,10 +418,10 @@
     {
         "id": 35,
         "title": "Functional Programming Slides",
-        "provider": "tony-scialo",
+        "link": "https://tony-scialo.github.io/slides-functional-programing/",
         "recommendation": null,
         "review": null,
-        "link": "https://tony-scialo.github.io/slides-functional-programing/",
+        "provider": "tony-scialo",
         "topics": [
             "functional programming"
         ]
@@ -429,10 +429,10 @@
     {
         "id": 36,
         "title": "Getting Started with picoCTF",
-        "provider": "picoCTF",
+        "link": "https://picoctf.org/get_started.html",
         "recommendation": null,
         "review": null,
-        "link": "https://picoctf.org/get_started.html",
+        "provider": "picoCTF",
         "topics": [
             "cyber security"
         ]
@@ -440,10 +440,10 @@
     {
         "id": 37,
         "title": "Git Book",
-        "provider": "Git",
+        "link": "https://www.git-scm.com/book/en/v2",
         "recommendation": null,
         "review": null,
-        "link": "https://www.git-scm.com/book/en/v2",
+        "provider": "Git",
         "topics": [
             "git"
         ]
@@ -451,10 +451,10 @@
     {
         "id": 38,
         "title": "Git Conventional Commits",
-        "provider": "conventional-commits",
+        "link": "https://www.conventionalcommits.org/en/v1.0.0/",
         "recommendation": 5,
         "review": "This document defines some standards for writing your commit messages. It covers almost all aspects and scopes of what a commit message should contain.",
-        "link": "https://www.conventionalcommits.org/en/v1.0.0/",
+        "provider": "conventional-commits",
         "topics": [
             "git"
         ]
@@ -462,10 +462,10 @@
     {
         "id": 39,
         "title": "How To Do In Java",
-        "provider": "howtodoinjava.com",
+        "link": "https://howtodoinjava.com/",
         "recommendation": null,
         "review": "It contains tutorials on java and its related technologies like Spring, Spring Boot, JUnit, Hibernate and also Interview preparation.",
-        "link": "https://howtodoinjava.com/",
+        "provider": "howtodoinjava.com",
         "topics": [
             "java",
             "tutorials",
@@ -479,10 +479,10 @@
     {
         "id": 40,
         "title": "How to get started with Milvus",
-        "provider": "Milvus",
+        "link": "https://milvus.io/blog/how-to-get-started-with-milvus.md",
         "recommendation": null,
         "review": null,
-        "link": "https://milvus.io/blog/how-to-get-started-with-milvus.md",
+        "provider": "Milvus",
         "topics": [
             "Vector Database"
         ]
@@ -490,10 +490,10 @@
     {
         "id": 41,
         "title": "IBM Trainin Center",
-        "provider": "IBM",
+        "link": "https://www.ibm.com/training/",
         "recommendation": 4,
         "review": "The cover a wide variety of topics including IT infrastructure, Automation, cloud, BI, AI, Asset Management, Supply chain, Security etc. A good place to learn a lot of things",
-        "link": "https://www.ibm.com/training/",
+        "provider": "IBM",
         "topics": [
             "Learning Platform"
         ]
@@ -501,10 +501,10 @@
     {
         "id": 42,
         "title": "Introduction to Statistics",
-        "provider": "Stanford",
+        "link": "https://www.coursera.org/learn/stanford-statistics",
         "recommendation": null,
         "review": null,
-        "link": "https://www.coursera.org/learn/stanford-statistics",
+        "provider": "Stanford",
         "topics": [
             "statistics"
         ]
@@ -512,10 +512,10 @@
     {
         "id": 43,
         "title": "JIRA Tutorial for beginners",
-        "provider": "Guru99",
+        "link": "https://www.guru99.com/jira-tutorial-a-complete-guide-for-beginners.html",
         "recommendation": null,
         "review": null,
-        "link": "https://www.guru99.com/jira-tutorial-a-complete-guide-for-beginners.html",
+        "provider": "Guru99",
         "topics": [
             "JIRA"
         ]
@@ -523,10 +523,10 @@
     {
         "id": 44,
         "title": "Jenkins Basics Tutorial",
-        "provider": "Guru99",
+        "link": "https://www.guru99.com/jenkins-tutorial.html",
         "recommendation": null,
         "review": null,
-        "link": "https://www.guru99.com/jenkins-tutorial.html",
+        "provider": "Guru99",
         "topics": [
             "jenkins"
         ]
@@ -534,10 +534,10 @@
     {
         "id": 45,
         "title": "JetBrains Academy",
-        "provider": "JetBrains",
+        "link": "https://www.jetbrains.com/academy/#learn",
         "recommendation": 5,
         "review": null,
-        "link": "https://www.jetbrains.com/academy/#learn",
+        "provider": "JetBrains",
         "topics": [
             "programming",
             "machine learning",
@@ -550,10 +550,10 @@
     {
         "id": 46,
         "title": "Learn Assembly The Hard Way",
-        "provider": "MahadMuhammad",
+        "link": "https://github.com/MahadMuhammad/Learn-Assembly-The-Hard-Way",
         "recommendation": null,
         "review": null,
-        "link": "https://github.com/MahadMuhammad/Learn-Assembly-The-Hard-Way",
+        "provider": "MahadMuhammad",
         "topics": [
             "assembly",
             "low-level"
@@ -562,10 +562,10 @@
     {
         "id": 47,
         "title": "Learn MongoDB",
-        "provider": "MongoDB",
+        "link": "https://learn.mongodb.com/",
         "recommendation": 5,
         "review": null,
-        "link": "https://learn.mongodb.com/",
+        "provider": "MongoDB",
         "topics": [
             "mongoDB",
             "NoSQL",
@@ -575,10 +575,10 @@
     {
         "id": 48,
         "title": "Learn Python",
-        "provider": "ronreiter",
+        "link": "https://www.learnpython.org",
         "recommendation": null,
         "review": "It is not only for learning python, but includes tutorials on several other languages as well.<br/>Think of it as a w3schools alternative.",
-        "link": "https://www.learnpython.org",
+        "provider": "ronreiter",
         "topics": [
             "languages",
             "tutorials"
@@ -587,10 +587,10 @@
     {
         "id": 49,
         "title": "Learn Spring Boot",
-        "provider": "Baeldung",
+        "link": "https://www.baeldung.com/spring-boot",
         "recommendation": null,
         "review": null,
-        "link": "https://www.baeldung.com/spring-boot",
+        "provider": "Baeldung",
         "topics": [
             "springboot",
             "backend"
@@ -599,10 +599,10 @@
     {
         "id": 50,
         "title": "Learn Three.js By Building 5 Projects",
-        "provider": "FreeCodeCamp",
+        "link": "https://www.freecodecamp.org/news/learn-threejs-by-building-five-projects/",
         "recommendation": null,
         "review": null,
-        "link": "https://www.freecodecamp.org/news/learn-threejs-by-building-five-projects/",
+        "provider": "FreeCodeCamp",
         "topics": [
             "three.js"
         ]
@@ -610,10 +610,10 @@
     {
         "id": 51,
         "title": "Libhunt",
-        "provider": "libhunt.com",
+        "link": "https://www.libhunt.com/",
         "recommendation": 5,
         "review": "A library for projects, Q/A, snippets and all sorts of cranky shenanigans. A treasurechest of code.",
-        "link": "https://www.libhunt.com/",
+        "provider": "libhunt.com",
         "topics": [
             "code",
             "projects",
@@ -623,10 +623,10 @@
     {
         "id": 52,
         "title": "Linux Guide",
-        "provider": "Baeldung",
+        "link": "https://www.baeldung.com/linux/",
         "recommendation": null,
         "review": "It contains information about linux OS and how to configure and modify it as well as how to manage it's resources",
-        "link": "https://www.baeldung.com/linux/",
+        "provider": "Baeldung",
         "topics": [
             "linux",
             "administration",
@@ -636,10 +636,10 @@
     {
         "id": 53,
         "title": "List of Free Learning Resources In Many Languages",
-        "provider": "EbookFoundation",
+        "link": "https://github.com/EbookFoundation/free-programming-books",
         "recommendation": null,
         "review": null,
-        "link": "https://github.com/EbookFoundation/free-programming-books",
+        "provider": "EbookFoundation",
         "topics": [
             "computer science",
             "software development"
@@ -648,10 +648,10 @@
     {
         "id": 54,
         "title": "Machine Learning Notes",
-        "provider": "kassi-bertrand",
+        "link": "https://github.com/kassi-bertrand/machine-learning-notes/tree/main",
         "recommendation": 5,
         "review": "A very detailed and organized compilation of machine learning notes. This includes topics like MLP,CNN,RNN, the usaeg of PyTorch and Scikit-learn etc. All of the topics discussed come with a set of Jupyter Notebooks. Someone really put a lot of effort in this repo.",
-        "link": "https://github.com/kassi-bertrand/machine-learning-notes/tree/main",
+        "provider": "kassi-bertrand",
         "topics": [
             "AI",
             "ML",
@@ -662,10 +662,10 @@
     {
         "id": 55,
         "title": "MalAPI",
-        "provider": "mrd0x",
+        "link": "https://malapi.io",
         "recommendation": null,
         "review": null,
-        "link": "https://malapi.io",
+        "provider": "mrd0x",
         "topics": [
             "malware developement"
         ]
@@ -673,10 +673,10 @@
     {
         "id": 56,
         "title": "NLP: Zero To Hero",
-        "provider": "JUSTSUJAY",
+        "link": "https://github.com/JUSTSUJAY/nlp-zero-to-hero/tree/main",
         "recommendation": null,
         "review": "This is a set of tutorials for learning NLP. The repository claims to have a complete package for anyone looking forward to learn NLP.",
-        "link": "https://github.com/JUSTSUJAY/nlp-zero-to-hero/tree/main",
+        "provider": "JUSTSUJAY",
         "topics": [
             "NLP",
             "ML",
@@ -686,10 +686,10 @@
     {
         "id": 57,
         "title": "Network Technician Course",
-        "provider": "SkillsForAll",
+        "link": "https://skillsforall.com/career-path/network-technician?courseLang=en-US",
         "recommendation": null,
         "review": null,
-        "link": "https://skillsforall.com/career-path/network-technician?courseLang=en-US",
+        "provider": "SkillsForAll",
         "topics": [
             "networking"
         ]
@@ -697,10 +697,10 @@
     {
         "id": 58,
         "title": "Neural Networks: Zero To Hero",
-        "provider": "Andrej Karpathy",
+        "link": "https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ",
         "recommendation": 5,
         "review": "This youtube playlist has a lot of materials related to neural networks. This guy is going from the basic concepts like back propagation, to building your own GPT model from scratch. There are lots of things going on in this playlist and they seem kind of unrelated to each other.",
-        "link": "https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ",
+        "provider": "Andrej Karpathy",
         "topics": [
             "neural networks",
             "NLP",
@@ -712,10 +712,10 @@
     {
         "id": 59,
         "title": "Neuromatch computational neuroscience course",
-        "provider": "Neuromatch",
+        "link": "https://compneuro.neuromatch.io/tutorials/intro.html",
         "recommendation": null,
         "review": null,
-        "link": "https://compneuro.neuromatch.io/tutorials/intro.html",
+        "provider": "Neuromatch",
         "topics": [
             "Machine Learning",
             "Neuro Science",
@@ -725,10 +725,10 @@
     {
         "id": 60,
         "title": "OWASP",
-        "provider": "OWASP",
+        "link": "https://owasp.org",
         "recommendation": null,
         "review": null,
-        "link": "https://owasp.org",
+        "provider": "OWASP",
         "topics": [
             "cyber security"
         ]
@@ -736,10 +736,10 @@
     {
         "id": 61,
         "title": "Online Labs and Playground",
-        "provider": "labex.io",
+        "link": "https://labex.io/tutorials/linux-online-linux-playground-372915",
         "recommendation": 5,
         "review": "They have several online in-browser labs to mess around with ranging from linux terminals tp C++ labs. It's in a virtual and isolated environment so you don't have to worry about breaking anything. Good for those who are just starting to learn about stuff without the hassle of setting up an environment dedicated to the technologies they want to use.<br/><br/>They also have skill trees, which can assist you in figuring out what to learn next in your career path.<br/><br/>Adding icing on top, they have several project guidelines and tutorials as well which can get you some hand-on.",
-        "link": "https://labex.io/tutorials/linux-online-linux-playground-372915",
+        "provider": "labex.io",
         "topics": [
             "labs",
             "playgrounds",
@@ -750,10 +750,10 @@
     {
         "id": 62,
         "title": "OpenStax",
-        "provider": "openstax.org",
+        "link": "https://openstax.org",
         "recommendation": 5,
         "review": "They provide free educational resources for a variety of subjects.",
-        "link": "https://openstax.org",
+        "provider": "openstax.org",
         "topics": [
             "resources",
             "education",
@@ -763,10 +763,10 @@
     {
         "id": 63,
         "title": "Operating System Course",
-        "provider": "Guru99",
+        "link": "https://www.guru99.com/os-tutorial.html",
         "recommendation": null,
         "review": null,
-        "link": "https://www.guru99.com/os-tutorial.html",
+        "provider": "Guru99",
         "topics": [
             "operating system"
         ]
@@ -774,10 +774,10 @@
     {
         "id": 64,
         "title": "Operating Systems: Three Easy Pieces",
-        "provider": "University of Wisconsin-Madison",
+        "link": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
         "recommendation": 5,
         "review": "First of all it a FREE online book. Although I haven't read it in detail but I have crawled through the topics it discusses.<br/>I remember that learning about OS was very boring, especially when there was no code involved. After all, we don't understand unless there is some tangible mechanics to understand. Not only this book has got your back on tangible examples, but also contains comprehension questions, homework(which includes code) and projects.",
-        "link": "https://pages.cs.wisc.edu/~remzi/OSTEP/",
+        "provider": "University of Wisconsin-Madison",
         "topics": [
             "OS",
             "projects"
@@ -786,10 +786,10 @@
     {
         "id": 65,
         "title": "Operations Research By Solomon Getachew",
-        "provider": "Solomon Getachew",
+        "link": "https://www.youtube.com/playlist?list=PLRE038tQcNiHT-ItY56Y230Nhu4jB97Wx",
         "recommendation": null,
         "review": null,
-        "link": "https://www.youtube.com/playlist?list=PLRE038tQcNiHT-ItY56Y230Nhu4jB97Wx",
+        "provider": "Solomon Getachew",
         "topics": [
             "operations research",
             "linear programming"
@@ -798,10 +798,10 @@
     {
         "id": 66,
         "title": "Operations Research by Yong Wang",
-        "provider": "Binghamton University",
+        "link": "https://www.youtube.com/watch?v=WIWhQpR-CjY&list=PLgA4wLGrqI-ll9OSJmR5nU4lV4_aNTgKx",
         "recommendation": null,
         "review": null,
-        "link": "https://www.youtube.com/watch?v=WIWhQpR-CjY&list=PLgA4wLGrqI-ll9OSJmR5nU4lV4_aNTgKx",
+        "provider": "Binghamton University",
         "topics": [
             "operations research",
             " linear programming"
@@ -810,10 +810,10 @@
     {
         "id": 67,
         "title": "Play With Docker Classroom",
-        "provider": "Marcos Nils, Jonathan Leibiusky",
+        "link": "https://training.play-with-docker.com",
         "recommendation": 5,
         "review": "A sand-box environment for those learning docker. There are interactive labs and ton of content to learn from.",
-        "link": "https://training.play-with-docker.com",
+        "provider": "Marcos Nils, Jonathan Leibiusky",
         "topics": [
             "docker",
             "devops"
@@ -822,10 +822,10 @@
     {
         "id": 68,
         "title": "Postgresql Tutorial",
-        "provider": "Postgresql",
+        "link": "https://www.postgresqltutorial.com/",
         "recommendation": null,
         "review": null,
-        "link": "https://www.postgresqltutorial.com/",
+        "provider": "Postgresql",
         "topics": [
             "postgreSQL",
             "database"
@@ -834,10 +834,10 @@
     {
         "id": 69,
         "title": "Power Shell Utilities",
-        "provider": "farag2",
+        "link": "https://github.com/farag2/Utilities/tree/master",
         "recommendation": null,
         "review": null,
-        "link": "https://github.com/farag2/Utilities/tree/master",
+        "provider": "farag2",
         "topics": [
             "powershell",
             "windows",
@@ -848,10 +848,10 @@
     {
         "id": 70,
         "title": "Programming Zero Knowledge Proof: From Zero To Hero",
-        "provider": "zkintro.com",
+        "link": "https://zkintro.com/articles/programming-zkps-from-zero-to-hero",
         "recommendation": null,
         "review": null,
-        "link": "https://zkintro.com/articles/programming-zkps-from-zero-to-hero",
+        "provider": "zkintro.com",
         "topics": [
             "zeroknowledge proof",
             "group signatures"
@@ -860,10 +860,10 @@
     {
         "id": 71,
         "title": "Programming in assembly language tutorial",
-        "provider": "mschwartz",
+        "link": "https://github.com/mschwartz/assembly-tutorial",
         "recommendation": 5,
         "review": null,
-        "link": "https://github.com/mschwartz/assembly-tutorial",
+        "provider": "mschwartz",
         "topics": [
             "assembly",
             "low-level"
@@ -872,10 +872,10 @@
     {
         "id": 72,
         "title": "Python For Everybody",
-        "provider": "Dr. Chuck",
+        "link": "https://www.py4e.com/",
         "recommendation": null,
         "review": null,
-        "link": "https://www.py4e.com/",
+        "provider": "Dr. Chuck",
         "topics": [
             "python",
             "programming"
@@ -884,10 +884,10 @@
     {
         "id": 73,
         "title": "REST API Tutorial",
-        "provider": "Restfulapi",
+        "link": "https://restfulapi.net/",
         "recommendation": null,
         "review": null,
-        "link": "https://restfulapi.net/",
+        "provider": "Restfulapi",
         "topics": [
             "REST",
             "RESTful",
@@ -897,10 +897,10 @@
     {
         "id": 74,
         "title": "React Hooks Simplified",
-        "provider": "Web Dev Simplified",
+        "link": "https://courses.webdevsimplified.com/react-hooks-simplified",
         "recommendation": null,
         "review": null,
-        "link": "https://courses.webdevsimplified.com/react-hooks-simplified",
+        "provider": "Web Dev Simplified",
         "topics": [
             "React.js",
             "Hooks"
@@ -909,10 +909,10 @@
     {
         "id": 75,
         "title": "Reverse Engineering For Everyone",
-        "provider": "mytechnotalent",
+        "link": "https://0xinfection.github.io/reversing/",
         "recommendation": null,
         "review": null,
-        "link": "https://0xinfection.github.io/reversing/",
+        "provider": "mytechnotalent",
         "topics": [
             "reverse engineering",
             "malware analysis"
@@ -921,10 +921,10 @@
     {
         "id": 76,
         "title": "SQL Academy",
-        "provider": "SQL Academy",
+        "link": "https://sql-academy.org/en",
         "recommendation": 4,
         "review": "It is a good place to learn SQL from.",
-        "link": "https://sql-academy.org/en",
+        "provider": "SQL Academy",
         "topics": [
             "SQL",
             "Database"
@@ -933,10 +933,10 @@
     {
         "id": 77,
         "title": "Software Engineering Tutorial",
-        "provider": "Guru99",
+        "link": "https://www.guru99.com/software-engineering-tutorial.html",
         "recommendation": null,
         "review": null,
-        "link": "https://www.guru99.com/software-engineering-tutorial.html",
+        "provider": "Guru99",
         "topics": [
             "software engineering"
         ]
@@ -944,10 +944,10 @@
     {
         "id": 78,
         "title": "Spring Quick Start Guide",
-        "provider": "Spring",
+        "link": "https://spring.io/quickstart",
         "recommendation": null,
         "review": null,
-        "link": "https://spring.io/quickstart",
+        "provider": "Spring",
         "topics": [
             "spring",
             "java"
@@ -956,10 +956,10 @@
     {
         "id": 79,
         "title": "System Design Primer",
-        "provider": "donnemartin",
+        "link": "https://github.com/donnemartin/system-design-primer",
         "recommendation": null,
         "review": null,
-        "link": "https://github.com/donnemartin/system-design-primer",
+        "provider": "donnemartin",
         "topics": [
             "system design"
         ]
@@ -967,10 +967,10 @@
     {
         "id": 80,
         "title": "Test Driven Development in Django",
-        "provider": "PSF",
+        "link": "https://test-driven-django-development.readthedocs.io/en/latest/",
         "recommendation": 4,
         "review": null,
-        "link": "https://test-driven-django-development.readthedocs.io/en/latest/",
+        "provider": "PSF",
         "topics": [
             "python",
             "TDD",
@@ -980,10 +980,10 @@
     {
         "id": 81,
         "title": "The Complete PyQT6 Tutorial",
-        "provider": "pythonguis",
+        "link": "https://www.pythonguis.com/pyqt6-tutorial/",
         "recommendation": null,
         "review": null,
-        "link": "https://www.pythonguis.com/pyqt6-tutorial/",
+        "provider": "pythonguis",
         "topics": [
             "pyQT6",
             "python"
@@ -992,21 +992,33 @@
     {
         "id": 82,
         "title": "The Documentation System",
-        "provider": "Divio",
+        "link": "https://docs.divio.com/documentation-system/",
         "recommendation": null,
         "review": null,
-        "link": "https://docs.divio.com/documentation-system/",
+        "provider": "Divio",
         "topics": [
             "documentation"
         ]
     },
     {
         "id": 83,
+        "title": "The Most Helpful PowerShell Cheat Sheet You\u2019ll Ever Find",
+        "link": "https://www.stationx.net/powershell-cheat-sheet/",
+        "recommendation": 4,
+        "review": "They have a powershell command generator in there. You just type what you want to do, and it spits back the command. Nice isn't it? but the only downside of it, as I feel, is that they wrote it as a blog which kind of hides the amazing tool beneath a mass of text.",
+        "provider": "stationx.net",
+        "topics": [
+            "windows",
+            "powershell"
+        ]
+    },
+    {
+        "id": 84,
         "title": "Training Custom Object Detector",
-        "provider": "Tensorflow",
+        "link": "https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html",
         "recommendation": null,
         "review": null,
-        "link": "https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/latest/training.html",
+        "provider": "Tensorflow",
         "topics": [
             "tensorfloww",
             "object detection",
@@ -1014,34 +1026,34 @@
         ]
     },
     {
-        "id": 84,
+        "id": 85,
         "title": "What is Microsoft Fabric? How to Build a Customer Segmentation Project",
-        "provider": "FreeCodeCamp",
+        "link": "https://www.freecodecamp.org/news/what-is-microsoft-fabric/",
         "recommendation": null,
         "review": null,
-        "link": "https://www.freecodecamp.org/news/what-is-microsoft-fabric/",
+        "provider": "FreeCodeCamp",
         "topics": [
             "Microsoft Fabric"
         ]
     },
     {
-        "id": 85,
+        "id": 86,
         "title": "flat assembler",
-        "provider": "Tomasz Grysztar",
+        "link": "https://flatassembler.net",
         "recommendation": 5,
         "review": null,
-        "link": "https://flatassembler.net",
+        "provider": "Tomasz Grysztar",
         "topics": [
             "assembly"
         ]
     },
     {
-        "id": 86,
+        "id": 87,
         "title": "hackerone",
-        "provider": "hackerone",
+        "link": "https://www.hackerone.com",
         "recommendation": null,
         "review": null,
-        "link": "https://www.hackerone.com",
+        "provider": "hackerone",
         "topics": [
             "cyber security"
         ]
