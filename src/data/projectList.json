@@ -47,6 +47,22 @@
         "openToContrib": false
     },
     {
+        "title": "LawnPro Software",
+        "description": "Nft Showroom is a platform which showcases and authenticates the best and most innovative digital assets while providing a user friendly, accessible and a safe way for art enthusiasts and collectors to engage with the world of NFTs.",
+        "tags": [
+            "PHP", 
+            "Laravel", 
+            "React.js"
+        ],
+        "projUrl": "https://www.lawnprosoftware.com",
+        "githubUrl": null,
+        "publishDate": "Live and Ongoing",
+        "thumbnailUrl":"project:lawnprosoftware",
+        "category":"corporate",
+        "status": "ongoing",
+        "openToContrib": false
+    },
+    {
         "title": "Ticket Booking System Decentralized App",
         "description": "This is a decentralized app for hosting events and selling their respective tickets. Anyone with a web3 wallet can use it.",
         "tags": [
@@ -69,7 +85,7 @@
         "title": "Crowdfunding Decentralized App",
         "description": "It is a crowdfunding solution but built entirely on web3.0. Host your projects here for funding via crypto and withdraw funds whenever.",
         "tags": [
-            "React", 
+            "React.js", 
             "Hedera Hashgraph",
             "Metamask",
             "Ethers.js"

@@ -40,6 +40,7 @@ import abstract18 from './images/abstract/18.jpg'
 import ebs from './images/projects/ebs.png'
 import practical from './images/projects/practical.png'
 import nftshowroom from './images/projects/nftshowroom.png'
+import lawnprosoftware from './images/projects/lawnprosoftware.png'
 
 export default {
     certificates: {
@@ -96,5 +97,6 @@ export default {
         ebs,
         practical,
         nftshowroom,
+        lawnprosoftware,
     }
 }
