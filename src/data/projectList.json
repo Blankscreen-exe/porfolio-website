@@ -47,6 +47,42 @@
         "openToContrib": false
     },
     {
+        "title": "Ticket Booking System Decentralized App",
+        "description": "This is a decentralized app for hosting events and selling their respective tickets. Anyone with a web3 wallet can use it.",
+        "tags": [
+            "Ethereum",
+            "Solidity",
+            "Truffle",
+            "Web3.js",
+            "React.js",
+            "Metamask"
+        ],
+        "projUrl": null,
+        "githubUrl": null,
+        "publishDate": "Jan 2024",
+        "thumbnailUrl":null,
+        "category":"corporate",
+        "status": "ongoing",
+        "openToContrib": false
+    },
+    {
+        "title": "Crowdfunding Decentralized App",
+        "description": "It is a crowdfunding solution but built entirely on web3.0. Host your projects here for funding via crypto and withdraw funds whenever.",
+        "tags": [
+            "React", 
+            "Hedera Hashgraph",
+            "Metamask",
+            "Ethers.js"
+        ],
+        "projUrl": null,
+        "githubUrl": null,
+        "publishDate": "Jan 2024",
+        "thumbnailUrl":null,
+        "category":"corporate",
+        "status": "ongoing",
+        "openToContrib": false
+    },
+    {
         "title": "Tkinter Mod Manager",
         "description": "This is a simple mod manager built on Tkinter. This applet is named mod manager because there are certain games which have an option to add or remove mods by copying/pasting/deleting files from one directory to another. The mod files in questions are named in a non-human-friendly way (e.g. 1234567.mod), now copying and pasting those files from directory to another will of course work but not when you want to keep track of which files belong to which mod. This applet makes that task easy.",
         "tags": [
