@@ -1,6 +1,6 @@
 [
     {
-        "title": "Why Does Python Allow \“print = 123\”?",
+        "title": "Why Does Python Allow `print = 123`?",
         "description": "If you ever try to run print=123, the interpreter would just run it without causing a fuss, although it would seem that it should raise a warning at least if not an exception.",
         "tags": [
             "programming", 
