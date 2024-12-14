@@ -17,6 +17,7 @@ import laravel from './svg/techstack/backend/laravel.svg'
 import flask from './svg/techstack/backend/flask.svg'
 import fastapi from './svg/techstack/backend/fastapi.svg'
 import odoo from './svg/techstack/backend/odoo.svg'
+import yii from './svg/techstack/backend/yii.svg'
 // ml ds ai
 import numpy from './svg/techstack/ml_ds_ai/numpy.svg'
 import openai from './svg/techstack/ml_ds_ai/openai.svg'
@@ -51,6 +52,7 @@ import apacheserver from './svg/techstack/other/apacheserver.svg'
 import celery from './svg/techstack/other/celery.svg'
 import rabbitmq from './svg/techstack/other/rabbitmq.svg'
 import sentry from './svg/techstack/other/sentry.svg'
+import selenium from './svg/techstack/other/selenium.svg'
 // database
 import postgresql from './svg/techstack/database/postgresql.svg'
 import redis from './svg/techstack/database/redis.svg'
@@ -837,7 +839,8 @@ export default {
       apacheserver,
       celery,
       rabbitmq,
-      sentry
+      sentry,
+      selenium,
     },
     frontend: {
       reactjs,
@@ -857,6 +860,7 @@ export default {
       odoo,
       flask,
       fastapi,
+      yii,
     },
   },
   projectList: {

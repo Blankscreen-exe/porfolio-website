@@ -99,6 +99,13 @@
             "imgUrl":"odoo",
             "fontColor":"",
             "bgColor":"#e96228"
+        },
+        {
+            "name":"Yii",
+            "url":"https://www.yiiframework.com",
+            "imgUrl":"yii",
+            "fontColor":"",
+            "bgColor":"#e96228"
         }
     ],
     "frontend": [
@@ -371,6 +378,13 @@
             "name":"Sentry",
             "url":"https://sentry.io/",
             "imgUrl":"sentry",
+            "fontColor":"",
+            "bgColor":""
+        },
+        {
+            "name":"Selenium",
+            "url":"https://www.selenium.dev",
+            "imgUrl":"selenium",
             "fontColor":"",
             "bgColor":""
         }
