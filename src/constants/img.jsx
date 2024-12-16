@@ -1,5 +1,6 @@
 import ctaBg from './images/cta-bg.jpg'
 import langBg from './images/lang-bg.jpg'
+import lazyNote from './images/lazy_note.png'
 
 // testimonials
 import ahsanFurqan from './images/testimonials/ahsanFurqan.jpg'
@@ -98,5 +99,6 @@ export default {
         practical,
         nftshowroom,
         lawnprosoftware,
-    }
+    },
+    lazyNote
 }

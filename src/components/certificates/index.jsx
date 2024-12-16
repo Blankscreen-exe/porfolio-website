@@ -13,6 +13,7 @@ import SectionHeading from '../common/SectionHeading'
 import HorizontalSlider from '../common/HorizontalSlider'
 import Paragraph from '../common/Paragraph'
 import CertificateStats from './CertificateStats'
+import LazyNote from '../common/LazyNote'
 
 function index() {
     window.scrollTo(0, 0);
@@ -32,7 +33,7 @@ function index() {
 
         </div>
         <Paragraph text={"<span class='font-bold'>Note</span> that this is an incomplete list and it is still WIP."}/>
-
+        <LazyNote/>
         <CertificateStats data={allData}/>
 
         <HorizontalSlider data={featuredData} title={"Featured"} buttonText={"view"}/>

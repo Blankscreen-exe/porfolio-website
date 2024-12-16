@@ -16,6 +16,7 @@ import appConstants from "../../constants/appConstants";
 import DataTable from "../common/DataTable";
 import PageTitle from "../common/PageTitle";
 import Paragraph from "../common/Paragraph";
+import LazyNote from "../common/LazyNote";
 
 function index(props) {
   window.scrollTo(0, 0);
@@ -155,6 +156,7 @@ function index(props) {
       <PageTitle title="My Book List"/>
       <Paragraph text={"Books I have read and books I have reviewed. Hope you <i>will</i> find a <span class='font-bold'>good read</span> somewhere in there!<br/><br/>We can also share thoughts on a particular book if you like, <a href="+appConstants.routes.contacts+" class='text-contentLink underline hover:text-contentLinkHover'>connect with me here</a>"}/>
       <Paragraph text={"<span class='font-bold'>Note</span> that this is an incomplete list and it is still WIP."}/>
+      <LazyNote/>
       <DataTable data={data} columns={columns} />
     </div>
   );
