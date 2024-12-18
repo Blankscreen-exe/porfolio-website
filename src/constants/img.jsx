@@ -36,6 +36,9 @@ import abstract15 from './images/abstract/15.jpg'
 import abstract16 from './images/abstract/16.jpg'
 import abstract17 from './images/abstract/17.jpg'
 import abstract18 from './images/abstract/18.jpg'
+import abstract19 from './images/abstract/19.jpg'
+import abstract20 from './images/abstract/20.jpg'
+import abstract21 from './images/abstract/21.jpg'
 
 // projects
 import ebs from './images/projects/ebs.png'
@@ -96,6 +99,9 @@ export default {
         abstract16,
         abstract17,
         abstract18,
+        abstract19,
+        abstract20,
+        abstract21,
     ],
     projects: {
         ebs,
