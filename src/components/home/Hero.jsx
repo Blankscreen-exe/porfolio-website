@@ -17,7 +17,10 @@ function Hero(props) {
           M.Ham<strong className='' id='hero-title-name-inner'>mad Hassan</strong> 
           </h1>
 
-          <p className="mt-5 text-2xl font-bold text-content/80">Full Stack Developer (Backend Heavy)</p>
+          <div className='mt-5 text-2xl font-bold text-content/80'>
+            <p className="">Full Stack Developer (Backend Heavy) </p>
+            <p className="">& Data Scientist</p>
+          </div>
           <div className='flex flex-row flex-wrap gap-2 mt-5'>
             <a target="_blank" href={socialLinks.linkedin} className="text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Linkedin </a>
             <a target="_blank" href={socialLinks.github} className=" text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Github </a>
