@@ -1,7 +1,7 @@
 [
     {
         "title": "Entrepreneur's Business Simulator",
-        "description": "Entrepreneur’s Business Simulator is a software designed to train young entrepreneurs within all aspects of business and financial management. It is a complete Online Business Coach’s solution for young entrepreneurs to become market-ready leaders of startups and learn hands-on techniques of business, management, finance and making critical business decisions. The project is built on Django Framework and it contains interfaces for coaches, entrepreneurs, administrators along with permission structure to maintain knowledge security.",
+        "description": "Entrepreneur’s Business Simulator is a software designed to train young entrepreneurs within all aspects of business and financial management.",
         "tags": [
             "Python", 
             "Django"
@@ -16,7 +16,7 @@
     },
     {
         "title": "PractiCal Food Ordering System",
-        "description": "PractiCal is a food ordering system which is managed and run by a nutritionist. This software, not only helps deliver you your desired meals, but also gives you an extensive and customized meal plan based on your dietary needs. Whether you are looking forward to lose some weight or to build muscles, PractiCal can give you a very personalized meal roadmap. PractiCal also features an admin panel with granular management controls.",
+        "description": "It is a food ordering system which is lead by a nutritionist. It helps deliver you your desired meal plan based on your dietary needs and more.",
         "tags": [
             "PHP", 
             "Laravel",
@@ -32,7 +32,7 @@
     },
     {
         "title": "NFT Showroom",
-        "description": "Nft Showroom is a platform which showcases and authenticates the best and most innovative digital assets while providing a user friendly, accessible and a safe way for art enthusiasts and collectors to engage with the world of NFTs.",
+        "description": "It is a platform which showcases digital assets while providing a user friendly and a safe way for everyone to engage with the world of NFTs.",
         "tags": [
             "Python", 
             "Django",
@@ -58,6 +58,21 @@
         "githubUrl": null,
         "publishDate": "Live and Ongoing",
         "thumbnailUrl":"project:lawnprosoftware",
+        "category":"corporate",
+        "status": "ongoing",
+        "openToContrib": false
+    },
+    {
+        "title": "Cloud Munshi",
+        "description": "It is a Point-of-Sales (POS) software for those who wan to keep track of their inventory and manage businesses.",
+        "tags": [
+            "PHP", 
+            "Yii"
+        ],
+        "projUrl": "https://cloudmunshi.com",
+        "githubUrl": null,
+        "publishDate": "Live and Ongoing",
+        "thumbnailUrl":"project:cloudmunshi",
         "category":"corporate",
         "status": "ongoing",
         "openToContrib": false
@@ -192,7 +207,7 @@
         "projUrl": "https://blankscreen-exe.github.io/docker-practice/",
         "githubUrl": "https://github.com/Blankscreen-exe/docker-practice",
         "publishDate": "Oct 2023",
-        "thumbnailUrl": null,
+        "thumbnailUrl": "project:dockerpracticerepo",
         "category":"hobby",
         "status": "ongoing",
         "openToContrib": true
@@ -287,7 +302,7 @@
         "projUrl": "https://blankscreen-exe.github.io/webGL-fluid-simulation/",
         "githubUrl": "https://github.com/Blankscreen-exe/webGL-fluid-simulation",
         "publishDate": "Aug 2022",
-        "thumbnailUrl": null,
+        "thumbnailUrl": "project:webglfluidsimulation",
         "category":"hobby",
         "status": "finished",
         "openToContrib": false

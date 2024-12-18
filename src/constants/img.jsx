@@ -42,6 +42,9 @@ import ebs from './images/projects/ebs.png'
 import practical from './images/projects/practical.png'
 import nftshowroom from './images/projects/nftshowroom.png'
 import lawnprosoftware from './images/projects/lawnprosoftware.png'
+import cloudmunshi from './images/projects/cloudmunshi.png'
+import dockerpracticerepo from './images/projects/dockerpracticerepo.png'
+import webglfluidsimulation from './images/projects/webglfluidsimulation.png'
 
 export default {
     certificates: {
@@ -99,6 +102,9 @@ export default {
         practical,
         nftshowroom,
         lawnprosoftware,
+        cloudmunshi,
+        dockerpracticerepo,
+        webglfluidsimulation,
     },
     lazyNote
 }
