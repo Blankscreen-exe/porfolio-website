@@ -48,6 +48,7 @@ import lawnprosoftware from './images/projects/lawnprosoftware.png'
 import cloudmunshi from './images/projects/cloudmunshi.png'
 import dockerpracticerepo from './images/projects/dockerpracticerepo.png'
 import webglfluidsimulation from './images/projects/webglfluidsimulation.png'
+import thesavestash from './images/projects/thesavestash.png'
 
 export default {
     certificates: {
@@ -111,6 +112,7 @@ export default {
         cloudmunshi,
         dockerpracticerepo,
         webglfluidsimulation,
+        thesavestash,
     },
     lazyNote
 }

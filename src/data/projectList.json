@@ -114,6 +114,22 @@
         "openToContrib": false
     },
     {
+        "title": "The Save Stash",
+        "description": "This is where I keep all my games' save files as trophies",
+        "tags": [
+            "JavaScript", 
+            "HTML",
+            "CSS"
+        ],
+        "projUrl": "https://blankscreen-exe.github.io/The-Save-Stash/",
+        "githubUrl": "https://github.com/Blankscreen-exe/The-Save-Stash",
+        "publishDate": "Dec 2024",
+        "thumbnailUrl": "project:thesavestash",
+        "category":"hobby",
+        "status": "finished",
+        "openToContrib": true
+    },
+    {
         "title": "Tkinter Mod Manager",
         "description": "This is a simple mod manager built on Tkinter. This applet is named mod manager because there are certain games which have an option to add or remove mods by copying/pasting/deleting files from one directory to another. The mod files in questions are named in a non-human-friendly way (e.g. 1234567.mod), now copying and pasting those files from directory to another will of course work but not when you want to keep track of which files belong to which mod. This applet makes that task easy.",
         "tags": [
