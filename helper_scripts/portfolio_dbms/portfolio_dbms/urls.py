@@ -23,4 +23,5 @@ urlpatterns = [
     path('', home, name='home'),
     path('export/games/json', get_games_json, name='get-games-json'),
     path('export/resources/json', get_resources_json, name='get-resources-json'),
+    path('export/blogs/json', get_blogs_json, name='get-blogs-json'),
 ]

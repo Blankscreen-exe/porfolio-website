@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import JsonResponse
 from django.urls import reverse
 from django.core.serializers.json import DjangoJSONEncoder
-from .models import Games, Resources
+from .models import Games, Resources, Blog
 
 def home(request):
     context = {}
@@ -15,6 +15,10 @@ def home(request):
             "name": "Games List",
             "link": reverse("get-games-json") 
         },
+        {
+            "name": "Blogs List",
+            "link": reverse("get-blogs-json") 
+        },
     ]
     return render(request, 'portfolio/index.html', context=context)
 
@@ -22,7 +26,7 @@ def get_games_json(request):
     games = Games.objects.filter(included=True).order_by('title')
     games_data = [
         {
-            "id": ind,
+            "id": ind+1,
             "title": game.title,
             "status": game.status,
             "recommendation": game.recommendation,
@@ -42,7 +46,7 @@ def get_resources_json(request):
     resources = Resources.objects.filter(included=True).order_by('title')
     resources_data = [
         {
-            "id": ind,
+            "id": ind+1,
             "title": resource.title,
             "link": resource.link,
             "recommendation": resource.recommendation,
@@ -55,5 +59,26 @@ def get_resources_json(request):
 
     response = JsonResponse(resources_data, safe=False, json_dumps_params={'indent': 4})
     response['Content-Disposition'] = f'attachment; filename="devResourceList.json"'
+
+    return response
+
+def get_blogs_json(request):
+    blogs = Blog.objects.filter(included=True).order_by('title')
+    resources_data = [
+        {
+            "id": ind+1,
+            "title": blog.title,
+            "description": blog.description,
+            "tags": blog.tags,
+            "mediumUrl": blog.medium_url,
+            "hashnodeUrl": blog.hashnode_url,
+            "publishDate": blog.get_publish_date,
+            "thumbnailUrl": blog.thumbnail_url,
+        }
+        for ind, blog in enumerate(blogs)
+    ]
+
+    response = JsonResponse(resources_data, safe=False, json_dumps_params={'indent': 4})
+    response['Content-Disposition'] = f'attachment; filename="blogList.json"'
 
     return response
