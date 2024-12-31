@@ -54,6 +54,7 @@ import rabbitmq from './svg/techstack/other/rabbitmq.svg'
 import sentry from './svg/techstack/other/sentry.svg'
 import selenium from './svg/techstack/other/selenium.svg'
 import aws from './svg/techstack/other/aws.svg'
+import opencv from './svg/techstack/other/opencv.svg'
 // database
 import postgresql from './svg/techstack/database/postgresql.svg'
 import redis from './svg/techstack/database/redis.svg'
@@ -843,6 +844,7 @@ export default {
       sentry,
       selenium,
 	  aws,
+	  opencv,
     },
     frontend: {
       reactjs,
