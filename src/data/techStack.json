@@ -298,6 +298,13 @@
     ],
     "other": [
         {
+            "name":"Amazon Web Services",
+            "url":"https://aws.amazon.com",
+            "imgUrl":"aws",
+            "fontColor":"",
+            "bgColor":""
+        },
+		{
             "name":"Docker",
             "url":"https://www.docker.com/",
             "imgUrl":"docker",
