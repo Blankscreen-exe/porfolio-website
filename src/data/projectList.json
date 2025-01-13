@@ -322,5 +322,20 @@
         "category":"hobby",
         "status": "finished",
         "openToContrib": false
+    },
+    {
+        "title": "Exploratory Data Analysis Of Hate Crimes In USA (1991-2020)",
+        "description": "This is an exploratory data analysis exercise which targets hatecrime records in different parts of USA (1991-2020) & extracts valuable insights from it.",
+        "tags": [
+            "PowerBI", 
+            "SQL"
+        ],
+        "projUrl": "",
+        "githubUrl": "https://github.com/Blankscreen-exe/PowerBI-Competition-MAT-May-2022",
+        "publishDate": "Mar 2022",
+        "thumbnailUrl": "https://raw.githubusercontent.com/Blankscreen-exe/PowerBI-Competition-MAT-May-2022/refs/heads/main/images/Screenshot_8.jpg",
+        "category":"hobby",
+        "status": "finished",
+        "openToContrib": false
     }
 ]
