@@ -55,6 +55,7 @@ import sentry from './svg/techstack/other/sentry.svg'
 import selenium from './svg/techstack/other/selenium.svg'
 import aws from './svg/techstack/other/aws.svg'
 import opencv from './svg/techstack/other/opencv.svg'
+import power_apps from './svg/techstack/other/power_apps.svg'
 // database
 import postgresql from './svg/techstack/database/postgresql.svg'
 import redis from './svg/techstack/database/redis.svg'
@@ -843,8 +844,9 @@ export default {
       rabbitmq,
       sentry,
       selenium,
-	  aws,
-	  opencv,
+      aws,
+      opencv,
+      power_apps,
     },
     frontend: {
       reactjs,

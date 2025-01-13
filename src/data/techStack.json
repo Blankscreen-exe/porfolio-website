@@ -401,6 +401,13 @@
             "imgUrl":"selenium",
             "fontColor":"",
             "bgColor":""
+        },
+        {
+            "name":"Power Apps",
+            "url":"https://www.microsoft.com/en-us/power-platform/products/power-apps",
+            "imgUrl":"power_apps",
+            "fontColor":"",
+            "bgColor":""
         }
     ]
 }
