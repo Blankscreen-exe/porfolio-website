@@ -324,11 +324,28 @@
         "openToContrib": false
     },
     {
+        "title": "Exploratory Data Analysis Of Pokemon Data - 2022 Submission for DataDNA Challenge",
+        "description": "This is a submission for 2022 DataDNA competition hosted by OnyxData.",
+        "tags": [
+            "PowerBI", 
+            "SQL",
+            "Python"
+        ],
+        "projUrl": "",
+        "githubUrl": "https://github.com/Blankscreen-exe/dataDNA_Challenge_submissions/tree/main/july2022",
+        "publishDate": "Jul 2022",
+        "thumbnailUrl": "https://github.com/Blankscreen-exe/dataDNA_Challenge_submissions/raw/main/july2022/doc/img/preview.jpg",
+        "category":"hobby",
+        "status": "finished",
+        "openToContrib": false
+    },
+    {
         "title": "Exploratory Data Analysis Of Hate Crimes In USA (1991-2020)",
         "description": "This is an exploratory data analysis exercise which targets hatecrime records in different parts of USA (1991-2020) & extracts valuable insights from it.",
         "tags": [
             "PowerBI", 
-            "SQL"
+            "SQL",
+            "Python"
         ],
         "projUrl": "",
         "githubUrl": "https://github.com/Blankscreen-exe/PowerBI-Competition-MAT-May-2022",
