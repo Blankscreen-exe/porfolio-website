@@ -324,6 +324,23 @@
         "openToContrib": false
     },
     {
+        "title": "Marketing Campaign EDA On Supermarket Dataset",
+        "description": "This is an attempt to analyze and find trends in the marketing campaign of a supermarket.",
+        "tags": [
+            "Data Visualization", 
+            "Data Analysis", 
+            "SQL",
+            "Python"
+        ],
+        "projUrl": "",
+        "githubUrl": "https://github.com/Blankscreen-exe/Data-Mining-Lab",
+        "publishDate": "Jul 2022",
+        "thumbnailUrl": "https://private-user-images.githubusercontent.com/51869983/402568818-b8de83a0-d7f0-4c2c-8f44-e89da733efa0.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MzY3NzgxMTIsIm5iZiI6MTczNjc3NzgxMiwicGF0aCI6Ii81MTg2OTk4My80MDI1Njg4MTgtYjhkZTgzYTAtZDdmMC00YzJjLThmNDQtZTg5ZGE3MzNlZmEwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAxMTMlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMTEzVDE0MTY1MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTVhMGZmMzY4MjI1MWI4MjEzYjliOWIxYzhmODkxNjZhNmJiMzllNWZhZDNmYmFkNGVlMjgwMzU0NGY2ZTUyZjgmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.cpdlQPdl31CHPEZtJsvh7ItKqFVv4XKhjwLb4i1DVLo",
+        "category":"hobby",
+        "status": "finished",
+        "openToContrib": false
+    },
+    {
         "title": "Exploratory Data Analysis Of Pokemon Data - 2022 Submission for DataDNA Challenge",
         "description": "This is a submission for 2022 DataDNA competition hosted by OnyxData.",
         "tags": [
