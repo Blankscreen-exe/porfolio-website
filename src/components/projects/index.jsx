@@ -16,7 +16,27 @@ import ProjectCard from './ProjectCard'
 import Paragraph from '../common/Paragraph'
 import ProjectKeys from './ProjectKeys'
 
+function countTags(data) {
+  const tagCounts = {};
+
+  // Iterate through the dataset to count tag occurrences
+  data.forEach(project => {
+      project.tags.forEach(tag => {
+          tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+      });
+  });
+
+  // Convert the tagCounts object into an array of objects
+  const result = Object.keys(tagCounts).map(tag => ({
+      name: tag,
+      count: tagCounts[tag]
+  }));
+
+  return result;
+}
+
 function index(props) {
+
     window.scrollTo(0, 0);
     const columnHelper = createColumnHelper();
   
@@ -24,7 +44,6 @@ function index(props) {
       columnHelper.accessor("title", {
         cell: (row) => {
             let rowData = row.row.original;
-            console.log(rowData)
             return (<>
                 <ProjectCard
                     cardTitle={rowData.title}
