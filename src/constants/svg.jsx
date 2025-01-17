@@ -56,6 +56,7 @@ import selenium from './svg/techstack/other/selenium.svg'
 import aws from './svg/techstack/other/aws.svg'
 import opencv from './svg/techstack/other/opencv.svg'
 import power_apps from './svg/techstack/other/power_apps.svg'
+import terraform from './svg/techstack/other/terraform.svg'
 // database
 import postgresql from './svg/techstack/database/postgresql.svg'
 import redis from './svg/techstack/database/redis.svg'
@@ -847,6 +848,7 @@ export default {
       aws,
       opencv,
       power_apps,
+      terraform,
     },
     frontend: {
       reactjs,

@@ -408,6 +408,13 @@
             "imgUrl":"power_apps",
             "fontColor":"",
             "bgColor":""
+        },
+        {
+            "name":"Terraform",
+            "url":"https://www.terraform.io",
+            "imgUrl":"terraform",
+            "fontColor":"",
+            "bgColor":""
         }
     ]
 }

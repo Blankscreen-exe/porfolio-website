@@ -6,6 +6,7 @@ import datacampData from '../../data/certificatesDataCamp.json'
 import dataScience360Data from '../../data/certificatesDataScience365.json'
 import kaggleData from '../../data/certificatesKaggle.json'
 import courseraData from '../../data/certificatesCoursera.json'
+import socialLinks from '../../data/socialLinks.json'
 
 // components
 import PageTitle from '../common/PageTitle'
@@ -29,7 +30,7 @@ function index() {
     <div>
         <PageTitle title="My Certificates"/>
         <div className='flex justify-center'>
-            <Paragraph text={"some description i want to talk about some description i want to talk about vsome description i want to talk about some description i want to talk about some description i want to talk about some description i want to talk about"} />
+            <Paragraph text={`All of my certificates are currently present in my <a href='${socialLinks.linkedin}' class='link'> Linkedin Profile</a>. There are many certificates and I will move all of them in this page as soon as I get some time. For the time being, you can simply visit my <a href='${socialLinks.linkedin}' class='link'> Linkedin Profile</a> and view all of the certificates there.`} />
 
         </div>
         <Paragraph text={"<span class='font-bold'>Note</span> that this is an incomplete list and it is still WIP."}/>
