@@ -103,9 +103,9 @@ function Testimonials(props) {
                             alt={item.title}
                             />
                         <h3 className='text-2xl font-bold text-content mt-5'>{item.title}</h3>
-                        <h4 className='text-lg italic font-medium text-content/60'>{item.designation}</h4>
+                        <h4 className='text-lg italic font-medium text-content/60 text-center'>{item.designation}</h4>
                         <div className='flex flex-col justify-between h-full'>
-                          <p className='font-normal text-content mt-5  w-full text-center mb-8' dangerouslySetInnerHTML={{ __html: item.content }}></p>
+                          <p className='font-normal text-sm text-content mt-5  w-full text-center mb-8' dangerouslySetInnerHTML={{ __html: item.content }}></p>
                     <div className='text-sm text-content/40 md:hidden inline w-full flex justify-center border-white/5 border-t-slate-300'> slide for more testimonials </div>
                         </div>
                     </div>
