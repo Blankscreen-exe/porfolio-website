@@ -54,5 +54,12 @@
       "avatarUrl": "anonMale",
       "profileUrl":"#",
       "content": "I would like to express my sincere appreciation for my teacher, Muhammad Hammad. <br/>From the very beginning, he helped me understand the fundamentals of programming and <br/>introduced me to the world of coding. <br/>Muhammad is an outstanding teacher who truly knows his craft. He is patient, supportive, <br/>and always willing to help whenever I face challenges. <br/>Thanks to his guidance and encouragement, I have been able to grow and improve my skills significantly. <br/>I am grateful to have had the opportunity to learn from such a dedicated and knowledgeable educator."
+    },
+    {
+      "title": "Syed Farrukh Shah",
+      "designation": "Frontend Lead - Siliconplex",
+      "avatarUrl": "syedFarrukhShah",
+      "profileUrl":"#",
+      "content": "I highly recommend Hammad for any development work, especially in the Django and React stack. <br/>Over the course of several projects, he consistently demonstrated not only <br/>technical expertise but also an incredible work ethic and problem-solving mindset. <br/>If you’re looking for a dependable developer with a strong skill set in <br/>Django and React. Definitely recommend him."
     }
   ]

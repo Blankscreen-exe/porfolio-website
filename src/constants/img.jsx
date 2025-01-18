@@ -10,6 +10,7 @@ import qamarAbbas from './images/testimonials/qamarAbbas.jpg'
 import saqibNajam from './images/testimonials/saqibNajam.jpg'
 import zainUlAbidin from './images/testimonials/zainUlAbidin.jpg'
 import mTahaHassan from './images/testimonials/mTahaHassan.jpg'
+import syedFarrukhShah from './images/testimonials/syedFarrukhShah.jpg'
 import anonMale from './images/testimonials/anonMale.png'
 import anonFemale from './images/testimonials/anonFemale.png'
 
@@ -76,6 +77,7 @@ export default {
         zainUlAbidin,
         mHammad,
         chanderHarwani,
+        syedFarrukhShah,
         anonMale,
         anonFemale,
     },
