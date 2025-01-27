@@ -19,6 +19,8 @@ import codebit from './images/awards/codebit.jpg'
 import digitaleducationawareness from './images/awards/digitaleducationawareness.jpg'
 import reachinglocalinitiatives from './images/awards/reachinglocalinitiatives.jpg'
 import siliconplexanniversary from './images/awards/siliconplexanniversary.jpg'
+import aghakhanuniversity from './images/awards/aghakhanuniversity.jpeg'
+import comstech from './images/awards/comstech.jpeg'
 
 // Abstract
 import abstract1 from './images/abstract/1.jpg'
@@ -86,6 +88,8 @@ export default {
         siliconplexanniversary,
         digitaleducationawareness,
         reachinglocalinitiatives,
+        aghakhanuniversity,
+        comstech,
     },
     abstract: [
         abstract1,

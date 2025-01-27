@@ -30,11 +30,15 @@ function Awards(props) {
                       <span className="text-primary my-auto">{svgList.calendar}</span> {item.date}
                     </div>
 
-                    <h1 className="text-darken mb-3 text-xl font-medium text-primary">
+                    <h1 className="text-darken mb-3 text-xl font-medium text-primary hover:cursor-pointer" onClick={() =>
+                      document.getElementById(`award_modal_${ind}`).showModal()
+                    }>
                       {capitalizeWords(item.title)}
                     </h1>
 
-                    <p className=" text-content/60">{truncateText(item.description,160)}</p>
+                    <p className=" text-content/60 hover:cursor-pointer" onClick={() =>
+                      document.getElementById(`award_modal_${ind}`).showModal()
+                    }>{truncateText(item.description,110)}</p>
                   </div>
 
                   <div className="">
