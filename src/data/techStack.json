@@ -15,6 +15,13 @@
             "bgColor":"#efd81d"
         },
         {
+            "name":"TypeScript",
+            "url":"https://www.typescriptlang.org",
+            "imgUrl":"typescript",
+            "fontColor":"",
+            "bgColor":"#efd81d"
+        },
+        {
             "name":"PHP",
             "url":"https://www.php.net/",
             "imgUrl":"php",
@@ -69,6 +76,13 @@
             "name":"Express.js",
             "url":"https://expressjs.com/",
             "imgUrl":"expressjs",
+            "fontColor":"",
+            "bgColor":"#e96228"
+        },
+        {
+            "name":"Nest.js",
+            "url":"https://nestjs.com",
+            "imgUrl":"nestjs",
             "fontColor":"",
             "bgColor":"#e96228"
         },
@@ -145,6 +159,13 @@
             "bgColor":"#e96228"
         },
         {
+            "name":"Bulma CSS",
+            "url":"https://bulma.io",
+            "imgUrl":"bulma",
+            "fontColor":"",
+            "bgColor":"#e96228"
+        },
+        {
             "name":"Bootstrap",
             "url":"https://getbootstrap.com/",
             "imgUrl":"bootstrap",
@@ -162,6 +183,13 @@
             "name":"Streamlit",
             "url":"https://streamlit.io/",
             "imgUrl":"streamlit",
+            "fontColor":"",
+            "bgColor":"#e96228"
+        },
+        {
+            "name":"Shadcn/ui",
+            "url":"https://ui.shadcn.com",
+            "imgUrl":"shadcn",
             "fontColor":"",
             "bgColor":"#e96228"
         }

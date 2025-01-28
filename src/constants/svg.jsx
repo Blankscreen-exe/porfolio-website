@@ -5,6 +5,7 @@ import TechStack from "../components/home/TechStack";
 import python from './svg/techstack/languages/python.svg'
 import nodejs from './svg/techstack/languages/nodejs.svg'
 import javascript from './svg/techstack/languages/javascript.svg'
+import typescript from './svg/techstack/languages/typescript.svg'
 import php from './svg/techstack/languages/php.svg'
 import solidity from './svg/techstack/languages/solidity.svg'
 import html from './svg/techstack/languages/html.svg'
@@ -13,6 +14,7 @@ import css from './svg/techstack/languages/css.svg'
 import django from './svg/techstack/backend/django.svg'
 import djangorestframework from './svg/techstack/backend/djangorestframework.svg'
 import expressjs from './svg/techstack/backend/expressjs.svg'
+import nestjs from './svg/techstack/backend/nestjs.svg'
 import laravel from './svg/techstack/backend/laravel.svg'
 import flask from './svg/techstack/backend/flask.svg'
 import fastapi from './svg/techstack/backend/fastapi.svg'
@@ -36,9 +38,12 @@ import reactrouter from './svg/techstack/frontend/reactrouter.svg'
 import redux from './svg/techstack/frontend/redux.svg'
 import sass from './svg/techstack/frontend/sass.svg'
 import tailwind from './svg/techstack/frontend/tailwind.svg'
+import bulma from './svg/techstack/frontend/bulma.svg'
 import bootstrap from './svg/techstack/frontend/bootstrap.svg'
 import streamlit from './svg/techstack/frontend/streamlit.svg'
 import vitejs from './svg/techstack/frontend/vitejs.svg'
+import nextjs from './svg/techstack/frontend/nextjs.svg'
+import shadcn from './svg/techstack/frontend/shadcn.svg'
 // other
 import docker from './svg/techstack/other/docker.svg'
 import git from './svg/techstack/other/git.svg'
@@ -805,9 +810,10 @@ export default {
       nodejs,
       solidity,
       javascript,
+      typescript,
       php,
       html,
-      css
+      css,
     },
     database: {
       postgresql,
@@ -859,11 +865,15 @@ export default {
       tailwind,
       bootstrap,
       streamlit,
+      bulma,
+      nextjs,
+      shadcn,
     },
     backend: {
       django,
       djangorestframework,
       expressjs,
+      nestjs,
       laravel,
       odoo,
       flask,
