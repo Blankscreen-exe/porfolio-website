@@ -86,7 +86,8 @@
             "Truffle",
             "Web3.js",
             "React.js",
-            "Metamask"
+            "Metamask",
+            "Nest.js"
         ],
         "projUrl": null,
         "githubUrl": null,
@@ -103,7 +104,8 @@
             "React.js", 
             "Hedera Hashgraph",
             "Metamask",
-            "Ethers.js"
+            "Ethers.js",
+            "Nest.js"
         ],
         "projUrl": null,
         "githubUrl": null,
