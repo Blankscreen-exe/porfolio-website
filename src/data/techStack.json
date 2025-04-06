@@ -243,6 +243,13 @@
             "imgUrl":"mssql",
             "fontColor":"",
             "bgColor":"#e96228"
+        },
+        {
+            "name":"Elasticsearch",
+            "url":"https://www.elastic.co/elasticsearch",
+            "imgUrl":"elasticsearch",
+            "fontColor":"",
+            "bgColor":"#e96228"
         }
     ],
     "ML DS AI": [

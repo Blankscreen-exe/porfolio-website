@@ -71,6 +71,7 @@ import sqlite from './svg/techstack/database/sqlite.svg'
 import mysql from './svg/techstack/database/mysql.svg'
 import mssql from './svg/techstack/database/mssql.svg'
 import firebase from './svg/techstack/database/firebase.svg'
+import elasticsearch from './svg/techstack/database/elasticsearch.svg'
 
 // Project List
 import projectUrl from './svg/projectList/projectUrl.svg'
@@ -824,6 +825,7 @@ export default {
       mongodb,
       firebase,
       redis,
+      elasticsearch,
     },
     ml_ds_ai: {
       numpy,
