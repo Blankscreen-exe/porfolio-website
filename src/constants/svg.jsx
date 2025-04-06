@@ -62,6 +62,7 @@ import aws from './svg/techstack/other/aws.svg'
 import opencv from './svg/techstack/other/opencv.svg'
 import power_apps from './svg/techstack/other/power_apps.svg'
 import terraform from './svg/techstack/other/terraform.svg'
+import webflow from './svg/techstack/other/webflow.svg'
 // database
 import postgresql from './svg/techstack/database/postgresql.svg'
 import redis from './svg/techstack/database/redis.svg'
@@ -855,6 +856,7 @@ export default {
       opencv,
       power_apps,
       terraform,
+      webflow,
     },
     frontend: {
       reactjs,
