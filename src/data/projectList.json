@@ -116,6 +116,36 @@
         "openToContrib": false
     },
     {
+        "title": "ExpenTable",
+        "description": "An Expendible Timtable suitable for quick weekly planning. Simple yet loaded with features you will love.",
+        "tags": [
+            "React.js", 
+            "Node.js"
+        ],
+        "projUrl": null,
+        "githubUrl": "https://github.com/Blankscreen-exe/ExpenTable",
+        "publishDate": null,
+        "thumbnailUrl": null,
+        "category":"hobby",
+        "status": "ongoing",
+        "openToContrib": true
+    },
+    {
+        "title": "YC Directory",
+        "description": "A startup directory where you can showcase your startup and engage with people.",
+        "tags": [
+            "Next.js", 
+            "Node.js"
+        ],
+        "projUrl": null,
+        "githubUrl": "https://github.com/Blankscreen-exe/yc_directory",
+        "publishDate": null,
+        "thumbnailUrl": null,
+        "category":"hobby",
+        "status": "ongoing",
+        "openToContrib": true
+    },
+    {
         "title": "The Save Stash",
         "description": "This is where I keep all my games' save files as trophies",
         "tags": [
