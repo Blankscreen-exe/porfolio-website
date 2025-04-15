@@ -80,13 +80,6 @@
             "bgColor":"#e96228"
         },
         {
-            "name":"Nest.js",
-            "url":"https://nestjs.com",
-            "imgUrl":"nestjs",
-            "fontColor":"",
-            "bgColor":"#e96228"
-        },
-        {
             "name":"Laravel",
             "url":"https://laravel.com/",
             "imgUrl":"laravel",
@@ -148,6 +141,13 @@
             "name":"React Router",
             "url":"https://reactrouter.com/en/main",
             "imgUrl":"reactrouter",
+            "fontColor":"",
+            "bgColor":"#e96228"
+        },
+        {
+            "name":"Next.js",
+            "url":"https://nextjs.org",
+            "imgUrl":"nextjs",
             "fontColor":"",
             "bgColor":"#e96228"
         },
