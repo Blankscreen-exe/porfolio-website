@@ -131,6 +131,22 @@
         "openToContrib": true
     },
     {
+        "title": "Crypto Price Tracker",
+        "description": "ETL pipeline with DLQ support for extracting and aggregating Crypto timeseries data.",
+        "tags": [
+            "Flask", 
+            "Python",
+            "JavaScript"
+        ],
+        "projUrl": null,
+        "githubUrl": "https://github.com/Blankscreen-exe/Crypto-Price-Tracker",
+        "publishDate": null,
+        "thumbnailUrl": "https://raw.githubusercontent.com/Blankscreen-exe/Crypto-Price-Tracker/refs/heads/main/docs/assets/preview2.png",
+        "category":"hobby",
+        "status": "ongoing",
+        "openToContrib": true
+    },
+    {
         "title": "YC Directory",
         "description": "A startup directory where you can showcase your startup and engage with people.",
         "tags": [
