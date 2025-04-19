@@ -63,19 +63,36 @@
         "openToContrib": false
     },
     {
-        "title": "Cloud Munshi",
-        "description": "It is a Point-of-Sales (POS) software for those who wan to keep track of their inventory and manage businesses.",
+        "title": "Crypto Price Tracker",
+        "description": "ETL pipeline with DLQ support for extracting and aggregating Crypto timeseries data.",
         "tags": [
-            "PHP", 
-            "Yii"
+            "Flask", 
+            "Python",
+            "JavaScript"
         ],
-        "projUrl": "https://www.cloudmunshi.com/demo/munshi",
-        "githubUrl": null,
-        "publishDate": "Live and Ongoing",
-        "thumbnailUrl":"project:cloudmunshi",
-        "category":"corporate",
+        "projUrl": null,
+        "githubUrl": "https://github.com/Blankscreen-exe/Crypto-Price-Tracker",
+        "publishDate": null,
+        "thumbnailUrl": "https://raw.githubusercontent.com/Blankscreen-exe/Crypto-Price-Tracker/refs/heads/main/docs/assets/preview2.png",
+        "category":"hobby",
         "status": "ongoing",
-        "openToContrib": false
+        "openToContrib": true
+    },
+    {
+        "title": "The Duck Council",
+        "description": "A council to reflect on problems using the Rubber Duck Debugging method.",
+        "tags": [
+            "Crew.ai", 
+            "Python",
+            "Flask"
+        ],
+        "projUrl": null,
+        "githubUrl": "https://github.com/Blankscreen-exe/The-Duck-Council",
+        "publishDate": null,
+        "thumbnailUrl": null,
+        "category":"hobby",
+        "status": "ongoing",
+        "openToContrib": true
     },
     {
         "title": "Ticket Booking System Decentralized App",
@@ -131,22 +148,6 @@
         "openToContrib": true
     },
     {
-        "title": "Crypto Price Tracker",
-        "description": "ETL pipeline with DLQ support for extracting and aggregating Crypto timeseries data.",
-        "tags": [
-            "Flask", 
-            "Python",
-            "JavaScript"
-        ],
-        "projUrl": null,
-        "githubUrl": "https://github.com/Blankscreen-exe/Crypto-Price-Tracker",
-        "publishDate": null,
-        "thumbnailUrl": "https://raw.githubusercontent.com/Blankscreen-exe/Crypto-Price-Tracker/refs/heads/main/docs/assets/preview2.png",
-        "category":"hobby",
-        "status": "ongoing",
-        "openToContrib": true
-    },
-    {
         "title": "YC Directory",
         "description": "A startup directory where you can showcase your startup and engage with people.",
         "tags": [
@@ -176,6 +177,22 @@
         "category":"hobby",
         "status": "finished",
         "openToContrib": true
+    },
+    {
+        "title": "Cloud Munshi",
+        "description": "It is a Point-of-Sales (POS) software for those who wan to keep track of their inventory and manage businesses.",
+        "tags": [
+            "PHP", 
+            "Yii",
+            "Next.js"
+        ],
+        "projUrl": "https://www.cloudmunshi.com/demo/munshi",
+        "githubUrl": null,
+        "publishDate": "Live and Ongoing",
+        "thumbnailUrl":"project:cloudmunshi",
+        "category":"corporate",
+        "status": "ongoing",
+        "openToContrib": false
     },
     {
         "title": "Tkinter Mod Manager",
