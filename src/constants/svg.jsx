@@ -32,6 +32,7 @@ import langchain from './svg/techstack/ml_ds_ai/langchain.svg'
 import scikitlearn from './svg//techstack/ml_ds_ai/scikitlearn.svg'
 import mlflow from './svg//techstack/ml_ds_ai/mlflow.svg'
 import dagshub from './svg//techstack/ml_ds_ai/dagshub.svg'
+import crewai from './svg//techstack/ml_ds_ai/crewai.svg'
 // frontend
 import reactjs from './svg/techstack/frontend/reactjs.svg'
 import reactrouter from './svg/techstack/frontend/reactrouter.svg'
@@ -839,6 +840,7 @@ export default {
       scikitlearn,
       mlflow,
       dagshub,
+      crewai,
     },
     other: {
       docker, 

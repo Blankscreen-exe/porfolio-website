@@ -329,6 +329,13 @@
             "imgUrl":"dagshub",
             "fontColor":"",
             "bgColor":""
+        },
+        {
+            "name":"Crew AI",
+            "url":"https://www.crewai.com",
+            "imgUrl":"crewai",
+            "fontColor":"",
+            "bgColor":""
         }
     ],
     "other": [
