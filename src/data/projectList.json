@@ -143,7 +143,7 @@
         "projUrl": null,
         "githubUrl": "https://github.com/Blankscreen-exe/ExpenTable",
         "publishDate": null,
-        "thumbnailUrl": null,
+        "thumbnailUrl": "https://raw.githubusercontent.com/Blankscreen-exe/ExpenTable/refs/heads/main/docs/assets/logo.png",
         "category":"hobby",
         "status": "ongoing",
         "openToContrib": true
