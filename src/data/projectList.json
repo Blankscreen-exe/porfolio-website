@@ -255,7 +255,7 @@
         "projUrl": "https://github.com/Blankscreen-exe/shell-show",
         "githubUrl": "https://github.com/Blankscreen-exe/shell-show",
         "publishDate": "Oct 2024",
-        "thumbnailUrl": null,
+        "thumbnailUrl": "https://raw.githubusercontent.com/Blankscreen-exe/shell-show/refs/heads/main/docs/assets/preview.png",
         "category":"hobby",
         "status": "finished",
         "openToContrib": true
@@ -272,7 +272,7 @@
         "projUrl": "https://github.com/Blankscreen-exe/the-void",
         "githubUrl": "https://github.com/Blankscreen-exe/the-void",
         "publishDate": "Feb 2025",
-        "thumbnailUrl": "https://github.com/Blankscreen-exe/the-void/blob/main/docs/assets/thumbnail.png",
+        "thumbnailUrl": "https://raw.githubusercontent.com/Blankscreen-exe/the-void/refs/heads/main/docs/assets/thumbnail.png",
         "category":"hobby",
         "status": "finished",
         "openToContrib": true
