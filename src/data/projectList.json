@@ -246,6 +246,38 @@
         "openToContrib": true
     },
     {
+        "title": "Shell Show",
+        "description": "A CMD applet which can render images inside the terminal.",
+        "tags": [
+            "Python",
+            "Pillow"
+        ],
+        "projUrl": "https://github.com/Blankscreen-exe/shell-show",
+        "githubUrl": "https://github.com/Blankscreen-exe/shell-show",
+        "publishDate": "Oct 2024",
+        "thumbnailUrl": null,
+        "category":"hobby",
+        "status": "finished",
+        "openToContrib": true
+    },
+    {
+        "title": "You vs The Void",
+        "description": "If you click on the void ... it will click back.",
+        "tags": [
+            "JavaScript", 
+            "JQuery",
+            "CSS",
+            "HTML"
+        ],
+        "projUrl": "https://github.com/Blankscreen-exe/the-void",
+        "githubUrl": "https://github.com/Blankscreen-exe/the-void",
+        "publishDate": "Feb 2025",
+        "thumbnailUrl": "https://github.com/Blankscreen-exe/the-void/blob/main/docs/assets/thumbnail.png",
+        "category":"hobby",
+        "status": "finished",
+        "openToContrib": true
+    },
+    {
         "title": "Color To GrayScale Converter",
         "description": "I made this to assist me in picking out the grayscale version of colors during my pixel art practice. Nothing too fancy about it.",
         "tags": [
@@ -258,7 +290,7 @@
         "thumbnailUrl": null,
         "category":"hobby",
         "status": "finished",
-        "openToContrib": false
+        "openToContrib": true
     },
     {
         "title": "Triple Triad Card Maker",
