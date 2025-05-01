@@ -27,7 +27,7 @@ function Home(props) {
     <>
         <Hero/>
         <BlockQuote
-          text="I am your go-to guy for <i>any</i> of your <span class='font-bold'>Python</span> related needs. Whatever it is. You dream it and I bring it to life."
+          text="I am your go-to guy for <span class='font-italic'>any</span> of your  Python</span> related needs. Whatever it is. You <span class='font-italic'>dream it</span> and I <span class='font-italic'>bring it to life</span>."
         />
         
         <Testimonials/>
