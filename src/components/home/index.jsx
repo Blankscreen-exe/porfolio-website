@@ -27,8 +27,9 @@ function Home(props) {
     <>
         <Hero/>
         <BlockQuote
-          text="I'm a <span class='font-bold'>Full-stack Software Engineer</span> and a <span class='font-bold'>Data Scientist</span>. But that alone cannot define who I am. I have developed this site in hopes of conveying that message."
+          text="I am your go-to guy for <i>any</i> of you your Python related needs. Whatever it is. You dream it and I bring it to life."
         />
+        
         <Testimonials/>
         {/* <div class="flex justify-center">
           <Paragraph text={"Note: The testimonials above are taken from my linkedin page."}/>
