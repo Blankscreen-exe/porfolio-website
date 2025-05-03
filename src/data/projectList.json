@@ -246,6 +246,22 @@
         "openToContrib": true
     },
     {
+        "title": "TermaChat",
+        "description": "A CMD applet for peer-to-peer serverless communication.",
+        "tags": [
+            "Python",
+            "Websockets",
+            "Multithreading"
+        ],
+        "projUrl": "https://github.com/Blankscreen-exe/TermaChat",
+        "githubUrl": "https://github.com/Blankscreen-exe/TermaChat",
+        "publishDate": "Jan 2025",
+        "thumbnailUrl": "https://raw.githubusercontent.com/Blankscreen-exe/TermaChat/refs/heads/main/docs/thumbnail.png",
+        "category":"hobby",
+        "status": "finished",
+        "openToContrib": true
+    },
+    {
         "title": "Shell Show",
         "description": "A CMD applet which can render images inside the terminal.",
         "tags": [
