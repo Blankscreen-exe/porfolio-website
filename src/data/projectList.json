@@ -31,6 +31,22 @@
         "openToContrib": false
     },
     {
+        "title": "Go Bro On-Demand Service Booking Platform",
+        "description": "It is an on demand service booking platform where customers can ask for services such as baby-sitting, plumbing, carpenter, A/C Repair etc",
+        "tags": [
+            "PHP", 
+            "Laravel",
+            "React-native"
+        ],
+        "projUrl": "https://www.gobro.co.nz/",
+        "githubUrl": null,
+        "publishDate": "Live and Ongoing",
+        "thumbnailUrl":"project:gobro",
+        "category":"corporate",
+        "status": "ongoing",
+        "openToContrib": false
+    },
+    {
         "title": "NFT Showroom",
         "description": "It is a platform which showcases digital assets while providing a user friendly and a safe way for everyone to engage with the world of NFTs.",
         "tags": [

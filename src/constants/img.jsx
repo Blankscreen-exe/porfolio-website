@@ -54,6 +54,7 @@ import cloudmunshi from './images/projects/cloudmunshi.png'
 import dockerpracticerepo from './images/projects/dockerpracticerepo.png'
 import webglfluidsimulation from './images/projects/webglfluidsimulation.png'
 import thesavestash from './images/projects/thesavestash.png'
+import gobro from './images/projects/gobro.png'
 
 export default {
     certificates: {
@@ -123,6 +124,7 @@ export default {
         dockerpracticerepo,
         webglfluidsimulation,
         thesavestash,
+        gobro,
     },
     lazyNote
 }
