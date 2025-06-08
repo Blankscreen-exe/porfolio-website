@@ -20,6 +20,7 @@ import flask from './svg/techstack/backend/flask.svg'
 import fastapi from './svg/techstack/backend/fastapi.svg'
 import odoo from './svg/techstack/backend/odoo.svg'
 import yii from './svg/techstack/backend/yii.svg'
+import sanity from './svg/techstack/backend/sanity.svg'
 // ml ds ai
 import numpy from './svg/techstack/ml_ds_ai/numpy.svg'
 import openai from './svg/techstack/ml_ds_ai/openai.svg'
@@ -885,6 +886,7 @@ export default {
       flask,
       fastapi,
       yii,
+	  sanity,
     },
   },
   projectList: {

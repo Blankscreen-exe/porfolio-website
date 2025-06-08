@@ -107,6 +107,13 @@
             "fontColor":"",
             "bgColor":"#e96228"
         },
+	{
+            "name":"Sanity",
+            "url":"https://www.sanity.io",
+            "imgUrl":"sanity",
+            "fontColor":"",
+            "bgColor":"#e96228"
+        },
         {
             "name":"Yii",
             "url":"https://www.yiiframework.com",
