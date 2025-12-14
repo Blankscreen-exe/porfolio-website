@@ -20,6 +20,7 @@ import Protip from '../common/Protip'
 import Paragraph from '../common/Paragraph'
 import GoToProjectButton from './GoToProjectButton'
 import SectionHeading from '../common/SectionHeading'
+import Metrics from './Metrics'
 
 function Home(props) {
   window.scrollTo(0, 0);
@@ -27,13 +28,16 @@ function Home(props) {
     <>
         <Hero/>
         <BlockQuote
-          text="I am your go-to guy for <span class='underline'>any</span> of your  <span class='font-bold'>Python</span> related needs. Whatever it is. You dream it and I bring it to life."
+          text="I help teams design, build, and stabilize <span class='bold'>production-grade systems</span>. From backend services and integrations to long-term maintainability."
         />
         
         <Testimonials/>
         {/* <div class="flex justify-center">
           <Paragraph text={"Note: The testimonials above are taken from my linkedin page."}/>
         </div> */}
+        
+        <Metrics/>
+        
         <TechStack/>
         {/* <Protip/> */}
         {/* <HorizontalSlider

@@ -9,26 +9,18 @@ import data from "../../data/booksList";
 import { capitalizeFirstLetter, capitalizeWords } from "../../helpers/common";
 
 // Constants
-import svgList from "../../constants/svg";
 import appConstants from "../../constants/appConstants";
 
 // Components
 import DataTable from "../common/DataTable";
 import PageTitle from "../common/PageTitle";
 import Paragraph from "../common/Paragraph";
-import LazyNote from "../common/LazyNote";
 
 function index(props) {
   window.scrollTo(0, 0);
   const columnHelper = createColumnHelper();
 
   const columns = [
-    columnHelper.accessor("id", {
-      cell: (row) => <span>{row.getValue()}</span>,
-      header: () => (
-        <h2 className="text-lg hover:cursor-pointer hover:text-primary">ID</h2>
-      ),
-    }),
     columnHelper.accessor("title", {
       cell: (row) => <b>{capitalizeWords(row.getValue())}</b>,
       header: () => (
@@ -45,84 +37,7 @@ function index(props) {
         </h2>
       ),
     }),
-    columnHelper.accessor("status", {
-      cell: (row) => {
-        let stat;
-        switch (row.getValue()) {
-          case "inqueue":
-            stat = <span>🔜 In Queue</span>;
-            break;
-          case "finished":
-            stat = <span>✅ Finished</span>;
-            break;
-          case "reading":
-            stat = <span className="px-2 py-1 rounded-md text-black bg-yellow-500">⬛️ Reading</span>;
-            break;
-          default:
-            stat = <span>⚪️ N/A</span>;
-        }
-        return (stat);
-      },
-      header: () => (
-        <h2 className="text-lg hover:cursor-pointer hover:text-primary w-[110px]">
-          Status
-        </h2>
-      ),
-    }),
-    columnHelper.accessor("recommendation", {
-      cell: (row) => {
-        let rating;
-        if (row.getValue()===false) {
-          rating="No ratings yet" 
-        } else if (row.getValue()===0) {
-          rating="It was pretty dumb, tbh" 
-        } else {
-          rating="⭐️".repeat(row.getValue())
-        }
-        return (<>{rating}</>);
-      }
-        ,
-      header: () => (
-        <h2 className="text-lg hover:cursor-pointer hover:text-primary">
-          Recommendation
-        </h2>
-      ),
-    }),
-    columnHelper.accessor("review", {
-      cell: (row) => (
-        <>
-          {row.getValue() ? (
-            <>
-              <button
-                className="p-1 bg-tertiary border-0 hover:border-0 hover:bg-primary hover:text-bg1 focus:outline-none rounded-full"
-                onClick={() =>
-                  document.getElementById(`booklist_modal_${row.row.id}`).showModal()
-                }
-              >
-                {svgList.view}
-              </button>
-              <dialog id={`booklist_modal_${row.row.id}`} className="modal">
-                <div className="modal-box bg-bg2">
-                  <h3 className="font-bold text-lg">Review</h3>
-                  <p className="py-4">{row.getValue()}</p>
-                </div>
-                <form method="dialog" className="modal-backdrop">
-                  <button>close</button>
-                </form>
-              </dialog>
-            </>
-          ) : (
-            <>No reviews yet</>
-          )}
-        </>
-      ),
-      header: () => (
-        <h2 className="text-lg hover:cursor-pointer hover:text-primary">
-          Review
-        </h2>
-      ),
-    }),
-    columnHelper.accessor("genre", {
+    columnHelper.accessor("tags", {
       cell: (row) => (
         <span className="flex flex-row flex-wrap gap-2">
           {row.getValue().map((item, ind) => {
@@ -138,7 +53,7 @@ function index(props) {
       enableSorting: false,
       header: () => (
         <h2 className="text-lg hover:cursor-pointer hover:text-primary w-[200px]">
-          Genre
+          Tags
         </h2>
       ),
     }),
@@ -154,9 +69,7 @@ function index(props) {
   return (
     <div className="mb-12">
       <PageTitle title="My Book List"/>
-      <Paragraph text={"Books I have read and books I have reviewed. Hope you <i>will</i> find a <span class='font-bold'>good read</span> somewhere in there!<br/><br/>We can also share thoughts on a particular book if you like, <a href="+appConstants.routes.contacts+" class='text-contentLink underline hover:text-contentLinkHover'>connect with me here</a>"}/>
-      <Paragraph text={"<span class='font-bold'>Note</span> that this is an incomplete list and it is still WIP."}/>
-      <LazyNote/>
+      <Paragraph text={"This is a curated collection of technical books covering software development, cybersecurity, networking, Linux, machine learning, and artificial intelligence. These books represent essential reading for anyone looking to deepen their understanding of modern technology and engineering practices.<br/><br/>If you'd like to discuss any of these books or share recommendations, feel free to <a href="+appConstants.routes.contacts+" class='text-contentLink underline hover:text-contentLinkHover'>connect with me here</a>"}/>
       <DataTable data={data} columns={columns} />
     </div>
   );

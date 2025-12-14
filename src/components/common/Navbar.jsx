@@ -59,22 +59,22 @@ function NavBar(props) {
       // ]
     },
     {
-      name: "My Experience",
+      name: "Awards & Certificates",
       icon: svgList.navIcons.experience,
       url: appConstants.routes.experience,
       children: [
         {
-          name: "Work History & Awards",
+          name: "Honors & Awards",
           url: appConstants.routes.experienceWorkHistory
         },
         {
           name: "Certificates",
           url: appConstants.routes.experienceCertificates
         },
-        {
-          name: "Targeted Skills",
-          url: appConstants.routes.experienceUpcomingSkills
-        },
+        // {
+        //   name: "Targeted Skills",
+        //   url: appConstants.routes.experienceUpcomingSkills
+        // },
       ]
     },
     {
@@ -82,13 +82,13 @@ function NavBar(props) {
       icon: svgList.navIcons.lists,
       url: appConstants.routes.lists,
       children: [
+        // {
+        //   name: "Dev Resources",
+        //   url: appConstants.routes.listsResources
+        // },
         {
-          name: "Dev Resources",
-          url: appConstants.routes.listsResources
-        },
-        {
-          name: "Games",
-          url: appConstants.routes.listsGames
+          name: "Bookmarks",
+          url: appConstants.routes.listsBookmarks
         },
         {
           name: "Books",

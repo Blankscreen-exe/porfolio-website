@@ -36,6 +36,13 @@
             "bgColor":"#74ad5e"
         },
         {
+            "name":"Go Lang",
+            "url":"https://go.dev",
+            "imgUrl":"golang",
+            "fontColor":"",
+            "bgColor":"#74ad5e"
+        },
+        {
             "name":"Solidity",
             "url":"https://soliditylang.org/",
             "imgUrl":"solidity",
@@ -101,13 +108,34 @@
             "bgColor":"#e96228"
         },
         {
+            "name":"Hono",
+            "url":"https://hono.dev",
+            "imgUrl":"hono",
+            "fontColor":"",
+            "bgColor":"#e96228"
+        },
+        {
+            "name":"Gin",
+            "url":"https://gin-gonic.com",
+            "imgUrl":"gin",
+            "fontColor":"",
+            "bgColor":"#e96228"
+        },
+        {
+            "name":"Echo",
+            "url":"https://echo.labstack.com",
+            "imgUrl":"echo",
+            "fontColor":"",
+            "bgColor":"#e96228"
+        },
+        {
             "name":"ODOO",
             "url":"https://www.odoo.com/",
             "imgUrl":"odoo",
             "fontColor":"",
             "bgColor":"#e96228"
         },
-	{
+	    {
             "name":"Sanity",
             "url":"https://www.sanity.io",
             "imgUrl":"sanity",

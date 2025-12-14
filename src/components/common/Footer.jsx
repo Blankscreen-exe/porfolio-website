@@ -30,7 +30,7 @@ function Footer(props) {
             <h6 className="footer-title font-bold font-sans text-content border-b-2 border-b-primary">My Work</h6> 
             <NavLink to={appConstants.routes.experienceWorkHistory} className={navLinkClasses}>Experience & Awards</NavLink >
             <NavLink to={appConstants.routes.experienceCertificates} className={navLinkClasses}>Certificates</NavLink >
-            <NavLink to={appConstants.routes.experienceUpcomingSkills} className={navLinkClasses}>Targetted Skills</NavLink >
+            {/* <NavLink to={appConstants.routes.experienceUpcomingSkills} className={navLinkClasses}>Targetted Skills</NavLink > */}
           </nav> 
           <nav>
             <h6 className="footer-title font-bold font-sans text-content border-b-2 border-b-primary">Services</h6> 
@@ -42,15 +42,15 @@ function Footer(props) {
           <nav>
             <h6 className="footer-title font-bold font-sans text-content border-b-2 border-b-primary">Lists</h6> 
             <NavLink to={appConstants.routes.listsBooks} className={navLinkClasses}>Books</NavLink >
-            <NavLink to={appConstants.routes.listsGames} className={navLinkClasses}>Games</NavLink >
-            <NavLink to={appConstants.routes.listsResources} className={navLinkClasses}>Dev Resources</NavLink >
+            <NavLink to={appConstants.routes.listsBookmarks} className={navLinkClasses}>Games</NavLink >
+            {/* <NavLink to={appConstants.routes.listsResources} className={navLinkClasses}>Dev Resources</NavLink > */}
           </nav>
 
         </footer> 
         <footer className="footer px-10 py-4 border-t bg-tertiary/90 text-base-content border-base-300 rounded-b-md">
           <aside className="items-center grid-flow-col">
             {svgLists.hashIcon}
-            <p><b className='text-primary'>M.Hammad Hassan</b> <br/>Code is a language I can speak!</p>
+            <p><b className='text-primary'>M.Hammad Hassan</b> <br/>Senior Engineer</p>
           </aside> 
           <nav className="md:place-self-center md:justify-self-end w-full md:w-fit">
             <div className="w-full md:w-fit grid grid-flow-col gap-4">

@@ -21,13 +21,15 @@ function Languages(props) {
                     flag = svgList.languages.german
                 } else if (item.language === "code") {
                     flag = svgList.languages.code
+                } else if (item.language === "japanese") {
+                    flag = svgList.languages.japanese
                 }
 
                 return (
                     <div key={ind} className="p-6 md:w-[45%] w-full">
                         <div className="relative overflow-hidden rounded-2xl bg-gray-900 px-6 pb-9 shadow-xl shadow-shadow h-full">
                             <img
-                                className="absolute inset-0 h-full w-full object-cover brightness-50 saturate-100"
+                                className="absolute inset-0 h-full w-full object-cover brightness-25 saturate-100"
                                 src={imgList.lang.bg}
                                 alt=""
                             />

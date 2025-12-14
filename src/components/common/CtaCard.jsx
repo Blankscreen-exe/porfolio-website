@@ -6,7 +6,7 @@ import svgList from "../../constants/svg";
 import imgList from "../../constants/img";
 import socialLinks from '../../data/socialLinks.json'
 
-const ctaText = "No matter how big or small your project is, I'm always interested in hearing new ideas. Drop me a line and let's discuss your vision and how I can help make it a reality.";
+const ctaText = "Every great project starts with a conversation. Share your idea and let’s see how we can bring it to life.";
 const ctaName = "M. Hammad Hassan";
 const ctaDesignation = "";
 

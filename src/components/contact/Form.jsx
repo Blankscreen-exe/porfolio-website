@@ -199,7 +199,7 @@ function Form(props) {
       :
       (<div className="md:min-w-96 text-center">
         <p className="text-xl font-bold text-primary mb-4">I Just Recieved Your Message! 🥳</p>
-        <p className="mb-4">Thank you or taking the time to write a wonderful message. I'll make sure to read it and get back to you as soon as possible (probably within 24 hours)</p>
+        <p className="mb-4">Thank you for taking the time to write a wonderful message. I'll make sure to read it and get back to you as soon as possible (probably within 24 hours)</p>
         <p>But hey! if you would like to send another <span className="text-primary hover:underline cursor-pointer" onClick={handleFillAgain}>click here</span></p>
       </div>)}
       {/**<div class="cf-turnstile" data-sitekey="0x4AAAAAAAcY1yqOBIph005P" data-callback="() => console.log('CAptcha RAN!!')"></div>**/}

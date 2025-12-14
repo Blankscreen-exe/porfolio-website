@@ -1,5 +1,11 @@
 import TechStack from "../components/home/TechStack";
 
+// language flags
+import englishFlag from './svg/languages/english.svg'
+import germanFlag from './svg/languages/german.svg'
+import codeFlag from './svg/languages/code.svg'
+import japaneseFlag from './svg/languages/japanese.svg'
+
 // techstack icons
 // languages
 import python from './svg/techstack/languages/python.svg'
@@ -10,6 +16,7 @@ import php from './svg/techstack/languages/php.svg'
 import solidity from './svg/techstack/languages/solidity.svg'
 import html from './svg/techstack/languages/html.svg'
 import css from './svg/techstack/languages/css.svg'
+import golang from './svg/techstack/languages/golang.svg'
 // backend
 import django from './svg/techstack/backend/django.svg'
 import djangorestframework from './svg/techstack/backend/djangorestframework.svg'
@@ -21,6 +28,9 @@ import fastapi from './svg/techstack/backend/fastapi.svg'
 import odoo from './svg/techstack/backend/odoo.svg'
 import yii from './svg/techstack/backend/yii.svg'
 import sanity from './svg/techstack/backend/sanity.svg'
+import hono from './svg/techstack/backend/hono.svg'
+import gin from './svg/techstack/backend/gin.svg'
+import echo from './svg/techstack/backend/echo.svg'
 // ml ds ai
 import numpy from './svg/techstack/ml_ds_ai/numpy.svg'
 import openai from './svg/techstack/ml_ds_ai/openai.svg'
@@ -798,15 +808,17 @@ export default {
   </svg>),
   languages: {
     english: (
-      <svg className="border-2 rounded-sm my-auto" height="20px" viewBox="0 0 60 30" width="30px" xmlns="http://www.w3.org/2000/svg"><path d="m0 0v30h60v-30z" fill="#00247d" /><path d="m0 0 60 30m0-30-60 30" stroke="#fff" stroke-width="6" /><path d="m0 0 60 30m0-30-60 30" stroke="#cf142b" stroke-width="4" /><path d="m30 0v30m-30-15h60" stroke="#fff" stroke-width="10" /><path d="m30 0v30m-30-15h60" stroke="#cf142b" stroke-width="6" /></svg>
+      <img src={englishFlag} className="border-2 rounded-sm my-auto" height="20px" width="30px" alt="English flag" />
     ),
-    german: (<svg className="border-2 rounded-sm my-auto" xmlns="http://www.w3.org/2000/svg" width="30px" height="20px" viewBox="0 0 216.498 130.785"><g fill-rule="evenodd" clip-rule="evenodd"><path fill="#cc2229" d="M.25 0h215.999v130.607H.25V0z" /><path d="M.25 0h215.999v43.776H.25V0z" /><path fill="#f2ca30" stroke="#f2ca30" stroke-width=".499" stroke-miterlimit="2.613" d="M.25 87.624h215.999v42.912H.25V87.624z" /></g></svg>),
-    code: (<svg className="border-2 rounded-sm my-auto" width="30px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" version="1.1" fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-      <rect height="4.5" width="3" y="1.75" x="3.25" />
-      <path d="m9.75 6.25h3m-3-4.5h1.5v4" />
-      <rect height="4.5" width="3" y="9.75" x="9.75" />
-      <path d="m3.25 14.25h3m-3-4.5h1.5v4" />
-    </svg>)
+    german: (
+      <img src={germanFlag} className="border-2 rounded-sm my-auto" width="30px" height="20px" alt="German flag" />
+    ),
+    code: (
+      <img src={codeFlag} className="border-2 rounded-sm my-auto" width="30px" height="20px" alt="Code icon" />
+    ),
+    japanese: (
+      <img src={japaneseFlag} className="border-2 rounded-sm my-auto" alt="Japanese flag" />
+    )
   },
   techStack: {
     languages: {
@@ -818,6 +830,7 @@ export default {
       php,
       html,
       css,
+      golang,
     },
     database: {
       postgresql,
@@ -886,7 +899,10 @@ export default {
       flask,
       fastapi,
       yii,
-	  sanity,
+  	  sanity,
+      hono,
+      gin,
+      echo,
     },
   },
   projectList: {

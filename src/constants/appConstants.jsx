@@ -27,6 +27,7 @@ export default {
         listsBooks:"/lists/books",
         listsGames:"/lists/games",
         listsResources:"/lists/useful-dev-resources",
+        listsBookmarks:"/lists/bookmarks",
         
         blog:"/blog",
         

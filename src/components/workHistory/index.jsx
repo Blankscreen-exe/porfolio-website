@@ -9,10 +9,10 @@ function WorkExperience(props) {
   window.scrollTo(0, 0);
   return (
     <div>
-        <PageTitle title="Work Experience"/>
-        <TimeLine/>
+        <PageTitle title="Honors & Awards"/>
+        {/* <TimeLine/> */}
 
-        <SectionHeading title={"Honors & Awards"}/>
+        {/* <SectionHeading title={"Honors & Awards"}/> */}
         <Awards/>
     </div>
   )

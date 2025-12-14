@@ -15,12 +15,12 @@ function About(props) {
     <div>
       <PageTitle title={"Who Am I?"} />
 
-      <BlockQuote text="<span class='font-italic'>Code is a language I can speak</span>, therefore I can communicate with computers and make them do what I want." />
-
+      <BlockQuote text="<span class='font-italic'>I am an Engineer by profession. But what I take most pride in are the people I have met, befriended, helped grow, supported and who come back to share their journey" />
+{/* 
       <SectionHeading title="Education Timeline" />
       <Education />
 
-      <br />
+      <br /> */}
 
       <SectionHeading title="Languages I Can Speak~" />
       <Languages />

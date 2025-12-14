@@ -63,9 +63,18 @@ module.exports = {
               borderColor: "white"
             }  
           },
+          "pulse-ring": {
+            "0%": {
+              boxShadow: "0 0 0 0px rgba(120, 240, 231, 0.4)"
+            },
+            "100%": {
+              boxShadow: "0 0 0 20px rgba(120, 240, 231, 0)"
+            }
+          },
         },
         animation: {
-          typing: "typing 3s steps(20) , blink .7s infinite"
+          typing: "typing 3s steps(20) , blink .7s infinite",
+          "pulse-ring": "pulse-ring 2s infinite"
         }
       },
       screens: {
