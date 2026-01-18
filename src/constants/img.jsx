@@ -56,6 +56,12 @@ import webglfluidsimulation from './images/projects/webglfluidsimulation.png'
 import thesavestash from './images/projects/thesavestash.png'
 import gobro from './images/projects/gobro.png'
 
+// communities
+import dit from './images/communities/dit.png'
+import cybersources from './images/communities/cybersources.png'
+import ieeeear10 from './images/communities/ieeeear10.png'
+import ieeecomputer from './images/communities/ieeecomputer.png'
+
 export default {
     certificates: {
         logo: {
@@ -126,5 +132,11 @@ export default {
         thesavestash,
         gobro,
     },
-    lazyNote
+    lazyNote,
+    communities: {
+        dit,
+        cybersources,
+        ieeeear10,
+        ieeecomputer,
+    },
 }
