@@ -21,6 +21,7 @@ import Paragraph from '../common/Paragraph'
 import GoToProjectButton from './GoToProjectButton'
 import SectionHeading from '../common/SectionHeading'
 import Metrics from './Metrics'
+import Communities from './Communities'
 
 function Home(props) {
   window.scrollTo(0, 0);
@@ -45,6 +46,7 @@ function Home(props) {
           title={"Projects"}
           buttonText={<><span>View</span> {svgList.externalLink}</>}
         /> */}
+        <Communities/>
         <br/>
         <SectionHeading title="Have a project in mind? Let's talk!"/>
         <CtaCard/>

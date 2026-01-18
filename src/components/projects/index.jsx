@@ -56,6 +56,7 @@ function index(props) {
                     category={rowData.category}
                     status={rowData.status}
                     openToContrib={rowData.openToContrib}
+                    caseStudy={rowData.caseStudy || null}
                 />
             </>)
         },

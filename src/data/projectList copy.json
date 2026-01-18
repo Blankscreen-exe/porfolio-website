@@ -205,6 +205,23 @@
         "openToContrib": true
     },
     {
+        "title": "Crypto Price Tracker",
+        "description": "ETL pipeline with DLQ support for extracting and aggregating Crypto timeseries data.",
+        "tags": [
+            "Flask", 
+            "Python",
+            "JavaScript",
+            "MongoDB"
+        ],
+        "projUrl": null,
+        "githubUrl": "https://github.com/Blankscreen-exe/Crypto-Price-Tracker",
+        "publishDate": "Apr 2025",
+        "thumbnailUrl": "https://raw.githubusercontent.com/Blankscreen-exe/Crypto-Price-Tracker/refs/heads/main/docs/assets/preview2.png",
+        "category":"hobby",
+        "status": "ongoing",
+        "openToContrib": true
+    },
+    {
         "title": "The Duck Council",
         "description": "A council to reflect on problems using the Rubber Duck Debugging method.",
         "tags": [
@@ -478,6 +495,23 @@
         "openToContrib": false
     },
     {
+        "title": "Image Classifier App",
+        "description": "This is a simple image classification app made with using MobileNetV2 model and Tensorflow.",
+        "tags": [
+            "Python", 
+            "Machine Learning",
+            "TKinter",
+            "Tensorflow"
+        ],
+        "projUrl": null,
+        "githubUrl": "https://github.com/Blankscreen-exe/Image-Classification-App",
+        "publishDate": "Jul 2023",
+        "thumbnailUrl": "https://github.com/Blankscreen-exe/Image-Classification-App/raw/main/docs/images/app_preview.png",
+        "category":"hobby",
+        "status": "finished",
+        "openToContrib": false
+    },
+    {
         "title": "Python Dependency Report Generator",
         "description": "It produces a docx format document which lists out all the dependencies that a certain python environments uses.",
         "tags": [
@@ -615,5 +649,23 @@
         "category":"hobby",
         "status": "finished",
         "openToContrib": true
+    },
+    {
+        "title": "Invoice Generator",
+        "description": "This is an invoice generator built with Jinja2 and WeasyPrint. You can use this to make a pdf and an html invoice. Before you can use this script, you will need to customize some settings beforehand.",
+        "tags": [
+            "Python", 
+            "Jinja2",
+            "WeasyPrint",
+            "HTML",
+            "CSS"
+        ],
+        "projUrl": null,
+        "githubUrl": "https://github.com/Blankscreen-exe/invoice_generator",
+        "publishDate": "Nov 2023",
+        "thumbnailUrl": null,
+        "category":"hobby",
+        "status": "finished",
+        "openToContrib": false
     }
 ]

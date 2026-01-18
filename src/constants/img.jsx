@@ -55,6 +55,30 @@ import dockerpracticerepo from './images/projects/dockerpracticerepo.png'
 import webglfluidsimulation from './images/projects/webglfluidsimulation.png'
 import thesavestash from './images/projects/thesavestash.png'
 import gobro from './images/projects/gobro.png'
+import linkedinAutomation1 from './images/projects/linkedin-automation-1.png'
+import linkedinAutomation2 from './images/projects/linkedin-automation-2.png'
+import linkedinAutomation3 from './images/projects/linkedin-automation-3.png'
+import linkedinAutomation4 from './images/projects/linkedin-automation-4.png'
+import clinicVoice1 from './images/projects/clinicVoice1.png'
+import clinicVoice2 from './images/projects/clinicVoice2.png'
+import clinicVoice3 from './images/projects/clinicVoice3.png'
+import clinicVoice4 from './images/projects/clinicVoice4.png'
+import clinicVoice5 from './images/projects/clinicVoice5.png'
+import clinicVoice6 from './images/projects/clinicVoice6.png'
+import clinicVoice7 from './images/projects/clinicVoice7.png'
+import clinicVoice8 from './images/projects/clinicVoice8.png'
+import clinicVoice9 from './images/projects/clinicVoice9.png'
+import clinicVoice10 from './images/projects/clinicVoice10.png'
+import bcEtherPass1 from './images/projects/bcEtherPass1.png'
+import bcEtherPass2 from './images/projects/bcEtherPass2.png'
+import bcEtherPass3 from './images/projects/bcEtherPass3.png'
+import bcEtherPass4 from './images/projects/bcEtherPass4.png'
+import ebayProductScraper1 from './images/projects/ebayProductScraper1.png'
+import ebayProductScraper2 from './images/projects/ebayProductScraper2.png'
+import ATSResumeParser1 from './images/projects/ATSResumeParser1.png'
+import ATSResumeParser2 from './images/projects/ATSResumeParser2.png'
+import ATSResumeParser3 from './images/projects/ATSResumeParser3.png'
+import mcServerDiscovery from './images/projects/mcServerDiscovery.png'
 
 // communities
 import dit from './images/communities/dit.png'
@@ -131,6 +155,30 @@ export default {
         webglfluidsimulation,
         thesavestash,
         gobro,
+        linkedinAutomation1,
+        linkedinAutomation2,
+        linkedinAutomation3,
+        linkedinAutomation4,
+        clinicVoice1,
+        clinicVoice2,
+        clinicVoice3,
+        clinicVoice4,
+        clinicVoice5,
+        clinicVoice6,
+        clinicVoice7,
+        clinicVoice8,
+        clinicVoice9,
+        clinicVoice10,
+        bcEtherPass1,
+        bcEtherPass2,
+        bcEtherPass3,
+        bcEtherPass4,
+        ebayProductScraper1,
+        ebayProductScraper2,
+        ATSResumeParser1,
+        ATSResumeParser2,
+        ATSResumeParser3,
+        mcServerDiscovery,
     },
     lazyNote,
     communities: {
