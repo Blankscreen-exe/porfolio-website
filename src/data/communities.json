@@ -1,13 +1,13 @@
 [
   {
     "title": "Dev In Trenches",
-    "description": "This is my own community for developers. Their website is dedicated to providing resources and hard-earned knowledge about software development in the corporate trenches.",
+    "description": "This is my own community for developers. This website is dedicated to providing resources and hard-earned knowledge about software development in the corporate trenches.",
     "imageUrl": "img:dit",
     "websiteUrl": "https://dev-in-trenches.com"
   },
   {
     "title": "Cyber Sources",
-    "description": "This is a community for cybersecurity professionals. Their website is dedicated to providing resources and information about cybersecurity.",
+    "description": "This is a community for cybersecurity professionals run by a good friend of mine. His website is dedicated to providing resources and information about cybersecurity.",
     "imageUrl": "img:cybersources",
     "websiteUrl": "https://cybersources.site"
   },
