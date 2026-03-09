@@ -1,5 +1,41 @@
 [
   {
+    "title": "0xinfection",
+    "url": "https://0xinfection.xyz/",
+    "description": "Ramblings of an infected geek on security, technology, and everything in between.",
+    "category": "docs",
+    "tags": ["cyber-security", "hacking", "docs"],
+    "featured": false,
+    "icon": "https://0xinfection.xyz/favicon-32x32.png"
+  },
+  {
+    "title": "Hard Break",
+    "url": "https://www.hardbreak.wiki/",
+    "description": "HardBreak collects knowledge about Hardware Hacking / IoT hacking in one place.",
+    "category": "docs",
+    "tags": ["cyber-security", "hardware", "docs"],
+    "featured": false,
+    "icon": "https://www.hardbreak.wiki/~gitbook/image?url=https%3A%2F%2F2343901342-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Forganizations%252FiAi4u24KW445RkQwdeSM%252Fsites%252Fsite_JnjIO%252Ficon%252FqPs8nePKQ0pFeJzuzEON%252Flogo.png%3Falt%3Dmedia%26token%3D598587cb-6de6-4f23-86a6-0407600354b9&width=32&dpr=3&quality=100&sign=b467cfbe&sv=2"
+  },
+  {
+    "title": "pico CTF",
+    "url": "https://picoctf.org/",
+    "description": "picoCTF gamifies learning hacking with capture-the-flag puzzles created by trusted computer security and privacy experts at Carnegie Mellon University.",
+    "category": "labs",
+    "tags": ["cyber-security", "CTF", "labs"],
+    "featured": false,
+    "icon": "https://picoctf.org/favicon-32x32.png"
+  },
+  {
+    "title": "Refactoring Guru",
+    "url": "https://refactoring.guru/",
+    "description": "Refactoring.Guru makes it easy for you to discover everything you need to know about refactoring, design patterns, SOLID principles, and other smart programming topics.",
+    "category": "guide",
+    "tags": ["refactor", "design-patterns", "programming", "reference", "docs"],
+    "featured": true,
+    "icon": "https://refactoring.guru/favicon.png"
+  },
+  {
     "title": "MDN Web Docs",
     "url": "https://developer.mozilla.org/",
     "description": "Comprehensive documentation for web technologies including HTML, CSS, and JavaScript",
