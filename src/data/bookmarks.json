@@ -1,5 +1,14 @@
 [
   {
+    "title": "osintcabal",
+    "url": "https://osintcabal.org/",
+    "description": "A lsit of OSINT online-tools and guides.",
+    "category": "docs",
+    "tags": ["cyber-security", "osint", "docs", "online tools"],
+    "featured": false,
+    "icon": "https://osintcabal.org/favicons/apple-icon-152x152.png"
+  },
+  {
     "title": "0xinfection",
     "url": "https://0xinfection.xyz/",
     "description": "Ramblings of an infected geek on security, technology, and everything in between.",
