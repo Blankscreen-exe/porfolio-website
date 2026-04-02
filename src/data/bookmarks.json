@@ -1,8 +1,17 @@
 [
   {
+    "title": "zenk-security",
+    "url": "https://repo.zenk-security.com/",
+    "description": "A list of free cyber security resources",
+    "category": "docs",
+    "tags": ["cyber-security", "docs", "learning resources"],
+    "featured": false,
+    "icon": "https://repo.zenk-security.com/images/favicon2.ico"
+  },
+  {
     "title": "osintcabal",
     "url": "https://osintcabal.org/",
-    "description": "A lsit of OSINT online-tools and guides.",
+    "description": "A list of OSINT online-tools and guides.",
     "category": "docs",
     "tags": ["cyber-security", "osint", "docs", "online tools"],
     "featured": false,
