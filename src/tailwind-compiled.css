@@ -5847,6 +5847,11 @@ input.tab:checked + .tab-content,
   border-color: rgb(255 255 255 / 0.05);
 }
 
+.border-\[\#004182\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 65 130 / var(--tw-border-opacity));
+}
+
 .border-b-primary {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(var(--color-primary) / var(--tw-border-opacity));
@@ -6131,6 +6136,12 @@ input.tab:checked + .tab-content,
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-\[\#0a66c2\] {
+  --tw-gradient-from: #0a66c2 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(10 102 194 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .via-blue-300 {
   --tw-gradient-to: rgb(147 197 253 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), #93c5fd var(--tw-gradient-via-position), var(--tw-gradient-to);
@@ -6158,6 +6169,10 @@ input.tab:checked + .tab-content,
 
 .to-teal-400 {
   --tw-gradient-to: #2dd4bf var(--tw-gradient-to-position);
+}
+
+.to-\[\#378fe9\] {
+  --tw-gradient-to: #378fe9 var(--tw-gradient-to-position);
 }
 
 .bg-cover {
@@ -8069,6 +8084,12 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.hover\:from-\[\#004182\]:hover {
+  --tw-gradient-from: #004182 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(0 65 130 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .hover\:to-\[\#b6feb0\]:hover {
   --tw-gradient-to: #b6feb0 var(--tw-gradient-to-position);
 }
@@ -8083,6 +8104,10 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
 
 .hover\:to-teal-400:hover {
   --tw-gradient-to: #2dd4bf var(--tw-gradient-to-position);
+}
+
+.hover\:to-\[\#0a66c2\]:hover {
+  --tw-gradient-to: #0a66c2 var(--tw-gradient-to-position);
 }
 
 .hover\:text-bg1:hover {
@@ -8179,6 +8204,11 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
 
 .hover\:shadow-yellow-400\/20:hover {
   --tw-shadow-color: rgb(250 204 21 / 0.2);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.hover\:shadow-\[\#378fe9\]\/20:hover {
+  --tw-shadow-color: rgb(55 143 233 / 0.2);
   --tw-shadow: var(--tw-shadow-colored);
 }
 

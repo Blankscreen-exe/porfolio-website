@@ -28,7 +28,7 @@ function PastClientReachout(props) {
         <a href={socialLinks.linkedin} className="inline-block" target='_blank'>
           <button
             id="button"
-            className=" transition-all duration-200 group bg-gradient-to-tr from-[#14a800] to-[#8fe384] hover:from-[#00a83b] hover:to-[#b6feb0] focus:outline-none text-white text-2xl font-normal hover:shadow-lg hover:shadow-yellow-400/20 cursor-pointer flex justify-between items-center overflow-hidden hover:glow border-lime-800 border-t-2 border-l-2 border-r-2 border-b-4 hover:border-b-2"
+            className=" transition-all duration-200 group bg-gradient-to-tr from-[#0a66c2] to-[#378fe9] hover:from-[#004182] hover:to-[#0a66c2] focus:outline-none text-white text-2xl font-normal hover:shadow-lg hover:shadow-[#378fe9]/20 cursor-pointer flex justify-between items-center overflow-hidden hover:glow border-[#004182] border-t-2 border-l-2 border-r-2 border-b-4 hover:border-b-2"
           >
             <div className="relative w-12 h-12 bg-white bg-opacity-20 text-white flex justify-center items-center transition-all">
               {svgList.socialIcons.linkedin}
