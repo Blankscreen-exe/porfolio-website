@@ -35,13 +35,15 @@ function Metrics(props) {
   }, []);
 
   const parseMetricValue = (value) => {
+    const str = value.toString();
+    // Extract prefix (~, etc.)
+    const prefix = str.match(/^[~≈]/)?.[0] || '';
     // Extract numeric value
-    const numericValue = parseInt(value.toString().replace(/\D/g, '')) || 0;
-    
+    const numericValue = parseInt(str.replace(/\D/g, '')) || 0;
     // Extract suffix (+, %, etc.)
-    const suffix = value.toString().match(/[+%]/)?.[0] || '';
-    
-    return { numericValue, suffix };
+    const suffix = str.match(/[+%]/)?.[0] || '';
+
+    return { numericValue, suffix, prefix };
   };
 
   return (
@@ -49,7 +51,7 @@ function Metrics(props) {
       <div className="h-full w-full  pt-6 p-4">
         <div className="flex flex-row flex-wrap gap-12 justify-center items-center">
           {MetricsData.map((metric, ind) => {
-            const { numericValue, suffix } = parseMetricValue(metric.value);
+            const { numericValue, suffix, prefix } = parseMetricValue(metric.value);
             
             return (
               <div key={ind} className="rounded-xl bg-bg2 p-6 text-center shadow-xl w-[250px] min-w-[200px] max-w-[300px]">
@@ -58,10 +60,11 @@ function Metrics(props) {
                     <CountUp
                       end={numericValue}
                       duration={2.5}
+                      prefix={prefix}
                       suffix={suffix}
                     />
                   ) : (
-                    <span>0{suffix}</span>
+                    <span>{prefix}0{suffix}</span>
                   )}
                 </div>
                 <div className="text-lg text-content/70">
