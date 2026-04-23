@@ -50,14 +50,14 @@ function CtaCard(props) {
                   Upwork
                 </div>
               </a> */}
-              <a href={socialLinks.eBizCard} target='_blank'>
+              {/* <a href={socialLinks.eBizCard} target='_blank'>
                 <div className="text-white hover:bg-white hover:text-black border rounded-md p-3 hover:cursor-pointer transition-all duration-500 flex justify-center gap-2">
                   <span class="material-symbols-outlined">
                   id_card
                   </span>
                   E-Business Card
                 </div>
-              </a>
+              </a> */}
             </div>
 
             {/* MAAL Ends */}
