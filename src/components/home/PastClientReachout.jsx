@@ -8,7 +8,7 @@ import svgList from "../../constants/svg";
 function PastClientReachout(props) {
   return (
     <div>
-      <div className="mb-12">
+      {/* <div className="mb-12">
         <p className="mx-auto w-[100%] font-normal text-xl text-center text-content">
           If you've learned from me or enjoyed working together, a
           recommendation on my{" "}
@@ -41,7 +41,7 @@ function PastClientReachout(props) {
         <p className="mx-auto w-[100%] font-normal text-center text-content">
           C'mon Please! 😁
         </p>
-      </div>
+      </div> */}
 
     </div>
   );
