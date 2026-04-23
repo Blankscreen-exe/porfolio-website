@@ -50,8 +50,8 @@ function Home(props) {
         <br/>
         <SectionHeading title="Have a project in mind? Let's talk!"/>
         <CtaCard/>
-        <SectionHeading title="Are you one of my students/clients?"/>
-        <PastClientReachout />
+        {/* <SectionHeading title="Are you one of my students/clients?"/>
+        <PastClientReachout /> */}
         <SectionHeading title="Or are you interested in my projects?"/>
         <GoToProjectButton/>
         <br/>
