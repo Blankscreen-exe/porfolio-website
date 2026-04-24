@@ -1,5 +1,14 @@
 [
   {
+    "title": "The Linux Foundation",
+    "url": "https://training.linuxfoundation.org/",
+    "description": "Free and paid Linux Courses",
+    "category": "docs",
+    "tags": ["linux", "networking", "cyber security", "learning resources"],
+    "featured": false,
+    "icon": "https://www.google.com/s2/favicons?domain=training.linuxfoundation.org"
+  },
+  {
     "title": "zenk-security",
     "url": "https://repo.zenk-security.com/",
     "description": "A list of free cyber security resources",
