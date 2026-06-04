@@ -1,4 +1,34 @@
 [
+        {
+        "title": "Global Trading System | Automated Crypto Trading Platform",
+        "description": "is an automated crypto futures trading platform that turns your TradingView strategy signals into live trades on your exchange. No manual clicking required. Users connect their account, set their risk preferences, and GTS executes and tracks every position automatically.",
+        "tags": [
+            "Python", 
+            "JavaScript",
+            "Node.js",
+            "TailwindCSS",
+            "PostgreSQL",
+            "Web3",
+            "Crypto Trading"
+        ],
+        "projUrl": "https://apitrade.nextlayer.live/",
+        "githubUrl": null,
+        "publishDate": "Live and Ongoing",
+        "thumbnailUrl":[
+            "project:gts-1",
+            "project:gts-2",
+            "project:gts-3",
+            "project:gts-4",
+            "project:gts-5",
+            "project:gts-6",
+            "project:gts-7",
+            "project:gts-8",
+            "project:gts-9"
+        ],
+        "category":"corporate",
+        "status": "ongoing",
+        "openToContrib": false
+    },
     {
         "title": "Clinic AI Voice Agent for Scheduling, Intake & Specialist Routing",
         "description": "This is a voice agent that can schedule appointments, intake patients and route them to the appropriate specialist.",
