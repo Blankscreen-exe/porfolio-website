@@ -119,6 +119,12 @@ import gts6 from './images/projects/gts-6.png'
 import gts7 from './images/projects/gts-7.png'
 import gts8 from './images/projects/gts-8.png'
 import gts9 from './images/projects/gts-9.png'
+import ats1 from './images/projects/ats1.png'
+import ats2 from './images/projects/ats2.png'
+import ats3 from './images/projects/ats3.png'
+import ats4 from './images/projects/ats4.png'
+import ats5 from './images/projects/ats5.png'
+import ats6 from './images/projects/ats6.png'
 
 // communities
 import dit from './images/communities/dit.png'
@@ -259,6 +265,12 @@ export default {
         linkea4,
         linkea5,
         linkea6,
+        ats1,
+        ats2,
+        ats3,
+        ats4,
+        ats5,
+        ats6,
     },
     lazyNote,
     communities: {

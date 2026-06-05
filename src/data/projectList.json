@@ -253,7 +253,7 @@
         "openToContrib": false
     },
     {
-        "title": "ATS System - Resume Parser Microservice",
+        "title": "ATS System - Resume Parser And Analytics System",
         "description": "ATS Resume Parser is an internal tool for a hiring agency that parses resumes and saves them to a database using an automated pipeline.",
         "tags": [
             "Python",
@@ -271,9 +271,12 @@
         "githubUrl": null,
         "publishDate": "May 2024",
         "thumbnailUrl":[
-            "project:ATSResumeParser1",
-            "project:ATSResumeParser2",
-            "project:ATSResumeParser3"
+            "project:ats1",
+            "project:ats2",
+            "project:ats3",
+            "project:ats4",
+            "project:ats5",
+            "project:ats6"
         ],
         "category":"corporate",
         "status": "finished",
