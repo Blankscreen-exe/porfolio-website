@@ -79,6 +79,46 @@ import ATSResumeParser1 from './images/projects/ATSResumeParser1.png'
 import ATSResumeParser2 from './images/projects/ATSResumeParser2.png'
 import ATSResumeParser3 from './images/projects/ATSResumeParser3.png'
 import mcServerDiscovery from './images/projects/mcServerDiscovery.png'
+import amos0 from './images/projects/amos-0.png'
+import amos1 from './images/projects/amos-1.png'
+import amos2 from './images/projects/amos-2.png'
+import amos3 from './images/projects/amos-3.png'
+import amos4 from './images/projects/amos-4.png'
+import amos5 from './images/projects/amos-5.png'
+import amos6 from './images/projects/amos-6.png'
+import amos7 from './images/projects/amos-7.png'
+import amos8 from './images/projects/amos-8.png'
+import amos9 from './images/projects/amos-9.png'
+import amos10 from './images/projects/amos-10.png'
+import amos11 from './images/projects/amos-11.png'
+import amos12 from './images/projects/amos-12.png'
+import amos13 from './images/projects/amos-13.png'
+import amos14 from './images/projects/amos-14.png'
+import amos15 from './images/projects/amos-15.png'
+import amos16 from './images/projects/amos-16.png'
+import amos17 from './images/projects/amos-17.png'
+import amos18 from './images/projects/amos-18.png'
+import amos19 from './images/projects/amos-19.png'
+import amos20 from './images/projects/amos-20.png'
+import amos21 from './images/projects/amos-21.png'
+import amos22 from './images/projects/amos-22.png'
+import amos23 from './images/projects/amos-23.png'
+import linkea0 from './images/projects/linkea-0.png'
+import linkea1 from './images/projects/linkea-1.png'
+import linkea2 from './images/projects/linkea-2.png'
+import linkea3 from './images/projects/linkea-3.png'
+import linkea4 from './images/projects/linkea-4.png'
+import linkea5 from './images/projects/linkea-5.png'
+import linkea6 from './images/projects/linkea-6.png'
+import gts1 from './images/projects/gts-1.png'
+import gts2 from './images/projects/gts-2.png'
+import gts3 from './images/projects/gts-3.png'
+import gts4 from './images/projects/gts-4.png'
+import gts5 from './images/projects/gts-5.png'
+import gts6 from './images/projects/gts-6.png'
+import gts7 from './images/projects/gts-7.png'
+import gts8 from './images/projects/gts-8.png'
+import gts9 from './images/projects/gts-9.png'
 
 // communities
 import dit from './images/communities/dit.png'
@@ -179,6 +219,46 @@ export default {
         ATSResumeParser2,
         ATSResumeParser3,
         mcServerDiscovery,
+        amos0,
+        amos1,
+        amos2,
+        amos3,
+        amos4,
+        amos5,
+        amos6,
+        amos7,
+        amos8,
+        amos9,
+        amos10,
+        amos11,
+        amos12,
+        amos13,
+        amos14,
+        amos15,
+        amos16,
+        amos17,
+        amos18,
+        amos19,
+        amos20,
+        amos21,
+        amos22,
+        amos23,
+        gts1,
+        gts2,
+        gts3,
+        gts4,
+        gts5,
+        gts6,
+        gts7,
+        gts8,
+        gts9,
+        linkea0,
+        linkea1,
+        linkea2,
+        linkea3,
+        linkea4,
+        linkea5,
+        linkea6,
     },
     lazyNote,
     communities: {
