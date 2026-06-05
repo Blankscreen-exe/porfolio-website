@@ -426,7 +426,7 @@ function ProjectCard(props) {
           <div className="modal-action mt-6 pt-4 border-t border-content/20">
             <button
               onClick={handleCloseModal}
-              className="btn btn-secondary w-full min-h-[44px]"
+              className="btn bg-bg2 w-full min-h-[44px]"
             >
               Close
             </button>
