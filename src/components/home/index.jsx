@@ -10,7 +10,8 @@ import appConstants from '../../constants/appConstants'
 
 // Components
 import Hero from './Hero'
-import Testimonials from './Testimonials'
+// import Testimonials from './Testimonials' // hidden — replaced by TestimonialsNew
+import TestimonialsNew from './TestimonialsNew'
 import PastClientReachout from './PastClientReachout'
 import TechStack from './TechStack'
 import HorizontalSlider from '../common/HorizontalSlider'
@@ -32,7 +33,9 @@ function Home(props) {
           text="I help teams design, build, and stabilize <span class='bold'>production-grade systems</span>. From backend services and integrations to long-term maintainability."
         />
         
-        <Testimonials/>
+        {/* Old testimonial slider — hidden, replaced by TestimonialsNew */}
+        {/* <Testimonials/> */}
+        <TestimonialsNew/>
         {/* <div class="flex justify-center">
           <Paragraph text={"Note: The testimonials above are taken from my linkedin page."}/>
         </div> */}

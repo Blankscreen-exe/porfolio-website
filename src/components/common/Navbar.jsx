@@ -5,6 +5,7 @@ import PropTypes from 'prop-types'
 import appConstants from '../../constants/appConstants'
 import svgList from '../../constants/svg'
 import { classLists } from '../../constants/cssClasses'
+import socialLinks from '../../data/socialLinks.json'
 
 // Router
 import { Link, NavLink } from 'react-router-dom'
@@ -193,11 +194,11 @@ function NavBar(props) {
             </ul>
             )}
           </div>
-            <NavLink to={appConstants.routes.home} className="text-contentLink hover:text-primary transition-colors text-xl mx-2">
+            <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="text-contentLink hover:text-primary transition-colors text-xl mx-2">
               <span className='text-content hover:text-primary '>
                 {appConstants.common.pageTitle}
               </span>
-            </NavLink>
+            </a>
         </div>
         <ThemeSwitch/>
       </div>

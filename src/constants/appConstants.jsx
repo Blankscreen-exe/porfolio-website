@@ -35,7 +35,7 @@ export default {
         contactsFaq:"/contacts#faq",
     },
     common: {
-        pageTitle: "Hammad AI"
+        pageTitle: "Hire Me!"
     },
     navItems: {
         home: "Home",
