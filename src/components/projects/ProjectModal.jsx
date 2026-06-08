@@ -149,8 +149,12 @@ function ProjectModal({ project, onClose }) {
                 </span>
               </div>
 
-              {/* Description */}
-              <p className="text-content text-sm md:text-base mb-4 leading-relaxed">{project.description}</p>
+              {/* Description (supports multiple paragraphs split on blank lines) */}
+              <div className="text-content text-sm md:text-base mb-4 leading-relaxed space-y-3">
+                {project.description.split('\n\n').map((para, i) => (
+                  <p key={i}>{para}</p>
+                ))}
+              </div>
 
               {/* Tags */}
               <div className="flex flex-wrap gap-2 mt-4">
