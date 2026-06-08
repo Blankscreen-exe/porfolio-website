@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
+import { useLocation } from 'react-router-dom'
 
 // Data
 import projectsData from '../../data/projectList.json'
@@ -16,7 +17,9 @@ import FeaturedProjects from './FeaturedProjects'
 import PastClientReachout from './PastClientReachout'
 import TechStack from './TechStack'
 import HorizontalSlider from '../common/HorizontalSlider'
-import CtaCard from '../common/CtaCard'
+// import CtaCard from '../common/CtaCard' // no longer used — contact form moved into #contact section
+import Form from '../contact/Form'
+import ContactSideSection from '../contact/ContactSideSection'
 // import BlockQuote from '../common/BlockQuote' // value-prop merged into Hero
 import Protip from '../common/Protip'
 import Paragraph from '../common/Paragraph'
@@ -27,7 +30,21 @@ import Metrics from './Metrics'
 import Communities from './Communities'
 
 function Home(props) {
-  window.scrollTo(0, 0);
+  const location = useLocation()
+
+  // Scroll to the hash target (e.g. #contact) when present, otherwise to the top.
+  useEffect(() => {
+    if (location.hash) {
+      const el = document.getElementById(location.hash.slice(1))
+      if (el) {
+        // small delay so layout/images settle before scrolling
+        const id = setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 100)
+        return () => clearTimeout(id)
+      }
+    }
+    window.scrollTo(0, 0)
+  }, [location.hash, location.key])
+
   return (
     <>
         {/* Recruiter funnel: who → impact → proof of work → skills → social proof → contact */}
@@ -62,8 +79,6 @@ function Home(props) {
         {/* <Testimonials/> */}
         <TestimonialsNew/>
 
-        <SectionHeading title="Have a project in mind? Let's talk!"/>
-        <CtaCard/>
 
         <Communities/>
 
@@ -71,6 +86,16 @@ function Home(props) {
         <div className="mb-20">
           <SectionHeading title="Are you one of my students/clients?"/>
           <PastClientReachout />
+        </div>
+
+        {/* Contact section — moved here from the (now redirected) /contacts page.
+            CtaCard is intentionally no longer used. */}
+        <div id="contact" className="scroll-mt-24">
+          <SectionHeading title="Have a project in mind? Let's talk!"/>
+          <div className="flex flex-col md:flex-row justify-around gap-10 px-4">
+            <ContactSideSection/>
+            <Form/>
+          </div>
         </div>
     </>
   )

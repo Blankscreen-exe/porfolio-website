@@ -10,6 +10,7 @@ import MultiSelectInput from "./MultiSelectInput";
 import CheckBox from "./CheckBox";
 import TextArea from "./TextArea";
 import { Turnstile } from '@marsidev/react-turnstile'
+import Button from "../common/Button";
 
 function Form(props) {
   const tsStatusConst = {
@@ -147,7 +148,7 @@ function Form(props) {
             <p
               className="text-primary text-left"
             >
-              You do know that my Discord link is right <br/>beside this form? ...
+              You do know that my Discord username is right <br/>beside this form? ...
               right? <br/>But go on write your message 😊
             </p>
           </div>
@@ -186,15 +187,7 @@ function Form(props) {
 			  	&& <p className='text-contrast'>You need to solve the Captcha</p>
 			  }
 			  
-        <a href="#_" 
-          type="submit"
-          value="Submit"
-          onClick={handleSubmit} class="relative p-0.5 inline-flex items-center justify-center overflow-hidden group rounded-md">
-          <span class="w-full h-full bg-gradient-to-br from-primary via-blue-300 to-cyan-300 group-hover:from-primary/40 group-hover:via-cyan-300 group-hover:to-primary absolute"></span>
-          <span class="relative px-6 py-3 w-full transition-all ease-out bg-bg1 rounded-md group-hover:bg-opacity-0 duration-400 flex justify-center">
-          <span class="relative text-content group-hover:text-gray-700 ">Submit</span>
-          </span>
-        </a>
+        <Button onClick={handleSubmit}>Submit</Button>
       </form>)
       :
       (<div className="md:min-w-96 text-center">

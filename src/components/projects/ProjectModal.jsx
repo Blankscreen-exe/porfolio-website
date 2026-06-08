@@ -113,31 +113,39 @@ function ProjectModal({ project, onClose }) {
                 )}
               </div>
 
-              {/* Metadata */}
-              <div className="flex flex-wrap items-center gap-2 md:gap-3 text-content/60 text-xs md:text-sm mb-4 pb-4 border-b border-content/20">
+              {/* Explain why a live link is unavailable (text driven entirely by JSON) */}
+              {!project.projUrl && project.liveUrlNote && (
+                <div className="flex items-start gap-2 text-content/50 text-sm mb-4">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-4 w-4 mt-0.5 shrink-0">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                  </svg>
+                  <span>{project.liveUrlNote}</span>
+                </div>
+              )}
+
+              {/* Metadata badges */}
+              <div className="flex flex-wrap items-center gap-2 text-content/60 text-xs md:text-sm mb-4 pb-4 border-b border-content/20">
                 <small>{project.publishDate ? <u>{project.publishDate}</u> : 'Unpublished'}</small>
                 {meta.category && (
-                  <>
-                    <span className="text-content/40">|</span>
-                    <span title={meta.category.description} className="flex flex-row gap-1 items-center hover:cursor-help">
-                      <img src={meta.category.icon} className="!text-primary h-4 w-4" alt={meta.category.title} />
-                      <span className="text-xs">{meta.category.title}</span>
-                    </span>
-                  </>
+                  <span title={meta.category.description} className="rounded-full border border-content/10 bg-bg1 px-2.5 py-0.5 text-xs font-medium text-content/70">
+                    {meta.category.title}
+                  </span>
                 )}
                 {meta.status && (
-                  <>
-                    <span className="text-content/40">|</span>
-                    <span title={meta.status.description} className="flex flex-row gap-1 items-center hover:cursor-help">
-                      <img src={meta.status.icon} className="!text-primary h-4 w-4" alt={meta.status.title} />
-                      <span className="text-xs">{meta.status.title}</span>
-                    </span>
-                  </>
+                  <span title={meta.status.description} className="inline-flex items-center gap-1.5 rounded-full border border-content/10 bg-bg1 px-2.5 py-0.5 text-xs font-medium text-content/70">
+                    <span className={`h-1.5 w-1.5 rounded-full ${project.status === 'ongoing' ? 'bg-green-400' : 'bg-sky-400'}`}></span>
+                    {meta.status.title}
+                  </span>
                 )}
-                <span className="text-content/40">|</span>
-                <span title={meta.contrib.description} className="flex flex-row gap-1 items-center hover:cursor-help">
-                  <img src={meta.contrib.icon} className="!text-primary h-4 w-4" alt={meta.contrib.title} />
-                  <span className="text-xs">{meta.contrib.title}</span>
+                <span
+                  title={meta.contrib.description}
+                  className={`rounded-full border px-2.5 py-0.5 text-xs font-medium ${
+                    project.openToContrib
+                      ? 'border-green-500/20 bg-green-500/15 text-green-500'
+                      : 'border-content/10 bg-bg1 text-content/60'
+                  }`}
+                >
+                  {meta.contrib.title}
                 </span>
               </div>
 

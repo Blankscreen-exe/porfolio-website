@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react'
+import React, { useState, useMemo, useEffect } from 'react'
 
 // Data
 import ProjData from '../../data/projectList.json'
@@ -6,14 +6,16 @@ import ProjData from '../../data/projectList.json'
 // Components
 import PageTitle from '../common/PageTitle'
 import Paragraph from '../common/Paragraph'
-import ProjectKeys from './ProjectKeys'
 import ProjectGridCard from './ProjectGridCard'
 import ProjectModal from './ProjectModal'
 
 const PAGE_SIZE = 9
 
 function Projects() {
-  window.scrollTo(0, 0)
+  // Scroll to top only on mount, not on every re-render (e.g. opening the modal).
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const [search, setSearch] = useState('')
   const [page, setPage] = useState(1)
@@ -47,9 +49,7 @@ function Projects() {
   return (
     <div>
       <PageTitle title={'Projects'} />
-      <Paragraph text={'This portfolio represents a selection of my endeavors, encompassing both professional undertakings within the confines of my employment and those born from personal pursuits.<br/><br/>In case you are wondering about the symbols below, here\'s the key:'} />
-
-      <ProjectKeys />
+      <Paragraph text={'This portfolio represents a selection of my endeavors, encompassing both professional undertakings within the confines of my employment and those born from personal pursuits.'} />
 
       {/* Search */}
       <div className="mx-auto my-8 max-w-xl">

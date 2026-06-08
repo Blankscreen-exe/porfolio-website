@@ -10,6 +10,7 @@ import { resolveProjectThumbnail, getProjectMeta } from '../../helpers/projects'
 function ProjectGridCard({ project, onClick }) {
   const thumbnail = resolveProjectThumbnail(project.thumbnailUrl)
   const meta = getProjectMeta(project)
+  const statusDot = project.status === 'ongoing' ? 'bg-green-400' : 'bg-sky-400'
 
   return (
     <button
@@ -17,28 +18,54 @@ function ProjectGridCard({ project, onClick }) {
       onClick={onClick}
       className="group flex h-full w-full flex-col overflow-hidden rounded-2xl bg-bg2 text-left shadow-md shadow-shadow/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg focus:outline-none"
     >
-      {/* Thumbnail */}
-      <div className="h-44 w-full overflow-hidden">
+      {/* Thumbnail with status badge overlay */}
+      <div className="relative h-44 w-full overflow-hidden">
         <img
           src={thumbnail}
           alt={project.title}
           loading="lazy"
           className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
+        {meta.status && (
+          <span
+            title={meta.status.description}
+            className="absolute left-3 top-3 inline-flex items-center gap-1.5 rounded-full bg-black/60 px-2.5 py-1 text-[10px] font-semibold text-white backdrop-blur-sm"
+          >
+            <span className={`h-1.5 w-1.5 rounded-full ${statusDot}`}></span>
+            {meta.status.title}
+          </span>
+        )}
+        {!project.projUrl && project.liveUrlNote && (
+          <span
+            title={project.liveUrlNote}
+            className="absolute right-3 top-3 inline-flex items-center gap-1 rounded-full bg-black/60 px-2.5 py-1 text-[10px] font-semibold text-white backdrop-blur-sm"
+          >
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-3 w-3">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+            </svg>
+            Private
+          </span>
+        )}
       </div>
 
       {/* Body */}
       <div className="flex flex-1 flex-col p-5">
-        <div className="flex items-start justify-between gap-2">
-          <h3 className="text-base font-bold text-content leading-snug group-hover:text-primary">
-            {truncateText(project.title, 60)}
-          </h3>
-          {/* Meta icons */}
-          <div className="flex shrink-0 gap-1.5 pt-0.5">
-            {meta.category && <img src={meta.category.icon} title={meta.category.description} alt={meta.category.title} className="h-4 w-4" />}
-            {meta.status && <img src={meta.status.icon} title={meta.status.description} alt={meta.status.title} className="h-4 w-4" />}
-            {meta.contrib && <img src={meta.contrib.icon} title={meta.contrib.description} alt={meta.contrib.title} className="h-4 w-4" />}
-          </div>
+        <h3 className="text-base font-bold text-content leading-snug group-hover:text-primary">
+          {truncateText(project.title, 60)}
+        </h3>
+
+        {/* Meta badges */}
+        <div className="mt-2 flex flex-wrap gap-1.5">
+          {meta.category && (
+            <span title={meta.category.description} className="rounded-full border border-content/10 bg-bg1 px-2.5 py-0.5 text-[10px] font-medium text-content/70">
+              {meta.category.title}
+            </span>
+          )}
+          {project.openToContrib && (
+            <span title={meta.contrib.description} className="rounded-full border border-green-500/20 bg-green-500/15 px-2.5 py-0.5 text-[10px] font-medium text-green-500">
+              Open to contributions
+            </span>
+          )}
         </div>
 
         <p className="mt-2 text-xs leading-relaxed text-content/70">

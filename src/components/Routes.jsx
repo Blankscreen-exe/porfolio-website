@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, Navigate } from 'react-router-dom'
 
 // Constants
 import appConstants from '../constants/appConstants'
@@ -9,7 +9,6 @@ import appConstants from '../constants/appConstants'
 import PageTitle from './common/PageTitle'
 import Home from './home'
 import About from './about'
-import Contact from './contact'
 import Services from './services'
 import Error404 from './common/404'
 import WorkExperience from './workHistory'
@@ -21,6 +20,8 @@ import TargetSkillSet from './targetSkillSet'
 import Certificates from './certificates'
 import Blog from './blog'
 import Project from './projects'
+// Contact page moved into the Home #contact section; route below redirects there.
+// import Contact from './contact'
 
 function RoutesList(props) {
   return (
@@ -52,7 +53,7 @@ function RoutesList(props) {
 
         <Route path={appConstants.routes.projects} element={<Project/>}/>
 
-        <Route path={appConstants.routes.contacts} element={<Contact/>}/>
+        <Route path={appConstants.routes.contacts} element={<Navigate to="/#contact" replace/>}/>
 
         <Route path={"*"} element={<Error404/>}/>
     </Routes>

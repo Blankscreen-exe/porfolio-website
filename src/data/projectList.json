@@ -67,7 +67,7 @@
         ],
         "projUrl": "https://www.linkeapropiedades.com/",
         "githubUrl": null,
-        "publishDate": "Live and Ongoing",
+        "publishDate": "Apr 2026",
         "thumbnailUrl":[
             "project:linkea0",
             "project:linkea1",
@@ -78,7 +78,7 @@
             "project:linkea6"
         ],
         "category":"corporate",
-        "status": "ongoing",
+        "status": "finished",
         "openToContrib": false
     },
     {
@@ -117,6 +117,7 @@
     {
         "title": "Clinic AI Voice Agent for Scheduling, Intake & Specialist Routing",
         "description": "This is a voice agent that can schedule appointments, intake patients and route them to the appropriate specialist.",
+        "liveUrlNote": "Deployed privately for the client's clinic, so there is no public demo.",
         "tags": [
             "Python", 
             "JavaScript",
@@ -251,10 +252,10 @@
         ],
         "projUrl": "https://nft-showroom.com/",
         "githubUrl": null,
-        "publishDate": "Live and Ongoing",
+        "publishDate": "Mar 2023",
         "thumbnailUrl":"project:nftshowroom",
         "category":"corporate",
-        "status": "ongoing",
+        "status": "finished",
         "openToContrib": false
     },
     {
@@ -430,24 +431,6 @@
         "openToContrib": true
     },
     {
-        "title": "Startup Showroom",
-        "description": "A startup directory where you can showcase your startup, engage with people and get noticed.",
-        "tags": [
-            "Next.js", 
-            "Node.js",
-            "TypeScript",
-            "Sanity",
-            "TailwindCSS"
-        ],
-        "projUrl": null,
-        "githubUrl": "https://github.com/Blankscreen-exe/yc_directory",
-        "publishDate": null,
-        "thumbnailUrl": null,
-        "category":"hobby",
-        "status": "ongoing",
-        "openToContrib": true
-    },
-    {
         "title": "Cloud Munshi",
         "description": "It is a Point-of-Sales (POS) software for those who wan to keep track of their inventory and manage businesses.",
         "tags": [
@@ -457,7 +440,7 @@
             "Vite.js",
             "MySQL"
         ],
-        "projUrl": "https://www.cloudmunshi.com/demo/munshi",
+        "projUrl": "http://alfazal.cloudmunshi.com/",
         "githubUrl": null,
         "publishDate": "Live and Ongoing",
         "thumbnailUrl":"project:cloudmunshi",
@@ -482,40 +465,6 @@
         "openToContrib": true
     },
     {
-        "title": "Shortcut Keeper",
-        "description": "An icon grouper applet for windows, inspired by icon grouping feature in GNOME and android desktops. This is just like the icon grouping found in android and GNOME desktops.",
-        "tags": [
-            "Python", 
-            "GUI",
-            "PySimpleGUI"
-        ],
-        "projUrl": null,
-        "githubUrl": "https://github.com/Blankscreen-exe/shortcut_keeper/tree/dev",
-        "publishDate": "Nov 2023",
-        "thumbnailUrl": "https://github.com/Blankscreen-exe/shortcut_keeper/raw/dev/docs/images/preview.png",
-        "category":"hobby",
-        "status": "finished",
-        "openToContrib": true
-    },
-    {
-        "title": "Jevil's Dilemma",
-        "description": "This is a Web-based version of the tabletop party game called Dilemma. In the traditional version of this game you have a pack of flash cards, all of which contain a question. This question describes a scenario which forces you to choose an 'action'. There are no scores, no correct answers, no winners ... just pure brimming creativity.",
-        "tags": [
-            "JavaScript", 
-            "React.js",
-            "Node.js",
-            "Vite.js",
-            "game"
-        ],
-        "projUrl": "https://jevils-dilemma.vercel.app/",
-        "githubUrl": "https://github.com/Blankscreen-exe/jevils-dilemma",
-        "publishDate": null,
-        "thumbnailUrl": null,
-        "category":"collab",
-        "status": "ongoing",
-        "openToContrib": true
-    },
-    {
         "title": "Shell Show",
         "description": "A CMD applet which can render images inside the terminal.",
         "tags": [
@@ -528,40 +477,6 @@
         "thumbnailUrl": "https://raw.githubusercontent.com/Blankscreen-exe/shell-show/refs/heads/main/docs/assets/preview.png",
         "category":"hobby",
         "status": "finished",
-        "openToContrib": true
-    },
-    {
-        "title": "You vs The Void",
-        "description": "If you click on the void ... it will click back.",
-        "tags": [
-            "JavaScript", 
-            "JQuery",
-            "CSS",
-            "HTML"
-        ],
-        "projUrl": "https://blankscreen-exe.github.io/the-void/",
-        "githubUrl": "https://github.com/Blankscreen-exe/the-void",
-        "publishDate": "Feb 2025",
-        "thumbnailUrl": "https://raw.githubusercontent.com/Blankscreen-exe/the-void/refs/heads/main/docs/assets/thumbnail.png",
-        "category":"hobby",
-        "status": "finished",
-        "openToContrib": true
-    },
-    {
-        "title": "Triple Triad Card Maker",
-        "description": "This is a game card generator which takes in .png assets and compiles them into a game card which can then be printed.",
-        "tags": [
-            "Python", 
-            "OpenCV",
-            "Numpy",
-            "game"
-        ],
-        "projUrl": null,
-        "githubUrl": "https://github.com/Blankscreen-exe/triple-trial-card-maker",
-        "publishDate": null,
-        "thumbnailUrl": null,
-        "category":"hobby",
-        "status": "ongoing",
         "openToContrib": true
     },
     {
@@ -716,22 +631,6 @@
         "githubUrl": "https://github.com/Blankscreen-exe/TermaChat",
         "publishDate": "Jan 2025",
         "thumbnailUrl": "https://raw.githubusercontent.com/Blankscreen-exe/TermaChat/refs/heads/main/docs/thumbnail.png",
-        "category":"hobby",
-        "status": "finished",
-        "openToContrib": true
-    },
-    {
-        "title": "The Save Stash",
-        "description": "This is where I keep all my games' save files as trophies",
-        "tags": [
-            "JavaScript", 
-            "HTML",
-            "CSS"
-        ],
-        "projUrl": "https://blankscreen-exe.github.io/The-Save-Stash/",
-        "githubUrl": "https://github.com/Blankscreen-exe/The-Save-Stash",
-        "publishDate": "Dec 2024",
-        "thumbnailUrl": "project:thesavestash",
         "category":"hobby",
         "status": "finished",
         "openToContrib": true
