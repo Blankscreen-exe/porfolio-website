@@ -10,7 +10,9 @@ import imgList from '../../constants/img'
 const cleanContent = (html) => (html || '').replace(/<br\s*\/?>/gi, ' ')
 
 const AUTO_SLIDE_MS = 6000
-const VERTICAL_PADDING = 80 // breathing room added above/below the centered content
+const TOP_PAD = 40    // space above the (leveled) header
+const BOTTOM_PAD = 40 // space below the quote
+const GAP = 24        // gap between header and quote area
 
 const total = testimonialData.length
 // Clone last at the front and first at the end so the track can loop seamlessly:
@@ -29,7 +31,8 @@ function TestimonialsNew() {
 
   const touchStartX = useRef(null)
   const paused = useRef(false)
-  const innerRefs = useRef([])
+  const headerRefs = useRef([])
+  const quoteRefs = useRef([])
 
   const next = useCallback(() => setPosition((p) => p + 1), [])
   const prev = useCallback(() => setPosition((p) => p - 1), [])
@@ -57,11 +60,14 @@ function TestimonialsNew() {
     }
   }, [animate])
 
-  // Size the box to the tallest testimonial so it never scrolls and never jumps.
+  // Box height = tallest header + tallest quote (+ fixed padding). This keeps the
+  // header leveled across slides while the quote centers in the space below.
   const measure = useCallback(() => {
-    const heights = innerRefs.current.map((el) => (el ? el.offsetHeight : 0))
-    const max = Math.max(0, ...heights)
-    if (max) setBoxHeight(max + VERTICAL_PADDING)
+    const maxHeader = Math.max(0, ...headerRefs.current.map((el) => (el ? el.offsetHeight : 0)))
+    const maxQuote = Math.max(0, ...quoteRefs.current.map((el) => (el ? el.offsetHeight : 0)))
+    if (maxHeader || maxQuote) {
+      setBoxHeight(TOP_PAD + maxHeader + GAP + maxQuote + BOTTOM_PAD)
+    }
   }, [])
 
   useLayoutEffect(() => {
@@ -139,7 +145,7 @@ function TestimonialsNew() {
           </svg>
         </button>
 
-        {/* Viewport: height = tallest testimonial, so it never scrolls or jumps */}
+        {/* Viewport: fixed height, so the layout never scrolls or jumps */}
         <div
           className="overflow-hidden rounded-2xl"
           onTouchStart={handleTouchStart}
@@ -154,24 +160,28 @@ function TestimonialsNew() {
             {slides.map((item, ind) => (
               <div
                 key={ind}
-                style={{ height: boxHeight || undefined }}
-                className="w-full flex-shrink-0 bg-bg2 px-6 md:px-12 flex flex-col items-center justify-center text-center"
+                style={{ height: boxHeight || undefined, paddingTop: TOP_PAD, paddingBottom: BOTTOM_PAD }}
+                className="w-full flex-shrink-0 bg-bg2 px-6 md:px-12 flex flex-col items-center text-center"
               >
-                {/* Inner block is centered vertically within the fixed-height box */}
+                {/* Header — stays leveled across every slide */}
                 <div
-                  ref={(el) => { innerRefs.current[ind] = el }}
+                  ref={(el) => { headerRefs.current[ind] = el }}
                   className="flex flex-col items-center"
                 >
                   <img
                     src={imgList.testimonials[item.avatarUrl]}
                     alt={item.title}
-                    className="w-24 h-24 rounded-full object-cover ring-2 ring-primary/40 flex-shrink-0"
+                    className="w-24 h-24 rounded-full object-cover ring-[5px] ring-primary/40 flex-shrink-0"
                   />
                   <h3 className="text-xl md:text-2xl font-bold text-content mt-6">{item.title}</h3>
                   <h4 className="text-sm md:text-base italic text-content/60 mt-1">{item.designation}</h4>
+                </div>
 
+                {/* Quote — centered in the remaining space, so its placement shifts with length */}
+                <div className="flex-1 flex items-center w-full" style={{ marginTop: GAP }}>
                   <p
-                    className="text-sm md:text-base leading-relaxed text-content/90 mt-6 max-w-2xl"
+                    ref={(el) => { quoteRefs.current[ind] = el }}
+                    className="text-sm md:text-base leading-relaxed text-content/90 max-w-2xl mx-auto"
                     dangerouslySetInnerHTML={{ __html: cleanContent(item.content) }}
                   />
                 </div>
