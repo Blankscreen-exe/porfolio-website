@@ -72,7 +72,7 @@ function ContactSideSection(props) {
 
   return (
     <div className="px-6 rounded-md mb-16 w-full max-w-sm">
-      <h1 className="text-3xl font-bold text-title my-3">Hello!</h1>
+      {/* <h1 className="text-3xl font-bold text-title my-3">Hello!</h1> */}
       <p className="mb-6">I'd love to hear from you! Feel free to drop me a line if you have any questions, project inquiries, or just want to chat.</p>
 
       <div className="flex flex-col gap-3">
