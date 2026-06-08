@@ -127,7 +127,7 @@ function TestimonialsNew() {
           type="button"
           onClick={prev}
           aria-label="Previous testimonial"
-          className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-14 lg:-translate-x-20 z-10 items-center justify-center h-11 w-11 rounded-full bg-bg2 text-content hover:text-primary transition-colors"
+          className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-14 lg:-translate-x-20 z-10 items-center justify-center h-11 w-11 rounded-full bg-bg2 text-content hover:text-primary transition-colors focus:outline-none"
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-6 w-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
@@ -138,7 +138,7 @@ function TestimonialsNew() {
           type="button"
           onClick={next}
           aria-label="Next testimonial"
-          className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 lg:translate-x-20 z-10 items-center justify-center h-11 w-11 rounded-full bg-bg2 text-content hover:text-primary transition-colors"
+          className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-14 lg:translate-x-20 z-10 items-center justify-center h-11 w-11 rounded-full bg-bg2 text-content hover:text-primary transition-colors focus:outline-none"
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="h-6 w-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
@@ -178,10 +178,18 @@ function TestimonialsNew() {
                 </div>
 
                 {/* Quote — centered in the remaining space, so its placement shifts with length */}
-                <div className="flex-1 flex items-center w-full" style={{ marginTop: GAP }}>
+                <div className="relative flex-1 flex items-center w-full" style={{ marginTop: GAP }}>
+                  {/* Decorative opening quotation mark behind the text */}
+                  <span
+                    aria-hidden="true"
+                    style={{ fontFamily: 'Georgia, "Times New Roman", serif' }}
+                    className="pointer-events-none select-none absolute top-0 left-0 -translate-y-2 lg:-translate-y-10 text-[9rem] md:text-[12rem] leading-none text-primary/30"
+                  >
+                    &ldquo;
+                  </span>
                   <p
                     ref={(el) => { quoteRefs.current[ind] = el }}
-                    className="text-sm md:text-base leading-relaxed text-content/90 max-w-2xl mx-auto"
+                    className="relative text-sm md:text-base leading-relaxed text-content/90 max-w-2xl mx-auto"
                     dangerouslySetInnerHTML={{ __html: cleanContent(item.content) }}
                   />
                 </div>
@@ -198,7 +206,7 @@ function TestimonialsNew() {
               type="button"
               onClick={() => goTo(ind)}
               aria-label={`Go to testimonial ${ind + 1}`}
-              className={`h-2 rounded-full transition-all ${
+              className={`h-2 rounded-full transition-all focus:outline-none ${
                 ind === activeDot ? 'w-6 bg-primary' : 'w-2 bg-content/30 hover:bg-content/50'
               }`}
             />
