@@ -194,7 +194,7 @@ function NavBar(props) {
             </ul>
             )}
           </div>
-            <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="text-contentLink hover:text-primary transition-colors text-xl mx-2">
+            <a href={"/"} className="text-contentLink hover:text-primary transition-colors text-xl mx-2">
               <span className='text-content hover:text-primary '>
                 {appConstants.common.pageTitle}
               </span>

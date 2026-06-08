@@ -10,9 +10,9 @@ import imgList from '../../constants/img'
 const cleanContent = (html) => (html || '').replace(/<br\s*\/?>/gi, ' ')
 
 const AUTO_SLIDE_MS = 6000
-const TOP_PAD = 40    // space above the (leveled) header
-const BOTTOM_PAD = 40 // space below the quote
-const GAP = 24        // gap between header and quote area
+const TOP_PAD = 28    // space above the (leveled) header
+const BOTTOM_PAD = 28 // space below the quote
+const GAP = 16        // gap between header and quote area
 
 const total = testimonialData.length
 // Clone last at the front and first at the end so the track can loop seamlessly:
@@ -171,9 +171,9 @@ function TestimonialsNew() {
                   <img
                     src={imgList.testimonials[item.avatarUrl]}
                     alt={item.title}
-                    className="w-24 h-24 rounded-full object-cover ring-[5px] ring-primary/40 flex-shrink-0"
+                    className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover ring-[5px] ring-primary/40 flex-shrink-0"
                   />
-                  <h3 className="text-xl md:text-2xl font-bold text-content mt-6">{item.title}</h3>
+                  <h3 className="text-xl md:text-2xl font-bold text-content mt-4 md:mt-6">{item.title}</h3>
                   <h4 className="text-sm md:text-base italic text-content/60 mt-1">{item.designation}</h4>
                 </div>
 
@@ -189,7 +189,7 @@ function TestimonialsNew() {
                   </span>
                   <p
                     ref={(el) => { quoteRefs.current[ind] = el }}
-                    className="relative text-sm md:text-base leading-relaxed text-content/90 max-w-2xl mx-auto"
+                    className="relative text-sm md:text-base leading-snug md:leading-relaxed text-content/90 max-w-2xl mx-auto"
                     dangerouslySetInnerHTML={{ __html: cleanContent(item.content) }}
                   />
                 </div>

@@ -17,10 +17,11 @@ import PastClientReachout from './PastClientReachout'
 import TechStack from './TechStack'
 import HorizontalSlider from '../common/HorizontalSlider'
 import CtaCard from '../common/CtaCard'
-import BlockQuote from '../common/BlockQuote'
+// import BlockQuote from '../common/BlockQuote' // value-prop merged into Hero
 import Protip from '../common/Protip'
 import Paragraph from '../common/Paragraph'
-import GoToProjectButton from './GoToProjectButton'
+// import GoToProjectButton from './GoToProjectButton' // hidden — off-theme, replaced by Button
+import Button from '../common/Button'
 import SectionHeading from '../common/SectionHeading'
 import Metrics from './Metrics'
 import Communities from './Communities'
@@ -29,33 +30,48 @@ function Home(props) {
   window.scrollTo(0, 0);
   return (
     <>
+        {/* Recruiter funnel: who → impact → proof of work → skills → social proof → contact */}
         <Hero/>
-        <BlockQuote
-          text="I help teams design, build, and stabilize <span class='bold'>production-grade systems</span>. From backend services and integrations to long-term maintainability."
-        />
-        
+
+        <div className="mt-20">
+          <Metrics/>
+        </div>
+
+        <div className="mt-20">
+          <SectionHeading title="Featured Projects"/>
+          <FeaturedProjects/>
+          <div className="flex justify-center mt-8">
+            <Button
+              to={appConstants.routes.projects}
+              icon={
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="h-4 w-4">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              }
+            >
+              View All Projects
+            </Button>
+          </div>
+        </div>
+
+        <div className="mt-20">
+          <TechStack/>
+        </div>
+
         {/* Old testimonial slider — hidden, replaced by TestimonialsNew */}
         {/* <Testimonials/> */}
         <TestimonialsNew/>
-        {/* <div class="flex justify-center">
-          <Paragraph text={"Note: The testimonials above are taken from my linkedin page."}/>
-        </div> */}
-        
-        <Metrics/>
-        
-        <TechStack/>
-        {/* <Protip/> */}
-        <Communities/>
-        <br/>
+
         <SectionHeading title="Have a project in mind? Let's talk!"/>
         <CtaCard/>
-        <SectionHeading title="Are you one of my students/clients?"/>
-        <PastClientReachout />
-        <SectionHeading title="Or are you interested in my projects?"/>
-        <FeaturedProjects/>
-        <GoToProjectButton/>
-        <br/>
-        <br/>
+
+        <Communities/>
+
+        {/* Lower priority for recruiters — kept near the bottom */}
+        <div className="mb-20">
+          <SectionHeading title="Are you one of my students/clients?"/>
+          <PastClientReachout />
+        </div>
     </>
   )
 }
