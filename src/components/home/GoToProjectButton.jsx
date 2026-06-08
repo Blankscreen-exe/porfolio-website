@@ -20,7 +20,7 @@ function GoToProjectButton(props) {
               <div class="relative w-12 h-12 bg-white bg-opacity-20 text-white flex justify-center items-center transition-all">
                 {svgList.awards.workshop}
               </div>
-              <p class="px-5">My Projects</p>
+              <p class="px-5">View All Projects</p>
         </button>
       </NavLink>
     {/* <NavLink to={appConstants.routes.projects} className='block mx-auto w-fit'>

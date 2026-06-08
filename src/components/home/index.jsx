@@ -12,6 +12,7 @@ import appConstants from '../../constants/appConstants'
 import Hero from './Hero'
 // import Testimonials from './Testimonials' // hidden — replaced by TestimonialsNew
 import TestimonialsNew from './TestimonialsNew'
+import FeaturedProjects from './FeaturedProjects'
 import PastClientReachout from './PastClientReachout'
 import TechStack from './TechStack'
 import HorizontalSlider from '../common/HorizontalSlider'
@@ -44,11 +45,6 @@ function Home(props) {
         
         <TechStack/>
         {/* <Protip/> */}
-        {/* <HorizontalSlider
-          data={projectsData}
-          title={"Projects"}
-          buttonText={<><span>View</span> {svgList.externalLink}</>}
-        /> */}
         <Communities/>
         <br/>
         <SectionHeading title="Have a project in mind? Let's talk!"/>
@@ -56,6 +52,7 @@ function Home(props) {
         <SectionHeading title="Are you one of my students/clients?"/>
         <PastClientReachout />
         <SectionHeading title="Or are you interested in my projects?"/>
+        <FeaturedProjects/>
         <GoToProjectButton/>
         <br/>
         <br/>

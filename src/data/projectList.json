@@ -1,6 +1,7 @@
 [
     {
         "title": "AMOS - AI Powered CRM System",
+        "featured": true,
         "description": "This is an AI augmented CRM system which can turn weeks's worth of work into minutes. Whether it is maintaining ongoing client conversation or automating personalized lead discovery, outreach and cold calls, this platform has all your needs covered.",
         "tags": [
             "Python", 
@@ -50,6 +51,7 @@
     },
     {
         "title": "Linkea Propeidades - Whatsapp Automated Concierge to CRM",
+        "featured": true,
         "description": "This is an End-To-End solution for a Real Estate Agency in Spain. It is a Whatsapp concierge which can handle client's inquiries and guide them to their matching properties according to their preferences. In the backend a complete CRM is being managed.",
         "tags": [
             "Python", 
@@ -81,6 +83,7 @@
     },
     {
         "title": "Global Trading System - Automated Crypto Trading Platform",
+        "featured": true,
         "description": "It is an automated crypto futures trading platform that turns your TradingView strategy signals into live trades on your exchange. No manual clicking required. Users connect their account, set their risk preferences, and GTS executes and tracks every position automatically.",
         "tags": [
             "Python", 
@@ -146,6 +149,7 @@
     },
     {
         "title": "AI-Powered LinkedIn Automation & CRM Integration Platform",
+        "featured": true,
         "description": "This is a platform that automates LinkedIn interactions and integrates with your CRM system to streamline your sales and marketing efforts.",
         "tags": [
             "Python", 
@@ -160,7 +164,7 @@
             "LLM",
             "Web scraping"
         ],
-        "projUrl": null,
+        "projUrl": "https://amostechnologies.co.uk/",
         "githubUrl": null,
         "publishDate": "Live and Ongoing",
         "thumbnailUrl":[
@@ -194,6 +198,7 @@
     {
         "title": "PractiCal Food Ordering System",
         "description": "It is a food ordering system which is lead by a nutritionist. It helps deliver you your desired meal plan based on your dietary needs and more.",
+        "featured": true,
         "tags": [
             "PHP", 
             "Laravel",
