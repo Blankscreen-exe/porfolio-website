@@ -3,11 +3,11 @@ import PropTypes from "prop-types";
 import { TECarousel, TECarouselItem } from 'tw-elements-react';
 
 // helpers
-import { capitalizeWords, truncateText, capitalizeFirstLetter } from "../../helpers/common";
+import { capitalizeWords, truncateText, capitalizeFirstLetter } from "../../../helpers/common";
 
 // constants
-import svgList from '../../constants/svg'
-import imgList from '../../constants/img'
+import svgList from '../../../constants/svg'
+import imgList from '../../../constants/img'
 
 function ProjectCard(props) {
   const { cardTitle, cardDescription, date, tags, imgUrl, projLink, githubLink, category, status, openToContrib, caseStudy } = props;
