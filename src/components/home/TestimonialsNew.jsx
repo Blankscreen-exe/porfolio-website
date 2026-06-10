@@ -10,6 +10,7 @@ import imgList from '../../constants/img'
 const cleanContent = (html) => (html || '').replace(/<br\s*\/?>/gi, ' ')
 
 const AUTO_SLIDE_MS = 6000
+const ANIM_MS = 500 // must match the transition duration below
 const TOP_PAD = 28    // space above the (leveled) header
 const BOTTOM_PAD = 28 // space below the quote
 const GAP = 16        // gap between header and quote area
@@ -38,17 +39,22 @@ function TestimonialsNew() {
   const prev = useCallback(() => setPosition((p) => p - 1), [])
   const goTo = useCallback((realIndex) => setPosition(realIndex + 1), [])
 
-  // After an animated slide lands on a clone, snap (without animation) to the
-  // matching real slide so the loop is seamless in both directions.
-  const handleTransitionEnd = () => {
-    if (position === total + 1) {
-      setAnimate(false)
-      setPosition(1)
-    } else if (position === 0) {
-      setAnimate(false)
-      setPosition(total)
+  // When an animated/auto slide lands on a clone, snap (without animation) back to
+  // the matching real slide so the loop is seamless. Driven by a TIMER rather than
+  // the transitionend event, because transitionend does NOT fire while the tab is
+  // backgrounded — which previously let `position` run away unbounded (translateX
+  // ended up thousands of % off and the box went blank). Using >= / <= also makes it
+  // self-correct if position ever overshoots.
+  useEffect(() => {
+    if (position >= total + 1 || position <= 0) {
+      const target = position <= 0 ? total : 1
+      const id = setTimeout(() => {
+        setAnimate(false)
+        setPosition(target)
+      }, ANIM_MS + 50)
+      return () => clearTimeout(id)
     }
-  }
+  }, [position])
 
   // Re-enable animation after a snap, once the no-transition jump has painted.
   useEffect(() => {
@@ -109,7 +115,11 @@ function TestimonialsNew() {
   }
 
   // Which real testimonial is showing (for the dot indicators).
-  const activeDot = (position - 1 + total) % total
+  const activeDot = ((position - 1) % total + total) % total
+
+  // Clamp the translated position so a stray value can never push the track into
+  // empty space (belt-and-suspenders alongside the snap effect above).
+  const displayPosition = Math.max(0, Math.min(position, total + 1))
 
   return (
     <section className="container mx-auto my-24 px-4 md:px-6">
@@ -154,8 +164,7 @@ function TestimonialsNew() {
           {/* Sliding track */}
           <div
             className={`flex ${animate ? 'transition-transform duration-500 ease-in-out' : ''}`}
-            style={{ transform: `translateX(-${position * 100}%)` }}
-            onTransitionEnd={handleTransitionEnd}
+            style={{ transform: `translateX(-${displayPosition * 100}%)` }}
           >
             {slides.map((item, ind) => (
               <div
