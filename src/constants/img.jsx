@@ -48,7 +48,18 @@ import abstract21 from './images/abstract/21.jpg'
 
 // projects
 import ebs from './images/projects/ebs.png'
-import practical from './images/projects/practical.png'
+import practical0 from './images/projects/practical-0.png'
+import practical1 from './images/projects/practical-1.png'
+import practical2 from './images/projects/practical-2.png'
+import practical3 from './images/projects/practical-3.png'
+import practical4 from './images/projects/practical-4.png'
+import practical5 from './images/projects/practical-5.png'
+import practical6 from './images/projects/practical-6.png'
+import practical7 from './images/projects/practical-7.png'
+import practical8 from './images/projects/practical-8.png'
+import practical9 from './images/projects/practical-9.png'
+import practical10 from './images/projects/practical-10.png'
+import practical11 from './images/projects/practical-11.png'
 import nftshowroom from './images/projects/nftshowroom.png'
 import lawnprosoftware from './images/projects/lawnprosoftware.png'
 import cloudmunshi from './images/projects/cloudmunshi.png'
@@ -126,6 +137,24 @@ import ats3 from './images/projects/ats3.png'
 import ats4 from './images/projects/ats4.png'
 import ats5 from './images/projects/ats5.png'
 import ats6 from './images/projects/ats6.png'
+import externalize0 from './images/projects/externalize-0.png'
+import externalize1 from './images/projects/externalize-1.png'
+import externalize2 from './images/projects/externalize-2.png'
+import externalize3 from './images/projects/externalize-3.png'
+import externalize4 from './images/projects/externalize-4.png'
+import externalize5 from './images/projects/externalize-5.png'
+import externalize6 from './images/projects/externalize-6.png'
+import externalize7 from './images/projects/externalize-7.png'
+import externalize8 from './images/projects/externalize-8.png'
+import externalize9 from './images/projects/externalize-9.png'
+import externalize10 from './images/projects/externalize-10.png'
+import externalize11 from './images/projects/externalize-11.png'
+import girudo0 from './images/projects/girudo-0.png'
+import girudo1 from './images/projects/girudo-1.png'
+import girudo2 from './images/projects/girudo-2.png'
+import girudo3 from './images/projects/girudo-3.png'
+import girudo4 from './images/projects/girudo-4.png'
+import girudo5 from './images/projects/girudo-5.png'
 
 // communities
 import dit from './images/communities/dit.png'
@@ -195,7 +224,18 @@ export default {
     ],
     projects: {
         ebs,
-        practical,
+        practica0,
+        practica1,
+        practica2,
+        practica3,
+        practica4,
+        practica5,
+        practica6,
+        practica7,
+        practica8,
+        practica9,
+        practical0,
+        practical1,
         nftshowroom,
         lawnprosoftware,
         cloudmunshi,
@@ -273,6 +313,24 @@ export default {
         ats4,
         ats5,
         ats6,
+        externalize0,
+        externalize1,
+        externalize2,
+        externalize3,
+        externalize4,
+        externalize5,
+        externalize6,
+        externalize7,
+        externalize8,
+        externalize9,
+        externalize10,
+        externalize11,
+        girudo0,
+        girudo1,
+        girudo2,
+        girudo3,
+        girudo4,
+        girudo5,
     },
     lazyNote,
     communities: {

@@ -82,6 +82,40 @@
         "openToContrib": false
     },
     {
+        "title": "Externalize ERP System",
+        "featured": false,
+        "description": "Designed and developed an AI-assisted accounting automation platform that streamlines the journey from invoice collection to ERP posting. The system uses OCR and large language models to extract structured data from invoices, generate draft accounting entries, and route them through a human validation workflow before synchronization with the accounting system. Multi-company support, role-based access control, audit trails, and secure document management ensure operational reliability and compliance.\n\nThe platform integrates with the Cegid ERP ecosystem to synchronize accounting and tax data, automate approved journal postings, and provide real-time visibility through financial dashboards, reporting tools, and intelligent alerts. Built with a strong focus on traceability and accounting control, the solution combines AI-driven efficiency with human oversight, helping accounting teams reduce manual workload while maintaining accuracy and compliance across financial operations.",
+        "tags": [
+            "Node.js", 
+            "Next.js", 
+            "Supabase", 
+            "JavaScript",
+            "TailwindCSS",
+            "PostgreSQL",
+            "Websocket"
+        ],
+        "projUrl": "https://externalize-iota.vercel.app/",
+        "githubUrl": null,
+        "publishDate": "May 2026",
+        "thumbnailUrl":[
+            "project:externalize0",
+            "project:externalize1",
+            "project:externalize2",
+            "project:externalize3",
+            "project:externalize4",
+            "project:externalize5",
+            "project:externalize6",
+            "project:externalize7",
+            "project:externalize8",
+            "project:externalize9",
+            "project:externalize10",
+            "project:externalize11"
+        ],
+        "category":"corporate",
+        "status": "ongoing",
+        "openToContrib": false
+    },
+    {
         "title": "Global Trading System - Automated Crypto Trading Platform",
         "featured": true,
         "description": "Global Trading System (GTS) is an automated crypto-futures trading platform that turns your TradingView strategy signals into live trades on your exchange — no manual clicking required. Users connect their account, set their risk preferences, and GTS executes and tracks every position automatically.\n\nThe platform is built on a Python/Django backend with a JavaScript/Node.js and TailwindCSS frontend, backed by PostgreSQL and deployed on AWS, with Web3 integration as part of the crypto workflow. It continuously ingests incoming strategy signals and takes care of order execution and position tracking on the user's behalf.",
@@ -109,6 +143,34 @@
             "project:gts7",
             "project:gts8",
             "project:gts9"
+        ],
+        "category":"corporate",
+        "status": "ongoing",
+        "openToContrib": false
+    },
+    {
+        "title": "Girudo - Online TCG Community & Streaming Platform",
+        "featured": false,
+        "description": "Developed a community-driven platform for trading card game (TCG) enthusiasts that combines live streaming, social networking, and online gameplay into a single experience. The platform enables players to connect with fellow collectors and competitors, join live streams, participate in community discussions, discover content creators, and organize games through an integrated social ecosystem designed specifically for TCG communities.\n\nBuilt with scalability and engagement in mind, the platform features creator profiles, community forums, video content hubs, live streaming capabilities, friend systems, and support for multiple card games including Magic: The Gathering and Disney Lorcana. The goal was to create a centralized destination where players can play, watch, learn, and interact with the broader TCG community while helping creators grow their audiences and strengthen community engagement.",
+        "tags": [
+            "Go", 
+            "Gin", 
+            "Microservices",
+            "Node.js",
+            "Next.js",
+            "PostgreSQL",
+            "Websocket"
+        ],
+        "projUrl": "https://game.girudo.com/",
+        "githubUrl": null,
+        "publishDate": "Live & Ongoing",
+        "thumbnailUrl":[
+            "project:girudo0",
+            "project:girudo1",
+            "project:girudo2",
+            "project:girudo3",
+            "project:girudo4",
+            "project:girudo5"
         ],
         "category":"corporate",
         "status": "ongoing",
@@ -211,7 +273,20 @@
         "projUrl": "https://practical.me/",
         "githubUrl": null,
         "publishDate": "Live and Ongoing",
-        "thumbnailUrl":"project:practical",
+        "thumbnailUrl":[
+            "project:practical0",
+            "project:practical1",
+            "project:practical2",
+            "project:practical3",
+            "project:practical4",
+            "project:practical5",
+            "project:practical6",
+            "project:practical7",
+            "project:practical8",
+            "project:practical9",
+            "project:practical10",
+            "project:practical11"
+        ],
         "category":"corporate",
         "status": "ongoing",
         "openToContrib": false
