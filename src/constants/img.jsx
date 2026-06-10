@@ -66,7 +66,15 @@ import cloudmunshi from './images/projects/cloudmunshi.png'
 import dockerpracticerepo from './images/projects/dockerpracticerepo.png'
 import webglfluidsimulation from './images/projects/webglfluidsimulation.png'
 import thesavestash from './images/projects/thesavestash.png'
-import gobro from './images/projects/gobro.png'
+import gobro0 from './images/projects/gobro-0.png'
+import gobro1 from './images/projects/gobro-1.png'
+import gobro2 from './images/projects/gobro-2.png'
+import gobro3 from './images/projects/gobro-3.png'
+import gobro4 from './images/projects/gobro-4.png'
+import gobro5 from './images/projects/gobro-5.png'
+import gobro6 from './images/projects/gobro-6.png'
+import gobro7 from './images/projects/gobro-7.png'
+import gobro8 from './images/projects/gobro-8.png'
 import linkedinAutomation1 from './images/projects/linkedin-automation-1.png'
 import linkedinAutomation2 from './images/projects/linkedin-automation-2.png'
 import linkedinAutomation3 from './images/projects/linkedin-automation-3.png'
@@ -242,7 +250,15 @@ export default {
         dockerpracticerepo,
         webglfluidsimulation,
         thesavestash,
-        gobro,
+        gobro0,
+        gobro1,
+        gobro2,
+        gobro3,
+        gobro4,
+        gobro5,
+        gobro6,
+        gobro7,
+        gobro8,
         linkedinAutomation1,
         linkedinAutomation2,
         linkedinAutomation3,

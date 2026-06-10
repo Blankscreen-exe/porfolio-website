@@ -305,7 +305,17 @@
         "projUrl": "https://play.google.com/store/apps/details?id=com.spcom.gobrocustomer",
         "githubUrl": null,
         "publishDate": "Live and Ongoing",
-        "thumbnailUrl":"project:gobro",
+        "thumbnailUrl":[
+            "project:gobro0",
+            "project:gobro1",
+            "project:gobro2",
+            "project:gobro3",
+            "project:gobro4",
+            "project:gobro5",
+            "project:gobro6",
+            "project:gobro7",
+            "project:gobro8"
+        ],
         "category":"corporate",
         "status": "ongoing",
         "openToContrib": false
