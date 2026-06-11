@@ -163,6 +163,29 @@ import girudo2 from './images/projects/girudo-2.png'
 import girudo3 from './images/projects/girudo-3.png'
 import girudo4 from './images/projects/girudo-4.png'
 import girudo5 from './images/projects/girudo-5.png'
+import nft0 from './images/projects/nft-0.png'
+import nft1 from './images/projects/nft-1.png'
+import nft1_1 from './images/projects/nft-1.1.png'
+import nft1_2 from './images/projects/nft-1.2.png'
+import nft2 from './images/projects/nft-2.png'
+import nft3 from './images/projects/nft-3.png'
+import nft4 from './images/projects/nft-4.png'
+import nft5 from './images/projects/nft-5.png'
+import nft6 from './images/projects/nft-6.png'
+import nft7 from './images/projects/nft-7.png'
+import nft8 from './images/projects/nft-8.png'
+import nft9 from './images/projects/nft-9.png'
+import nft10 from './images/projects/nft-10.png'
+import nft11 from './images/projects/nft-11.png'
+import nft12 from './images/projects/nft-12.png'
+import nft13 from './images/projects/nft-13.png'
+import nft14 from './images/projects/nft-14.png'
+import nft15 from './images/projects/nft-15.png'
+import nft16 from './images/projects/nft-16.png'
+import nft17 from './images/projects/nft-17.png'
+import nft18 from './images/projects/nft-18.png'
+import nft19 from './images/projects/nft-19.png'
+import nft20 from './images/projects/nft-20.png'
 
 // communities
 import dit from './images/communities/dit.png'
@@ -347,6 +370,29 @@ export default {
         girudo3,
         girudo4,
         girudo5,
+        nft0,
+        nft1,
+        nft1_1,
+        nft1_2,
+        nft2,
+        nft3,
+        nft4,
+        nft5,
+        nft6,
+        nft7,
+        nft8,
+        nft9,
+        nft10,
+        nft11,
+        nft12,
+        nft13,
+        nft14,
+        nft15,
+        nft16,
+        nft17,
+        nft18,
+        nft19,
+        nft20,
     },
     lazyNote,
     communities: {
