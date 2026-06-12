@@ -186,6 +186,15 @@ import nft17 from './images/projects/nft-17.png'
 import nft18 from './images/projects/nft-18.png'
 import nft19 from './images/projects/nft-19.png'
 import nft20 from './images/projects/nft-20.png'
+import crowdgrid1 from './images/projects/crowdgrid-1.png'
+import crowdgrid2 from './images/projects/crowdgrid-2.png'
+import crowdgrid3 from './images/projects/crowdgrid-3.png'
+import crowdgrid4 from './images/projects/crowdgrid-4.png'
+import crowdgrid5 from './images/projects/crowdgrid-5.png'
+import crowdgrid6 from './images/projects/crowdgrid-6.png'
+import crowdgrid7 from './images/projects/crowdgrid-7.png'
+import crowdgrid8 from './images/projects/crowdgrid-8.png'
+import crowdgrid9 from './images/projects/crowdgrid-9.png'
 
 // communities
 import dit from './images/communities/dit.png'
@@ -393,6 +402,15 @@ export default {
         nft18,
         nft19,
         nft20,
+        crowdgrid1,
+        crowdgrid2,
+        crowdgrid3,
+        crowdgrid4,
+        crowdgrid5,
+        crowdgrid6,
+        crowdgrid7,
+        crowdgrid8,
+        crowdgrid9,
     },
     lazyNote,
     communities: {
