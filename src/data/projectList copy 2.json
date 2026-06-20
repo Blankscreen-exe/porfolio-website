@@ -149,6 +149,34 @@
         "openToContrib": false
     },
     {
+        "title": "Girudo - Online TCG Community & Streaming Platform",
+        "featured": false,
+        "description": "Developed a community-driven platform for trading card game (TCG) enthusiasts that combines live streaming, social networking, and online gameplay into a single experience. The platform enables players to connect with fellow collectors and competitors, join live streams, participate in community discussions, discover content creators, and organize games through an integrated social ecosystem designed specifically for TCG communities.\n\nBuilt with scalability and engagement in mind, the platform features creator profiles, community forums, video content hubs, live streaming capabilities, friend systems, and support for multiple card games including Magic: The Gathering and Disney Lorcana. The goal was to create a centralized destination where players can play, watch, learn, and interact with the broader TCG community while helping creators grow their audiences and strengthen community engagement.",
+        "tags": [
+            "Go", 
+            "Gin", 
+            "Microservices",
+            "Node.js",
+            "Next.js",
+            "PostgreSQL",
+            "Websocket"
+        ],
+        "projUrl": "https://game.girudo.com/",
+        "githubUrl": null,
+        "publishDate": "Live & Ongoing",
+        "thumbnailUrl":[
+            "project:girudo0",
+            "project:girudo1",
+            "project:girudo2",
+            "project:girudo3",
+            "project:girudo4",
+            "project:girudo5"
+        ],
+        "category":"corporate",
+        "status": "ongoing",
+        "openToContrib": false
+    },
+    {
         "title": "Clinic AI Voice Agent for Scheduling, Intake & Specialist Routing",
         "description": "This is an AI voice agent for a medical clinic that can schedule appointments, carry out patient intake, and route callers to the appropriate specialist. It takes on the routine phone work that would otherwise tie up front-desk staff, letting patients simply call in and speak naturally with the agent.\n\nIt combines a Python backend and PostgreSQL with a JavaScript/Node.js and TailwindCSS interface, and uses an OpenAI-based LLM for the conversation. VAPI and Twilio provide the real-time voice and telephony layer that powers the live phone calls.",
         "liveUrlNote": "Deployed privately for the client's clinic, so there is no public demo.",
@@ -231,6 +259,115 @@
         "openToContrib": false
     },
     {
+        "title": "PractiCal Food Ordering System",
+        "description": "PractiCal is a nutritionist-led food-ordering system that helps customers receive meal plans tailored to their dietary needs. Instead of generic takeout, it focuses on delivering the right meals for each customer's goals and restrictions.\n\nThe application uses a PHP/Laravel backend with a Next.js and TailwindCSS frontend and a MySQL database, tying together ordering, meal-plan management, and delivery in one platform.",
+        "featured": true,
+        "tags": [
+            "PHP", 
+            "Laravel",
+            "Next.js",
+            "Node.js",
+            "TailwindCSS",
+            "MySQL"
+        ],
+        "projUrl": "https://practical.me/",
+        "githubUrl": null,
+        "publishDate": "Live and Ongoing",
+        "thumbnailUrl":[
+            "project:practical0",
+            "project:practical1",
+            "project:practical2",
+            "project:practical3",
+            "project:practical4",
+            "project:practical5",
+            "project:practical6",
+            "project:practical7",
+            "project:practical8",
+            "project:practical9",
+            "project:practical10",
+            "project:practical11"
+        ],
+        "category":"corporate",
+        "status": "ongoing",
+        "openToContrib": false
+    },
+    {
+        "title": "Go Bro On-Demand Service Booking Platform",
+        "description": "Go Bro is an on-demand service-booking platform where customers can request everyday help such as babysitting, plumbing, carpentry, and A/C repair, connecting them with providers for the service they need, when they need it.\n\nIt pairs a PHP/Laravel backend and MySQL database with a React Native mobile app (published on the Google Play Store) and Vite.js/Node.js tooling on the web side, delivering the booking experience across both mobile and web.",
+        "tags": [
+            "PHP", 
+            "Laravel",
+            "React-native",
+            "Vite.js",
+            "Node.js",
+            "MySQL"
+        ],
+        "projUrl": "https://play.google.com/store/apps/details?id=com.spcom.gobrocustomer",
+        "githubUrl": null,
+        "publishDate": "Live and Ongoing",
+        "thumbnailUrl":[
+            "project:gobro0",
+            "project:gobro1",
+            "project:gobro2",
+            "project:gobro3",
+            "project:gobro4",
+            "project:gobro5",
+            "project:gobro6",
+            "project:gobro7",
+            "project:gobro8"
+        ],
+        "category":"corporate",
+        "status": "ongoing",
+        "openToContrib": false
+    },
+    {
+        "title": "NFT Showroom",
+        "description": "NFT Showroom is a platform for showcasing digital assets that aims to make engaging with NFTs approachable and safe for everyone, not just crypto-natives. It puts a friendly front-end on what can otherwise be an intimidating space.\n\nOn-chain logic is written in Solidity and accessed through Web3.js and MetaMask, while a Python/Django and Django REST Framework backend with PostgreSQL serves the application's API. The client side is built with React Native and Vite.js/Node.js tooling.",
+        "tags": [
+            "Python", 
+            "Django",
+            "Django Rest Framework",
+            "Solidity",
+            "Metamask",
+            "Web3.js",
+            "React-native",
+            "Vite.js",
+            "Node.js",
+            "PostgreSQL"
+        ],
+        "projUrl": "https://nft-showroom.com/",
+        "githubUrl": null,
+        "publishDate": "Mar 2023",
+        "thumbnailUrl":[
+            "project:nft0",
+            "project:nft1",
+            "project:nft1_1",
+            "project:nft1_2",
+            "project:nft2",
+            "project:nft3",
+            "project:nft4",
+            "project:nft5",
+            "project:nft6",
+            "project:nft7",
+            "project:nft8",
+            "project:nft9",
+            "project:nft10",
+            "project:nft11",
+            "project:nft12",
+            "project:nft13",
+            "project:nft14",
+            "project:nft15",
+            "project:nft16",
+            "project:nft17",
+            "project:nft18",
+            "project:nft19",
+            "project:nft20"
+        ],
+        "category":"corporate",
+        "status": "finished",
+        "openToContrib": false
+    },
+    {
         "title": "ATS System - Resume Parser And Analytics System",
         "description": "ATS Resume Parser is an internal tool for a hiring agency that parses incoming resumes and saves them to a database through an automated pipeline, removing the manual data-entry burden from recruiters. Beyond parsing, it lets recruiters semantically search and match or rank candidates against the roles they are hiring for.\n\nIt is built on a Python/FastAPI backend with PostgreSQL and a JavaScript/TailwindCSS interface, and uses OpenAI LLMs orchestrated with LangChain together with a vector database — both to extract structured fields from resumes and to power the AI-driven candidate search.",
         "tags": [
@@ -258,6 +395,25 @@
         ],
         "category":"corporate",
         "status": "finished",
+        "openToContrib": false
+    },
+    {
+        "title": "LawnPro Software",
+        "description": "LawnPro is business-management software for lawn-care companies, shipping with a range of features to manage employees, payments, customers, and the day-to-day operations of the business from a single place.\n\nIt is built on a PHP/Laravel backend and MySQL database, with a React.js frontend (Vite.js/Node.js tooling) providing the management interface.",
+        "tags": [
+            "PHP", 
+            "Laravel", 
+            "React.js",
+            "Vite.js",
+            "Node.js",
+            "MySQL"
+        ],
+        "projUrl": "https://www.lawnprosoftware.com",
+        "githubUrl": null,
+        "publishDate": "Live and Ongoing",
+        "thumbnailUrl":"project:lawnprosoftware",
+        "category":"corporate",
+        "status": "ongoing",
         "openToContrib": false
     },
     {
@@ -392,6 +548,24 @@
         "category":"hobby",
         "status": "ongoing",
         "openToContrib": true
+    },
+    {
+        "title": "Cloud Munshi",
+        "description": "Cloud Munshi is point-of-sale (POS) software for business owners who want to keep track of their inventory and run their operations from a single tool — from recording sales to managing stock levels.\n\nIt is built on a PHP (Yii) backend with a Next.js frontend (Vite.js tooling) and a MySQL database.",
+        "tags": [
+            "PHP", 
+            "Yii",
+            "Next.js",
+            "Vite.js",
+            "MySQL"
+        ],
+        "projUrl": "http://alfazal.cloudmunshi.com/",
+        "githubUrl": null,
+        "publishDate": "Live and Ongoing",
+        "thumbnailUrl":"project:cloudmunshi",
+        "category":"corporate",
+        "status": "ongoing",
+        "openToContrib": false
     },
     {
         "title": "Tkinter Mod Manager",
