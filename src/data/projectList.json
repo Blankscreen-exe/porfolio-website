@@ -473,6 +473,28 @@
         "openToContrib": true
     },
     {
+        "title": "Notty - File-Based Notes Manager",
+        "description": "Notty manages plain‑text and Markdown notes the simplest way possible: as ordinary files on disk. Your notes are Markdown or Plain Text files. Categories are folders. No database, no cloud, no account, no lock‑in. Close the app, open the folder in Explorer, and everything is right there. Fully offline, lightweight, no browser runtime.",
+        "tags": [
+            "C#",
+            ".NET 8",
+            "WPF",
+            "MVVM",
+            "AvalonEdit",
+            "SharpVectors"
+        ],
+        "projUrl": "https://blankscreen-exe.github.io/Notty-Text-Editor/",
+        "githubUrl": "https://github.com/Blankscreen-exe/Notty-Text-Editor",
+        "publishDate": "Jun 2026",
+        "thumbnailUrl": [
+            "project:notty0",
+            "project:notty1"
+        ],
+        "category":"hobby",
+        "status": "ongoing",
+        "openToContrib": true
+    },
+    {
         "title": "Usagi Chan's Number Guessing Game",
         "description": "Usagi Chan's Number Guessing Game is a browser game where the player is shown a number and has to guess whether the next number will be larger or smaller. A correct guess earns a point, while a wrong one costs a life.\n\nIt is a frontend game built with React.js and Vite.js, and is playable live in the browser.",
         "tags": [

@@ -195,6 +195,8 @@ import crowdgrid6 from './images/projects/crowdgrid-6.png'
 import crowdgrid7 from './images/projects/crowdgrid-7.png'
 import crowdgrid8 from './images/projects/crowdgrid-8.png'
 import crowdgrid9 from './images/projects/crowdgrid-9.png'
+import notty0 from './images/projects/notty-0.png'
+import notty1 from './images/projects/notty-1.png'
 
 // communities
 import dit from './images/communities/dit.png'
@@ -411,6 +413,8 @@ export default {
         crowdgrid7,
         crowdgrid8,
         crowdgrid9,
+        notty0,
+        notty1,
     },
     lazyNote,
     communities: {
