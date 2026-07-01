@@ -21,7 +21,7 @@ function index(props) {
       columnHelper.accessor("title", {
         cell: (row) => {
             let rowData = row.row.original;
-            console.log(rowData)
+            // console.log(rowData)
             return (<>
                 <BlogCard
                     cardTitle={rowData.title}

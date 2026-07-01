@@ -14,7 +14,7 @@ function Hobbies(props) {
         tooltip: {
           trigger: 'item',
           formatter: (data) => {
-            console.log("FOUND IT",data);
+            // console.log("FOUND IT",data);
             setDisplayText(data.data.desc)
           }
         },

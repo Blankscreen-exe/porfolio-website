@@ -10,6 +10,7 @@ import "tw-elements-react/dist/css/tw-elements-react.min.css";
 // Components
 import NavBar from './components/common/Navbar'
 import Footer from './components/common/Footer';
+import ChatWidget from './components/common/ChatWidget';
 
 //data
 import RoutesList from './components/Routes.jsx';
@@ -17,7 +18,7 @@ import RoutesList from './components/Routes.jsx';
 function App() {
     
   const count = useSelector((state) => {
-    console.log(state)
+    // console.log(state)
     return state.persistedReducer.common.myValue
   })
 
@@ -32,6 +33,7 @@ function App() {
     <NavBar/>
     <RoutesList/>
     <Footer/>
+    <ChatWidget/>
 
     {/* TODO: Redux check. remove when done */}
     {/* <button

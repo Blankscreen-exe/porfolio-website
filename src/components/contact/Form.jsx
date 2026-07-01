@@ -50,8 +50,8 @@ function Form(props) {
 
   const handleSubmit = async () => {
   
-		console.log("trunstileStatus -> success", trunstileStatus===tsStatusConst.success)
-		console.log("is email valid", isEmailValid)
+		// console.log("trunstileStatus -> success", trunstileStatus===tsStatusConst.success)
+		// console.log("is email valid", isEmailValid)
   	
   	if (
   		trunstileStatus===tsStatusConst.success 
@@ -72,11 +72,11 @@ function Form(props) {
 		    })
 		    .then(
 		      () => {
-		        console.log('SUCCESS!');
+		        // console.log('SUCCESS!');
 		        setFormState( prevState => !prevState)
 		      },
 		      (error) => {
-		        console.log('FAILED...', error.text);
+		        // console.log('FAILED...', error.text);
 		      },
 		    );
 	   } 

@@ -21,12 +21,12 @@ function ThemeSwitch(props) {
     );
 
   const handleToggleTheme = () => {
-    console.log("isdarkmode === ", isDarkMode)
+    // console.log("isdarkmode === ", isDarkMode)
   
     // TODO: do it without reload
     dispatch(toggleThemeAction());
     // location.reload()
-    console.log("THEME SWITCHED TO ", isDarkMode ? "--DARK--" : "--LIGHT--");
+    // console.log("THEME SWITCHED TO ", isDarkMode ? "--DARK--" : "--LIGHT--");
 
     // document.documentElement.setAttribute(
     //   "data-theme",
@@ -35,7 +35,7 @@ function ThemeSwitch(props) {
   };
 
   window.addEventListener("load", (event) => {
-    console.log("DOC LOADED ");
+    // console.log("DOC LOADED ");
     document.documentElement.setAttribute(
       "data-theme",
       isDarkMode ? "dark" : "light"

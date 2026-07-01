@@ -28,7 +28,7 @@ function MultiSelectInput(props) {
 
 
   const handleChange = (data) => {
-    console.log("CHANGED", data)
+    // console.log("CHANGED", data)
     setFormData(prevState => {
       return {
         ...prevState,

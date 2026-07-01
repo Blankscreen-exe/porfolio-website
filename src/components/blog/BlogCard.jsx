@@ -37,7 +37,7 @@ function BlogCard(props) {
 
           <div className="my-1 card-actions justify-start ">
             {tags.map((item) => {
-              console.log(item);
+              // console.log(item);
               return (
                 <div className="badge flex flex-wrap text-content hover:bg-contrast/70 hover:text-white hover:cursor-default font-bold rounded-md border border-contrast/50 px-2 py-0.5 text-md lg:text-sm xl:text-sm">
                   {capitalizeWords(item)}

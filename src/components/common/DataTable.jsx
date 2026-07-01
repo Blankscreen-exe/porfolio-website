@@ -41,7 +41,7 @@ export default function DataTable({ data, columns, colVisibility={} }) {
       newPageIndex < 0 ||
       newPageIndex >= table.getPageCount()
     ) {
-      console.warn("Invalid page number entered.");
+      // console.warn("Invalid page number entered.");
       return;
     }
 
@@ -66,7 +66,7 @@ export default function DataTable({ data, columns, colVisibility={} }) {
     table.setPageIndex(table.getPageCount() - 1);
     setCurrentPageNumber(table.getPageCount());
   };
-  console.log(table.getState()) 
+  // console.log(table.getState())
   return (
     <div className="">
       <TextInputFilter

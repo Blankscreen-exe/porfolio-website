@@ -26,7 +26,7 @@ function Input(props) {
       } 
     })
     
-    console.log("is email valid? Email input ==> ", validate(formData.email))
+    // console.log("is email valid? Email input ==> ", validate(formData.email))
     setIsEmailValid(validate(formData.email))
   };
 
