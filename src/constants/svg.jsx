@@ -9,7 +9,6 @@ import japaneseFlag from './svg/languages/japanese.svg'
 // techstack icons
 // languages
 import python from './svg/techstack/languages/python.svg'
-import nodejs from './svg/techstack/languages/nodejs.svg'
 import javascript from './svg/techstack/languages/javascript.svg'
 import typescript from './svg/techstack/languages/typescript.svg'
 import php from './svg/techstack/languages/php.svg'
@@ -20,6 +19,7 @@ import golang from './svg/techstack/languages/golang.svg'
 // backend
 import django from './svg/techstack/backend/django.svg'
 import djangorestframework from './svg/techstack/backend/djangorestframework.svg'
+import nodejs from './svg/techstack/backend/nodejs.svg'
 import expressjs from './svg/techstack/backend/expressjs.svg'
 import nestjs from './svg/techstack/backend/nestjs.svg'
 import laravel from './svg/techstack/backend/laravel.svg'
@@ -823,7 +823,6 @@ export default {
   techStack: {
     languages: {
       python,
-      nodejs,
       solidity,
       javascript,
       typescript,
@@ -892,6 +891,7 @@ export default {
     backend: {
       django,
       djangorestframework,
+      nodejs,
       expressjs,
       nestjs,
       laravel,

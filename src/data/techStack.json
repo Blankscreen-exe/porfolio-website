@@ -29,13 +29,6 @@
             "bgColor":"#7377ad;"
         },
         {
-            "name":"Node.js",
-            "url":"https://nodejs.org/en",
-            "imgUrl":"nodejs",
-            "fontColor":"",
-            "bgColor":"#74ad5e"
-        },
-        {
             "name":"Go Lang",
             "url":"https://go.dev",
             "imgUrl":"golang",
@@ -78,6 +71,13 @@
             "imgUrl":"djangorestframework",
             "fontColor":"",
             "bgColor":"#e96228"
+        },
+                {
+            "name":"Node.js",
+            "url":"https://nodejs.org/en",
+            "imgUrl":"nodejs",
+            "fontColor":"",
+            "bgColor":"#74ad5e"
         },
         {
             "name":"Express.js",
