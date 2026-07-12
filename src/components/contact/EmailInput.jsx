@@ -18,16 +18,18 @@ function Input(props) {
     setIsEmailValid,
   } = props;
 
+  const [touched, setTouched] = useState(false);
+
   const handleChange = (event) => {
     setFormData( prevState => {
       return {
         ...prevState,
         [event.target.name]: event.target.value
-      } 
+      }
     })
-    
-    // console.log("is email valid? Email input ==> ", validate(formData.email))
-    setIsEmailValid(validate(formData.email))
+
+    setTouched(true)
+    setIsEmailValid(validate(event.target.value))
   };
 
   return (
@@ -52,7 +54,7 @@ function Input(props) {
           value={formData.email}
         ></TEInput>
       )}
-      	{ !isEmailValid && <p className='text-contrast mx-auto'>Please use a valid email address</p> }
+      	{ touched && !isEmailValid && <p className='text-contrast mx-auto'>Please use a valid email address</p> }
     </div>
   );
 }
