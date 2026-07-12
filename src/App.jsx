@@ -33,7 +33,7 @@ function App() {
     <NavBar/>
     <RoutesList/>
     <Footer/>
-    <ChatWidget/>
+    {/* <ChatWidget/> //REF: not needed  */}
 
     {/* TODO: Redux check. remove when done */}
     {/* <button
