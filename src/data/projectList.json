@@ -213,6 +213,134 @@
         "openToContrib": false
     },
     {
+        "title": "PractiCal Food Ordering System",
+        "description": "PractiCal is a nutritionist-led food-ordering system that helps customers receive meal plans tailored to their dietary needs. Instead of generic takeout, it focuses on delivering the right meals for each customer's goals and restrictions.\n\nThe application uses a PHP/Laravel backend with a Next.js and TailwindCSS frontend and a MySQL database, tying together ordering, meal-plan management, and delivery in one platform.",
+        "featured": true,
+        "tags": [
+            "PHP", 
+            "Laravel",
+            "Next.js",
+            "Node.js",
+            "TailwindCSS",
+            "MySQL"
+        ],
+        "projUrl": "https://practical.me/",
+        "githubUrl": null,
+        "publishDate": "Live and Ongoing",
+        "thumbnailUrl":[
+            "project:practical0",
+            "project:practical1",
+            "project:practical2",
+            "project:practical3",
+            "project:practical4",
+            "project:practical5",
+            "project:practical6",
+            "project:practical7",
+            "project:practical8",
+            "project:practical9",
+            "project:practical10",
+            "project:practical11"
+        ],
+        "category":"corporate",
+        "status": "ongoing",
+        "openToContrib": false
+    },
+    {
+        "title": "Go Bro On-Demand Service Booking Platform",
+        "description": "Go Bro is an on-demand service-booking platform where customers can request everyday help such as babysitting, plumbing, carpentry, and A/C repair, connecting them with providers for the service they need, when they need it.\n\nIt pairs a PHP/Laravel backend and MySQL database with a React Native mobile app (published on the Google Play Store) and Vite.js/Node.js tooling on the web side, delivering the booking experience across both mobile and web.",
+        "tags": [
+            "PHP", 
+            "Laravel",
+            "React-native",
+            "Vite.js",
+            "Node.js",
+            "MySQL"
+        ],
+        "projUrl": "https://play.google.com/store/apps/details?id=com.spcom.gobrocustomer",
+        "githubUrl": null,
+        "publishDate": "Live and Ongoing",
+        "thumbnailUrl":[
+            "project:gobro0",
+            "project:gobro1",
+            "project:gobro2",
+            "project:gobro3",
+            "project:gobro4",
+            "project:gobro5",
+            "project:gobro6",
+            "project:gobro7",
+            "project:gobro8"
+        ],
+        "category":"corporate",
+        "status": "ongoing",
+        "openToContrib": false
+    },
+    {
+        "title": "NFT Showroom",
+        "description": "NFT Showroom is a platform for showcasing digital assets that aims to make engaging with NFTs approachable and safe for everyone, not just crypto-natives. It puts a friendly front-end on what can otherwise be an intimidating space.\n\nOn-chain logic is written in Solidity and accessed through Web3.js and MetaMask, while a Python/Django and Django REST Framework backend with PostgreSQL serves the application's API. The client side is built with React Native and Vite.js/Node.js tooling.",
+        "tags": [
+            "Python", 
+            "Django",
+            "Django Rest Framework",
+            "Solidity",
+            "Metamask",
+            "Web3.js",
+            "React-native",
+            "Vite.js",
+            "Node.js",
+            "PostgreSQL"
+        ],
+        "projUrl": "https://nft-showroom.com/",
+        "githubUrl": null,
+        "publishDate": "Mar 2023",
+        "thumbnailUrl":[
+            "project:nft0",
+            "project:nft1",
+            "project:nft1_1",
+            "project:nft1_2",
+            "project:nft2",
+            "project:nft3",
+            "project:nft4",
+            "project:nft5",
+            "project:nft6",
+            "project:nft7",
+            "project:nft8",
+            "project:nft9",
+            "project:nft10",
+            "project:nft11",
+            "project:nft12",
+            "project:nft13",
+            "project:nft14",
+            "project:nft15",
+            "project:nft16",
+            "project:nft17",
+            "project:nft18",
+            "project:nft19",
+            "project:nft20"
+        ],
+        "category":"corporate",
+        "status": "finished",
+        "openToContrib": false
+    },
+    {
+        "title": "LawnPro Software",
+        "description": "LawnPro is business-management software for lawn-care companies, shipping with a range of features to manage employees, payments, customers, and the day-to-day operations of the business from a single place.\n\nIt is built on a PHP/Laravel backend and MySQL database, with a React.js frontend (Vite.js/Node.js tooling) providing the management interface.",
+        "tags": [
+            "PHP", 
+            "Laravel", 
+            "React.js",
+            "Vite.js",
+            "Node.js",
+            "MySQL"
+        ],
+        "projUrl": "https://www.lawnprosoftware.com",
+        "githubUrl": null,
+        "publishDate": "Live and Ongoing",
+        "thumbnailUrl":"project:lawnprosoftware",
+        "category":"corporate",
+        "status": "ongoing",
+        "openToContrib": false
+    },
+    {
         "title": "Entrepreneur's Business Simulator",
         "description": "Entrepreneur's Business Simulator is a training platform designed to teach young entrepreneurs the fundamentals of business and financial management. Rather than dry theory, it lets learners practise decision-making in a simulated environment.\n\nIt is built with a Python/Django backend using Jinja2 server-side templating and a JavaScript frontend, with PostgreSQL storing the simulation and user data.",
         "tags": [
@@ -441,7 +569,7 @@
         "openToContrib": true
     },
     {
-        "title": "Screen Magnifier",
+        "title": "Screen Magnifier - Teaching Assistance Tool",
         "description": "Screen Magnifier is a desktop app for enlarging a portion of the screen — handy when you are presenting a lot of code and text and want to zoom into a specific area so your audience can follow along.\n\nIt is built in Python with a PyQt interface, using OpenCV and Pillow to capture and magnify the selected region of the screen in real time.",
         "tags": [
             "Python", 

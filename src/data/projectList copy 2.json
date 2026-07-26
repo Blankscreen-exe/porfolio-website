@@ -615,7 +615,7 @@
         "openToContrib": true
     },
     {
-        "title": "Screen Magnifier",
+        "title": "Screen Magnifier - Teaching Assistance Tool",
         "description": "Screen Magnifier is a desktop app for enlarging a portion of the screen — handy when you are presenting a lot of code and text and want to zoom into a specific area so your audience can follow along.\n\nIt is built in Python with a PyQt interface, using OpenCV and Pillow to capture and magnify the selected region of the screen in real time.",
         "tags": [
             "Python", 
