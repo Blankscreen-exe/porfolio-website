@@ -1,5 +1,14 @@
 [
   {
+    "title": "System Design Handbook",
+    "url": "https://www.systemdesignhandbook.com/",
+    "description": "20+ years of system design wisdom",
+    "category": "resource",
+    "tags": ["system design", "ML system design", "interview prep"],
+    "featured": false,
+    "icon": "https://www.systemdesignhandbook.com/favicon.ico"
+  },
+  {
     "title": "Tech Interview Handbook",
     "url": "https://www.techinterviewhandbook.org/",
     "description": "Free curated interview preparation materials for busy people",
