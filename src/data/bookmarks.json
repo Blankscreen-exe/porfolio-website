@@ -1,5 +1,23 @@
 [
   {
+    "title": "Tech Interview Handbook",
+    "url": "https://www.techinterviewhandbook.org/",
+    "description": "Free curated interview preparation materials for busy people",
+    "category": "resource",
+    "tags": ["system design", "salary negotiation", "algorithm", "behaviour interview"],
+    "featured": false,
+    "icon": "https://www.techinterviewhandbook.org/img/favicon.png"
+  },
+  {
+    "title": "Awesome System Design Resources",
+    "url": "https://github.com/ashishps1/awesome-system-design-resources",
+    "description": "free resources to learn System Design concepts and prepare for interviews",
+    "category": "resource",
+    "tags": ["system design", "networks", "database", "architecture", "Async Communication", "API"],
+    "featured": false,
+    "icon": "https://github.com/favicon.ico"
+  },
+  {
     "title": "Bug Me Not",
     "url": "https://bugmenot.com/",
     "description": "Get free, shared logins from the BugMeNot community",
