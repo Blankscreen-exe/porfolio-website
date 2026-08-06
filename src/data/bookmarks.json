@@ -1,5 +1,14 @@
 [
   {
+    "title": "Church Of Malware",
+    "url": "https://churchofmalware.org",
+    "description": "Registered nonprofit org for free off-sec research and security education",
+    "category": "library",
+    "tags": ["malware", "cyber security", "Research", "library"],
+    "featured": false,
+    "icon": false
+  },
+  {
     "title": "System Design Handbook",
     "url": "https://www.systemdesignhandbook.com/",
     "description": "20+ years of system design wisdom",
