@@ -4739,6 +4739,10 @@ input.tab:checked + .tab-content,
   margin-bottom: 0.125rem;
 }
 
+.ml-4 {
+  margin-left: 1rem;
+}
+
 .ml-8 {
   margin-left: 2rem;
 }
@@ -4829,22 +4833,6 @@ input.tab:checked + .tab-content,
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
-.ml-1 {
-  margin-left: 0.25rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
 }
 
 .box-border {
@@ -5083,8 +5071,8 @@ input.tab:checked + .tab-content,
   max-height: 6rem;
 }
 
-.max-h-\[350px\] {
-  max-height: 350px;
+.max-h-\[343px\] {
+  max-height: 343px;
 }
 
 .max-h-\[90vh\] {
@@ -5093,10 +5081,6 @@ input.tab:checked + .tab-content,
 
 .max-h-full {
   max-height: 100%;
-}
-
-.max-h-\[343px\] {
-  max-height: 343px;
 }
 
 .min-h-36 {
@@ -5382,6 +5366,10 @@ input.tab:checked + .tab-content,
   max-width: 300px;
 }
 
+.max-w-\[30vh\] {
+  max-width: 30vh;
+}
+
 .max-w-\[500px\] {
   max-width: 500px;
 }
@@ -5416,18 +5404,6 @@ input.tab:checked + .tab-content,
 
 .max-w-xl {
   max-width: 36rem;
-}
-
-.max-w-\[100px\] {
-  max-width: 100px;
-}
-
-.max-w-\[20vh\] {
-  max-width: 20vh;
-}
-
-.max-w-\[30vh\] {
-  max-width: 30vh;
 }
 
 .flex-1 {
@@ -6389,6 +6365,10 @@ input.tab:checked + .tab-content,
   background-color: rgb(var(--color-primary) / var(--tw-bg-opacity));
 }
 
+.bg-primary\/10 {
+  background-color: rgb(var(--color-primary) / 0.1);
+}
+
 .bg-primary\/15 {
   background-color: rgb(var(--color-primary) / 0.15);
 }
@@ -6475,11 +6455,6 @@ input.tab:checked + .tab-content,
 .bg-zinc-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
-}
-
-.bg-secondary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(var(--color-secondary) / var(--tw-bg-opacity));
 }
 
 .bg-opacity-20 {
@@ -7413,9 +7388,9 @@ input.tab:checked + .tab-content,
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-\[inset_0_10px_10px_-10px_rgba\(0\2c 0\2c 0\2c 0\.15\)\2c inset_0_-10px_10px_-10px_rgba\(0\2c 0\2c 0\2c 0\.15\)\] {
-  --tw-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.15),inset 0 -10px 10px -10px rgba(0,0,0,0.15);
-  --tw-shadow-colored: inset 0 10px 10px -10px var(--tw-shadow-color), inset 0 -10px 10px -10px var(--tw-shadow-color);
+.shadow-\[inset_0_5px_5px_-5px_rgba\(0\2c 0\2c 0\2c 0\.15\)\2c inset_0_-5px_5px_-5px_rgba\(0\2c 0\2c 0\2c 0\.15\)\2c inset_5px_0_5px_-5px_rgba\(0\2c 0\2c 0\2c 0\.15\)\2c inset_-5px_0_5px_-5px_rgba\(0\2c 0\2c 0\2c 0\.15\)\] {
+  --tw-shadow: inset 0 5px 5px -5px rgba(0,0,0,0.15),inset 0 -5px 5px -5px rgba(0,0,0,0.15),inset 5px 0 5px -5px rgba(0,0,0,0.15),inset -5px 0 5px -5px rgba(0,0,0,0.15);
+  --tw-shadow-colored: inset 0 5px 5px -5px var(--tw-shadow-color), inset 0 -5px 5px -5px var(--tw-shadow-color), inset 5px 0 5px -5px var(--tw-shadow-color), inset -5px 0 5px -5px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -7452,18 +7427,6 @@ input.tab:checked + .tab-content,
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-\[inset_0_10px_10px_-10px_rgba\(0\2c 0\2c 0\2c 0\.15\)\2c inset_0_-10px_10px_-10px_rgba\(0\2c 0\2c 0\2c 0\.15\)\2c inset_10px_0_10px_-10px_rgba\(0\2c 0\2c 0\2c 0\.15\)\2c inset_-10px_0_10px_-10px_rgba\(0\2c 0\2c 0\2c 0\.15\)\] {
-  --tw-shadow: inset 0 10px 10px -10px rgba(0,0,0,0.15),inset 0 -10px 10px -10px rgba(0,0,0,0.15),inset 10px 0 10px -10px rgba(0,0,0,0.15),inset -10px 0 10px -10px rgba(0,0,0,0.15);
-  --tw-shadow-colored: inset 0 10px 10px -10px var(--tw-shadow-color), inset 0 -10px 10px -10px var(--tw-shadow-color), inset 10px 0 10px -10px var(--tw-shadow-color), inset -10px 0 10px -10px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-\[inset_0_5px_5px_-5px_rgba\(0\2c 0\2c 0\2c 0\.15\)\2c inset_0_-5px_5px_-5px_rgba\(0\2c 0\2c 0\2c 0\.15\)\2c inset_5px_0_5px_-5px_rgba\(0\2c 0\2c 0\2c 0\.15\)\2c inset_-5px_0_5px_-5px_rgba\(0\2c 0\2c 0\2c 0\.15\)\] {
-  --tw-shadow: inset 0 5px 5px -5px rgba(0,0,0,0.15),inset 0 -5px 5px -5px rgba(0,0,0,0.15),inset 5px 0 5px -5px rgba(0,0,0,0.15),inset -5px 0 5px -5px rgba(0,0,0,0.15);
-  --tw-shadow-colored: inset 0 5px 5px -5px var(--tw-shadow-color), inset 0 -5px 5px -5px var(--tw-shadow-color), inset 5px 0 5px -5px var(--tw-shadow-color), inset -5px 0 5px -5px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -8566,6 +8529,14 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
   background-color: rgb(var(--color-primary) / 0.1);
 }
 
+.hover\:bg-primary\/15:hover {
+  background-color: rgb(var(--color-primary) / 0.15);
+}
+
+.hover\:bg-primary\/80:hover {
+  background-color: rgb(var(--color-primary) / 0.8);
+}
+
 .hover\:bg-secondary\/10:hover {
   background-color: rgb(var(--color-secondary) / 0.1);
 }
@@ -8591,6 +8562,10 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
 
 .hover\:bg-white\/20:hover {
   background-color: rgb(255 255 255 / 0.2);
+}
+
+.hover\:bg-primary\/20:hover {
+  background-color: rgb(var(--color-primary) / 0.2);
 }
 
 .hover\:bg-gradient-to-br:hover {
@@ -8696,6 +8671,11 @@ body > div.z-\[1070\] > div > div > .\[\&\:\:-webkit-scrollbar-track-piece\]\:bg
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-bg2:hover {
+  --tw-text-opacity: 1;
+  color: rgb(var(--color-bg2) / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {

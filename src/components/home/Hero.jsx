@@ -32,17 +32,26 @@ function Hero(props) {
           </p>
 
           <div className='flex flex-row flex-wrap gap-2 mt-5'>
-            <a target="_blank" href={socialLinks.linkedin} className="text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Linkedin </a>
-            <a target="_blank" href={socialLinks.github} className=" text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Github </a>
-            <a target="_blank" href={socialLinks.medium} className=" text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Medium </a>
+            <a target="_blank" href={socialLinks.linkedin} className="text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">LinkedIn </a> |
+            <a target="_blank" href={socialLinks.x} className="text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">X </a> |
+            <a target="_blank" href={socialLinks.github} className=" text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Github </a> |
+            <a target="_blank" href={socialLinks.medium} className=" text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Medium </a> 
             {/* <a target="_blank" href={socialLinks.upwork} className="text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Upwork </a> */}
-            <a target="_blank" href={socialLinks.discord} className="text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Discord </a>
+            {/* <a target="_blank" href={socialLinks.discord} className="text-1xl text-contentLink cursor-pointer hover:text-contentLinkHover">Discord </a> */}
           </div>
         </div>
       </div>
       <div className="order-1 md:order-2 w-64 md:w-48 mx-auto mb-8 md:mb-0">
         {/* TODO: put this link in constants */}
         <img src="/profile_pic.png" alt="Profile image" className=" rounded-lg shadow object-cover rounded-md  hover:shadow-xl transition duration-500 "/>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={socialLinks.calendarBooking}
+          className="mt-4 flex items-center justify-center w-full rounded-md bg-primary text-bg1 px-4 py-2 text-sm font-bold font-semibold hover:bg-primary/80 hover:text-white transition-colors"
+        >
+          Let's talk?
+        </a>
       </div>
     </div>
 

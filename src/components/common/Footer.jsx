@@ -49,9 +49,16 @@ function Footer(props) {
         </footer> 
         <footer className="footer px-10 py-4 border-t bg-tertiary/90 text-base-content border-base-300 rounded-b-md">
           <aside className="items-center grid-flow-col">
-            {svgLists.hashIcon}
-            <p><b className='text-primary'>M.Hammad Hassan</b> <br/>Senior Engineer</p>
-          </aside> 
+            <a
+              href={socialLinks.calendarBooking}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-md bg-primary text-bg1 hover:text-bg1 px-4 py-2 text-sm font-semibold hover:bg-primary/80 transition-colors"
+            >
+              {svgLists.calendar}
+              Book a Call
+            </a>
+          </aside>
           <nav className="md:place-self-center md:justify-self-end w-full md:w-fit">
             <div className="w-full md:w-fit grid grid-flow-col gap-4">
               {/* TODO: icons to add Linkedin, Github, Discord, E business card*/}
@@ -60,6 +67,7 @@ function Footer(props) {
               <NavLink to={socialLinks.github}  className={navLinkClasses}>{svgLists.socialIcons.github}</NavLink >
               <NavLink to={socialLinks.linkedin}  className={navLinkClasses}>{svgLists.socialIcons.linkedin}</NavLink >
               <NavLink to={socialLinks.medium}  className={navLinkClasses}>{svgLists.socialIcons.medium}</NavLink >
+              <NavLink to={socialLinks.x}  className={navLinkClasses}>{svgLists.socialIcons.x}</NavLink >
               
             </div>
           </nav>

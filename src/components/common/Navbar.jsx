@@ -5,7 +5,6 @@ import PropTypes from 'prop-types'
 import appConstants from '../../constants/appConstants'
 import svgList from '../../constants/svg'
 import { classLists } from '../../constants/cssClasses'
-import socialLinks from '../../data/socialLinks.json'
 
 // Router
 import { Link, NavLink } from 'react-router-dom'

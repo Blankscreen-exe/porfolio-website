@@ -13,6 +13,12 @@ const EMAIL = "mhammad.hassan002@gmail.com";
 const buttonClasses =
   "flex items-center gap-3 w-full rounded-lg bg-bg2 px-4 py-3 text-content shadow-sm shadow-shadow/30 transition-all duration-200 hover:-translate-y-0.5 hover:text-primary hover:shadow-md focus:outline-none";
 
+const CalendarIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-6 h-6">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+  </svg>
+);
+
 const CopyIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-4 h-4">
     <path strokeLinecap="round" strokeLinejoin="round" d="M15.666 3.888A2.25 2.25 0 0 0 13.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 0 1-.75.75H9a.75.75 0 0 1-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 0 1-2.25 2.25H6.75A2.25 2.25 0 0 1 4.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 0 1 1.927-.184" />
@@ -76,6 +82,16 @@ function ContactSideSection(props) {
       <p className="mb-6">I'd love to hear from you! Feel free to drop me a line if you have any questions, project inquiries, or just want to chat.</p>
 
       <div className="flex flex-col gap-3">
+        {/* Cal.com — book a call directly */}
+        <a href={socialLinks.calendarBooking} target="_blank" rel="noopener noreferrer" className={buttonClasses + " bg-primary/10 hover:bg-primary/15"}>
+          <span className="shrink-0 text-primary"><CalendarIcon /></span>
+          <div className="flex flex-col items-start min-w-0">
+            <span className="font-bold text-sm">Book a Call</span>
+            <span className="text-xs text-content/60 truncate">Pick a time that works for you</span>
+          </div>
+          <span className="ml-auto"><ExternalIcon /></span>
+        </a>
+
         {/* LinkedIn — opens profile */}
         <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className={buttonClasses}>
           <span className="shrink-0 [&>svg]:w-6 [&>svg]:h-6">{svgList.socialIcons.linkedin}</span>
@@ -97,7 +113,7 @@ function ContactSideSection(props) {
         </a>
 
         {/* Discord — copies username */}
-        <button type="button" onClick={() => copyToClipboard("discord", DISCORD_USERNAME)} className={buttonClasses}>
+        {/* <button type="button" onClick={() => copyToClipboard("discord", DISCORD_USERNAME)} className={buttonClasses}>
           <span className="shrink-0 [&>svg]:w-6 [&>svg]:h-6">{svgList.socialIcons.discord}</span>
           <div className="flex flex-col items-start min-w-0">
             <span className="font-bold text-sm">Discord</span>
@@ -106,7 +122,7 @@ function ContactSideSection(props) {
             </span>
           </div>
           <span className="ml-auto">{copied === "discord" ? <CheckIcon /> : <CopyIcon />}</span>
-        </button>
+        </button> */}
 
         {/* Email — copies address */}
         <button type="button" onClick={() => copyToClipboard("email", EMAIL)} className={buttonClasses}>

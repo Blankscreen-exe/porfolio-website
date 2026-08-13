@@ -38,6 +38,12 @@ function CtaCard(props) {
             </figcaption>
 
             <div className="flex flex-col justify-around mt-10 md:flex-row lg:flex-row gap-4 md:gap-4 lg:gap-4">
+              <a href={socialLinks.calendarBooking} target='_blank' rel="noopener noreferrer">
+                <div className="text-black bg-white hover:bg-transparent hover:text-white border rounded-md p-3 hover:cursor-pointer transition-all duration-500 flex justify-center gap-2">
+                  {svgList.calendar}
+                  Book a Call
+                </div>
+              </a>
               <a href={socialLinks.linkedin} target='_blank'>
                 <div className="text-white hover:bg-white hover:text-black border rounded-md p-3 hover:cursor-pointer transition-all duration-500 flex justify-center gap-2">
                   {svgList.socialIcons.linkedin }

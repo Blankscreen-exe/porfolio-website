@@ -10,6 +10,7 @@ import "tw-elements-react/dist/css/tw-elements-react.min.css";
 // Components
 import NavBar from './components/common/Navbar'
 import Footer from './components/common/Footer';
+// import CalFloatingButton from './components/common/CalFloatingButton'; //REF: disabled for now
 // import ChatWidget from './components/common/ChatWidget'; //REF: not needed anymore
 
 //data
@@ -33,6 +34,7 @@ function App() {
     <NavBar/>
     <RoutesList/>
     <Footer/>
+    {/* <CalFloatingButton/> //REF: disabled for now */}
     {/* <ChatWidget/> //REF: not needed  */}
 
     {/* TODO: Redux check. remove when done */}
