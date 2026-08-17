@@ -11,6 +11,7 @@ import appConstants from '../../constants/appConstants'
 
 // Components
 import Hero from './Hero'
+import ServicesOverview from './ServicesOverview'
 // import Testimonials from './Testimonials' // hidden — replaced by TestimonialsNew
 import TestimonialsNew from './TestimonialsNew'
 import FeaturedProjects from './FeaturedProjects'
@@ -47,8 +48,25 @@ function Home(props) {
 
   return (
     <>
-        {/* Recruiter funnel: who → impact → proof of work → skills → social proof → contact */}
+        {/* Recruiter funnel: who → what I offer → impact → proof of work → skills → social proof → contact */}
         <Hero/>
+
+        <div className="mt-20">
+          <SectionHeading title="What I Can Do For You"/>
+          <ServicesOverview/>
+          <div className="flex justify-center mt-8">
+            <Button
+              to={appConstants.routes.services}
+              icon={
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2" stroke="currentColor" className="h-4 w-4">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              }
+            >
+              View All Services
+            </Button>
+          </div>
+        </div>
 
         <div className="mt-20">
           <Metrics/>

@@ -42,7 +42,7 @@ function Footer(props) {
           <nav>
             <h6 className="footer-title font-bold font-sans text-content border-b-2 border-b-primary">Lists</h6> 
             <NavLink to={appConstants.routes.listsBooks} className={navLinkClasses}>Books</NavLink >
-            <NavLink to={appConstants.routes.listsBookmarks} className={navLinkClasses}>Games</NavLink >
+            <NavLink to={appConstants.routes.listsBookmarks} className={navLinkClasses}>Bookmarks</NavLink >
             {/* <NavLink to={appConstants.routes.listsResources} className={navLinkClasses}>Dev Resources</NavLink > */}
           </nav>
 

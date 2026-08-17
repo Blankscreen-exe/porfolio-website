@@ -1,56 +1,88 @@
 [
     {
-        "title": "backend",
-        "optionTitle": "backend",
-        "type": "TEC",
-        "description": "I specialize in building robust and scalable <b>backend systems</b>. I can handle your application's <i>core logic, data storage, and server-side functionality</i>, allowing you to focus on the user experience. <br/><br/>My expertise in backend technologies ensures efficient and secure operations.",
+        "title": "Product Engineering",
+        "optionTitle": "Product Eng",
+        "featured": true,
+        "description": "I build and evolve software products from idea to production, with the engineering needed to support real users.",
         "deliverables": [
-            "Payment Gateways", 
-            "APIs", 
-            "Server-side Rendering",
-            "Caching",
-            "Unit testing",
-            "Deployment",
-            "Databases",
-            "... and more"
+            "SaaS platforms",
+            "B2B applications",
+            "Internal tools",
+            "APIs & backend systems",
+            "MVPs & production products"
         ]
     },
     {
-        "title": "frontend",
-        "optionTitle": "frontend",
-        "type": "TEC",
-        "description": "As a Full Stack Developer, I can design quality wireframes and generate the outline of your app while also fusing those ideas into code. <br/><br/>Currently I am providing my services for the <b>Web Application</b> domain where I can perform all kinds of tasks in youur web application.",
+        "title": "AI Engineering",
+        "optionTitle": "AI Eng",
+        "description": "I turn AI capabilities into reliable software that can actually be used in production.",
         "deliverables": [
-            "API Integration",
-            "Translate Designs to Code",
-            "Responsive Design",
-            "Cross-Browser Compatibility",
-            "Unit Testing",
-            "Theme Integration",
-            "... and more"
+            "AI-powered applications",
+            "LLM integrations",
+            "AI agents & workflows",
+            "RAG systems",
+            "AI automation",
+            "Model/API integrations"
         ]
     },
     {
-        "title": "Machine Learning",
-        "optionTitle": "ML",
-        "type": "TEC",
-        "description": "I'm a <b>machine learning engineer</b> here to help you unlock the power of data. I can tackle your machine learning challenges, from building models for tasks like prediction and classification to ensuring they run smoothly in real-world applications. <br/><br/>I'll handle everything, from data wrangling to deployment and monitoring, so you can focus on the insights your models deliver.",
+        "title": "AI Prototype To Production",
+        "optionTitle": "AI to Production",
+        "description": "Bring your AI prototypes to your customers and make it production-grade and ready to survive real users.",
+        "featured": true,
         "deliverables": [
-            "Model Development & Training",
-            "Model Deployment & Integration",
-            "Model Evaluation & Monitoring",
-            "Data Analysis & Exploration",
-            "ETL Pipelines",
-            "Data Aggregation & Munging", 
-            "Business Presentations",
-            "... and more"
+            "Prototype assessment",
+            "Production architecture",
+            "Backend & infrastructure",
+            "Reliability & observability",
+            "Security & access control",
+            "Scaling & deployment"
+        ]
+    },
+    {
+        "title": "Technical Rescue",
+        "optionTitle": "Tech Rescue",
+        "description": "Diagnose and fix software that has become unreliable, difficult to maintain, or expensive to change.",
+        "deliverables": [
+            "Codebase audits",
+            "Architecture reviews",
+            "Production debugging",
+            "Performance investigations",
+            "Technical debt",
+            "Technical roadmaps"
+        ]
+    },
+    {
+        "title": "Consultancy & Audit",
+        "optionTitle": "Consultancy",
+        "description": "Get an experienced technical perspective on your product, architecture, or engineering decisions before they become expensive problems.",
+        "deliverables": [
+            "Architecture & technology selection",
+            "Technical strategy",
+            "Product feasibility",
+            "System design",
+            "Engineering roadmaps",
+            "Technical decision reviews"
+        ]
+    },
+    {
+        "title": "Automation & Integrations",
+        "optionTitle": "Automation",
+        "description": "Automate repetitive processes and connect systems that currently don't talk to each other.",
+        "featured": true,
+        "deliverables": [
+            "Business process automation",
+            "API integrations",
+            "CRM/ERP integrations",
+            "Data synchronization",
+            "Workflow automation",
+            "Internal tooling"
         ]
     },
     {
         "title": "mentorship",
         "optionTitle": "mentorship",
-        "type": "TCH",
-        "description": "I'm passionate about fostering the growth of aspiring developers. I offer <b>mentorship programs</b> designed to empower individuals at various stages of their careers. <br/><br/>Whether you're seeking guidance on building your first <b>machine learning model</b> or refining your <b>full-stack development</b> skills, I can provide a structured learning environment. Through collaboration on real-world projects and open communication, I aim to equip you with the knowledge and confidence to thrive in the dynamic tech industry. Let's discuss your goals and how I can help you achieve them.",
+        "description": "I offer mentorship for developers looking to strengthen their skills through structured guidance and real-world projects.",
         "deliverables": [
             "Technical Skill Development",
             "Career Path Coaching",
@@ -58,7 +90,7 @@
             "Industry Insights",
             "Resume Improvement",
             "Interview Preparation",
-            "... and more" 
+            "... and more"
         ]
     }
 ]

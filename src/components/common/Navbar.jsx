@@ -151,13 +151,13 @@ function NavBar(props) {
           <div className="dropdown">
             {/* MSG: made this dropdown view permanenet */}
             {/* <div tabIndex="0" role="button" className="btn btn-ghost xl:hidden"> */}
-            <div tabIndex="0" role="button" className="btn btn-ghost hover:bg-bg2" onClick={toggleDropdown}>
+            <div tabIndex="0" role="button" className="btn btn-ghost bg-bg2 border border-secondary hover:bg-tertiary text-content hover:text-primary transition-colors" onClick={toggleDropdown}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5 fill-current"
+                className="h-6 w-6"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke="#C4C4C4"
+                stroke="currentColor"
               >
                 <path
                   strokeLinecap="round"
