@@ -33,10 +33,11 @@ function ServicesTabs(props) {
 
   return (
     <div>
-      <div className="mb-16 font-sans flex items-center justify-center flex-col">
+      {/* Desktop / tablet: tab selector + side-by-side info panel */}
+      <div className="mb-16 font-sans hidden sm:flex items-center justify-center flex-col">
         <div className="">
           <div className=" mx-auto">
-            <div className="mb-16 mx-auto  sm:w-fit md:w-fit lg:w-fit flex flex-wrap justify-center flex-col sm:flex-row sm:space-x-4 p-2 rounded-lg shadow-inner shadow-shadow/50 bg-tertiary focus:outline-none focus:shadow-none">
+            <div className="mb-16 mx-auto w-fit flex flex-wrap justify-center space-x-4 p-2 rounded-lg shadow-inner shadow-shadow/50 bg-tertiary focus:outline-none focus:shadow-none">
               {servicesData.map((item, ind) => {
                 return (
                   <button
@@ -55,14 +56,14 @@ function ServicesTabs(props) {
             </div>
           </div>
         </div>
-              
+
         <div id="service-info-container" className="flex flex-col lg:flex-row justify-between gap-6 w-[90%] mx-auto">
           <div className="w-full transition-all duration-300 bg-bg2 p-4 rounded-lg shadow-md border-l-4 border-primary text-content">
             <h2 className="text-2xl font-semibold mb-2 text-primary">
               {capitalizeFirstLetter(servicesData[activeTab].title)}
             </h2>
             <p className="text-content" dangerouslySetInnerHTML={{ __html: capitalizeFirstLetter(servicesData[activeTab].description) }}>
-              
+
             </p>
           </div>
 
@@ -75,7 +76,29 @@ function ServicesTabs(props) {
             </ul>
           </div>
         </div>
+      </div>
 
+      {/* Mobile: stacked service cards */}
+      <div className="mb-16 font-sans sm:hidden w-full flex flex-col gap-4">
+        {servicesData.map((item, ind) => {
+          return (
+            <div key={ind} className="w-full bg-bg2 p-4 rounded-lg shadow-md border-l-4 border-primary text-content">
+              <h2 className="text-xl font-semibold mb-2 text-primary">
+                {capitalizeFirstLetter(item.title)}
+              </h2>
+              <p className="text-content" dangerouslySetInnerHTML={{ __html: capitalizeFirstLetter(item.description) }}></p>
+
+              <div className="w-full border border-secondary drop-shadow-sm rounded-md p-4 relative mt-4">
+                <h3 className="text-contentLink/80 text-xs bg-bg1 absolute -top-2 px-2 shadow-none">I can do the following</h3>
+                <ul className="space-y-2">
+                  {item.deliverables.map((deliverable, dInd) => {
+                    return <li key={dInd}><span className="w-1 h-1 rounded-3xl p bg-primary text-primary">.</span> <pre className="inline"> </pre>{capitalizeFirstLetter(deliverable)}</li>;
+                  })}
+                </ul>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
