@@ -66,7 +66,7 @@ function Footer(props) {
               <NavLink to={socialLinks.discord}  className={navLinkClasses}>{svgLists.socialIcons.discord}</NavLink >
               <NavLink to={socialLinks.github}  className={navLinkClasses}>{svgLists.socialIcons.github}</NavLink >
               <NavLink to={socialLinks.linkedin}  className={navLinkClasses}>{svgLists.socialIcons.linkedin}</NavLink >
-              <NavLink to={socialLinks.medium}  className={navLinkClasses}>{svgLists.socialIcons.medium}</NavLink >
+              <NavLink to={socialLinks.hashnode}  className={navLinkClasses}>{svgLists.socialIcons.hashnode}</NavLink >
               <NavLink to={socialLinks.x}  className={navLinkClasses}>{svgLists.socialIcons.x}</NavLink >
               
             </div>
