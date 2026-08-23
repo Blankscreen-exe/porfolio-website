@@ -1,5 +1,14 @@
 [
   {
+    "title": "JetBrains Academy",
+    "url": "https://academy.jetbrains.com/",
+    "description": "Lots of great courses for both beignners and professionals",
+    "category": "courses",
+    "tags": ["programming", "AI", "ML", "Tooling"],
+    "featured": false,
+    "icon": false
+  },
+  {
     "title": "Church Of Malware",
     "url": "https://churchofmalware.org",
     "description": "Registered nonprofit org for free off-sec research and security education",
