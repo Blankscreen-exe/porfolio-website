@@ -1,12 +1,21 @@
 [
   {
+    "title": "Early",
+    "url": "https://www.early.tools/",
+    "description": "Early-stage startups & pre-launch tools, curated daily",
+    "category": "directory",
+    "tags": ["startups", "pre-launch", "founders"],
+    "featured": false,
+    "icon": "https://www.early.tools/favicon.ico"
+  },
+  {
     "title": "JetBrains Academy",
     "url": "https://academy.jetbrains.com/",
     "description": "Lots of great courses for both beignners and professionals",
     "category": "courses",
     "tags": ["programming", "AI", "ML", "Tooling"],
     "featured": false,
-    "icon": false
+    "icon": "https://resources.jetbrains.com/storage/ui/favicons/favicon.ico"
   },
   {
     "title": "Church Of Malware",
